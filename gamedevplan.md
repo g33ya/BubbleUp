@@ -1,20 +1,20 @@
-##Bubble Up
+# Bubble Up
 
 ## Elevator Pitch
 
-*A narrative journey where you explore customers’ daily struggles and solutions, helping you navigate your own imposter syndrome along the way in the setting of a boba shop.*
+A narrative journey where you explore customers’ daily struggles and solutions, helping you navigate your own imposter syndrome along the way in the setting of a boba shop.
 
 ## Influences (Brief)
 
-- *Coffee Talk*: 
-  - Medium: *Video Game*
-  - Explanation: *Coffee Talk allows you to work as a barista while chatting with customers, serving fantasy creatures alongside humans that are dealing with different struggles. The game tackles discrimination, forbidden love, career struggles, and more. You can help ease your customers’ minds by crafting an appropriate drink based on a recipe book and what specials you have in stock for the day.
-- *Papa’s Freezeria*
-  - Medium: *Video Game*
-  - Explanation: *Papa’s Freezeria allows players to build different drinks and milkshakes by interacting with customers and taking orders. After taking the orders, players have to go through the stations needed to build the desired drink while keeping an eye on the lobby in case any other customers walk in. Players receive tips from customers based on the time and quality of their work. Bubble Up resembles this format as players will need to make drinks and interact with customers to learn about computer science. Players may even receive tips and payments to use for power-ups later on in the game*
-- *Sims*:
-  - Medium: *Video Game*
-  - Explanation: *In the Sims, there is a stats system where the player has to manage the different types of stats (like hunger, energy, happiness) in order to keep the player’s Sims alive and well. These stats can be affected by the action of the player or by the action of the game, but at the end of the day, it is always the player’s choice on whether or not the player wants to act upon these stat changes. Bubble Up takes the idea of stats and runs with it as part of its core night mechanics in how the player has to manage their stats based on what they hear or their objective, as it is always the player’s choice whether or not to take different actions to fill up different stats.*
+- Coffee Talk: 
+  - Medium: Video Game
+  - Explanation: Coffee Talk allows you to work as a barista while chatting with customers, serving fantasy creatures alongside humans that are dealing with different struggles. The game tackles discrimination, forbidden love, career struggles, and more. You can help ease your customers’ minds by crafting an appropriate drink based on a recipe book and what specials you have in stock for the day.
+- Papa’s Freezeria
+  - Medium: Video Game
+  - Explanation: Papa’s Freezeria allows players to build different drinks and milkshakes by interacting with customers and taking orders. After taking the orders, players have to go through the stations needed to build the desired drink while keeping an eye on the lobby in case any other customers walk in. Players receive tips from customers based on the time and quality of their work. Bubble Up resembles this format as players will need to make drinks and interact with customers to learn about computer science. Players may even receive tips and payments to use for power-ups later on in the game
+- Sims:
+  - Medium: Video Game
+  - Explanation: In the Sims, there is a stats system where the player has to manage the different types of stats (like hunger, energy, happiness) in order to keep the player’s Sims alive and well. These stats can be affected by the action of the player or by the action of the game, but at the end of the day, it is always the player’s choice on whether or not the player wants to act upon these stat changes. Bubble Up takes the idea of stats and runs with it as part of its core night mechanics in how the player has to manage their stats based on what they hear or their objective, as it is always the player’s choice whether or not to take different actions to fill up different stats.
 
 ## Core Gameplay Mechanics (Brief)
 
