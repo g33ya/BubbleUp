@@ -1,4 +1,4 @@
-##Bubble Up
+## Bubble Up
 
 ## Elevator Pitch
 
@@ -16,8 +16,6 @@ A narrative journey where you explore customers’ daily struggles and solutions
   - Explanation: In the Sims, there is a stats system where the player has to manage the different types of stats (like hunger, energy, happiness) to keep the player’s Sims alive and well. These stats can be affected by the action of the player or by the action of the game, but at the end of the day, it is always the player’s choice on whether or not the player wants to act upon these stat changes. Bubble Up takes the idea of stats and runs with it as part of its core night mechanics in how the player has to manage their stats based on what they hear or their objective, as it is always the player’s choice whether or not to take different actions to fill up different stats.
 
 ## Core Gameplay Mechanics (Brief)
-
-Give a very high-level description of any core gameplay mechanics
 
 - Dialogue System: Engage with customers (CS students!) - This dialogue system is how the player will learn about their customers and what their customers do, this is the main storyline takes place and how the player will learn about different things and thus will appear later that night as an option for the player to do/make. For example, if a customer mentions taking a walk helped out their stress, then later that night, the player has the option to take a walk that can affect their stress level
 
@@ -45,8 +43,6 @@ Bubble Up can be formally used as a module in introductory computer science cour
 
 ## Learning Objectives
 
-Remember, Learning Objectives are NOT simply topics. They are statements of observable behavior that a learner can do after the learning experience. You cannot observe someone "understanding" or "knowing" something.
-
 - Identifying Imposter Syndrome: By the end of instruction, students should be able to identify emotions and thoughts associated with Imposter Syndrome.
 - Applying Coping Mechanisms: By the end of instruction, students should be able to respond with techniques and coping mechanisms related to self-compassion and a growth mindset to combat Imposter Syndrome.
 - Managing Responsibilities: By the end of instruction, students should be able to organize their school workload in a way that does not impede work-life balance and mental health.
@@ -63,23 +59,17 @@ Students will be asked to fill out “Pre-work forms” during their “training
 
 # What sets this project apart?
 
-Give some reasons why this game is not like every other game out there. Whether the learning objective is unique, the gameplay mechanics are new, or what. You should persuade the reader that your game is novel and worthy of development. Consider arguments that would be persuasive to a Venture Capitalist, Teacher, or Researcher. These might be focused on learning needs, too.
-
 - Bubble Up will introduce a range of relatable experiences and stressors of computer science students based directly on real-life experiences of current undergraduates (such as internship searching, having too many responsibilities, feeling like you don’t have enough responsibilities, struggling to connect with others, etc.)
 - While many students are told Imposter Syndrome is common, they might not know how and why other peers similar to them struggle with it. By introducing characters in situations similar to what real students experience, players can resonate with it more and recognize Imposter Syndrome in themselves more easily.
 - Bubble Up combines the fun nostalgic feel of Papa’s Freezeria and cooking games with computer science and mental health skills. It is engaging, and educational and allows players to get creative with their avatars, drink designs, and flavors while teaching them about imposter syndrome.
 
 # Player Interaction Patterns and Modes
 
-
-
 ## Player Interaction Pattern
 
 This is a game for one person. The player clicks/drags with a mouse.
 
 ## Player Modes
-
-Your game has one or more player modes. Describe each discrete mode, considering things like menus too. Generally describe the transitions between modes too.
 
 - Single Player Mode:  You will make drinks, talk to customers, and manage your stats advancing through each day until the narrative is done (ending based on the stats, ~1 week in-game time)
 -In Boba shop Mode: This is the mode where the player makes the customers' drinks. The screen will also showcase the receipt near the boba-making station in order for the player to follow the ingredients the customer had asked for.
@@ -98,8 +88,6 @@ Your game has one or more player modes. Describe each discrete mode, considering
 # Procedures/Actions
 
 You can click on the customer in the line, and spark up a conversation while simultaneously taking their order. Once the conversation ends, you’ll receive a ticket for your order. Then, they began making their bubble tea drink based on what the receipt stated.
-
-Describe the control scheme and what actions a user can take in the game.
 
 The user can control the making of the drinks, however, the conversations between the customers are preset. So the user can not alter the dialogue. The user also can customize their character to make it more personable.
 
@@ -128,16 +116,11 @@ Game Menu Interactable: phone, help, calendar
 When giving the customer their drink, they smile if the order is correct and frown if it is incorrect.
 The facial expressions can vary between customers during the conversations, some may have a mad expression, while others can have a happy or sad expression
 
-Explicitly describe what visual/audio/animation indicators there are that give players feedback on their progress towards their gameplay objectives (and ideally the learning objectives).
-
 Selection sound, to indicate that the user has clicked something
 Phone Buzz Sound to indicate when there is something on the phone the player should see: new item unlocked, mental note made, etc.
 Bell sound at the start of shop day
 Energy & Stress Levels will change based off the player’s interaction
 Happy twinkle sound at the end of a good day (stress levels low), whomp sound at the end of a bad day (stress levels high)
-
-
-Describe what longer-term feedback you detect and give that guides the player in their learning and lets them know how they are doing regarding the learning objectives.
 
 If the character ended the day poorly, a ‘DUN DUN’ (negative feedback sound) would play
 If the character ended the day on a good note, a ‘Sparkle’ (positive feedback sound) would play
@@ -150,13 +133,10 @@ Players will have a “training day at the beginning of their “week” where t
 
 ## Presentation of Content
 
-Briefly describe how the player will be taught the core material they are meant to learn. Avoid using walls of text, since people will not read them. Think instead of natural ways of teaching material iteratively and slowly.
-
 The player will learn about imposter syndrome through the dialogue of the characters (each representing different forms of imposters) and through the management of their stress and energy levels during the gameplay. The game will either show or not show interactable items to the player depending on their levels, representing how when one is suffering from imposter syndrome, it can almost “blind” them to the reality of things. 
 
 ## Story (Brief)
 
-The Summary or TL;DR version of below
 The player works at a Boba Shop where they make drinks and interact with four characters, each with different personality types (busy bee, shy/athletic, relaxed/down to Earth, and the professor) and each suffers from different manifestations of imposter syndrome. Each day in the shop, you learn more about what each character does, how they suffer from Imposter Syndrome, and how to overcome your own stress and imposter syndrome. 
 
 ## Storyboarding
@@ -165,7 +145,7 @@ The player works at a Boba Shop where they make drinks and interact with four ch
 
 ## Aesthetics
 
-The aesthetics should be cartoonish with a mixture of Lofi girls’ aesthetics, and cute with 2D art, having fun settings and fun characters that are enjoyable to talk to!
+The aesthetics will be cartoonish with a mixture of Lofi girls’ aesthetics, and cute with 2D art, having fun settings and fun characters that are enjoyable to talk to!
 
 ## Graphical
 
@@ -191,13 +171,9 @@ The aesthetics should be cartoonish with a mixture of Lofi girls’ aesthetics, 
 
 ## Audio
 
-Game region/phase/time are ways of designating a particularly important place in the game.
-
 - Music List (Ambient sound)
   - The background music while working will contain generic coffee shop catchy tunes
   - The background music while home will be a chill Lofi beat
-
-Game Interactions are things that trigger SFX, like character movement, hitting a spiky enemy, or collecting a coin.
 
 - Sound List (SFX)
   - Pouring sound when adding liquid to a cup
