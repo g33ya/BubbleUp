@@ -1,14 +1,10 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 807d36d1cb287d84fa4648a3ef321ce6
-=======
-guid: 18bf61c163a3ee64abe6d9470205fa2c
->>>>>>> 63cf71a0a0d62f02cbe7174cdea8050e696a8942
+guid: 4cb07f22b850b624fa381883ffe32fc7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7383227530907356540
-    second: Cafe_Outside_background_0
+      213: -2506802742594549973
+    second: Clickable_RecorderPlayer_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -104,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cafe_Outside_background_0
+      name: Clickable_RecorderPlayer_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 1561
+        y: 394
+        width: 207
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 482f16cbda1898990800000000000000
-      internalID: -7383227530907356540
+      spriteID: b274dadef2c063dd0800000000000000
+      internalID: -2506802742594549973
       vertices: []
       indices: 
       edges: []
@@ -138,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Clickable_RecorderPlayer_0: -2506802742594549973
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
