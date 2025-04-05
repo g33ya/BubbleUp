@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d26bcadd05e638f43865077f69e2fe5f
+guid: 7ab2e8c041a7e71429110f74bf384279
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6642193843099659868
-    second: Front_Cafe_Background_Tables 1_0
+      213: -5061729371024041935
+    second: Cafe_Outside_background 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Front_Cafe_Background_Tables 1_0
+      name: Cafe_Outside_background 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c5eed33cb10dd2c50800000000000000
-      internalID: 6642193843099659868
+      spriteID: 13853fa84ff11c9b0800000000000000
+      internalID: -5061729371024041935
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Front_Cafe_Background_Tables 1_0: 6642193843099659868
+      Cafe_Outside_background 1_0: -5061729371024041935
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

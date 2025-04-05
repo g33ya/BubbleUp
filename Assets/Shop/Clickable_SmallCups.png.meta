@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: d26bcadd05e638f43865077f69e2fe5f
+guid: 4efce30ff74b14a44a240983367dd8ec
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6642193843099659868
-    second: Front_Cafe_Background_Tables 1_0
+      213: -1714467979693379417
+    second: Clickable_SmallCups_0
+  - first:
+      213: -1252762131206808500
+    second: Clickable_SmallCups_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Front_Cafe_Background_Tables 1_0
+      name: Clickable_SmallCups_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 1187
+        y: 407
+        width: 99
+        height: 193
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c5eed33cb10dd2c50800000000000000
-      internalID: 6642193843099659868
+      spriteID: 7a03893c47cf438e0800000000000000
+      internalID: -1714467979693379417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clickable_SmallCups_1
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 374
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4c5b55aa7b4d9ee0800000000000000
+      internalID: -1252762131206808500
       vertices: []
       indices: 
       edges: []
@@ -148,7 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Front_Cafe_Background_Tables 1_0: 6642193843099659868
+      Clickable_SmallCups_0: -1714467979693379417
+      Clickable_SmallCups_1: -1252762131206808500
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

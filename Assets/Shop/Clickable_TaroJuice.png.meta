@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: d26bcadd05e638f43865077f69e2fe5f
+guid: 60d235d569769c54ab6f6b9f86566c7e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6642193843099659868
-    second: Front_Cafe_Background_Tables 1_0
+      213: 4733270386757030733
+    second: Clickable_TaroJuice_0
+  - first:
+      213: -8972077444049936784
+    second: Clickable_TaroJuice_1
+  - first:
+      213: -8121099926934001401
+    second: Clickable_TaroJuice_2
+  - first:
+      213: -3487311684289569588
+    second: Clickable_TaroJuice_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Front_Cafe_Background_Tables 1_0
+      name: Clickable_TaroJuice_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 48
+        y: 870
+        width: 83
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +137,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c5eed33cb10dd2c50800000000000000
-      internalID: 6642193843099659868
+      spriteID: d43578cb654ffa140800000000000000
+      internalID: 4733270386757030733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clickable_TaroJuice_1
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 827
+        width: 140
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07edb1ac917cc7380800000000000000
+      internalID: -8972077444049936784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clickable_TaroJuice_2
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 826
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 709e5a5d4ae0c4f80800000000000000
+      internalID: -8121099926934001401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clickable_TaroJuice_3
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 826
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cccd9dcef749a9fc0800000000000000
+      internalID: -3487311684289569588
       vertices: []
       indices: 
       edges: []
@@ -148,7 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Front_Cafe_Background_Tables 1_0: 6642193843099659868
+      Clickable_TaroJuice_0: 4733270386757030733
+      Clickable_TaroJuice_1: -8972077444049936784
+      Clickable_TaroJuice_2: -8121099926934001401
+      Clickable_TaroJuice_3: -3487311684289569588
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

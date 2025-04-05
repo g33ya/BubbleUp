@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d26bcadd05e638f43865077f69e2fe5f
+guid: 92117e6a17a5395419cc7cd511198d6d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6642193843099659868
-    second: Front_Cafe_Background_Tables 1_0
+      213: 1916321052337360993
+    second: Clickable_WorkingCup_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Front_Cafe_Background_Tables 1_0
+      name: Clickable_WorkingCup_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 811
+        y: 305
+        width: 237
+        height: 301
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c5eed33cb10dd2c50800000000000000
-      internalID: 6642193843099659868
+      spriteID: 160db2018d3289a10800000000000000
+      internalID: 1916321052337360993
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Front_Cafe_Background_Tables 1_0: 6642193843099659868
+      Clickable_WorkingCup_0: 1916321052337360993
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
