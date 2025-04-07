@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: d26bcadd05e638f43865077f69e2fe5f
+guid: 2960f3b6a37b1b346ac45bb92689ca07
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6642193843099659868
-    second: Front_Cafe_Background_Tables 1_0
+      213: 3608335082506622847
+    second: Clickable_AloeJelly_0
+  - first:
+      213: 5575963388615792716
+    second: Clickable_AloeJelly_1
+  - first:
+      213: 1432916220475679775
+    second: Clickable_AloeJelly_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Front_Cafe_Background_Tables 1_0
+      name: Clickable_AloeJelly_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 933
+        y: 692
+        width: 155
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c5eed33cb10dd2c50800000000000000
-      internalID: 6642193843099659868
+      spriteID: f771367c3a1631230800000000000000
+      internalID: 3608335082506622847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clickable_AloeJelly_1
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 691
+        width: 159
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c481703c82dc16d40800000000000000
+      internalID: 5575963388615792716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clickable_AloeJelly_2
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 616
+        width: 131
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f14295ae5bdb2e310800000000000000
+      internalID: 1432916220475679775
       vertices: []
       indices: 
       edges: []
@@ -134,8 +184,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Front_Cafe_Background_Tables 1_0: 6642193843099659868
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
