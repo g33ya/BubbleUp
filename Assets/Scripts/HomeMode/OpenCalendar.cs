@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CalendarOpener : MonoBehaviour
+public class OpenCalendar : MonoBehaviour
 {
     public GameObject calendarUI;
 
