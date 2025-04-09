@@ -1,0 +1,29 @@
+using UnityEngine;
+using UnityEngine.EventSystems;
+public class ShopEventScript : MonoBehaviour, IPointerClickHandler, IDragHandler, IBeginDragHandler, IEndDragHandler
+{
+
+    Vector3 cameraOffset;
+    public void OnBeginDrag(PointerEventData eventData){}
+
+    public void OnDrag(PointerEventData eventData){
+          Debug.Log("OnDrag" + eventData.position);
+          transform.position= Camera.main.ScreenToWorldPoint(eventData.position)+cameraOffset;
+    }
+
+    public void OnEndDrag(PointerEventData eventData){}
+
+    public void OnPointerClick(PointerEventData eventData){
+        Debug.Log("OnPointerClick");
+    }
+    
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+  void Start(){
+    cameraOffset=Camera.main.ScreenToWorldPoint(new Vector3(0,0,0));
+    cameraOffset.x=0;
+    cameraOffset.y=0;
+    cameraOffset.z=-cameraOffset.z;
+    Debug.Log("camerOffset:"+cameraOffset);
+  }
+
+}
