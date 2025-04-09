@@ -1,14 +1,19 @@
 fileFormatVersion: 2
-
-guid: 4f48bc9f3669a483d9cb3d2f9add981c
-
-guid: d20f946c03d39ae4a8cffe2d987d7221
-
+guid: 633cc458d89a14af6a52617d012ab4b4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3526611238206078052
-    second: Back_Cafe_Background_0
+      213: 7614751710158676882
+    second: Clickable_PoppingPerals_0
+  - first:
+      213: -1316164938913545147
+    second: Clickable_PoppingPerals_1
+  - first:
+      213: -6538876152222414345
+    second: Clickable_PoppingPerals_2
+  - first:
+      213: 5009306644266587465
+    second: Clickable_PoppingPerals_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -117,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Back_Cafe_Background_0
+      name: Clickable_PoppingPerals_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 1159
+        y: 699
+        width: 155
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +137,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c9383dd73c5fe0fc0800000000000000
-      internalID: -3526611238206078052
+      spriteID: 2936ec0f5580da960800000000000000
+      internalID: 7614751710158676882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clickable_PoppingPerals_1
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 695
+        width: 120
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5440c3e16fa0cbde0800000000000000
+      internalID: -1316164938913545147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clickable_PoppingPerals_2
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 682
+        width: 157
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f98284b8ce3145a0800000000000000
+      internalID: -6538876152222414345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clickable_PoppingPerals_3
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 611
+        width: 126
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 945938e3ad1a48540800000000000000
+      internalID: 5009306644266587465
       vertices: []
       indices: 
       edges: []
@@ -151,12 +222,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-
     nameFileIdTable: {}
-
-    nameFileIdTable:
-      Back_Cafe_Background_0: -3526611238206078052
-
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

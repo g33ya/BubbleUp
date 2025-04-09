@@ -1,14 +1,16 @@
 fileFormatVersion: 2
-
-guid: 4f48bc9f3669a483d9cb3d2f9add981c
-
-guid: d20f946c03d39ae4a8cffe2d987d7221
-
+guid: ffe995514110f4c75821f16416680a69
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3526611238206078052
-    second: Back_Cafe_Background_0
+      213: 7474596038081111408
+    second: Clickable_MangoJuice_0
+  - first:
+      213: -4531041163806948709
+    second: Clickable_MangoJuice_1
+  - first:
+      213: 5907826053827365974
+    second: Clickable_MangoJuice_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -117,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Back_Cafe_Background_0
+      name: Clickable_MangoJuice_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 14
+        y: 828
+        width: 147
+        height: 187
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c9383dd73c5fe0fc0800000000000000
-      internalID: -3526611238206078052
+      spriteID: 075ed599e791bb760800000000000000
+      internalID: 7474596038081111408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clickable_MangoJuice_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 827
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b924d9861128e11c0800000000000000
+      internalID: -4531041163806948709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clickable_MangoJuice_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 827
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65c8d25be70dcf150800000000000000
+      internalID: 5907826053827365974
       vertices: []
       indices: 
       edges: []
@@ -151,12 +197,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-
     nameFileIdTable: {}
-
-    nameFileIdTable:
-      Back_Cafe_Background_0: -3526611238206078052
-
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,14 +1,10 @@
 fileFormatVersion: 2
-
-guid: 4f48bc9f3669a483d9cb3d2f9add981c
-
-guid: d20f946c03d39ae4a8cffe2d987d7221
-
+guid: eebd988e8576e4a3996aa413b7a89416
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3526611238206078052
-    second: Back_Cafe_Background_0
+      213: -5217493170432572579
+    second: Clickable_ShakerBase_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -117,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Back_Cafe_Background_0
+      name: Clickable_ShakerBase_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 370
+        y: 377
+        width: 286
+        height: 398
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c9383dd73c5fe0fc0800000000000000
-      internalID: -3526611238206078052
+      spriteID: d53075eda9db797b0800000000000000
+      internalID: -5217493170432572579
       vertices: []
       indices: 
       edges: []
@@ -151,12 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-
     nameFileIdTable: {}
-
-    nameFileIdTable:
-      Back_Cafe_Background_0: -3526611238206078052
-
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

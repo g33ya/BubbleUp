@@ -1,14 +1,13 @@
 fileFormatVersion: 2
-
-guid: 4f48bc9f3669a483d9cb3d2f9add981c
-
-guid: d20f946c03d39ae4a8cffe2d987d7221
-
+guid: 6fa9a259be474421f8fc72ee0219da4c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3526611238206078052
-    second: Back_Cafe_Background_0
+      213: 228835466367813266
+    second: Clickable_EmptyCup_0
+  - first:
+      213: -7964577245524220630
+    second: Clickable_EmptyCup_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -117,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Back_Cafe_Background_0
+      name: Clickable_EmptyCup_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 56
+        y: 849
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c9383dd73c5fe0fc0800000000000000
-      internalID: -3526611238206078052
+      spriteID: 2964ddce4acfc2300800000000000000
+      internalID: 228835466367813266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clickable_EmptyCup_1
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 267
+        width: 822
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a25ae5e7133287190800000000000000
+      internalID: -7964577245524220630
       vertices: []
       indices: 
       edges: []
@@ -151,12 +172,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-
     nameFileIdTable: {}
-
-    nameFileIdTable:
-      Back_Cafe_Background_0: -3526611238206078052
-
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
