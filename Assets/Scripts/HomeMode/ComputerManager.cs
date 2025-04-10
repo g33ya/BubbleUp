@@ -18,6 +18,8 @@ public class ComputerManager : MonoBehaviour
     public GameObject dayPanel; 
     public GameObject assignmentPanel;
     public Button initialWorkOnButton;
+    public TimeManager timeManager; 
+
 
     void Start()
     {
@@ -48,25 +50,25 @@ public class ComputerManager : MonoBehaviour
         if (selectedOption == "30 min") 
         {
             assignment1.UpdateProgress(10);
-            FindFirstObjectByType<TimeManager>().AddTime(30);
+            timeManager.AddTime(30);
         }
         else if (selectedOption == "1 hr") {
             assignment1.UpdateProgress(20); 
-            FindFirstObjectByType<TimeManager>().AddTime(60);
+            timeManager.AddTime(60);
         }
         
         else if (selectedOption == "2 hr")
         {
             assignment1.UpdateProgress(40);
-            FindFirstObjectByType<TimeManager>().AddTime(120);
+            timeManager.AddTime(120);
         }
         else if (selectedOption == "3 hr") {
             assignment1.UpdateProgress(60); 
-            FindFirstObjectByType<TimeManager>().AddTime(180);
+            timeManager.AddTime(180);
         }
         else if (selectedOption == "4 hr") {
             assignment1.UpdateProgress(80); 
-            FindFirstObjectByType<TimeManager>().AddTime(240);
+            timeManager.AddTime(240);
         }
 
         UpdateCurrentProgressDisplay();

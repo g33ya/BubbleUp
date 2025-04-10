@@ -1,6 +1,7 @@
 using UnityEngine;
 
 using TMPro;
+using System.Collections;
 using UnityEngine;
 
 public class TimeManager : MonoBehaviour
@@ -8,10 +9,14 @@ public class TimeManager : MonoBehaviour
     public TMP_Text timeText;
     private int hour = 19; // 7 PM
     private int minute = 0;
+     public CanvasGroup fadePanel;  
+    public float fadeDuration = 1f;
 
     void Start()
     {
         UpdateTimeDisplay();
+        fadePanel.alpha = 0;  // Start with the fade panel hidden
+
     }
 
     public void AddTime(int minutesToAdd)
@@ -26,6 +31,9 @@ public class TimeManager : MonoBehaviour
         {
             hour -= 24;
         }
+        
+        // Trigger the fade effect coroutine
+        StartCoroutine(FadeInOut());
         UpdateTimeDisplay();
     }
 
@@ -36,6 +44,35 @@ public class TimeManager : MonoBehaviour
         if (displayHour == 0) displayHour = 12;
 
         timeText.text = displayHour.ToString("0") + ":" + minute.ToString("00") + " " + suffix;
+    }
+
+     private IEnumerator FadeInOut()
+    {
+        // Fade In
+        fadePanel.alpha = 0;
+        fadePanel.gameObject.SetActive(true);  // Ensure the fade panel is active
+        float timeElapsed = 0;
+        while (timeElapsed < fadeDuration)
+        {
+            fadePanel.alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+        fadePanel.alpha = 1;
+
+        // Wait for a brief moment before fading out
+        yield return new WaitForSeconds(0.5f);
+
+        // Fade Out
+        timeElapsed = 0;
+        while (timeElapsed < fadeDuration)
+        {
+            fadePanel.alpha = Mathf.Lerp(1, 0, timeElapsed / fadeDuration);
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+        fadePanel.alpha = 0;
+        fadePanel.gameObject.SetActive(false);  // Hide the fade panel after the animation
     }
 }
 
