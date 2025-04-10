@@ -24,6 +24,26 @@ public class ComputerManager : MonoBehaviour
         int selectedIndex = dropdown.value;  // Get selected index
         string selectedOption = dropdown.options[selectedIndex].text;  // Get selected option's text
 
+        if (selectedOption == "30 min")
+        {
+            assignment1.UpdateProgress(10);
+        }
+        else if (selectedOption == "1 hr")
+        {
+            assignment1.UpdateProgress(20);
+        }
+        else if (selectedOption == "2 hr")
+        {
+            assignment1.UpdateProgress(40);
+        }
+        else if (selectedOption == "3 hr")
+        {
+            assignment1.UpdateProgress(60);
+        }
+        else if (selectedOption == "4 hr")
+        {
+            assignment1.UpdateProgress(80);
+        }
     }
 
     // Update is called once per frame
