@@ -22,6 +22,10 @@ public class TimeManager : MonoBehaviour
             minute -= 60;
             hour += 1;
         }
+        while (hour >= 24) 
+        {
+            hour -= 24;
+        }
         UpdateTimeDisplay();
     }
 
