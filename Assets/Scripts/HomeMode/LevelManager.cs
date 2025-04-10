@@ -10,7 +10,7 @@ public class LevelManager : MonoBehaviour
     public TMP_Text stressLevelText;
 
 
-    void IncreaseEnergyLevel(int amount)
+    public void IncreaseEnergyLevel(int amount)
     {
         energyLevel += amount;
         if (energyLevel > 100) // max level
@@ -20,7 +20,7 @@ public class LevelManager : MonoBehaviour
         UpdateEnergyLevelText();
     }
 
-    void DecreaseEnergyLevel(int amount)
+    public void DecreaseEnergyLevel(int amount)
     {
         energyLevel += amount;
         if (energyLevel > 100) // min level
@@ -30,7 +30,7 @@ public class LevelManager : MonoBehaviour
         UpdateEnergyLevelText();
     }
 
-    void IncreaseStressLevel(int amount)
+    public void IncreaseStressLevel(int amount)
     {
         stressLevel += amount;
         if (stressLevel > 100) // max level
@@ -40,7 +40,7 @@ public class LevelManager : MonoBehaviour
         UpdateStressLevelText();
     }
 
-    void DecreaseStressLevel(int amount)
+    public void DecreaseStressLevel(int amount)
     {
         stressLevel -= amount;
         if (stressLevel < 0) // min level
@@ -50,12 +50,12 @@ public class LevelManager : MonoBehaviour
         UpdateStressLevelText();
     }
 
-    void UpdateEnergyLevelText()
+    public void UpdateEnergyLevelText()
     {
         energyLevelText.text = "Energy: " + energyLevel.ToString();
     }
 
-    void UpdateStressLevelText()
+    public void UpdateStressLevelText()
     {
         stressLevelText.text = "Stress: " + stressLevel.ToString();
     }
