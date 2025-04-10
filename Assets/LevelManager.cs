@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour
@@ -5,60 +6,60 @@ public class LevelManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public int energyLevel;
     public int stressLevel;
+    public TMP_Text energyLevelText;
+    public TMP_Text stressLevelText;
 
-    void increaseEnergyLevel(int amount)
+
+    void IncreaseEnergyLevel(int amount)
     {
         energyLevel += amount;
         if (energyLevel > 100) // max level
         {
             energyLevel = 100;
         }
+        UpdateEnergyLevelText();
     }
 
-    void decreaseEnergyLevel(int amount)
-    {
-        energyLevel -= amount;
-        if (energyLevel < 0) // min level
-        {
-            energyLevel = 0;
-        }
-    }
-
-    void increaseEnergyLevel(int amount)
-    {
-        energyLevel += amount;
-        if (energyLevel > 100) // max level
-        {
-            energyLevel = 100;
-        }
-    }
-
-    void decreaseEnergyLevel(int amount)
+    void DecreaseEnergyLevel(int amount)
     {
         energyLevel += amount;
         if (energyLevel > 100) // min level
         {
             energyLevel = 100;
         }
+        UpdateEnergyLevelText();
     }
 
-    void increaseStressLevel(int amount)
+    void IncreaseStressLevel(int amount)
     {
         stressLevel += amount;
         if (stressLevel > 100) // max level
         {
             stressLevel = 100;
         }
+        UpdateStressLevelText();
     }
 
-    void decreaseStressLevel(int amount)
+    void DecreaseStressLevel(int amount)
     {
         stressLevel -= amount;
         if (stressLevel < 0) // min level
         {
             stressLevel = 0;
         }
+        UpdateStressLevelText();
     }
+
+    void UpdateEnergyLevelText()
+    {
+        energyLevelText.text = "Energy Level: " + energyLevel.ToString();
+    }
+
+    void UpdateStressLevelText()
+    {
+        stressLevelText.text = "Stress Level: " + stressLevel.ToString();
+    }
+
     void Start()
     {
         
