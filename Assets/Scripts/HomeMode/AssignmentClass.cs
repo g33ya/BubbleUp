@@ -13,6 +13,15 @@ public class Assignment
         this.currentProgress = currentProgress;
     }
 
+    public void UpdateProgress(int progressIncrease)
+    {
+        currentProgress += progressIncrease;
+        if (currentProgress > 100)
+            currentProgress = 100; 
+        else if (currentProgress < 0f)
+            currentProgress = 0; 
+    }
+
     public bool IsComplete()
     {
         return currentProgress >= 100;
