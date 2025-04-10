@@ -3,13 +3,13 @@ using UnityEngine;
 public class Assignment
 {
     public string name { get; set; }
-    public int timeRequired { get; set; }
+    public int progressRequired { get; set; }
     public int currentProgress { get; set; }
 
-    public Assignment(string name, int timeRequired)
+    public Assignment(string name, int progressRequired)
     {
         this.name = name;
-        this.timeRequired = timeRequired;
+        this.progressRequired = progressRequired;
         currentProgress = 0;
     }
 
