@@ -5,9 +5,11 @@ using UnityEngine.UI;
 public class ComputerManager : MonoBehaviour
 {
     Assignment assignment1;
+
     public Button startWorkingButton;
     public TMP_Dropdown dropdown; // Used to get duration to work on assignment
     public TMP_Text currentProgressText; // Used to display current progress of assignment
+    public TMP_Text predictedProgressText; // Used to display current progress of assignment
     public TMP_Text stressText; // Used to display stress level of the player
     public TMP_Text energyText;
     public GameObject computerUI;
@@ -15,15 +17,21 @@ public class ComputerManager : MonoBehaviour
     public GameObject dayPanel; 
     public GameObject assignmentPanel;
     public Button initialWorkOnButton;
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
-        Assignment assignment1 = new Assignment("Assignment 1", 180);
+        assignment1 = new Assignment("Assignment 1", 180);
+
         startWorkingButton.onClick.AddListener(OnButtonClick);
-        computerUI.SetActive(false);
+        dropdown.onValueChanged.AddListener(delegate { OnDropdownValueChanged(); });
         closeButton.GetComponent<Button>().onClick.AddListener(CloseComputer);
         initialWorkOnButton.onClick.AddListener(OnInitialWorkClick);
+
+        // Hide UI initially
+        computerUI.SetActive(false);
+
+        // Show initial progress
+        UpdateCurrentProgressDisplay();
     }
 
     void OnInitialWorkClick()
@@ -34,36 +42,43 @@ public class ComputerManager : MonoBehaviour
 
     void OnButtonClick()
     {
-        int selectedIndex = dropdown.value;  // Get selected index
-        string selectedOption = dropdown.options[selectedIndex].text;  // Get selected option's text
+        int selectedIndex = dropdown.value;
+        string selectedOption = dropdown.options[selectedIndex].text;
 
-        if (selectedOption == "30 min")
-        {
-            assignment1.UpdateProgress(10);
-        }
-        else if (selectedOption == "1 hr")
-        {
-            assignment1.UpdateProgress(20);
-        }
-        else if (selectedOption == "2 hr")
-        {
-            assignment1.UpdateProgress(40);
-        }
-        else if (selectedOption == "3 hr")
-        {
-            assignment1.UpdateProgress(60);
-        }
-        else if (selectedOption == "4 hr")
-        {
-            assignment1.UpdateProgress(80);
-        }
-        currentProgressText.text = "Current Progress: " + (assignment1.currentProgress / assignment1.progressRequired).ToString() + "%";
+        if (selectedOption == "30 min") assignment1.UpdateProgress(10);
+        else if (selectedOption == "1 hr") assignment1.UpdateProgress(20);
+        else if (selectedOption == "2 hr") assignment1.UpdateProgress(40);
+        else if (selectedOption == "3 hr") assignment1.UpdateProgress(60);
+        else if (selectedOption == "4 hr") assignment1.UpdateProgress(80);
+
+        UpdateCurrentProgressDisplay();
+        computerUI.SetActive(false);
     }
 
-    // Update is called once per frame
+    void OnDropdownValueChanged()
+    {
+        int selectedIndex = dropdown.value;
+        string selectedOption = dropdown.options[selectedIndex].text;
+
+        int predictedProgress = 0;
+        if (selectedOption == "30 min") predictedProgress = 10;
+        else if (selectedOption == "1 hr") predictedProgress = 20;
+        else if (selectedOption == "2 hr") predictedProgress = 40;
+        else if (selectedOption == "3 hr") predictedProgress = 60;
+        else if (selectedOption == "4 hr") predictedProgress = 80;
+
+        predictedProgressText.text = $"Predicted Progress: {predictedProgress}%";
+    }
+
+    void UpdateCurrentProgressDisplay()
+    {   
+        int progressPercent = assignment1.currentProgress;
+        currentProgressText.text = "Current Progress: " + progressPercent + "%";
+    }
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape)) // close on escape key press
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             CloseComputer();
         }
