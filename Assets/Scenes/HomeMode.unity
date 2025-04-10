@@ -10034,6 +10034,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   calendarUI: {fileID: 1895568491}
   closeButton: {fileID: 1514513389}
+  assignmentNumText: {fileID: 590121511}
+  assignmentCurrentProgress: {fileID: 1470438244}
 --- !u!1 &1781501196
 GameObject:
   m_ObjectHideFlags: 0
