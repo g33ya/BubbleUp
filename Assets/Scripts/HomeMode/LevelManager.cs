@@ -52,17 +52,20 @@ public class LevelManager : MonoBehaviour
 
     void UpdateEnergyLevelText()
     {
-        energyLevelText.text = "Energy Level: " + energyLevel.ToString();
+        energyLevelText.text = "Energy: " + energyLevel.ToString();
     }
 
     void UpdateStressLevelText()
     {
-        stressLevelText.text = "Stress Level: " + stressLevel.ToString();
+        stressLevelText.text = "Stress: " + stressLevel.ToString();
     }
 
     void Start()
     {
-        
+        energyLevel = 50; // Initial energy level
+        stressLevel = 20; // Initial stress level
+        UpdateEnergyLevelText();
+        UpdateStressLevelText();
     }
 
     // Update is called once per frame
