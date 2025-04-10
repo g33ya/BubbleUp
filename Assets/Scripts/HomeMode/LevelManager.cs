@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using System.Collections;
 
 public class LevelManager : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class LevelManager : MonoBehaviour
         {
             energyLevel = 100;
         }
-        UpdateEnergyLevelText();
+        StartCoroutine(DelayedEnergyDisplay()); // Update energy level text
     }
 
     public void DecreaseEnergyLevel(int amount)
@@ -27,7 +28,7 @@ public class LevelManager : MonoBehaviour
         {
             energyLevel = 100;
         }
-        UpdateEnergyLevelText();
+        StartCoroutine(DelayedEnergyDisplay()); // Update energy level text
     }
 
     public void IncreaseStressLevel(int amount)
@@ -37,7 +38,7 @@ public class LevelManager : MonoBehaviour
         {
             stressLevel = 100;
         }
-        UpdateStressLevelText();
+        StartCoroutine(DelayedStressDisplay()); // Update stress level text
     }
 
     public void DecreaseStressLevel(int amount)
@@ -47,7 +48,7 @@ public class LevelManager : MonoBehaviour
         {
             stressLevel = 0;
         }
-        UpdateStressLevelText();
+        StartCoroutine(DelayedStressDisplay()); // Update stress level text
     }
 
     public void UpdateEnergyLevelText()
@@ -58,6 +59,20 @@ public class LevelManager : MonoBehaviour
     public void UpdateStressLevelText()
     {
         stressLevelText.text = "Stress: " + stressLevel.ToString();
+    }
+
+    private IEnumerator DelayedStressDisplay()
+    {
+        // Wait for 1 second before updating the time display
+        yield return new WaitForSeconds(1f);
+        UpdateStressLevelText(); // Update stress level text
+    }
+
+    private IEnumerator DelayedEnergyDisplay()
+    {
+        // Wait for 1 second before updating the time display
+        yield return new WaitForSeconds(1f);
+        UpdateEnergyLevelText(); // Update stress level text
     }
 
     void Start()

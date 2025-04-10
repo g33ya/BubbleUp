@@ -9,7 +9,9 @@ public class ComputerManager : MonoBehaviour
     public Button startWorkingButton;
     public TMP_Dropdown dropdown; // Used to get duration to work on assignment
     public TMP_Text currentProgressText; // Used to display current progress of assignment
-    public TMP_Text predictedProgressText; // Used to display current progress of assignment
+    public TMP_Text plusProgressText; 
+    public TMP_Text plusStressText;
+    public TMP_Text minusSleepText;
     public TMP_Text stressText; // Used to display stress level of the player
     public TMP_Text energyText;
     public GameObject computerUI;
@@ -61,13 +63,19 @@ public class ComputerManager : MonoBehaviour
         {
             startWorkingButton.interactable = false; // Disable the button if not enough energy
             notEnoughEnergyText.gameObject.SetActive(true); 
+            if (levelManager.stressLevel + (selectedOptionNum * 0.4) >= 100){
+                tooStressedText.gameObject.SetActive(true); 
+            }
             return; 
         }
 
-        if (levelManager.stressLevel + (selectedOptionNum * 0.2) >= 100)
+        if (levelManager.stressLevel + (selectedOptionNum * 0.4) >= 100)
         {
             startWorkingButton.interactable = false; // Disable the button if not enough energy
             tooStressedText.gameObject.SetActive(true); 
+            if (levelManager.energyLevel - (selectedOptionNum * 0.2) <= 0){
+                notEnoughEnergyText.gameObject.SetActive(true); 
+            }
             return; 
         }
         
@@ -75,10 +83,12 @@ public class ComputerManager : MonoBehaviour
         timeManager.AddTime(selectedOptionNum); // Add time to the time manager
         UpdateCurrentProgressDisplay();
 
+        assignment1.currentProgress += (int)(selectedOptionNum * 0.3f); // Increase progress of the assignment
+        UpdateCurrentProgressDisplay();
+
         levelManager.DecreaseEnergyLevel((int)(-selectedOptionNum * 0.2f)); // Decrease energy level
-        levelManager.IncreaseStressLevel((int)(selectedOptionNum * 0.2f)); // Increase stress level
-        levelManager.UpdateEnergyLevelText(); // Update energy level text
-        levelManager.UpdateStressLevelText(); // Update stress level text
+        levelManager.IncreaseStressLevel((int)(selectedOptionNum * 0.4f)); // Increase stress level
+        
         
         computerUI.SetActive(false);
         assignmentPanel.SetActive(false); // Show the assignment panel after working on the assignment
@@ -87,20 +97,27 @@ public class ComputerManager : MonoBehaviour
     void OnDropdownValueChanged()
     {
         startWorkingButton.interactable = true;
-        //notEnoughEnergyText.gameObject.SetActive(false);
-        //tooStressedText.gameObject.SetActive(false);
+        notEnoughEnergyText.gameObject.SetActive(false);
+        tooStressedText.gameObject.SetActive(false);
 
         int selectedIndex = dropdown.value;
-        string selectedOption = dropdown.options[selectedIndex].text;
+        string selectedOptionString = dropdown.options[selectedIndex].text;
+        int selectedOptionNum = 0;
 
-        int predictedProgress = 0;
-        if (selectedOption == "30 min") predictedProgress = 10;
-        else if (selectedOption == "1 hr") predictedProgress = 20;
-        else if (selectedOption == "2 hr") predictedProgress = 40;
-        else if (selectedOption == "3 hr") predictedProgress = 60;
-        else if (selectedOption == "4 hr") predictedProgress = 80;
+        if (selectedOptionString == "30 min") selectedOptionNum = 30;
+        else if (selectedOptionString == "1 hr") selectedOptionNum = 60;
+        else if (selectedOptionString == "2 hr") selectedOptionNum = 120;
+        else if (selectedOptionString == "3 hr") selectedOptionNum = 180;
+        else if (selectedOptionString == "4 hr") selectedOptionNum = 240;
 
-        predictedProgressText.text = $"Predicted Progress: {predictedProgress}%";
+        int plusProgress = (int)(selectedOptionNum * .3f);
+        int minusSleep = (int)(selectedOptionNum * .2f);
+        int plusStress = (int)(selectedOptionNum * .4f);
+
+        plusProgressText.text = $"+ {plusProgress}% Progress";
+        minusSleepText.text = $"- {minusSleep} Energy";
+        plusStressText.text = $"+ {plusStress} Stress";
+        
     }
 
     void UpdateCurrentProgressDisplay()
