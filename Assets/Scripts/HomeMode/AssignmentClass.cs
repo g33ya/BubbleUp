@@ -6,11 +6,11 @@ public class Assignment
     public int timeRequired { get; set; }
     public int currentProgress { get; set; }
 
-    public Assignment(string name, int timeRequired, int currentProgress)
+    public Assignment(string name, int timeRequired)
     {
         this.name = name;
         this.timeRequired = timeRequired;
-        this.currentProgress = currentProgress;
+        currentProgress = 0;
     }
 
     public void UpdateProgress(int progressIncrease)
