@@ -88,5 +88,6 @@ public class ComputerManager : MonoBehaviour
     public void CloseComputer()
     {
         computerUI.SetActive(false);
+        assignmentPanel.SetActive(false); 
     }
 }
