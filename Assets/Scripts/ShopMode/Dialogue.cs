@@ -28,6 +28,7 @@ public class Dialogue : MonoBehaviour
             }
         }
     }
+    
     void StartDialogue(){
         index=0;
         StartCoroutine(TypeLine());
