@@ -12,6 +12,9 @@ public class ComputerManager : MonoBehaviour
     public TMP_Text energyText;
     public GameObject computerUI;
     public GameObject closeButton;
+    public GameObject dayPanel; 
+    public GameObject assignmentPanel;
+    public Button initialWorkOnButton;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -20,6 +23,13 @@ public class ComputerManager : MonoBehaviour
         startWorkingButton.onClick.AddListener(OnButtonClick);
         computerUI.SetActive(false);
         closeButton.GetComponent<Button>().onClick.AddListener(CloseComputer);
+        initialWorkOnButton.onClick.AddListener(OnInitialWorkClick);
+    }
+
+    void OnInitialWorkClick()
+    {
+        dayPanel.SetActive(false);
+        assignmentPanel.SetActive(true);
     }
 
     void OnButtonClick()
