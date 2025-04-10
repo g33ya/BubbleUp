@@ -13,7 +13,8 @@ public class ComputerManager : MonoBehaviour
     public TMP_Text stressText; // Used to display stress level of the player
     public TMP_Text energyText;
     public GameObject computerUI;
-    public GameObject closeButton;
+    public GameObject closeButton1;
+    public GameObject closeButton2;
     public GameObject dayPanel; 
     public GameObject assignmentPanel;
     public Button initialWorkOnButton;
@@ -24,13 +25,12 @@ public class ComputerManager : MonoBehaviour
 
         startWorkingButton.onClick.AddListener(OnButtonClick);
         dropdown.onValueChanged.AddListener(delegate { OnDropdownValueChanged(); });
-        closeButton.GetComponent<Button>().onClick.AddListener(CloseComputer);
+        closeButton1.GetComponent<Button>().onClick.AddListener(CloseComputer);
+        closeButton2.GetComponent<Button>().onClick.AddListener(CloseComputer);
         initialWorkOnButton.onClick.AddListener(OnInitialWorkClick);
 
-        // Hide UI initially
+ 
         computerUI.SetActive(false);
-
-        // Show initial progress
         UpdateCurrentProgressDisplay();
     }
 
