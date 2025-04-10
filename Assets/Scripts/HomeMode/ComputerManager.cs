@@ -53,6 +53,7 @@ public class ComputerManager : MonoBehaviour
 
         UpdateCurrentProgressDisplay();
         computerUI.SetActive(false);
+        assignmentPanel.SetActive(false); // Show the assignment panel after working on the assignment
     }
 
     void OnDropdownValueChanged()
