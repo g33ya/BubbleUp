@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Character_Elomar_0: 7640617194265235215
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
