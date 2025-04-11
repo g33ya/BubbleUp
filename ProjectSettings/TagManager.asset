@@ -3,15 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
+
+
   tags:
   - NPC
 
+
   tags:
-  - Shaker
-  - Carton
-
-  tags: []
-
+  - cup
   layers:
   - Default
   - TransparentFX
@@ -19,8 +18,8 @@ TagManager:
   - 
   - Water
   - UI
-  - Text
-  - Hello
+  - 
+  - 
   - 
   - 
   - 
