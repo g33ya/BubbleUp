@@ -2,7 +2,7 @@ using UnityEngine;
 
 using TMPro;
 using System.Collections;
-using UnityEngine;
+//using UnityEngine;
 
 public class TimeManager : MonoBehaviour
 {
