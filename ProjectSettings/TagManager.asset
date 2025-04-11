@@ -3,12 +3,6 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-
-
-  tags:
-  - NPC
-
-
   tags:
   - cup
   layers:
@@ -47,6 +41,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: OutlineLayer
+    uniqueID: 727195459
     locked: 0
   m_RenderingLayers:
   - Default

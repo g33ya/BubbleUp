@@ -4,13 +4,13 @@ public class outlinerGenerator : MonoBehaviour
 {
     public Material outlineMaterial;
     public Color outlineColor = Color.white;
-    public float outlineSize = 0.5f;
+    public float outlineSize = 0.03f;
     private GameObject outlineObject;
 
     void Start()
     {
         createOutline();
-        toggleOutline(false);
+        toggleOutline(true);
     }
 
     void createOutline()
@@ -24,7 +24,7 @@ public class outlinerGenerator : MonoBehaviour
 
         SpriteRenderer outlineRenderer = outlineObject.AddComponent<SpriteRenderer>();
         outlineRenderer.sprite = original.sprite;
-        outlineRenderer.sortingLayerID = original.sortingLayerID;
+        outlineRenderer.sortingLayerName = "OutlineLayer";
         outlineRenderer.sortingOrder = original.sortingOrder - 1;
         outlineRenderer.color = outlineColor;
         outlineRenderer.material = outlineMaterial;
