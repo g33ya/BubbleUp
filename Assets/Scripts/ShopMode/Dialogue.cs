@@ -3,7 +3,7 @@ using TMPro;
 using System.Collections;
 //using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine.UI;
-using UnityEditor.Rendering;
+//using UnityEditor.Rendering;
 using System;
 
 public class Dialogue : MonoBehaviour
@@ -12,13 +12,15 @@ public class Dialogue : MonoBehaviour
     public TMP_Text speakerText;
     public TMP_Text dialogueText;
     public Image portraitImage;
-    
+    public GameObject position1;
+    public GameObject homeButton;
+    public GameObject Character;
     public string[] speaker;
     [TextArea]
     public string[] dialogueWords;
     public Sprite[] portrait;
     private bool dialogueActivated;
-    private bool isDrinkMade=false;
+    //private bool isDrinkMade=false;
     private int step;
     // void Start()
     // {
@@ -36,6 +38,11 @@ public class Dialogue : MonoBehaviour
             dialogueText.text=dialogueWords[step];
             portraitImage.sprite=portrait[step];
             step +=1;
+            if (step==9){
+                homeButton.SetActive(true);
+                Character.SetActive(true);
+                //position1.GetComponent<RectTransform>().anchoredPosition = new Vector2(537f, 97f);
+            }
             }
            
         }
