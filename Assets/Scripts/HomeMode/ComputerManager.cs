@@ -24,6 +24,7 @@ public class ComputerManager : MonoBehaviour
     public LevelManager levelManager; // Reference to the LevelManager script
     public TMP_Text notEnoughEnergyText; // Text to display when not enough energy
     public TMP_Text tooStressedText; // Text to display when not enough energy
+    public TMP_Text assignmentCompleteText; // Text to display the name of the assignment
 
 
     void Start()
@@ -81,9 +82,16 @@ public class ComputerManager : MonoBehaviour
         
 
         timeManager.AddTime(selectedOptionNum); // Add time to the time manager
-        UpdateCurrentProgressDisplay();
 
         assignment1.currentProgress += (int)(selectedOptionNum * 0.3f); // Increase progress of the assignment
+        
+
+        if (assignment1.currentProgress >= 100)
+        {
+            assignment1.currentProgress = 100;
+            initialWorkOnButton.interactable = false; // Lock the button (disable interaction)
+            assignmentCompleteText.gameObject.SetActive(true);
+        }
         UpdateCurrentProgressDisplay();
 
         levelManager.DecreaseEnergyLevel((int)(-selectedOptionNum * 0.2f)); // Decrease energy level
