@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class OpenCalendar : MonoBehaviour
+public class OpenBed : MonoBehaviour
 {
     public GameObject calendarUI;
     public GameObject computerUI;
@@ -8,9 +8,9 @@ public class OpenCalendar : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (!computerUI.activeSelf && !bedUI.activeSelf)
+        if (!computerUI.activeSelf && !calendarUI.activeSelf)
         {
-            calendarUI.SetActive(true);
+            bedUI.SetActive(true);
         }
     }
 }

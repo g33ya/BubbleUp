@@ -10,7 +10,7 @@ public class outlinerGenerator : MonoBehaviour
     void Start()
     {
         createOutline();
-        toggleOutline(true);
+        toggleOutline(false);
     }
 
     void createOutline()
