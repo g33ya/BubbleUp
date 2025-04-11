@@ -5858,6 +5858,7 @@ MonoBehaviour:
   computerUI: {fileID: 1781501196}
   dayPanel: {fileID: 1013289660}
   assignmentPanel: {fileID: 606111671}
+  calendarUI: {fileID: 1895568491}
 --- !u!61 &772726579
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9449,6 +9450,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   calendarUI: {fileID: 1895568491}
+  computerUI: {fileID: 1781501196}
 --- !u!61 &1483308416
 BoxCollider2D:
   m_ObjectHideFlags: 0

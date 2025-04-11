@@ -3,9 +3,13 @@ using UnityEngine;
 public class OpenCalendar : MonoBehaviour
 {
     public GameObject calendarUI;
+    public GameObject computerUI;
 
     void OnMouseDown()
     {
-        calendarUI.SetActive(true);
+        if (!computerUI.activeSelf)
+        {
+            calendarUI.SetActive(true);
+        }
     }
 }
