@@ -4,7 +4,7 @@ public class TrashScript : MonoBehaviour
 {
       private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("cup"))
+        if (other.CompareTag("cup") && other.CompareTag("inProgressCup"))
         {
             Destroy(other.gameObject);
             Debug.Log("🗑️ cup trashed!");
