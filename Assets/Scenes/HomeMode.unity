@@ -4188,8 +4188,9 @@ GameObject:
   - component: {fileID: 477043852}
   - component: {fileID: 477043851}
   - component: {fileID: 477043850}
+  - component: {fileID: 477043853}
   m_Layer: 5
-  m_Name: Button
+  m_Name: sleepButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4297,6 +4298,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 477043848}
   m_CullTransparentMesh: 1
+--- !u!114 &477043853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477043848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0688f177ab38874ba8cea1bebaff991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropdown: {fileID: 0}
+  plusEnergyText: {fileID: 0}
+  minusStressText: {fileID: 0}
+  stressText: {fileID: 0}
+  energyText: {fileID: 0}
+  BedUI: {fileID: 0}
+  closeButton: {fileID: 1547562863}
+  startButton: {fileID: 0}
+  timeManager: {fileID: 0}
+  levelManager: {fileID: 0}
+  fadePanel: {fileID: 0}
 --- !u!1 &478818731
 GameObject:
   m_ObjectHideFlags: 0
@@ -6656,7 +6680,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 746277945}
-  - component: {fileID: 746277946}
   m_Layer: 5
   m_Name: BedUI
   m_TagString: Untagged
@@ -6676,6 +6699,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1796852870}
   - {fileID: 1040685106}
   m_Father: {fileID: 1971253963}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6684,29 +6708,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &746277946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 746277944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0688f177ab38874ba8cea1bebaff991, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropdown: {fileID: 1546795079}
-  plusEnergyText: {fileID: 1161412922}
-  minusStressText: {fileID: 1523406785}
-  stressText: {fileID: 1039564818}
-  energyText: {fileID: 163599909}
-  sleepUI: {fileID: 746277944}
-  closeButton: {fileID: 1547562863}
-  startButton: {fileID: 1963369096}
-  timeManager: {fileID: 725658458}
-  levelManager: {fileID: 593411906}
-  fadePanel: {fileID: 299764518}
 --- !u!1 &764559740
 GameObject:
   m_ObjectHideFlags: 0
@@ -10662,6 +10663,7 @@ GameObject:
   - component: {fileID: 1400239735}
   - component: {fileID: 1400239734}
   - component: {fileID: 1400239733}
+  - component: {fileID: 1400239736}
   m_Layer: 0
   m_Name: Clickable_Bed_0
   m_TagString: Untagged
@@ -10812,6 +10814,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 4.272494, y: 6.0231924}
   m_EdgeRadius: 0
+--- !u!114 &1400239736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400239730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86b2d6b7df3f1234986e02ccafef02b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  calendarUI: {fileID: 1895568491}
+  computerUI: {fileID: 1781501196}
+  bedUI: {fileID: 746277944}
 --- !u!1 &1410412836
 GameObject:
   m_ObjectHideFlags: 0
@@ -11608,6 +11625,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   calendarUI: {fileID: 1895568491}
   computerUI: {fileID: 1781501196}
+  bedUI: {fileID: 0}
 --- !u!61 &1483308416
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13613,6 +13631,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1790499226}
   m_CullTransparentMesh: 1
+--- !u!1 &1796852869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1796852870}
+  - component: {fileID: 1796852871}
+  m_Layer: 5
+  m_Name: BedManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1796852870
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796852869}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 746277945}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1796852871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796852869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0688f177ab38874ba8cea1bebaff991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropdown: {fileID: 1546795079}
+  plusEnergyText: {fileID: 1161412922}
+  minusStressText: {fileID: 1523406785}
+  stressText: {fileID: 1039564818}
+  energyText: {fileID: 163599909}
+  BedUI: {fileID: 746277944}
+  closeButton: {fileID: 477043848}
+  startButton: {fileID: 1963369096}
+  timeManager: {fileID: 725658458}
+  levelManager: {fileID: 593411906}
+  fadePanel: {fileID: 299764518}
 --- !u!1 &1831593444
 GameObject:
   m_ObjectHideFlags: 0
