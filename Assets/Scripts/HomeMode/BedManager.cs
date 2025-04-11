@@ -19,50 +19,72 @@ public class SleepManager : MonoBehaviour
     public TimeManager timeManager;
     public LevelManager levelManager;
 
-    // Fade-to-black panel information
+    // Fade-to-black Panel
     public Image fadePanel;
     private float fadeDuration = 1f;
 
     void Start()
     {
         BedUI.SetActive(false);
+        fadePanel.color = new Color(0, 0, 0, 0);
 
-        // Hook up button clicks
-        dropdown.onValueChanged.AddListener(delegate { UpdateSleepPreview(); });
+        dropdown.onValueChanged.AddListener(delegate { OnDropdownValueChanged(); });
         closeButton.GetComponent<Button>().onClick.AddListener(CloseSleep);
-        startButton.GetComponent<Button>().onClick.AddListener(() => StartCoroutine(HandleSleepWithFade()));
-
-        // Set initial values
-        BedUI.SetActive(false);
-        fadePanel.color = new Color(0, 0, 0, 0); // Fully transparent at start
+        startButton.GetComponent<Button>().onClick.AddListener(StartSleep);
     }
 
-    // This runs when the player hits the sleep "Start" button
-    IEnumerator HandleSleepWithFade()
+    void StartSleep(){
+        int selectedIndex = dropdown.value;
+        string selectedOptionString = dropdown.options[selectedIndex].text;
+        int selectedSleepTime = 0;
+
+        if (selectedOptionString == "30 min") selectedSleepTime = 30;
+        else if (selectedOptionString == "1 hr") selectedSleepTime = 60;
+        else if (selectedOptionString == "2 hr") selectedSleepTime = 120;
+        else if (selectedOptionString == "3 hr") selectedSleepTime = 180;
+        else if (selectedOptionString == "4 hr") selectedSleepTime = 240;
+
+        timeManager.AddTime(selectedSleepTime); // Simulate time passing - Gia
+
+        // Energy gain & stress relief
+        levelManager.IncreaseEnergyLevel((int)(selectedSleepTime * 0.3f)); 
+        levelManager.DecreaseStressLevel((int)(selectedSleepTime * 0.2f)); 
+
+        BedUI.SetActive(false);
+        HandleSleepWithFade();
+    }
+
+    void OnDropdownValueChanged()
     {
-        int sleepTime = GetSelectedSleepTime();
+        int selectedIndex = dropdown.value;
+        string selectedOptionString = dropdown.options[selectedIndex].text;
+        int selectedOptionNum = 0;
 
-        // Fade to black
-        yield return StartCoroutine(FadeIn());
+        if (selectedOptionString == "30 min") selectedOptionNum = 30;
+        else if (selectedOptionString == "1 hr") selectedOptionNum = 60;
+        else if (selectedOptionString == "2 hr") selectedOptionNum = 120;
+        else if (selectedOptionString == "3 hr") selectedOptionNum = 180;
+        else if (selectedOptionString == "4 hr") selectedOptionNum = 240;
 
-        // Simulate sleep effects
-        timeManager.AddTime(sleepTime);
-        levelManager.IncreaseEnergyLevel((int)(sleepTime * 0.2f));
-        levelManager.DecreaseStressLevel((int)(sleepTime * 0.3f));
+        int plusEnergy = (int)(selectedOptionNum * 0.2f);
+        int minusStress = (int)(selectedOptionNum * 0.3f);
+
+        plusEnergyText.text = $"+ {plusEnergy} Energy";
+        minusStressText.text = $"- {minusStress} Stress";
 
         UpdateSleepTextDisplay();
-
-        // Wait for 1 second while screen is black
-        yield return new WaitForSeconds(1f);
-
-        // Fade back to normal
-        yield return StartCoroutine(FadeOut());
-
-        // Close the sleep UI
-        BedUI.SetActive(false);
     }
 
-    // Fade IN/Out screen to black - Heavily Credited to ChatGPT
+    IEnumerator HandleSleepWithFade()
+    {
+        yield return StartCoroutine(FadeIn());
+        yield return new WaitForSeconds(1f);
+        yield return StartCoroutine(FadeOut());
+
+        UpdateSleepTextDisplay();
+    }
+
+    // Fade IN/Out screen to black - Help with ChatGPT
     IEnumerator FadeIn()
     {
         float t = 0;
@@ -87,45 +109,19 @@ public class SleepManager : MonoBehaviour
         }
     }
 
-    // Updates the "+Energy" and "-Stress" preview text
-    void UpdateSleepPreview()
-    {
-        int time = GetSelectedSleepTime();
-        plusEnergyText.text = $"+ {(int)(time * 0.2f)} Energy";
-        minusStressText.text = $"- {(int)(time * 0.3f)} Stress";
-        UpdateSleepTextDisplay();
-    }
-
-    // Gets the number of minutes from the dropdown selection
-    int GetSelectedSleepTime()
-    {
-        string label = dropdown.options[dropdown.value].text;
-
-        return label switch
-        {
-            "30 min" => 30,
-            "1 hr" => 60,
-            "2 hr" => 120,
-            "3 hr" => 180,
-            "4 hr" => 240,
-            _ => 0
-        };
-    }
-
-    // Updates the player's main stats
+    // Updates the player's Stats
     void UpdateSleepTextDisplay()
     {
         stressText.text = "Stress: " + levelManager.stressLevel;
         energyText.text = "Energy: " + levelManager.energyLevel;
     }
 
-    // Hides the sleep menu
+    // Hides the Sleep Menu
     public void CloseSleep()
     {
         BedUI.SetActive(false);
     }
 
-    // Press ESC to exit sleep menu
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
