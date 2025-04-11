@@ -20,7 +20,7 @@ public class SealLeverButton : MonoBehaviour
 
 
     private void OnTriggerEnter2D(Collider2D other){
-        if(other.CompareTag("cup")){
+        if(other.CompareTag("inProgressCup")){
             spriteRenderer.sprite = withCup; //when you drag the cup, now the cup should appear in the machine
             Destroy(other.gameObject); //removes the cup after you have dragged it to the seal machine
         }

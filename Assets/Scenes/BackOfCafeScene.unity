@@ -1414,6 +1414,7 @@ GameObject:
   - component: {fileID: 535938853}
   - component: {fileID: 535938852}
   - component: {fileID: 535938854}
+  - component: {fileID: 535938855}
   m_Layer: 0
   m_Name: Cup Shaker
   m_TagString: Untagged
@@ -1494,7 +1495,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: -3701020776413774219, guid: decc83005646cd0489ecc7f2e3692aa6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1536,7 +1537,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1552,6 +1553,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.07, y: 2.42}
   m_EdgeRadius: 0
+--- !u!114 &535938855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535938850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c62a303168ab9461ba2a358507b1c59d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inProgressCupPrefab: {fileID: 2815753840982345500, guid: 318b277b1a7404b218c273060593504e, type: 3}
 --- !u!1 &564312661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1921,12 +1935,12 @@ Transform:
   - {fileID: 14809864}
   - {fileID: 1786490070}
   - {fileID: 440243111}
+  - {fileID: 535938851}
   - {fileID: 166643540}
   - {fileID: 564312662}
   - {fileID: 154480706}
   - {fileID: 718009228}
   - {fileID: 299636929}
-  - {fileID: 535938851}
   - {fileID: 1182806182}
   - {fileID: 1758619317}
   m_Father: {fileID: 0}
@@ -3365,7 +3379,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -3393,8 +3407,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5662b764d559e4ddfad3f2d1d8fe4060, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noCup: {fileID: -7851375875926598054, guid: a8af48e6bc7ab654c8d4405d5fb9479d, type: 3}
-  withCup: {fileID: 6568491884983337940, guid: b90e3218e48f9ab45b94fe2ab541686f, type: 3}
+  noCup: {fileID: 0}
+  withCup: {fileID: 0}
   sealedCupPrefab: {fileID: 5288852215165320657, guid: 6dc6cf970d83b4866bed66a877af1cc2, type: 3}
   spawnPoint: {fileID: 1182806182}
 --- !u!1 &1642855254

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2923463049489943186}
   - component: {fileID: 7344817483376654351}
   - component: {fileID: 1568445353607701517}
+  - component: {fileID: 3358057286936632483}
   m_Layer: 0
   m_Name: Sealed Cup
   m_TagString: sealcup
@@ -134,3 +135,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 4.75, y: 7.13}
   m_EdgeRadius: 0
+--- !u!114 &3358057286936632483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5288852215165320657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58e0a5d64eddc444694891874addfe8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapPoint: {fileID: 0}
+  snapThreshold: 0.7
+  snapOffset: {x: 0, y: -0.2, z: 0}
