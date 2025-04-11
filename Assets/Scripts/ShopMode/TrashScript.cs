@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class TrashScript : MonoBehaviour
 {
-      private void OnTriggerEnter2D(Collider2D other)
+      private void OnTriggerEnter2D(Collider2D trash)
     {
-        if (other.CompareTag("cup") && other.CompareTag("inProgressCup"))
+        if (trash.CompareTag("cup") || trash.CompareTag("inProgressCup"))
         {
-            Destroy(other.gameObject);
+            Destroy(trash.gameObject);
             Debug.Log("🗑️ cup trashed!");
         }
     }
