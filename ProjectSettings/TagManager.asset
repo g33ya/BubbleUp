@@ -45,5 +45,8 @@ TagManager:
   - name: OutlineLayer
     uniqueID: 727195459
     locked: 0
+  - name: ClickableLayers
+    uniqueID: 4286051789
+    locked: 0
   m_RenderingLayers:
   - Default

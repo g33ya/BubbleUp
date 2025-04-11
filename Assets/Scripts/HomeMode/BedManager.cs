@@ -46,7 +46,7 @@ public class SleepManager : MonoBehaviour
 
         timeManager.AddTime(selectedSleepTime); // Simulate time passing - Gia
 
-        // Energy gain & stress relief
+        // Energy & Stress Stat Change
         levelManager.IncreaseEnergyLevel((int)(selectedSleepTime * 0.3f)); 
         levelManager.DecreaseStressLevel((int)(selectedSleepTime * 0.2f)); 
 
