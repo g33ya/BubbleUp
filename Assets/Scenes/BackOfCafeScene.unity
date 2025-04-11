@@ -566,7 +566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c8359835bf3a44b4a6132edd6b68c92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cupPrefab: {fileID: 0}
+  cupPrefab: {fileID: 7794389447993196635, guid: 0bae0335b66f44c968a98e2e6e84e542, type: 3}
   spawnPoint: {fileID: 1182806182}
 --- !u!4 &191840047
 Transform:
