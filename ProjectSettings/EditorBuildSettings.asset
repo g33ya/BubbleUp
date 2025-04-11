@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BackOfCafeScene.unity
     guid: c888dbba32b956c4bacda5f3838e2d8e
+  - enabled: 1
+    path: Assets/Scenes/SecondBeaMonday.unity
+    guid: 3ff78300ee7bb70459b271c03c229b7b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
