@@ -692,6 +692,7 @@ GameObject:
   - component: {fileID: 561823376}
   - component: {fileID: 561823375}
   - component: {fileID: 561823374}
+  - component: {fileID: 561823377}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -762,7 +763,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 561823375}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 561823377}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: MoveToScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &561823375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -801,6 +814,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 561823372}
   m_CullTransparentMesh: 1
+--- !u!114 &561823377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561823372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 644311c2e1b6e024589f0ef6600d53ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &701186907
 GameObject:
   m_ObjectHideFlags: 0
@@ -1350,7 +1375,7 @@ MonoBehaviour:
   - "Thank you. It\u2019s weird\u2013 hearing you say that helps more than I expected.
     Still, it feels like my brain is wired to chase this impossible idea of flawlessness. "
   - ' Good afternoon! One mango smoothie, please.'
-  - Coming right up.
+  - Coming right up. *CLICK HOME. KITCHEN NOT FINISHED YET. CLICK HOME*
   portrait:
   - {fileID: -690040873414559854, guid: 6f69d1c09e28a2f40ae91897d271d35b, type: 3}
   - {fileID: 8277218729506813210, guid: 4604871ed7db5254aa3c462d8712cdb5, type: 3}
