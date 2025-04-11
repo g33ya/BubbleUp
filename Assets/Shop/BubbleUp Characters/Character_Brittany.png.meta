@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Character_Brittany_0: 2595119390430105050
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
