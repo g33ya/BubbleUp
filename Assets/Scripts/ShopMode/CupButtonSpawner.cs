@@ -3,14 +3,15 @@ using UnityEngine;
 public class CupButtonSpawner : MonoBehaviour
 {
      public GameObject cupPrefab;    
-    public Transform spawnPoint;    
-    private bool hasSpawned = false;
+    public Transform spawnPoint;   
+
+     private GameObject currentCup;
+    //private bool hasSpawned = false;
 
     public void SpawnCup(){
-    if (!hasSpawned && cupPrefab != null && spawnPoint != null)
+    if (currentCup == null && cupPrefab != null && spawnPoint != null)
         {
-            Instantiate(cupPrefab, spawnPoint.position, Quaternion.identity);
-            hasSpawned = true;
+            currentCup = Instantiate(cupPrefab, spawnPoint.position, Quaternion.identity);
             Debug.Log("🧋 Spawned: " + cupPrefab.name);
         }  
     }
@@ -23,6 +24,9 @@ public class CupButtonSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
+      if (currentCup == null)
+        {
+            
+        }
     }
 }
