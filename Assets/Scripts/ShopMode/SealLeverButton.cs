@@ -28,12 +28,22 @@ public class SealLeverButton : MonoBehaviour
 
      void OnMouseDown(){
         Debug.Log("lever clicked");
+        //only run if we havent already sealed a cup
         if(!cupIsSealed && sealedCupPrefab != null && spawnPoint != null){
-            spriteRenderer.sprite = withCup;
+            spriteRenderer.sprite = withCup; 
             Instantiate(sealedCupPrefab, spawnPoint.position, Quaternion.identity);
             cupIsSealed = true;
+
+            StartCoroutine(ResetLever());
         }
     }
+
+    private System.Collections.IEnumerator ResetLever(){
+    yield return new WaitForSeconds(0.5f); // wait half a second
+    spriteRenderer.sprite = noCup; //seeting sprite back to empty
+    cupIsSealed = false; // allow next cup to be sealed
+}
+
 
      
     // Update is called once per frame
