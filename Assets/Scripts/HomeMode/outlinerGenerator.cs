@@ -4,7 +4,7 @@ public class outlinerGenerator : MonoBehaviour
 {
     public Material outlineMaterial;
     public Color outlineColor = Color.white;
-    public float outlineSize = 0.02f;
+    public float outlineSize = 0.05f;
     private GameObject outlineObject;
 
     void Start()

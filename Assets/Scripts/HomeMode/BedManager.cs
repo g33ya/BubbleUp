@@ -22,6 +22,7 @@ public class SleepManager : MonoBehaviour
     // Fade-to-black Panel
     public Image fadePanel;
     private float fadeDuration = 1f;
+    //public AudioSource dreamSound;
 
     void Start()
     {
@@ -77,6 +78,7 @@ public class SleepManager : MonoBehaviour
 
     IEnumerator HandleSleepWithFade()
     {
+        //playSound(dreamSound);
         yield return StartCoroutine(FadeIn());
         yield return new WaitForSeconds(1f);
         yield return StartCoroutine(FadeOut());
@@ -129,4 +131,13 @@ public class SleepManager : MonoBehaviour
             CloseSleep();
         }
     }
+
+    //Function that is use to play any Sound in the game - will move to logic manager soon
+     public void playSound(AudioSource sound){
+        if(sound != null){
+            sound.Play();
+        }
+    }
 }
+
+
