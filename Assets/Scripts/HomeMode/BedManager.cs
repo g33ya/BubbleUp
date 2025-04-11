@@ -19,15 +19,9 @@ public class SleepManager : MonoBehaviour
     public TimeManager timeManager;
     public LevelManager levelManager;
 
-    // Fade-to-black Panel
-    public Image fadePanel;
-    private float fadeDuration = 1f;
-    //public AudioSource dreamSound;
-
     void Start()
     {
         BedUI.SetActive(false);
-        fadePanel.color = new Color(0, 0, 0, 0);
 
         dropdown.onValueChanged.AddListener(delegate { OnDropdownValueChanged(); });
         closeButton.GetComponent<Button>().onClick.AddListener(CloseSleep);
@@ -52,7 +46,8 @@ public class SleepManager : MonoBehaviour
         levelManager.DecreaseStressLevel((int)(selectedSleepTime * 0.2f)); 
 
         BedUI.SetActive(false);
-        HandleSleepWithFade();
+
+        UpdateSleepTextDisplay();
     }
 
     void OnDropdownValueChanged()
@@ -74,41 +69,6 @@ public class SleepManager : MonoBehaviour
         minusStressText.text = $"- {minusStress} Stress";
 
         UpdateSleepTextDisplay();
-    }
-
-    IEnumerator HandleSleepWithFade()
-    {
-        //playSound(dreamSound);
-        yield return StartCoroutine(FadeIn());
-        yield return new WaitForSeconds(1f);
-        yield return StartCoroutine(FadeOut());
-
-        UpdateSleepTextDisplay();
-    }
-
-    // Fade IN/Out screen to black - Help with ChatGPT
-    IEnumerator FadeIn()
-    {
-        float t = 0;
-        while (t < fadeDuration)
-        {
-            t += Time.deltaTime;
-            float alpha = Mathf.Clamp01(t / fadeDuration);
-            fadePanel.color = new Color(0, 0, 0, alpha);
-            yield return null;
-        }
-    }
-    
-    IEnumerator FadeOut()
-    {
-        float t = 0;
-        while (t < fadeDuration)
-        {
-            t += Time.deltaTime;
-            float alpha = 1f - Mathf.Clamp01(t / fadeDuration);
-            fadePanel.color = new Color(0, 0, 0, alpha);
-            yield return null;
-        }
     }
 
     // Updates the player's Stats
@@ -133,11 +93,9 @@ public class SleepManager : MonoBehaviour
     }
 
     //Function that is use to play any Sound in the game - will move to logic manager soon
-     public void playSound(AudioSource sound){
+    public void playSound(AudioSource sound){
         if(sound != null){
             sound.Play();
         }
     }
 }
-
-

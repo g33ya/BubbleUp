@@ -9,19 +9,19 @@ public class AssignmentListToggle : MonoBehaviour
 
     void Start()
     {
-        //assignmentsPanel.SetActive(false);
+        assignmentsPanel.SetActive(false);
     }
 
     public void ToggleAssignments()
     {
         isExpanded = true;
-        //assignmentsPanel.SetActive(true);
+        assignmentsPanel.SetActive(true);
     }
 
     public void Collapse()
     {
         isExpanded = false;
-        //assignmentsPanel.SetActive(false);
+        assignmentsPanel.SetActive(false);
     }
 
     public bool IsExpanded()
