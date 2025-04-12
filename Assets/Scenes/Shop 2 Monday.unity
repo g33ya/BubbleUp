@@ -662,7 +662,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6642193843099659868, guid: 44ca0b36f23353d4c9f24a64b08298d8, type: 3}
+  m_Sprite: {fileID: 6642193843099659868, guid: d26bcadd05e638f43865077f69e2fe5f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1268,12 +1268,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -690040873414559854, guid: 6f69d1c09e28a2f40ae91897d271d35b, type: 3}
+  m_Sprite: {fileID: -690040873414559854, guid: 426337f648495f944b35accaeca2514f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 5.54, y: 6.22}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1377,9 +1377,9 @@ MonoBehaviour:
   - ' Good afternoon! One mango smoothie, please.'
   - Coming right up. *CLICK HOME. KITCHEN NOT FINISHED YET. CLICK HOME*
   portrait:
-  - {fileID: -690040873414559854, guid: 6f69d1c09e28a2f40ae91897d271d35b, type: 3}
-  - {fileID: 8277218729506813210, guid: 4604871ed7db5254aa3c462d8712cdb5, type: 3}
-  - {fileID: -690040873414559854, guid: 6f69d1c09e28a2f40ae91897d271d35b, type: 3}
+  - {fileID: -690040873414559854, guid: 426337f648495f944b35accaeca2514f, type: 3}
+  - {fileID: 8277218729506813210, guid: 75ec104d85eb87c43beeb0cca5770af7, type: 3}
+  - {fileID: -690040873414559854, guid: 426337f648495f944b35accaeca2514f, type: 3}
   - {fileID: 8277218729506813210, guid: 75ec104d85eb87c43beeb0cca5770af7, type: 3}
   - {fileID: -690040873414559854, guid: 426337f648495f944b35accaeca2514f, type: 3}
   - {fileID: -690040873414559854, guid: 426337f648495f944b35accaeca2514f, type: 3}
@@ -1733,7 +1733,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1557768966
@@ -1858,12 +1858,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 8270719687502293858, guid: b5902ea3476c76c4a8ff7ebc581d6700, type: 3}
+  m_Sprite: {fileID: 8270719687502293858, guid: 45f628d1574fb694798bf8ba7c2cf3a8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 19.2, y: 8.05}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2400,7 +2400,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -690040873414559854, guid: 6f69d1c09e28a2f40ae91897d271d35b, type: 3}
+  m_Sprite: {fileID: 8277218729506813210, guid: 75ec104d85eb87c43beeb0cca5770af7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
