@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13966, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Shop 2 template
+  m_Name: Shop 3 MTemplate
   m_EditorClassIdentifier: 
   templateScene: {fileID: 102900000, guid: 3ff78300ee7bb70459b271c03c229b7b, type: 3}
   templateName: 

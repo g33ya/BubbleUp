@@ -5,6 +5,7 @@ using System.Collections;
 using UnityEngine.UI;
 //using UnityEditor.Rendering;
 using System;
+using UnityEngine.SceneManagement;
 
 public class Dialogue : MonoBehaviour
 {
@@ -13,8 +14,12 @@ public class Dialogue : MonoBehaviour
     public TMP_Text dialogueText;
     public Image portraitImage;
     public GameObject position1;
+    public GameObject position2;
     public GameObject homeButton;
+    public GameObject kitchenButton;
     public GameObject Character;
+    public GameObject Character2;
+    //public GameObject ElomarPosition;
     public string[] speaker;
     [TextArea]
     public string[] dialogueWords;
@@ -22,10 +27,19 @@ public class Dialogue : MonoBehaviour
     private bool dialogueActivated;
     //private bool isDrinkMade=false;
     private int step;
+    private int currentScene;
     // void Start()
     // {
     //     isDrinkMade==false;
     // }
+    void Start()
+    {
+        currentScene=SceneManager.GetActiveScene().buildIndex;
+        speakerText.text=speaker[step];
+            dialogueText.text=dialogueWords[step];
+            portraitImage.sprite=portrait[step];
+            step +=1;
+    }
     void Update()
     {
         if(Input.GetMouseButtonDown(0)){
@@ -38,10 +52,38 @@ public class Dialogue : MonoBehaviour
             dialogueText.text=dialogueWords[step];
             portraitImage.sprite=portrait[step];
             step +=1;
+            if (currentScene==5){
+            if (dialogueText.text=="Sure thing. Enjoy your day!"){
+                position1.transform.position= new Vector3(-11.28f,1.154747f,0);
+            }
+            if (step==4){
+                Character2.SetActive(true);
+                position2.transform.position= new Vector3(-11.28f,1.154747f,0);
+            }
+            if (step==5){
+                kitchenButton.SetActive(true);
+            }
+            }
+            if (currentScene==1){
+                if (step==4){
+                    kitchenButton.SetActive(true);
+            }
+            }
+            if (currentScene==3){
             if (step==9){
-                homeButton.SetActive(true);
+                //homeButton.SetActive(true);
                 Character.SetActive(true);
                 //position1.GetComponent<RectTransform>().anchoredPosition = new Vector2(537f, 97f);
+            }
+            if (step==10){
+                kitchenButton.SetActive(true);
+            }
+            }
+            if (currentScene==6){
+                if (step==11){
+                    homeButton.SetActive(true);
+                    position1.transform.position= new Vector3(-11.28f,1.154747f,0);
+                }
             }
             }
            
