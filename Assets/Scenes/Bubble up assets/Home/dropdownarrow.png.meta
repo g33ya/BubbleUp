@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a1a58accb89da8e44bef6a4a1403f8a3
+guid: 48b1d32ead5ed4c4a83d650c2bac7062
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1320473006705388889
-    second: dialogue panel_0
+      213: -6191652249119812333
+    second: dropdownarrow_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dialogue panel_0
+      name: dropdownarrow_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1488
-        height: 428
+        x: 610
+        y: 706
+        width: 132
+        height: 87
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 95daa241433435210800000000000000
-      internalID: 1320473006705388889
+      spriteID: 315177e8515d21aa0800000000000000
+      internalID: -6191652249119812333
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      dialogue panel_0: 1320473006705388889
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a1a58accb89da8e44bef6a4a1403f8a3
+guid: 4937b20a6154d624081b79eb73e560c5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1320473006705388889
-    second: dialogue panel_0
+      213: 5606590905928436505
+    second: Sleep_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dialogue panel_0
+      name: Sleep_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1488
-        height: 428
+        x: 372
+        y: 745
+        width: 1042
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 95daa241433435210800000000000000
-      internalID: 1320473006705388889
+      spriteID: 91bccc459bc9ecd40800000000000000
+      internalID: 5606590905928436505
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      dialogue panel_0: 1320473006705388889
+      Sleep_0: 5606590905928436505
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
