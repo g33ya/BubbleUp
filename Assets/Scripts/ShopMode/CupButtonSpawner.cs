@@ -12,7 +12,7 @@ public class CupButtonSpawner : MonoBehaviour
     if (currentCup == null && cupPrefab != null && spawnPoint != null)
         {
             currentCup = Instantiate(cupPrefab, spawnPoint.position, Quaternion.identity);
-            Debug.Log("🧋 Spawned: " + cupPrefab.name);
+            Debug.Log("Spawned: " + cupPrefab.name);
         }  
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
