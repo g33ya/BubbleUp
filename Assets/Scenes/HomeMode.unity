@@ -378,7 +378,7 @@ GameObject:
   - component: {fileID: 27205408}
   - component: {fileID: 27205407}
   m_Layer: 5
-  m_Name: MinusStress
+  m_Name: MinusStressDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2240,7 +2240,7 @@ GameObject:
   m_Component:
   - component: {fileID: 124014177}
   m_Layer: 5
-  m_Name: StatImpact
+  m_Name: StatImpactRecord
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3101,7 +3101,7 @@ GameObject:
   - component: {fileID: 217312195}
   - component: {fileID: 217312194}
   m_Layer: 5
-  m_Name: PlusEnergy
+  m_Name: PlusEnergyDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3560,7 +3560,7 @@ GameObject:
   - component: {fileID: 250156206}
   - component: {fileID: 250156205}
   m_Layer: 5
-  m_Name: MinusStress
+  m_Name: MinusStressJournal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4619,6 +4619,7 @@ GameObject:
   - component: {fileID: 359065703}
   - component: {fileID: 359065702}
   - component: {fileID: 359065701}
+  - component: {fileID: 359065704}
   m_Layer: 0
   m_Name: Clickable_Books_0
   m_TagString: Untagged
@@ -4769,6 +4770,26 @@ MonoBehaviour:
   outlineMaterial: {fileID: 2100000, guid: 3eec5ec5549f83440aa72981970b557d, type: 2}
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineSize: 0.05
+--- !u!114 &359065704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359065698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c275209001264047bc40149d3e9ba49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  calendarUI: {fileID: 1895568491}
+  computerUI: {fileID: 1781501196}
+  bedUI: {fileID: 746277944}
+  doorUI: {fileID: 1602871766}
+  catUI: {fileID: 1647281466}
+  recordUI: {fileID: 1174921606}
+  journalUI: {fileID: 940271669}
+  booksUI: {fileID: 2002617466}
 --- !u!1 &361454236
 GameObject:
   m_ObjectHideFlags: 0
@@ -5576,6 +5597,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c8223d481e36a342a6961eb6a5f361a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  calendarUI: {fileID: 1895568491}
+  computerUI: {fileID: 1781501196}
+  bedUI: {fileID: 746277944}
+  doorUI: {fileID: 1602871766}
+  catUI: {fileID: 1647281466}
+  recordUI: {fileID: 1174921606}
+  journalUI: {fileID: 940271669}
+  booksUI: {fileID: 2002617466}
 --- !u!1 &403908612
 GameObject:
   m_ObjectHideFlags: 0
@@ -7189,7 +7218,7 @@ GameObject:
   - component: {fileID: 491574291}
   - component: {fileID: 491574290}
   m_Layer: 5
-  m_Name: MinusStress
+  m_Name: MinusStressBook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8248,6 +8277,7 @@ GameObject:
   - component: {fileID: 584297152}
   - component: {fileID: 584297151}
   - component: {fileID: 584297153}
+  - component: {fileID: 584297154}
   m_Layer: 0
   m_Name: Clickable_Cat_0
   m_TagString: Untagged
@@ -8398,6 +8428,26 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.08, y: 1.08}
   m_EdgeRadius: 0
+--- !u!114 &584297154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584297147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7edbcdf4a6bcb249b0e95049edc1162, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  calendarUI: {fileID: 1895568491}
+  computerUI: {fileID: 1781501196}
+  bedUI: {fileID: 746277944}
+  doorUI: {fileID: 1602871766}
+  catUI: {fileID: 1647281466}
+  recordUI: {fileID: 1174921606}
+  journalUI: {fileID: 940271669}
+  booksUI: {fileID: 2002617466}
 --- !u!1 &585372195
 GameObject:
   m_ObjectHideFlags: 0
@@ -9396,7 +9446,7 @@ GameObject:
   - component: {fileID: 622984297}
   - component: {fileID: 622984296}
   m_Layer: 5
-  m_Name: PlusEnergy
+  m_Name: PlusEnergyCat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12371,7 +12421,7 @@ GameObject:
   - component: {fileID: 903434460}
   - component: {fileID: 903434459}
   m_Layer: 5
-  m_Name: PlusEnergy
+  m_Name: PlusEnergyJounral
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15021,7 +15071,7 @@ GameObject:
   - component: {fileID: 1121075437}
   - component: {fileID: 1121075436}
   m_Layer: 5
-  m_Name: MinusStress
+  m_Name: MinusStressRecord
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15568,6 +15618,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1810156811}
   - {fileID: 1097812156}
   m_Father: {fileID: 1971253963}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16201,8 +16252,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1, y: 329}
-  m_SizeDelta: {x: 509.5449, y: 140.93}
+  m_AnchoredPosition: {x: 10.9759, y: 329}
+  m_SizeDelta: {x: 529.4966, y: 140.93}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1217738196
 MonoBehaviour:
@@ -16237,7 +16288,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Listening to Beats
+  m_Text: 'Listening to Beats
+
+'
 --- !u!222 &1217738197
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16789,6 +16842,7 @@ GameObject:
   - component: {fileID: 1286324208}
   - component: {fileID: 1286324207}
   - component: {fileID: 1286324206}
+  - component: {fileID: 1286324209}
   m_Layer: 0
   m_Name: Clickable_ArtSupplies_0
   m_TagString: Untagged
@@ -16939,6 +16993,26 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.0685626, y: 0.76366067}
   m_EdgeRadius: 0
+--- !u!114 &1286324209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286324203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a92c6b6afaad3847b869651c47512ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  calendarUI: {fileID: 1895568491}
+  computerUI: {fileID: 1781501196}
+  bedUI: {fileID: 746277944}
+  doorUI: {fileID: 1602871766}
+  catUI: {fileID: 1647281466}
+  recordUI: {fileID: 1174921606}
+  journalUI: {fileID: 940271669}
+  booksUI: {fileID: 2002617466}
 --- !u!1 &1295563430
 GameObject:
   m_ObjectHideFlags: 0
@@ -17313,6 +17387,64 @@ MonoBehaviour:
   notEnoughEnergyText: {fileID: 2043970557}
   tooStressedText: {fileID: 109694537}
   assignmentCompleteText: {fileID: 1458849564}
+--- !u!1 &1316106376
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1316106377}
+  - component: {fileID: 1316106378}
+  m_Layer: 5
+  m_Name: DoorManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1316106377
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316106376}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1602871767}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.00012922287, y: 0.000046253204}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1316106378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316106376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d1aed6c7879e8544805225c6ea06a7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropdown: {fileID: 484413049}
+  plusEnergyText: {fileID: 217312194}
+  minusStressText: {fileID: 27205407}
+  stressText: {fileID: 1039564818}
+  energyText: {fileID: 163599909}
+  DoorUI: {fileID: 1602871766}
+  closeButton: {fileID: 2111318851}
+  startButton: {fileID: 1683088756}
+  timeManager: {fileID: 725658458}
+  levelManager: {fileID: 593411906}
 --- !u!1 &1327658018
 GameObject:
   m_ObjectHideFlags: 0
@@ -20620,7 +20752,7 @@ GameObject:
   - component: {fileID: 1516460211}
   - component: {fileID: 1516460210}
   m_Layer: 5
-  m_Name: sleepButton
+  m_Name: RecordCloseButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21840,6 +21972,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1316106377}
   - {fileID: 2040922677}
   m_Father: {fileID: 1971253963}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22460,6 +22593,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2144277454}
   - {fileID: 2072956412}
   m_Father: {fileID: 1971253963}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22468,50 +22602,6 @@ RectTransform:
   m_AnchoredPosition: {x: 6, y: -5}
   m_SizeDelta: {x: 953.4376, y: 636.3618}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1652790375
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1652790377}
-  - component: {fileID: 1652790376}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1652790376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1652790375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c8223d481e36a342a6961eb6a5f361a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1652790377
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1652790375}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 855.55023, y: 390.15924, z: -3.728441}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1655409764
 GameObject:
   m_ObjectHideFlags: 0
@@ -22648,7 +22738,7 @@ GameObject:
   - component: {fileID: 1677230916}
   - component: {fileID: 1677230915}
   m_Layer: 5
-  m_Name: MinusStress
+  m_Name: MinusStressCat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23641,7 +23731,7 @@ GameObject:
   - component: {fileID: 1772826651}
   - component: {fileID: 1772826650}
   m_Layer: 5
-  m_Name: PlusEnergy
+  m_Name: PlusEnergyBook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23904,6 +23994,7 @@ GameObject:
   - component: {fileID: 1782999627}
   - component: {fileID: 1782999626}
   - component: {fileID: 1782999625}
+  - component: {fileID: 1782999628}
   m_Layer: 0
   m_Name: Clickable_RecorderPlayer_0
   m_TagString: Untagged
@@ -24054,6 +24145,26 @@ MonoBehaviour:
   outlineMaterial: {fileID: 2100000, guid: 3eec5ec5549f83440aa72981970b557d, type: 2}
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineSize: 0.05
+--- !u!114 &1782999628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782999622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d35051c0812991d42b4c441b51015089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  calendarUI: {fileID: 1895568491}
+  computerUI: {fileID: 1781501196}
+  bedUI: {fileID: 746277944}
+  doorUI: {fileID: 2002617466}
+  catUI: {fileID: 1647281466}
+  recordUI: {fileID: 1174921606}
+  journalUI: {fileID: 940271669}
+  booksUI: {fileID: 2002617466}
 --- !u!1 &1790499226
 GameObject:
   m_ObjectHideFlags: 0
@@ -24218,6 +24329,64 @@ MonoBehaviour:
   BedUI: {fileID: 746277944}
   closeButton: {fileID: 607575553}
   startButton: {fileID: 1930611468}
+  timeManager: {fileID: 725658458}
+  levelManager: {fileID: 593411906}
+--- !u!1 &1810156810
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1810156811}
+  - component: {fileID: 1810156812}
+  m_Layer: 5
+  m_Name: CatManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1810156811
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810156810}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1174921607}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.00012922287, y: 0.000046253204}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1810156812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810156810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 545a109dc35cbea44ad6246c97f32786, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropdown: {fileID: 1920498580}
+  plusEnergyText: {fileID: 1935700192}
+  minusStressText: {fileID: 1121075436}
+  stressText: {fileID: 1039564818}
+  energyText: {fileID: 163599909}
+  recordUI: {fileID: 1174921606}
+  closeButton: {fileID: 1516460208}
+  startButton: {fileID: 2038461851}
   timeManager: {fileID: 725658458}
   levelManager: {fileID: 593411906}
 --- !u!1 &1831593444
@@ -25878,7 +26047,7 @@ GameObject:
   - component: {fileID: 1935700193}
   - component: {fileID: 1935700192}
   m_Layer: 5
-  m_Name: PlusEnergy
+  m_Name: PlusEnergyRecord
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26099,7 +26268,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938965840}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -26145,7 +26314,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938965840}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6f927ee73af2d34cac096de87fe3fab, type: 3}
   m_Name: 
@@ -26160,7 +26329,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938965840}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 53c7cfa78dcc9c64c80f1720790f4e8c, type: 3}
   m_Name: 
@@ -27013,7 +27182,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 30 min of Jams
+  m_text: 30 min
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c0f568ab35932c44c8f02dddcb06175d, type: 2}
   m_sharedMaterial: {fileID: 5893740002465033161, guid: c0f568ab35932c44c8f02dddcb06175d, type: 2}
@@ -28432,6 +28601,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2129969987}
   m_CullTransparentMesh: 1
+--- !u!1 &2144277453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2144277454}
+  - component: {fileID: 2144277455}
+  m_Layer: 5
+  m_Name: CatManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2144277454
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144277453}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1647281467}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.00012922287, y: 0.000046253204}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2144277455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144277453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69b1d635ce0e5d04ca409a1086c84b6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropdown: {fileID: 1377664768}
+  plusEnergyText: {fileID: 622984296}
+  minusStressText: {fileID: 1677230915}
+  stressText: {fileID: 1039564818}
+  energyText: {fileID: 163599909}
+  CatUI: {fileID: 1647281466}
+  closeButton: {fileID: 1497234747}
+  startButton: {fileID: 1631916522}
+  timeManager: {fileID: 725658458}
+  levelManager: {fileID: 593411906}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -28450,4 +28677,3 @@ SceneRoots:
   - {fileID: 1971253963}
   - {fileID: 1640186735}
   - {fileID: 1529924538}
-  - {fileID: 1652790377}
