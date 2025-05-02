@@ -322,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      calicons_0: 5715586124147094718
+      calicons_1: -8610928629224058588
+      calicons_2: -3172626397385898803
+      calicons_3: -2278061529993910911
+      calicons_4: 7206888313700907758
+      calicons_5: 5287031332884739024
+      calicons_6: 936117530295205005
+      calicons_7: -1765174709966369324
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
