@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class OpenDoor : MonoBehaviour
+public class OpenBook : MonoBehaviour
 {
     public GameObject calendarUI;
     public GameObject computerUI;
@@ -16,12 +16,12 @@ public class OpenDoor : MonoBehaviour
         if (!computerUI.activeSelf && 
             !calendarUI.activeSelf && 
             !bedUI.activeSelf &&
-            !catUI.activeSelf &&
+            !doorUI.activeSelf &&
             !recordUI.activeSelf &&
             !journalUI.activeSelf &&
-            !booksUI.activeSelf)
+            !recordUI.activeSelf)
         {
-            doorUI.SetActive(true);
+            booksUI.SetActive(true);
         }
     }
 }

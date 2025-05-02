@@ -5413,6 +5413,7 @@ GameObject:
   - component: {fileID: 397864503}
   - component: {fileID: 397864502}
   - component: {fileID: 397864501}
+  - component: {fileID: 397864504}
   m_Layer: 0
   m_Name: Clickable_Door_0
   m_TagString: Untagged
@@ -5563,6 +5564,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.19, y: 7.33}
   m_EdgeRadius: 0
+--- !u!114 &397864504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397864498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8223d481e36a342a6961eb6a5f361a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &403908612
 GameObject:
   m_ObjectHideFlags: 0
@@ -7107,19 +7120,19 @@ MonoBehaviour:
   m_MultiSelect: 0
   m_Options:
     m_Options:
-    - m_Text: 30 min Walk
+    - m_Text: 30 min
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: 1 hr Walk
+    - m_Text: 1 hr
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: 2 hr Walk
+    - m_Text: 2 hr
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: 3 hr Walk
+    - m_Text: 3 hr
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: 4 hr Walk
+    - m_Text: 4 hr
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_OnValueChanged:
@@ -18210,19 +18223,19 @@ MonoBehaviour:
   m_MultiSelect: 0
   m_Options:
     m_Options:
-    - m_Text: 30 min of Pets
+    - m_Text: 30 min
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: 1 hr of Pets
+    - m_Text: 1 hr
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: 2 hr of Pets
+    - m_Text: 2 hr
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: 3 hr of Pets
+    - m_Text: 3 hr
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: 4 hr of Pets (Damn)
+    - m_Text: 4 hr
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_OnValueChanged:
@@ -18446,6 +18459,11 @@ MonoBehaviour:
   calendarUI: {fileID: 1895568491}
   computerUI: {fileID: 1781501196}
   bedUI: {fileID: 746277944}
+  doorUI: {fileID: 1602871766}
+  catUI: {fileID: 1647281466}
+  recordUI: {fileID: 1174921606}
+  journalUI: {fileID: 940271669}
+  booksUI: {fileID: 2002617466}
 --- !u!1 &1406091147
 GameObject:
   m_ObjectHideFlags: 0
@@ -21410,19 +21428,19 @@ MonoBehaviour:
   m_MultiSelect: 0
   m_Options:
     m_Options:
-    - m_Text: 30 min Nap
+    - m_Text: 30 min
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: 1 hr Nap
+    - m_Text: 1 hr
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: 2 hr Nap
+    - m_Text: 2 hr
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: 3 hr Nap
+    - m_Text: 3 hr
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: 4 hr Nap
+    - m_Text: 4 hr
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
     - m_Text: End Day Sleep
@@ -22450,6 +22468,50 @@ RectTransform:
   m_AnchoredPosition: {x: 6, y: -5}
   m_SizeDelta: {x: 953.4376, y: 636.3618}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1652790375
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1652790377}
+  - component: {fileID: 1652790376}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1652790376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652790375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8223d481e36a342a6961eb6a5f361a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1652790377
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652790375}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 855.55023, y: 390.15924, z: -3.728441}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1655409764
 GameObject:
   m_ObjectHideFlags: 0
@@ -24370,19 +24432,19 @@ MonoBehaviour:
   m_MultiSelect: 0
   m_Options:
     m_Options:
-    - m_Text: 30 min of Journaling
+    - m_Text: 30 min
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: 1 hr of Journaling
+    - m_Text: 1 hr
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: 2 hr of Journaling
+    - m_Text: 2 hr
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: 3 hr of Journaling
+    - m_Text: 3 hr
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: 4 hr of Journaling
+    - m_Text: 4 hr
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_OnValueChanged:
@@ -24823,19 +24885,19 @@ MonoBehaviour:
   m_MultiSelect: 0
   m_Options:
     m_Options:
-    - m_Text: 30 min Read
+    - m_Text: 30 min
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: 1 hr Read
+    - m_Text: 1 hr
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: 2 hr Read
+    - m_Text: 2 hr
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: 3 hr Read
+    - m_Text: 3 hr
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: 4 hr Read
+    - m_Text: 4 hr
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_OnValueChanged:
@@ -25482,19 +25544,19 @@ MonoBehaviour:
   m_MultiSelect: 0
   m_Options:
     m_Options:
-    - m_Text: 30 min of Jams
+    - m_Text: 30 min
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: 1 hr of Jams
+    - m_Text: 1 hr
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: 2 hr of Jams
+    - m_Text: 2 hr
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: 3 hr of Jams
+    - m_Text: 3 hr
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: 4 hr of Jams
+    - m_Text: 4 hr
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_OnValueChanged:
@@ -26295,10 +26357,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -28388,3 +28450,4 @@ SceneRoots:
   - {fileID: 1971253963}
   - {fileID: 1640186735}
   - {fileID: 1529924538}
+  - {fileID: 1652790377}
