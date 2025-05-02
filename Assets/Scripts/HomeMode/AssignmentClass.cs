@@ -10,7 +10,7 @@ public class Assignment
     {
         this.name = name;
         this.progressRequired = progressRequired;
-        currentProgress = 99;
+        currentProgress = 0;
     }
 
     public void UpdateProgress(int progressIncrease)
