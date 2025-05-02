@@ -65,7 +65,7 @@ public class Dialogue : MonoBehaviour
             }
             }
             if (currentScene==1){
-                if (step==3){
+                if (step==4){
                     kitchenButton.SetActive(true);
             }
             }
