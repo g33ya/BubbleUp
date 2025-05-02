@@ -5,7 +5,7 @@ public class CupButtonSpawner : MonoBehaviour
      public GameObject cupPrefab;    
     public Transform spawnPoint;   
 
-     private GameObject currentCup;
+     public static GameObject currentCup;
     //private bool hasSpawned = false;
 
     public void SpawnCup(){

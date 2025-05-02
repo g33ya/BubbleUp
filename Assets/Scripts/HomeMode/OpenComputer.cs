@@ -10,10 +10,13 @@ public class OpenComputer : MonoBehaviour
 
     void OnMouseDown()
     {
-        if(!assignmentPanel.activeSelf && !calendarUI.activeSelf && !bedUI.activeSelf)
+        Debug.Log("Computer clicked!");
+        if(!calendarUI.activeSelf && !bedUI.activeSelf && !assignmentPanel.activeSelf)
         {
             computerUI.SetActive(true);
             dayPanel.SetActive(true);
+            Debug.Log("Set active!");
+
         }
         
         
