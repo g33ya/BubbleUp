@@ -85,6 +85,19 @@ public class Dialogue : MonoBehaviour
                     position1.transform.position= new Vector3(-11.28f,1.154747f,0);
                 }
             }
+            if (currentScene==7){
+                if (step==3){
+                    kitchenButton.SetActive(true);
+                }
+            }
+            if (currentScene==8){
+                if (step==4){
+                Character.SetActive(true);
+                }
+                if (step==20){
+                    kitchenButton.SetActive(true);
+                }
+            }
             }
            
         }
