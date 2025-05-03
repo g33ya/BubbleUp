@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1915913291394888926
+--- !u!1 &6930462063324153968
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,38 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1969510387084766375}
-  - component: {fileID: 3755842106849267814}
-  - component: {fileID: 38309459321080546}
+  - component: {fileID: 9117525328274204014}
+  - component: {fileID: 4170123173906783725}
+  - component: {fileID: 8338290987303081524}
+  - component: {fileID: 5733486309346785921}
+  - component: {fileID: 445197321287640413}
   m_Layer: 0
-  m_Name: poppinw_cup
-  m_TagString: poppinw/cup
+  m_Name: bobawcup
+  m_TagString: bobaw/cup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1969510387084766375
+--- !u!4 &9117525328274204014
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1915913291394888926}
+  m_GameObject: {fileID: 6930462063324153968}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.18, y: -0.81, z: 0}
-  m_LocalScale: {x: 0.22244133, y: 0.2077139, z: 1}
+  m_LocalPosition: {x: -0.3106, y: -0.9019, z: 0}
+  m_LocalScale: {x: 0.25968763, y: 0.23926918, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &3755842106849267814
+--- !u!212 &4170123173906783725
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1915913291394888926}
+  m_GameObject: {fileID: 6930462063324153968}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -77,24 +79,24 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8891852669829288390, guid: 5ad6aef59ceb1644fb7127de0222bc6d, type: 3}
+  m_Sprite: {fileID: 3490220934111244818, guid: fab127a6c3057af4ebf0d59930d2fcc2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.06, y: 0.06}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &38309459321080546
+--- !u!61 &8338290987303081524
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1915913291394888926}
+  m_GameObject: {fileID: 6930462063324153968}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -122,15 +124,44 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.07813716, y: 0.17866647}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 11.48, y: 7.88}
-    newSize: {x: 0.06, y: 0.06}
+    pivot: {x: 0.4707882, y: 0.48038834}
+    oldSize: {x: 12.72, y: 7.75}
+    newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 11.1, y: 7.32}
+  m_Size: {x: 3.5967946, y: 6.8430157}
   m_EdgeRadius: 0
+--- !u!114 &5733486309346785921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6930462063324153968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58e0a5d64eddc444694891874addfe8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapPoint: {fileID: 0}
+  snapThreshold: 0.7
+  snapOffset: {x: 0, y: -0.2, z: 0}
+--- !u!114 &445197321287640413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6930462063324153968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e8db8a5352eb407ea374f739feeee0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasBoba: 1
+  hasMatcha: 0

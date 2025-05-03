@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: e9f96bdfdb5de4942809fb4d46d87449
+guid: b9de1d9a724184bb2884ba709ce2dfe6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3282668761559350636
-    second: Clickable_(SD)Matcha_0
+      213: 7370226238808567388
+    second: Clickable_EmptyCup (1)_0
   - first:
-      213: 8811764849333973026
-    second: Clickable_(SD)Matcha_1
+      213: 8938497788610969540
+    second: Clickable_EmptyCup (1)_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Clickable_(SD)Matcha_0
+      name: Clickable_EmptyCup (1)_0
       rect:
         serializedVersion: 2
         x: 56
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c6d3408a8d16e8d20800000000000000
-      internalID: 3282668761559350636
+      spriteID: c5ea27e07bd484660800000000000000
+      internalID: 7370226238808567388
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clickable_(SD)Matcha_1
+      name: Clickable_EmptyCup (1)_1
       rect:
         serializedVersion: 2
         x: 353
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 22033d8917da94a70800000000000000
-      internalID: 8811764849333973026
+      spriteID: 4cf75cb616ceb0c70800000000000000
+      internalID: 8938497788610969540
       vertices: []
       indices: 
       edges: []

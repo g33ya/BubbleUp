@@ -79,12 +79,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 2150198551892363791, guid: 5a1e98b02428445c88859dd2780a7668, type: 3}
+  m_Sprite: {fileID: 2150198551892363791, guid: 74739c4bc6d2734489d32d092540a52c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -127,9 +127,9 @@ BoxCollider2D:
   m_Offset: {x: -0.29293346, y: 0.15461302}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5274539, y: 0.4819377}
-    oldSize: {x: 10.67, y: 8.56}
-    newSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.06, y: 0.06}
+    newSize: {x: 0.06, y: 0.06}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -163,5 +163,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822edb052b656410f9939f11edc1ce37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  matchaOnlySprite: {fileID: -2635907909881453443, guid: e160cec71e0f846c3946228c39d31836, type: 3}
-  matchaWithBobaSprite: {fileID: -784692581750019777, guid: f5a0e81d5350e454aace040645f6e585, type: 3}
+  matchaOnlySprite: {fileID: 2150198551892363791, guid: 74739c4bc6d2734489d32d092540a52c, type: 3}
+  matchaWithBobaSprite: {fileID: -784692581750019777, guid: 4e69a021962c2084bb1301663bf4037a, type: 3}
