@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 74739c4bc6d2734489d32d092540a52c
-=======
-guid: 5a1e98b02428445c88859dd2780a7668
->>>>>>> 208125044a117132a60145706be8830ae3fa6429
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -123,12 +119,12 @@ TextureImporter:
       name: "Clickable_Cupw\uF022Matcha_0"
       rect:
         serializedVersion: 2
-        x: 346
-        y: 140
-        width: 1067
-        height: 856
-      alignment: 9
-      pivot: {x: 0.5274539, y: 0.4819377}
+        x: 470
+        y: 227
+        width: 1042
+        height: 781
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -147,8 +143,8 @@ TextureImporter:
         serializedVersion: 2
         x: 353
         y: 267
-        width: 998
-        height: 735
+        width: 822
+        height: 713
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c85b67f82d3b245caa989b326a2a6a0c
+    spriteID: 700fcbca8410f438497488019095a996
     internalID: 0
     vertices: []
     indices: 

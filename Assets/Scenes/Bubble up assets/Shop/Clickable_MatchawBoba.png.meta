@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 4e69a021962c2084bb1301663bf4037a
-=======
-guid: f5a0e81d5350e454aace040645f6e585
->>>>>>> 208125044a117132a60145706be8830ae3fa6429
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -123,10 +119,10 @@ TextureImporter:
       name: "Clickable_Matchaw\uF022Boba_0"
       rect:
         serializedVersion: 2
-        x: 377
-        y: 227
-        width: 1141
-        height: 769
+        x: 358
+        y: 258
+        width: 1160
+        height: 738
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8420e801b743248f1af152bbfaceb0ca
+    spriteID: 846ec6116e9b3490683ef0198b390aa6
     internalID: 0
     vertices: []
     indices: 

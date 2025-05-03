@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: fab127a6c3057af4ebf0d59930d2fcc2
-=======
-guid: ca50f6660007c43b2ac31a49de83231a
->>>>>>> 208125044a117132a60145706be8830ae3fa6429
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -123,21 +119,12 @@ TextureImporter:
       name: "Clickable_Cupw\uF022Boba_0"
       rect:
         serializedVersion: 2
-<<<<<<< HEAD
-        x: 56
-        y: 849
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-=======
-        x: 489
-        y: 190
-        width: 880
-        height: 806
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
->>>>>>> 208125044a117132a60145706be8830ae3fa6429
+        x: 321
+        y: 233
+        width: 1272
+        height: 775
+      alignment: 9
+      pivot: {x: 0.4707882, y: 0.48038834}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -154,21 +141,12 @@ TextureImporter:
       name: "Clickable_Cupw\uF022Boba_1"
       rect:
         serializedVersion: 2
-<<<<<<< HEAD
         x: 353
         y: 267
         width: 822
         height: 713
       alignment: 0
-      pivot: {x: 0, y: 0}
-=======
-        x: 483
-        y: 286
-        width: 822
-        height: 713
-      alignment: 0
       pivot: {x: 0.5, y: 0.5}
->>>>>>> 208125044a117132a60145706be8830ae3fa6429
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -185,11 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-<<<<<<< HEAD
-    spriteID: 
-=======
-    spriteID: 5c25f40ae8e31480d99bde97abb46d57
->>>>>>> 208125044a117132a60145706be8830ae3fa6429
+    spriteID: 20478f640827049ae96e78e3f2fee88e
     internalID: 0
     vertices: []
     indices: 
@@ -198,13 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-<<<<<<< HEAD
-    nameFileIdTable: {}
-=======
     nameFileIdTable:
       "Clickable_Cupw\uF022Boba_0": 3490220934111244818
       "Clickable_Cupw\uF022Boba_1": -5910099957331676731
->>>>>>> 208125044a117132a60145706be8830ae3fa6429
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
