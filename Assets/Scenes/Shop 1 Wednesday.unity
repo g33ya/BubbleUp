@@ -247,7 +247,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6270953770400647376, guid: b0b3f2d0e81d2474581b73f222f17f0a, type: 3}
+  m_Sprite: {fileID: -6270953770400647376, guid: 81ac4d28796dd7945aded3d0ef6c38a8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -401,7 +401,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6642193843099659868, guid: 330d920b13af10549994286163ef78cc, type: 3}
+  m_Sprite: {fileID: 6642193843099659868, guid: 8011d976cd268a74b807bfa20f852617, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -796,7 +796,7 @@ GameObject:
   - component: {fileID: 1171144100}
   - component: {fileID: 1171144102}
   m_Layer: 0
-  m_Name: Taylor
+  m_Name: Bea
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -846,7 +846,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 8277218729506813210, guid: 75ec104d85eb87c43beeb0cca5770af7, type: 3}
+  m_Sprite: {fileID: -690040873414559854, guid: aa44474ffd088ef4c82bcbeb0bb79b31, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -928,18 +928,33 @@ MonoBehaviour:
   Character: {fileID: 0}
   Character2: {fileID: 0}
   speaker:
-  - Taylor
-  - Taylor
+  - Bea
+  - Bea
+  - Bea
+  - Bea
+  - Bea
   - You
+  - Bea
   dialogueWords:
-  - " Yeah\u2026 I know. I won\u2019t make it to practice tomorrow.\r\n I\u2019ve
-    got an exam coming up. I\u2019m really sorry.\r\n [ends the call]\r"
-  - '  Can I get a taro tea with popping boba?'
-  - ' Of course. Coming right up.'
+  - " Hey!\r\n I wanted to show you something.\r\n"
+  - " I made a collage last night at the drawing station.\r\n It\u2019s kind of messy,
+    but that\u2019s the point. No perfect lines. Just real feelings.\r\n"
+  - " I added a quote to it:\r\n \"You\u2019re not a machine\u2014you\u2019re a masterpiece
+    in progress.\"\r\n"
+  - " Honestly? It helped me let go of the exam a little.\r\n I\u2019ve got another
+    one coming up, but I\u2019m planning ahead this time.\r\n Not gonna cram, not
+    gonna crash. Just balance.\r"
+  - " Well\u2026 balance and energy drinks. I\u2019m not a saint.\r"
+  - " That sounds like a solid plan.\r"
+  - " Thanks. I\u2019m trying.\r\n Anyway, can I get a milk tea with aloe jelly?"
   portrait:
-  - {fileID: 8277218729506813210, guid: 75ec104d85eb87c43beeb0cca5770af7, type: 3}
-  - {fileID: 8277218729506813210, guid: 30f1147294891674a926ecd36744854a, type: 3}
+  - {fileID: -690040873414559854, guid: aa44474ffd088ef4c82bcbeb0bb79b31, type: 3}
+  - {fileID: -690040873414559854, guid: 426337f648495f944b35accaeca2514f, type: 3}
+  - {fileID: -690040873414559854, guid: aa44474ffd088ef4c82bcbeb0bb79b31, type: 3}
+  - {fileID: -690040873414559854, guid: aa44474ffd088ef4c82bcbeb0bb79b31, type: 3}
+  - {fileID: -690040873414559854, guid: aa44474ffd088ef4c82bcbeb0bb79b31, type: 3}
   - {fileID: -4033371025274693098, guid: 35b97bcd261a7f5439b049fe10fb4f35, type: 3}
+  - {fileID: -690040873414559854, guid: aa44474ffd088ef4c82bcbeb0bb79b31, type: 3}
 --- !u!4 &1235620348
 Transform:
   m_ObjectHideFlags: 0
@@ -1249,7 +1264,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1540426309290004842, guid: c02bf12c4f2025e4db3e91edda4d17fc, type: 3}
+  m_Sprite: {fileID: -1540426309290004842, guid: 7058f1f2b86d487489ac96892b5e089c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1465,7 +1480,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: fe72d8d3811c7ad4caf2b4967d7ca603, type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: d45c0d2489072254a95c0c43a7b03d79, type: 3}
   m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0}
   m_FlipX: 0
   m_FlipY: 0
@@ -1599,7 +1614,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 8270719687502293858, guid: cc01cb7e4ea173543909d818efd8c9c9, type: 3}
+  m_Sprite: {fileID: 8270719687502293858, guid: 93b6d10b2247c0840926352cb83da198, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1819,7 +1834,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -690040873414559854, guid: 6d42f20525088a0408ca8519a0939bfb, type: 3}
+  m_Sprite: {fileID: -690040873414559854, guid: 017d9c9fcc8ac63439ad9cb655b18bc6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
