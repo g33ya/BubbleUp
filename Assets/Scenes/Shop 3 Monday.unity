@@ -1730,10 +1730,10 @@ MonoBehaviour:
   - Coming up!
   portrait:
   - {fileID: 7640617194265235215, guid: f83520627ee1ebf418fad794a3580a9a, type: 3}
-  - {fileID: 8277218729506813210, guid: 75ec104d85eb87c43beeb0cca5770af7, type: 3}
+  - {fileID: -4033371025274693098, guid: 35b97bcd261a7f5439b049fe10fb4f35, type: 3}
   - {fileID: -690040873414559854, guid: 426337f648495f944b35accaeca2514f, type: 3}
   - {fileID: -4569859926898310901, guid: dbe016c32d3caf6409ff632b9a32ac98, type: 3}
-  - {fileID: 8277218729506813210, guid: 75ec104d85eb87c43beeb0cca5770af7, type: 3}
+  - {fileID: -4033371025274693098, guid: 35b97bcd261a7f5439b049fe10fb4f35, type: 3}
 --- !u!4 &1235620348
 Transform:
   m_ObjectHideFlags: 0

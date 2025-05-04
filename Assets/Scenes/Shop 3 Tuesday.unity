@@ -1313,7 +1313,7 @@ Transform:
   m_GameObject: {fileID: 1171144099}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 100.44, y: 97, z: -9719.999}
+  m_LocalPosition: {x: 563, y: 97, z: -9719.999}
   m_LocalScale: {x: 79.05079, y: 79.05079, z: 79.05079}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1369,7 +1369,7 @@ MonoBehaviour:
   dialogueText: {fileID: 2083473879}
   portraitImage: {fileID: 2138368967}
   position1: {fileID: 1557768964}
-  position2: {fileID: 0}
+  position2: {fileID: 116611569}
   homeButton: {fileID: 1827673209}
   kitchenButton: {fileID: 154042022}
   Character: {fileID: 1891057510}
@@ -1377,44 +1377,24 @@ MonoBehaviour:
   speaker:
   - Bea
   - You
-  - Bea
-  - You
-  - Bea
-  - Bea
-  - You
-  - Bea
-  - Elomar
+  - Taylor
+  - Taylor
   - You
   dialogueWords:
-  - This looks perfect, thank you!
-  - "Of course! You mentioned you\u2019re CS\u2013 what exams do you have coming
-    up?"
-  - " Algorithms. I had a huge exam last week, and the grade\u2019s supposed to be
-    released any minute now. I\u2019ve been checking Canvas all day, refreshing like
-    a maniac.\r\n\r\n"
-  - That class is no joke.
-  - ' I care a little too much, probably. I studied for two days straight. I barely
-    slept. Just caffeine, panic and data structures in my dreams. '
-  - " Even then, it felt like when I was taking the exam I forgot everything.  I
-    think I\u2019ll pass, but sometimes it feels like I have to do just as well,
-    if not better, than others to prove that I\u2019m supposed to be in this major."
-  - " Grades don\u2019t define your worth or level of belonging! Computer science
-    is right for anyone who wants to learn."
-  - "Thank you. It\u2019s weird\u2013 hearing you say that helps more than I expected.
-    Still, it feels like my brain is wired to chase this impossible idea of flawlessness. "
-  - ' Good afternoon! One mango smoothie, please.'
-  - 'Coming right up. '
+  - "Looks great! \nI\u2019m heading to the library.\r\nWishing you good study vibes!\r\n"
+  - Have a great day!
+  - "She\u2019s cool.\r\n I\u2019ve been so sure people didn\u2019t want me aroud,
+    I never gave them a chance to prove me wrong.\r\n"
+  - " Thanks for listening. I\u2019ll catch you later.\r\n"
+  - 'That''s what friends are for. Bye!
+
+'
   portrait:
   - {fileID: -690040873414559854, guid: 2250031c906319a4193b80b78a8b44c3, type: 3}
+  - {fileID: -4033371025274693098, guid: 35b97bcd261a7f5439b049fe10fb4f35, type: 3}
   - {fileID: 8277218729506813210, guid: 122d0a2fdfb705a4a8c6c335db59d5e8, type: 3}
-  - {fileID: -690040873414559854, guid: 2250031c906319a4193b80b78a8b44c3, type: 3}
   - {fileID: 8277218729506813210, guid: 122d0a2fdfb705a4a8c6c335db59d5e8, type: 3}
-  - {fileID: -690040873414559854, guid: 2250031c906319a4193b80b78a8b44c3, type: 3}
-  - {fileID: -690040873414559854, guid: 2250031c906319a4193b80b78a8b44c3, type: 3}
-  - {fileID: 8277218729506813210, guid: 122d0a2fdfb705a4a8c6c335db59d5e8, type: 3}
-  - {fileID: -690040873414559854, guid: 2250031c906319a4193b80b78a8b44c3, type: 3}
-  - {fileID: 7640617194265235215, guid: 1ee9f5922fe68f54a952853fe127b565, type: 3}
-  - {fileID: 8277218729506813210, guid: 122d0a2fdfb705a4a8c6c335db59d5e8, type: 3}
+  - {fileID: -4033371025274693098, guid: 35b97bcd261a7f5439b049fe10fb4f35, type: 3}
 --- !u!4 &1235620348
 Transform:
   m_ObjectHideFlags: 0
@@ -2006,7 +1986,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1891057511
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2071,8 +2051,8 @@ Transform:
   m_GameObject: {fileID: 1891057510}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.36, y: 1.07, z: 0}
-  m_LocalScale: {x: 0.63466, y: 0.63466, z: 0.63466}
+  m_LocalPosition: {x: -0.4707241, y: 1.154747, z: 0}
+  m_LocalScale: {x: 0.8066514, y: 0.8066514, z: 0.8066514}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

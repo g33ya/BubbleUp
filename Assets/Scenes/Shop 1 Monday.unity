@@ -941,7 +941,7 @@ MonoBehaviour:
   - "I\u2019ll do a milk tea with boba. My sweet treat for the day!"
   portrait:
   - {fileID: -690040873414559854, guid: 426337f648495f944b35accaeca2514f, type: 3}
-  - {fileID: 8277218729506813210, guid: 75ec104d85eb87c43beeb0cca5770af7, type: 3}
+  - {fileID: -4033371025274693098, guid: 35b97bcd261a7f5439b049fe10fb4f35, type: 3}
   - {fileID: -690040873414559854, guid: 426337f648495f944b35accaeca2514f, type: 3}
   - {fileID: -690040873414559854, guid: 426337f648495f944b35accaeca2514f, type: 3}
 --- !u!4 &1235620348
