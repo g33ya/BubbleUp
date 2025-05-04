@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 8febd10e160feb849be2287893992125
-=======
-guid: 4d34b1435ab5f4142823b750cb3c6acf
->>>>>>> 208125044a117132a60145706be8830ae3fa6429
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -123,12 +119,12 @@ TextureImporter:
       name: "Clickable_Cupw\uF022Aloe_0"
       rect:
         serializedVersion: 2
-        x: 56
-        y: 849
-        width: 6
-        height: 6
+        x: 408
+        y: 239
+        width: 1129
+        height: 763
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -150,7 +146,7 @@ TextureImporter:
         width: 822
         height: 713
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -167,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6889955422780423bad95da2dbe505c5
     internalID: 0
     vertices: []
     indices: 
@@ -176,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Clickable_Cupw\uF022Aloe_0": -1231341891186751354
+      "Clickable_Cupw\uF022Aloe_1": 4387323063240269654
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

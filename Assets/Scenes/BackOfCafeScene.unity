@@ -1114,6 +1114,7 @@ GameObject:
   - component: {fileID: 440243114}
   - component: {fileID: 440243113}
   - component: {fileID: 440243112}
+  - component: {fileID: 440243115}
   m_Layer: 0
   m_Name: Popping Pearls
   m_TagString: Untagged
@@ -1252,6 +1253,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &440243115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440243110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6bec9b5065a44c468b32d39b2c06a58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poppinCupSprite: {fileID: -8891852669829288390, guid: bc644f93f6e3d46af9e6b093c9b08df5, type: 3}
 --- !u!1 &451869677
 GameObject:
   m_ObjectHideFlags: 0
@@ -1264,6 +1278,7 @@ GameObject:
   - component: {fileID: 451869681}
   - component: {fileID: 451869680}
   - component: {fileID: 451869679}
+  - component: {fileID: 451869682}
   m_Layer: 0
   m_Name: Boba Pearls
   m_TagString: Untagged
@@ -1402,6 +1417,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &451869682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451869677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89f75e9b704244c43890fdb25612be03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bobaCupSprite: {fileID: 3490220934111244818, guid: ca50f6660007c43b2ac31a49de83231a, type: 3}
 --- !u!1 &535938850
 GameObject:
   m_ObjectHideFlags: 0
@@ -2263,6 +2291,7 @@ GameObject:
   - component: {fileID: 996660864}
   - component: {fileID: 996660863}
   - component: {fileID: 996660862}
+  - component: {fileID: 996660865}
   m_Layer: 0
   m_Name: Aloe Jelly
   m_TagString: Untagged
@@ -2401,6 +2430,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &996660865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996660860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fef84d614bb454395d2f2e4fd55125, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aloeCupSprite: {fileID: -1231341891186751354, guid: 4d34b1435ab5f4142823b750cb3c6acf, type: 3}
 --- !u!1 &1066240585
 GameObject:
   m_ObjectHideFlags: 0
@@ -2739,6 +2781,7 @@ GameObject:
   - component: {fileID: 1230733419}
   - component: {fileID: 1230733418}
   - component: {fileID: 1230733417}
+  - component: {fileID: 1230733420}
   m_Layer: 0
   m_Name: Matcha Juice
   m_TagString: Untagged
@@ -2877,6 +2920,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1230733420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230733415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 822edb052b656410f9939f11edc1ce37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matchaOnlySprite: {fileID: 2150198551892363791, guid: 5a1e98b02428445c88859dd2780a7668, type: 3}
+  matchaWithBobaSprite: {fileID: -784692581750019777, guid: f5a0e81d5350e454aace040645f6e585, type: 3}
 --- !u!1 &1443796746
 GameObject:
   m_ObjectHideFlags: 0
