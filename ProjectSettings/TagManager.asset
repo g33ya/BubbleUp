@@ -19,6 +19,7 @@ TagManager:
   - matchaw/poppin
   - mangow/aloe
   - mangow/boba
+  - mangow/poppin
   layers:
   - Default
   - TransparentFX
