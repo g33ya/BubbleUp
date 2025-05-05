@@ -47,6 +47,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Shop 4 Wednesday.unity
     guid: 13cf3f24f169ea64586b42f143ada5d5
+  - enabled: 1
+    path: Assets/Scenes/Shop 1 Thursday.unity
+    guid: 682440d81a372df4783724674a672ffb
+  - enabled: 1
+    path: Assets/Scenes/Shop 2 Thursday.unity
+    guid: d27b13656a8220f4bb4ed45814daff63
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

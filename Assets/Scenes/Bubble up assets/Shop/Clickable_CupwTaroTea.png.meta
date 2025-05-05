@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Clickable_Cupw\uF022TaroTea_0": -83516185683859780
+      "Clickable_Cupw\uF022TaroTea_1": -1582377024864390478
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

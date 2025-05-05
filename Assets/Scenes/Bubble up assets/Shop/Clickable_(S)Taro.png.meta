@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Clickable_(S)Taro_0: -8247699785675443468
+      Clickable_(S)Taro_1: -7308945541212265895
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

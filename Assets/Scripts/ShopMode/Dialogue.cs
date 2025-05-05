@@ -138,9 +138,30 @@ public class Dialogue : MonoBehaviour
                     homeButton.SetActive(true);
                 }
             }
+            if (currentScene==14){
+                if (step==14){
+                    kitchenButton.SetActive(true);
+                }
             }
-           
+             if (currentScene==15){
+                if (step==3){
+                    Character.SetActive(true);
+                }
+                if (step==8){
+                    kitchenButton.SetActive(true);
+                }
+            }
+           if (currentScene==16){
+                if (step==2){
+                    position2.transform.position= new Vector3(-11.28f,1.154747f,0);
+                }
+                if (step==4){
+                    position1.transform.position= new Vector3(-11.28f,1.154747f,0);
+                    homeButton.SetActive(true);
+                }
+            }
         }
+    }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

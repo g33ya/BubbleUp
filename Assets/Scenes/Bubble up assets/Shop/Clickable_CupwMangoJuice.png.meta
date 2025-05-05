@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Clickable_Cupw\uF022MangoJuice_0": 2096412399073885462
+      "Clickable_Cupw\uF022MangoJuice_1": 1856265048766878409
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

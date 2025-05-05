@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Clickable_(SD)Matchaw\uF022Boba_0": 1741782910487133450
+      "Clickable_(SD)Matchaw\uF022Boba_1": 4968216072229654079
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

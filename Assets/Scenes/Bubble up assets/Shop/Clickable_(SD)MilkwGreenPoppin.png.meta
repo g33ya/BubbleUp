@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Clickable_(SD)Milkw\uF022GreenPoppin_0": -7460026915291639544
+      "Clickable_(SD)Milkw\uF022GreenPoppin_1": -2450487091069490063
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Clickable_(S)Mango_0: 3120742503207459111
+      Clickable_(S)Mango_1: -9109128011059622245
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

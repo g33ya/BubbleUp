@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Clickable_(SD)BrownSugar_0: -1080652937448538977
+      Clickable_(SD)BrownSugar_1: -9132960432318239476
+      Clickable_(SD)BrownSugar_2: -2362091815066502698
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

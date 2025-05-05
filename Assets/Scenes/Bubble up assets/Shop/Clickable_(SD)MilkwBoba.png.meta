@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Clickable_(SD)Milkw\uF022Boba_0": 5294554095018347407
+      "Clickable_(SD)Milkw\uF022Boba_1": -5089573550529837197
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
