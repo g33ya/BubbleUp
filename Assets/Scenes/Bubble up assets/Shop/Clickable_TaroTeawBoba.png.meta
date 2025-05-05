@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Clickable_TaroTeaw\uF022Boba_0": -2763158845320072381
+      "Clickable_TaroTeaw\uF022Boba_1": -2888858501133180506
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

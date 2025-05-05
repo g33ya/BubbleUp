@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Clickable_Matchaw\uF022OrangePoppin_0": -6771009301961453599
+      "Clickable_Matchaw\uF022OrangePoppin_1": 420089123440994822
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Clickable_MangoJuicew\uF022AloePoppin_0": -2586768722040249087
+      "Clickable_MangoJuicew\uF022AloePoppin_1": 180525179293712551
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

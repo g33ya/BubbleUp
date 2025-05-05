@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Clickable_TaroTeaw\uF022OrangePoppin_0": 1402998173964939640
+      "Clickable_TaroTeaw\uF022OrangePoppin_1": 7211605252324149030
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

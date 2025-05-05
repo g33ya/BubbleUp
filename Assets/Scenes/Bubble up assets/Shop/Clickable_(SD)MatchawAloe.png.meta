@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Clickable_(SD)Matchaw\uF022Aloe_0": -5052810778189264964
+      "Clickable_(SD)Matchaw\uF022Aloe_1": -7076845317244760406
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
