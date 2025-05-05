@@ -12,8 +12,11 @@ public class ShopEventScript : MonoBehaviour, IPointerClickHandler, IDragHandler
 
     public void OnDrag(PointerEventData eventData){
           Debug.Log("OnDrag" + eventData.position);
-          transform.position= Camera.main.ScreenToWorldPoint(eventData.position)+cameraOffset;
-          transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+         Vector3 pointerWorldPos = Camera.main.ScreenToWorldPoint(eventData.position)+cameraOffset;
+          pointerWorldPos.z = -1f;
+          transform.position = pointerWorldPos;
+
+          // transform.position = new Vector3(transform.position.x, transform.position.y, -1f);
     }
 
     public void OnEndDrag(PointerEventData eventData){

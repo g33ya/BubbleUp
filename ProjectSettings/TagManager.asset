@@ -8,6 +8,11 @@ TagManager:
   - cup
   - sealcup
   - inProgressCup
+  - boba topping
+  - bobaw/cup
+  - aloew/cup
+  - poppinw/cup
+  - matchaOnly
   layers:
   - Default
   - TransparentFX
