@@ -8,7 +8,8 @@ public class AddPopping : MonoBehaviour
 
     public Sprite mangoWithPoppinSprite;
 
-    
+    public Sprite taroWithPoppinSprite;
+    public Sprite milkWithPoppinSprite;
     
 
 
@@ -29,6 +30,11 @@ public class AddPopping : MonoBehaviour
                 }
                 else if(state.hasMatcha){
                     sr.sprite = matchaWithPoppinSprite;
+                }else if(state.hasTaro){
+                    sr.sprite = taroWithPoppinSprite;
+                }
+                else if(state.hasMilk){
+                    sr.sprite = milkWithPoppinSprite;
                 }
                 else{
                      sr.sprite = poppinCupSprite;

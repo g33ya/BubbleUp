@@ -1253,6 +1253,7 @@ MonoBehaviour:
   poppinCupSprite: {fileID: -8891852669829288390, guid: 5ad6aef59ceb1644fb7127de0222bc6d, type: 3}
   matchaWithPoppinSprite: {fileID: -6771009301961453599, guid: 6737b15dd2f742b4088671910bb372a8, type: 3}
   mangoWithPoppinSprite: {fileID: -6971235186392487740, guid: 9ae21b2e7767e8947acd6095ed35e4c9, type: 3}
+  taroWithPoppinSprite: {fileID: 1402998173964939640, guid: ab2fa133d7b3a034ab4c2a83805b698d, type: 3}
 --- !u!1 &451869677
 GameObject:
   m_ObjectHideFlags: 0
@@ -1576,7 +1577,7 @@ GameObject:
   - component: {fileID: 564312662}
   - component: {fileID: 564312665}
   - component: {fileID: 564312664}
-  - component: {fileID: 564312663}
+  - component: {fileID: 564312666}
   m_Layer: 0
   m_Name: Taro Juice
   m_TagString: Untagged
@@ -1599,21 +1600,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 616174736}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &564312663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 564312661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58e0a5d64eddc444694891874addfe8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapPoint: {fileID: 0}
-  snapThreshold: 0.7
-  snapOffset: {x: 0, y: -0.2, z: 0}
 --- !u!61 &564312664
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1715,6 +1701,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &564312666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564312661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be3af96a6c404c41a79cb0e307d4b3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  taroOnlySprite: {fileID: -83516185683859780, guid: d88573a5169b4e140bfd0ea97a3e682c, type: 3}
+  taroWithAloeSprite: {fileID: -1243633403815435530, guid: e6b741183beb2e0458f26207e427ed38, type: 3}
+  taroWithBobaSprite: {fileID: -2763158845320072381, guid: 750bfe0471ccc4b4191e777a77907e36, type: 3}
+  taroWithPoppinSprite: {fileID: 1402998173964939640, guid: ab2fa133d7b3a034ab4c2a83805b698d, type: 3}
 --- !u!1 &588769357
 GameObject:
   m_ObjectHideFlags: 0
@@ -2400,6 +2402,7 @@ MonoBehaviour:
   aloeCupSprite: {fileID: -1231341891186751354, guid: 8febd10e160feb849be2287893992125, type: 3}
   matchaWithAloeSprite: {fileID: 8379732681861297503, guid: fb4b849d2370312488703759b30b914a, type: 3}
   mangoWithAloeSprite: {fileID: -2586768722040249087, guid: 3b362d02ffbf85f4aa7233329c8a4952, type: 3}
+  taroWithAloeSprite: {fileID: -1243633403815435530, guid: e6b741183beb2e0458f26207e427ed38, type: 3}
 --- !u!1 &1066240585
 GameObject:
   m_ObjectHideFlags: 0
@@ -2890,7 +2893,7 @@ GameObject:
   - component: {fileID: 1443796749}
   - component: {fileID: 1443796748}
   m_Layer: 0
-  m_Name: Milk
+  m_Name: BrownSugar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

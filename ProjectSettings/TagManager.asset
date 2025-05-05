@@ -20,6 +20,10 @@ TagManager:
   - mangow/aloe
   - mangow/boba
   - mangow/poppin
+  - taroOnly
+  - tarow/aloe
+  - tarow/boba
+  - tarow/poppin
   layers:
   - Default
   - TransparentFX
