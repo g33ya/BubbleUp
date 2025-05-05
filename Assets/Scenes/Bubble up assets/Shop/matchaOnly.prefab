@@ -128,7 +128,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.06, y: 0.06}
+    oldSize: {x: 10.42, y: 7.81}
     newSize: {x: 0.06, y: 0.06}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -165,3 +165,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   matchaOnlySprite: {fileID: 2150198551892363791, guid: 74739c4bc6d2734489d32d092540a52c, type: 3}
   matchaWithBobaSprite: {fileID: -784692581750019777, guid: 4e69a021962c2084bb1301663bf4037a, type: 3}
+  matchaWithAloeSprite: {fileID: 8379732681861297503, guid: fb4b849d2370312488703759b30b914a, type: 3}
+  matchaWithPoppinSprite: {fileID: -6771009301961453599, guid: 6737b15dd2f742b4088671910bb372a8, type: 3}

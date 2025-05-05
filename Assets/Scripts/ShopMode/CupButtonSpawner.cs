@@ -15,6 +15,7 @@ public class CupButtonSpawner : MonoBehaviour
             Debug.Log("Spawned: " + cupPrefab.name);
         }  
     }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

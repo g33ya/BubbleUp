@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1969510387084766375}
   - component: {fileID: 3755842106849267814}
   - component: {fileID: 38309459321080546}
+  - component: {fileID: -2777059129729381588}
   m_Layer: 0
   m_Name: poppinw_cup
   m_TagString: poppinw/cup
@@ -134,3 +135,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 11.1, y: 7.32}
   m_EdgeRadius: 0
+--- !u!114 &-2777059129729381588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915913291394888926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e8db8a5352eb407ea374f739feeee0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasBoba: 0
+  hasAloe: 0
+  hasMatcha: 0
+  hasPoppin: 1

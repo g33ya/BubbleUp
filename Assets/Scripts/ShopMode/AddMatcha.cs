@@ -5,6 +5,10 @@ public class AddMatcha : MonoBehaviour
 
     public Sprite matchaOnlySprite;
     public Sprite matchaWithBobaSprite;
+
+    public Sprite matchaWithAloeSprite;
+
+    public Sprite matchaWithPoppinSprite;
     private void OnMouseDown()
     {
         GameObject cup = CupButtonSpawner.currentCup;
@@ -16,9 +20,16 @@ public class AddMatcha : MonoBehaviour
 
             if (sr != null && state != null)
             {
+             
                 if (state.hasBoba)
                 {
                     sr.sprite = matchaWithBobaSprite;
+                }
+                else if(state.hasAloe){
+                    sr.sprite = matchaWithAloeSprite;
+                }
+                else if(state.hasPoppin){
+                    sr.sprite = matchaWithPoppinSprite;
                 }
                 else
                 {
