@@ -1254,6 +1254,7 @@ MonoBehaviour:
   matchaWithPoppinSprite: {fileID: -6771009301961453599, guid: 6737b15dd2f742b4088671910bb372a8, type: 3}
   mangoWithPoppinSprite: {fileID: -6971235186392487740, guid: 9ae21b2e7767e8947acd6095ed35e4c9, type: 3}
   taroWithPoppinSprite: {fileID: 1402998173964939640, guid: ab2fa133d7b3a034ab4c2a83805b698d, type: 3}
+  milkWithPoppinSprite: {fileID: 8517543488386050402, guid: 2c692a91ab4ba2a458c1becd5dc88fde, type: 3}
 --- !u!1 &451869677
 GameObject:
   m_ObjectHideFlags: 0
@@ -2403,6 +2404,7 @@ MonoBehaviour:
   matchaWithAloeSprite: {fileID: 8379732681861297503, guid: fb4b849d2370312488703759b30b914a, type: 3}
   mangoWithAloeSprite: {fileID: -2586768722040249087, guid: 3b362d02ffbf85f4aa7233329c8a4952, type: 3}
   taroWithAloeSprite: {fileID: -1243633403815435530, guid: e6b741183beb2e0458f26207e427ed38, type: 3}
+  milkWithAloeSprite: {fileID: 4148317677747987209, guid: cdda076241b2dc84a905e314dd0af4ad, type: 3}
 --- !u!1 &1066240585
 GameObject:
   m_ObjectHideFlags: 0
@@ -2891,7 +2893,7 @@ GameObject:
   - component: {fileID: 1443796747}
   - component: {fileID: 1443796750}
   - component: {fileID: 1443796749}
-  - component: {fileID: 1443796748}
+  - component: {fileID: 1443796751}
   m_Layer: 0
   m_Name: BrownSugar
   m_TagString: Untagged
@@ -2914,21 +2916,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 616174736}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1443796748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1443796746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58e0a5d64eddc444694891874addfe8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapPoint: {fileID: 0}
-  snapThreshold: 0.7
-  snapOffset: {x: 0, y: -0.2, z: 0}
 --- !u!61 &1443796749
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3030,6 +3017,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1443796751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443796746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7fa35446e4b449beb131fbaf2369ff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brownsugarOnlySprite: {fileID: 7776524351508437024, guid: a4d24bf8caf22ca48ae747fcf39e5101, type: 3}
+  brownsugarWithBobaSprite: {fileID: -1934966080297878056, guid: 9bf609f675ca0ab4db50ec6956e6b7c3, type: 3}
 --- !u!1 &1444163022
 GameObject:
   m_ObjectHideFlags: 0
@@ -3827,7 +3828,7 @@ GameObject:
   - component: {fileID: 1786490070}
   - component: {fileID: 1786490073}
   - component: {fileID: 1786490072}
-  - component: {fileID: 1786490071}
+  - component: {fileID: 1786490074}
   m_Layer: 0
   m_Name: PlantMilk
   m_TagString: Untagged
@@ -3850,21 +3851,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 616174736}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1786490071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1786490069}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58e0a5d64eddc444694891874addfe8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapPoint: {fileID: 0}
-  snapThreshold: 0.7
-  snapOffset: {x: 0, y: -0.2, z: 0}
 --- !u!61 &1786490072
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3966,6 +3952,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1786490074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786490069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb4d4ce40e33a402387cc4ff325d0a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  milkOnlySprite: {fileID: 7115314469374858343, guid: 469d69e1e4af29248a50192da28042d4, type: 3}
+  milkWithBobaSprite: {fileID: 4268452383655585642, guid: 5824300be47407441ac4f1e64399b26f, type: 3}
+  milkWithAloeSprite: {fileID: 4148317677747987209, guid: cdda076241b2dc84a905e314dd0af4ad, type: 3}
+  milkWithPoppinSprite: {fileID: 8517543488386050402, guid: 2c692a91ab4ba2a458c1becd5dc88fde, type: 3}
 --- !u!1 &2101680678
 GameObject:
   m_ObjectHideFlags: 0

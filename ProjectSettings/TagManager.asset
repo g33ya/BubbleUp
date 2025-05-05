@@ -24,6 +24,12 @@ TagManager:
   - tarow/aloe
   - tarow/boba
   - tarow/poppin
+  - brownsugarOnly
+  - brownsugarw/boba
+  - milkOnly
+  - milkw/boba
+  - milkw/Aloe
+  - milkw/Poppin
   layers:
   - Default
   - TransparentFX

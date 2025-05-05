@@ -77,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7776524351508437024, guid: a4d24bf8caf22ca48ae747fcf39e5101, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -106,6 +106,7 @@ MonoBehaviour:
   hasMatcha: 0
   hasMango: 0
   hasTaro: 0
+  hasMilk: 0
   hasBrownSugar: 1
   hasPoppin: 0
 --- !u!114 &193843052824971430
@@ -121,3 +122,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brownsugarOnlySprite: {fileID: 7776524351508437024, guid: a4d24bf8caf22ca48ae747fcf39e5101, type: 3}
+  brownsugarWithBobaSprite: {fileID: 0}
