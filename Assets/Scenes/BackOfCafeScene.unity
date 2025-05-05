@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 14809864}
   - component: {fileID: 14809867}
   - component: {fileID: 14809866}
-  - component: {fileID: 14809865}
+  - component: {fileID: 14809868}
   m_Layer: 0
   m_Name: Mango Juice
   m_TagString: Untagged
@@ -153,21 +153,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 616174736}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &14809865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 14809863}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58e0a5d64eddc444694891874addfe8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapPoint: {fileID: 0}
-  snapThreshold: 0.7
-  snapOffset: {x: 0, y: -0.2, z: 0}
 --- !u!61 &14809866
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -269,6 +254,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &14809868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14809863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ef1c5a58902487ba2104e0bb6d532f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mangoCupSprite: {fileID: 2096412399073885462, guid: 72e26e27b4f3fb843a65b359e4a2b24f, type: 3}
+  mangoWithAloeSprite: {fileID: -2586768722040249087, guid: 3b362d02ffbf85f4aa7233329c8a4952, type: 3}
 --- !u!1 &154480705
 GameObject:
   m_ObjectHideFlags: 0
@@ -1113,7 +1112,6 @@ GameObject:
   - component: {fileID: 440243111}
   - component: {fileID: 440243114}
   - component: {fileID: 440243113}
-  - component: {fileID: 440243112}
   - component: {fileID: 440243115}
   m_Layer: 0
   m_Name: Popping Pearls
@@ -1137,21 +1135,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 616174736}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &440243112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 440243110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58e0a5d64eddc444694891874addfe8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapPoint: {fileID: 0}
-  snapThreshold: 0.7
-  snapOffset: {x: 0, y: -0.2, z: 0}
 --- !u!61 &440243113
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1266,6 +1249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poppinCupSprite: {fileID: -8891852669829288390, guid: 5ad6aef59ceb1644fb7127de0222bc6d, type: 3}
+  matchaWithPoppinSprite: {fileID: -6771009301961453599, guid: 6737b15dd2f742b4088671910bb372a8, type: 3}
 --- !u!1 &451869677
 GameObject:
   m_ObjectHideFlags: 0
@@ -2274,7 +2258,6 @@ GameObject:
   - component: {fileID: 996660861}
   - component: {fileID: 996660864}
   - component: {fileID: 996660863}
-  - component: {fileID: 996660862}
   - component: {fileID: 996660865}
   m_Layer: 0
   m_Name: Aloe Jelly
@@ -2298,21 +2281,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 616174736}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &996660862
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 996660860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58e0a5d64eddc444694891874addfe8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapPoint: {fileID: 0}
-  snapThreshold: 0.7
-  snapOffset: {x: 0, y: -0.2, z: 0}
 --- !u!61 &996660863
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2427,6 +2395,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aloeCupSprite: {fileID: -1231341891186751354, guid: 8febd10e160feb849be2287893992125, type: 3}
+  matchaWithAloeSprite: {fileID: 8379732681861297503, guid: fb4b849d2370312488703759b30b914a, type: 3}
+  mangoWithAloeSprite: {fileID: -2586768722040249087, guid: 3b362d02ffbf85f4aa7233329c8a4952, type: 3}
 --- !u!1 &1066240585
 GameObject:
   m_ObjectHideFlags: 0
@@ -2902,6 +2872,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   matchaOnlySprite: {fileID: 2150198551892363791, guid: 74739c4bc6d2734489d32d092540a52c, type: 3}
   matchaWithBobaSprite: {fileID: -784692581750019777, guid: 4e69a021962c2084bb1301663bf4037a, type: 3}
+  matchaWithAloeSprite: {fileID: 8379732681861297503, guid: fb4b849d2370312488703759b30b914a, type: 3}
+  matchaWithPoppinSprite: {fileID: -6771009301961453599, guid: 6737b15dd2f742b4088671910bb372a8, type: 3}
 --- !u!1 &1443796746
 GameObject:
   m_ObjectHideFlags: 0
@@ -3206,6 +3178,158 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1444163022}
   m_CullTransparentMesh: 1
+--- !u!1 &1464867929
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1464867933}
+  - component: {fileID: 1464867932}
+  - component: {fileID: 1464867931}
+  - component: {fileID: 1464867930}
+  m_Layer: 0
+  m_Name: mangow/boba
+  m_TagString: mangow/boba
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1464867930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464867929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e8db8a5352eb407ea374f739feeee0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasBoba: 1
+  hasAloe: 0
+  hasMatcha: 0
+  hasMango: 1
+  hasPoppin: 0
+--- !u!61 &1464867931
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464867929}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.06, y: 0.06}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.06, y: 0.06}
+  m_EdgeRadius: 0
+--- !u!212 &1464867932
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464867929}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 1755747747064077749, guid: b63d0b8a2c271a54490b364db7725e88, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1464867933
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464867929}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.4090652, y: 1.5159079, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1569795630
 GameObject:
   m_ObjectHideFlags: 0
@@ -4225,3 +4349,4 @@ SceneRoots:
   - {fileID: 1198830709}
   - {fileID: 616174736}
   - {fileID: 191840047}
+  - {fileID: 1464867933}

@@ -13,6 +13,12 @@ TagManager:
   - aloew/cup
   - poppinw/cup
   - matchaOnly
+  - mangoOnly
+  - matchaw/aloe
+  - matchaw/boba
+  - matchaw/poppin
+  - mangow/aloe
+  - mangow/boba
   layers:
   - Default
   - TransparentFX

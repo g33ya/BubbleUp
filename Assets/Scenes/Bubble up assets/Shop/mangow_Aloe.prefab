@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7794389447993196635
+--- !u!1 &6391138246895621380
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,41 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 9048049969727471896}
-  - component: {fileID: 8527151352344011440}
-  - component: {fileID: 1341319306225983047}
-  - component: {fileID: 3123876155224631926}
-  - component: {fileID: -1962411947889298792}
-  - component: {fileID: -787679954404103389}
+  - component: {fileID: 6562062001928825136}
+  - component: {fileID: 5546960383778269178}
+  - component: {fileID: 2883260292621192748}
+  - component: {fileID: 6508923356215001225}
+  - component: {fileID: 3922548547434894416}
   m_Layer: 0
-  m_Name: Cup
-  m_TagString: cup
+  m_Name: mangow_Aloe
+  m_TagString: mangow/aloe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &9048049969727471896
+--- !u!4 &6562062001928825136
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7794389447993196635}
+  m_GameObject: {fileID: 6391138246895621380}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.35, y: -0.89, z: 0}
-  m_LocalScale: {x: 0.20832117, y: 0.2072679, z: 1}
+  m_LocalPosition: {x: 2.4090652, y: 1.5159079, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &8527151352344011440
+--- !u!212 &5546960383778269178
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7794389447993196635}
+  m_GameObject: {fileID: 6391138246895621380}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -79,25 +78,58 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 228835466367813266, guid: 565df8667e309fd498602fde46a6041b, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -2586768722040249087, guid: 3b362d02ffbf85f4aa7233329c8a4952, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 8.8, y: 7.51}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1341319306225983047
+--- !u!114 &2883260292621192748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6391138246895621380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e8db8a5352eb407ea374f739feeee0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasBoba: 0
+  hasAloe: 1
+  hasMatcha: 0
+  hasMango: 1
+  hasPoppin: 0
+--- !u!114 &6508923356215001225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6391138246895621380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ef1c5a58902487ba2104e0bb6d532f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mangoCupSprite: {fileID: 2096412399073885462, guid: 72e26e27b4f3fb843a65b359e4a2b24f, type: 3}
+  mangoWithAloeSprite: {fileID: -2586768722040249087, guid: 3b362d02ffbf85f4aa7233329c8a4952, type: 3}
+  mangoWithBobaSprite: {fileID: 1755747747064077749, guid: b63d0b8a2c271a54490b364db7725e88, type: 3}
+  mangoWithPoppinSprite: {fileID: -6971235186392487740, guid: 9ae21b2e7767e8947acd6095ed35e4c9, type: 3}
+--- !u!61 &3922548547434894416
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7794389447993196635}
+  m_GameObject: {fileID: 6391138246895621380}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -129,70 +161,11 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 8.8, y: 7.51}
-    newSize: {x: 8.8, y: 7.51}
+    oldSize: {x: 11.6, y: 7.51}
+    newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 8.8, y: 7.51}
+  m_Size: {x: 11.6, y: 7.51}
   m_EdgeRadius: 0
---- !u!114 &3123876155224631926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7794389447993196635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58e0a5d64eddc444694891874addfe8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapPoint: {fileID: 0}
-  snapThreshold: 0.7
-  snapOffset: {x: 0, y: -0.2, z: 0}
---- !u!50 &-1962411947889298792
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7794389447993196635}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &-787679954404103389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7794389447993196635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e8db8a5352eb407ea374f739feeee0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hasBoba: 0
-  hasAloe: 0
-  hasMatcha: 0
-  hasMango: 0
-  hasPoppin: 0

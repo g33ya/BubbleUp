@@ -5,6 +5,10 @@ public class AddPopping : MonoBehaviour
      public Sprite poppinCupSprite;
     // public GameObject cupObject;
     public Sprite matchaWithPoppinSprite;
+
+    public Sprite mangoWithPoppinSprite;
+
+    
     
 
 
@@ -20,7 +24,10 @@ public class AddPopping : MonoBehaviour
             SpriteRenderer sr = cup.GetComponent<SpriteRenderer>();
             CupState state = cup.GetComponent<CupState>();
             if (sr != null && state != null){
-                if(state.hasMatcha){
+                if(state.hasMango){
+                    sr.sprite = mangoWithPoppinSprite;
+                }
+                else if(state.hasMatcha){
                     sr.sprite = matchaWithPoppinSprite;
                 }
                 else{

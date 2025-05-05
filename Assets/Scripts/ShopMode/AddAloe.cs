@@ -4,6 +4,8 @@ public class AddAloe : MonoBehaviour
 {
       public Sprite aloeCupSprite;
       public Sprite matchaWithAloeSprite;
+
+      public Sprite mangoWithAloeSprite;
     // public GameObject cupObject;
 
     void OnMouseDown()
@@ -21,6 +23,8 @@ public class AddAloe : MonoBehaviour
             if (sr != null && state != null){
                 if(state.hasMatcha){
                     sr.sprite = matchaWithAloeSprite;
+                }else if(state.hasMango){
+                    sr.sprite = mangoWithAloeSprite;
                 }else{
                      sr.sprite = aloeCupSprite;
                 }
