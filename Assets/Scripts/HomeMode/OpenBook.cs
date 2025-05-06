@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class OpenBed : MonoBehaviour
+public class OpenBook : MonoBehaviour
 {
     public GameObject calendarUI;
     public GameObject computerUI;
@@ -15,13 +15,14 @@ public class OpenBed : MonoBehaviour
     {
         if (!computerUI.activeSelf && 
             !calendarUI.activeSelf && 
+            !bedUI.activeSelf &&
             !doorUI.activeSelf &&
-            !catUI.activeSelf &&
             !recordUI.activeSelf &&
             !journalUI.activeSelf &&
-            !booksUI.activeSelf)
+            !recordUI.activeSelf)
         {
-            bedUI.SetActive(true);
+            booksUI.SetActive(true);
         }
     }
 }
+
