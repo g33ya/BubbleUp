@@ -107,6 +107,8 @@ MonoBehaviour:
   hasMatcha: 0
   hasMango: 0
   hasTaro: 1
+  hasMilk: 0
+  hasBrownSugar: 0
   hasPoppin: 0
 --- !u!114 &7072290303023556406
 MonoBehaviour:
@@ -122,6 +124,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taroOnlySprite: {fileID: -83516185683859780, guid: d88573a5169b4e140bfd0ea97a3e682c, type: 3}
   taroWithAloeSprite: {fileID: 0}
+  taroWithBobaSprite: {fileID: 0}
+  taroWithPoppinSprite: {fileID: 0}
 --- !u!61 &5338901954978804448
 BoxCollider2D:
   m_ObjectHideFlags: 0

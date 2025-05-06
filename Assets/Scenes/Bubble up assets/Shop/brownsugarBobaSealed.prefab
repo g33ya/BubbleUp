@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6992484972945932334}
   - component: {fileID: 6190761397773907173}
   - component: {fileID: -446199613224995530}
+  - component: {fileID: -3359093262464940849}
   m_Layer: 0
   m_Name: brownsugarBobaSealed
   m_TagString: bobaSealedw/BrownSugar
@@ -78,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 4316991545061791639, guid: 7cb30ee6209dfb946abfa93640dafc92, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -161,7 +162,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 8.22, y: 7.13}
+    oldSize: {x: 2.163158, y: 1.8763158}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -169,3 +170,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 8.22, y: 7.13}
   m_EdgeRadius: 0
+--- !u!114 &-3359093262464940849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8549518895370683587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58e0a5d64eddc444694891874addfe8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapPoint: {fileID: 0}
+  snapThreshold: 0.7
+  snapOffset: {x: 0, y: -0.2, z: 0}

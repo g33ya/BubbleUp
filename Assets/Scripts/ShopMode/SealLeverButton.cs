@@ -4,137 +4,117 @@ public class SealLeverButton : MonoBehaviour
 {
     public Sprite noCup;
     public Sprite withCup;
-    public GameObject sealedCupPrefab;
-    public Transform spawnPoint; //where the sealed cup will appear, like location
-    private SpriteRenderer spriteRenderer; //changes the image during the game
+    public Transform spawnPoint;
+    private SpriteRenderer spriteRenderer;
 
-     public Sprite mangoSealed;
-    public Sprite mangoBobaSealed;
-    public Sprite mangoAloeSealed;
-    public Sprite mangoPoppinSealed;
-    public Sprite taroSealed;
-    public Sprite taroBobaSealed;
-    public Sprite taroPoppinSealed;
-    public Sprite taroAloeSealed;
-    public Sprite milkSealed;
-    public Sprite milkBobaSealed;
-    public Sprite milkAloeSealed;
-    public Sprite milkPoppinSealed;
-    public Sprite brownsugarSealed;
-    public Sprite brownsugarBobaSealed;
-    public Sprite matchaSealed;
-    public Sprite matchaBobaSealed;
-    public Sprite matchaPoppinSealed;
-    public Sprite matchaAloeSealed;
+    public GameObject mangoSealed, mangoBobaSealed, mangoAloeSealed, mangoPoppinSealed;
+    public GameObject taroSealed, taroBobaSealed, taroPoppinSealed, taroAloeSealed;
+    public GameObject milkSealed, milkBobaSealed, milkAloeSealed, milkPoppinSealed;
+    public GameObject brownsugarSealed, brownsugarBobaSealed;
+    public GameObject matchaSealed, matchaBobaSealed, matchaPoppinSealed, matchaAloeSealed;
 
     private bool cupIsSealed = false;
     private GameObject currentCup;
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.sprite = noCup; //the game will start with no cup
+        spriteRenderer.sprite = noCup;
     }
 
-
-    private void OnTriggerEnter2D(Collider2D other){
-        if(!cupIsSealed && other.CompareTag("inProgressCup")){
-            spriteRenderer.sprite = withCup; //when you drag the cup, now the cup should appear in the machine
-            currentCup = other.gameObject;
-           // Destroy(other.gameObject); //removes the cup after you have dragged it to the seal machine
-        }
-    }
-
-void OnMouseDown()
-{
-    Debug.Log("lever clicked");
-    //only run if we havent already sealed a cup
-    if (!cupIsSealed && sealedCupPrefab != null && spawnPoint != null && currentCup != null)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        SpriteRenderer oldSR = currentCup.GetComponent<SpriteRenderer>();
-        CupState state = currentCup.GetComponent<CupState>();
-
-        Sprite sealedSprite = null;
-
-        if (state != null)
+        if (!cupIsSealed && other.CompareTag("cup"))
         {
-            if (state.hasMango && state.hasBoba){
-                sealedSprite = mangoBobaSealed;
-            }
-            else if (state.hasMango && state.hasAloe){
-                sealedSprite = mangoAloeSealed;
-            }
-            else if (state.hasMango && state.hasPoppin){
-                sealedSprite = mangoPoppinSealed;
-            }
-            else if (state.hasMango){
-                sealedSprite = mangoSealed;
-            }
-            else if (state.hasTaro){
-                sealedSprite = taroSealed;
-            }
-            else if(state.hasTaro &&state.hasBoba){
-                sealedSprite = taroBobaSealed;
-            }
-            else if(state.hasTaro && state.hasAloe){
-                sealedSprite = taroAloeSealed;
-            }
-            else if(state.hasTaro && state.hasPoppin){
-                sealedSprite = taroPoppinSealed;
-            }
-            else if(state.hasMilk){
-                sealedSprite = milkSealed;
-            }
-             else if(state.hasMilk && state.hasPoppin){
-                sealedSprite = milkPoppinSealed;
-            }
-             else if(state.hasMilk && state.hasBoba){
-                sealedSprite = milkBobaSealed;
-            }
-             else if(state.hasMilk && state.hasAloe){
-                sealedSprite = milkAloeSealed;
-            }
-            else if(state.hasMatcha){
-                sealedSprite = matchaSealed;
-            }
-            else if(state.hasMatcha && state.hasBoba){
-                sealedSprite = matchaBobaSealed;
-            }
-            else if(state.hasMatcha && state.hasAloe){
-                sealedSprite = matchaAloeSealed;
-            }
-            else if(state.hasMatcha && state.hasPoppin){
-                sealedSprite = matchaPoppinSealed;
-            }
-            else if(state.hasBrownSugar){
-                sealedSprite = brownsugarSealed;
-            }
-            else if(state.hasBrownSugar && state.hasBoba){
-                sealedSprite = brownsugarBobaSealed;
-            }
+            spriteRenderer.sprite = withCup;
+            currentCup = other.gameObject;
+           
         }
-
-        Destroy(currentCup);
-
-        GameObject sealedCup = Instantiate(sealedCupPrefab, spawnPoint.position, Quaternion.identity);
-
-        SealedCupDisplay display = sealedCup.GetComponent<SealedCupDisplay>();
-        if (display != null)
-        {
-            display.SetSealedSprite(sealedSprite);
-        }
-
-        cupIsSealed = true;
-        StartCoroutine(ResetLever());
     }
-}
-    private System.Collections.IEnumerator ResetLever(){
+
+    void OnMouseDown()
+    {
+        Debug.Log("lever clicked");
+
+        if (!cupIsSealed && spawnPoint != null && currentCup != null)
+        {
+            CupState state = currentCup.GetComponent<CupState>();
+            GameObject prefabToSpawn = GetSealedCupPrefab(state);
+
+            if (prefabToSpawn != null)
+            {
+                Debug.Log("Spawning sealed cup: " + prefabToSpawn.name);
+                Instantiate(prefabToSpawn, spawnPoint.position, Quaternion.identity);
+                Destroy(currentCup); //destroys hidden cup
+                cupIsSealed = true;
+                StartCoroutine(ResetLever());
+            }
+            else
+            {
+                Debug.LogWarning("No matching sealed cup prefab found.");
+            }
+        }
+    }
+private GameObject GetSealedCupPrefab(CupState state)
+    {
+        if (state == null) return null;
+
+        if (state.hasMango && state.hasBoba) return mangoBobaSealed;
+        if (state.hasMango && state.hasAloe) return mangoAloeSealed;
+        if (state.hasMango && state.hasPoppin) return mangoPoppinSealed;
+        if (state.hasMango) return mangoSealed;
+
+        if (state.hasTaro && state.hasBoba) return taroBobaSealed;
+        if (state.hasTaro && state.hasAloe) return taroAloeSealed;
+        if (state.hasTaro && state.hasPoppin) return taroPoppinSealed;
+        if (state.hasTaro) return taroSealed;
+
+        if (state.hasMilk && state.hasBoba) return milkBobaSealed;
+        if (state.hasMilk && state.hasAloe) return milkAloeSealed;
+        if (state.hasMilk && state.hasPoppin) return milkPoppinSealed;
+        if (state.hasMilk) return milkSealed;
+
+        if (state.hasBrownSugar && state.hasBoba) return brownsugarBobaSealed;
+        if (state.hasBrownSugar) return brownsugarSealed;
+
+        if (state.hasMatcha && state.hasBoba) return matchaBobaSealed;
+        if (state.hasMatcha && state.hasAloe) return matchaAloeSealed;
+        if (state.hasMatcha && state.hasPoppin) return matchaPoppinSealed;
+        if (state.hasMatcha) return matchaSealed;
+
+        return null;
+    }
+
+    private System.Collections.IEnumerator ResetLever()
+    {
         yield return new WaitForSeconds(0.5f); // wait half a second
         spriteRenderer.sprite = noCup; //seeting sprite back to empty
         cupIsSealed = false; // allow next cup to be sealed
     }
+}
+
+
+//        // Destroy(currentCup);
+//         if(prefabToSpawn != null){
+//              GameObject sealedCup = Instantiate(prefabToSpawn, spawnPoint.position, Quaternion.identity);
+
+//         // SealedCupDisplay display = sealedCup.GetComponent<SealedCupDisplay>();
+//         // if (display != null)
+//         // {
+//         //     display.SetSealedSprite(sealedSprite);
+//         // }
+
+//         cupIsSealed = true;
+//         StartCoroutine(ResetLever());
+//         }
+//     }
+// }
+//     private System.Collections.IEnumerator ResetLever(){
+//         yield return new WaitForSeconds(0.5f); // wait half a second
+//         spriteRenderer.sprite = noCup; //seeting sprite back to empty
+//         cupIsSealed = false; // allow next cup to be sealed
+//     }
+
 
 
 //      void OnMouseDown(){
@@ -156,10 +136,12 @@ void OnMouseDown()
 // }
 
 
+    
+
      
     // Update is called once per frame
-    void Update()
-    {
+//     void Update()
+//     {
         
-    }
-}
+//     }
+// }

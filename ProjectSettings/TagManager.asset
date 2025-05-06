@@ -30,6 +30,24 @@ TagManager:
   - milkw/boba
   - milkw/Aloe
   - milkw/Poppin
+  - Sealedw/BrownSugar
+  - Sealedw/Milk
+  - Sealedw/Taro
+  - Sealedw/Mango
+  - Sealedw/Matcha
+  - bobaSealedw/BrownSugar
+  - bobaSealedw/milk
+  - bobaSealedw/matcha
+  - bobaSealedw/mango
+  - bobaSealedw/taro
+  - poppinSealedw/milk
+  - poppinSealedw/mango
+  - poppinSealedw/taro
+  - poppinSealedw/matcha
+  - aloeSealedw/milk
+  - aloeSealedw/matcha
+  - aloeSealedw/mango
+  - aloeSealedw/taro
   layers:
   - Default
   - TransparentFX
