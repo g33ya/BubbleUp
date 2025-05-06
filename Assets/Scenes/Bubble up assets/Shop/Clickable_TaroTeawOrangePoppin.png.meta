@@ -119,12 +119,12 @@ TextureImporter:
       name: "Clickable_TaroTeaw\uF022OrangePoppin_0"
       rect:
         serializedVersion: 2
-        x: 56
-        y: 849
-        width: 6
-        height: 6
+        x: 346
+        y: 221
+        width: 1141
+        height: 769
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -146,7 +146,7 @@ TextureImporter:
         width: 822
         height: 713
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -163,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 158911eda87cf40ad8ef51f532d77572
     internalID: 0
     vertices: []
     indices: 
