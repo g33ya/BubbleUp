@@ -4,6 +4,61 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects: {}
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/OutsideCafeScene.unity
+    guid: 025a8eea0db5f5b489abc22bf46ad322
+  - enabled: 1
+    path: Assets/Scenes/Shop 1 Monday.unity
+    guid: 4ad37b25d62ccbd4b9825e546a9b489f
+  - enabled: 1
+    path: Assets/Scenes/BackOfCafeScene.unity
+    guid: c888dbba32b956c4bacda5f3838e2d8e
+  - enabled: 1
+    path: Assets/Scenes/Shop 2 Monday.unity
+    guid: 3ff78300ee7bb70459b271c03c229b7b
+  - enabled: 1
+    path: Assets/Scenes/HomeMode.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Shop 3 Monday.unity
+    guid: be8723142bd20a84cb5a1921aaa3e2e6
+  - enabled: 1
+    path: Assets/Scenes/Shop 4 Monday.unity
+    guid: c548711656bae204b8025ce38c6235a8
+  - enabled: 1
+    path: Assets/Scenes/Shop 1 Tuesday.unity
+    guid: c749b99e5713251418a9148a8b243f23
+  - enabled: 1
+    path: Assets/Scenes/Shop 2 Tuesday.unity
+    guid: 4504ed18164c3fc4f985469d3e35b871
+  - enabled: 1
+    path: Assets/Scenes/Shop 3 Tuesday.unity
+    guid: d6767a85fe660c245b836328d171fa85
+  - enabled: 1
+    path: Assets/Scenes/Shop 1 Wednesday.unity
+    guid: 9ad302e9ccea87a4b8c28c2a9a22cb7c
+  - enabled: 1
+    path: Assets/Scenes/Shop 2 Wednesday.unity
+    guid: b2264e01de4257c4dbbce8438bbfeaaf
+  - enabled: 1
+    path: Assets/Scenes/Shop 3 Wednesday.unity
+    guid: d0bb672f0c6c19b4c83b96afb4576f92
+  - enabled: 1
+    path: Assets/Scenes/Shop 4 Wednesday.unity
+    guid: 13cf3f24f169ea64586b42f143ada5d5
+  - enabled: 1
+    path: Assets/Scenes/Shop 1 Thursday.unity
+    guid: 682440d81a372df4783724674a672ffb
+  - enabled: 1
+    path: Assets/Scenes/Shop 2 Thursday.unity
+    guid: d27b13656a8220f4bb4ed45814daff63
+  - enabled: 1
+    path: Assets/Scenes/BackOfCafeScene 2 Monday.unity
+    guid: 805a051d74144d64cb01d8169c25d1eb
+  - enabled: 1
+    path: Assets/Scenes/BackOfCafeScene 3 Monday.unity
+    guid: 6dee418127a10ab4c8931ebb74e1f9a7
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
