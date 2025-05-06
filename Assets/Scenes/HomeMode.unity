@@ -5913,6 +5913,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1147899447}
   - {fileID: 359259685}
   - {fileID: 909567675}
   - {fileID: 314963517}
@@ -6267,6 +6268,7 @@ GameObject:
   - component: {fileID: 359065703}
   - component: {fileID: 359065702}
   - component: {fileID: 359065701}
+  - component: {fileID: 359065704}
   m_Layer: 0
   m_Name: Clickable_Books_0
   m_TagString: Untagged
@@ -6417,6 +6419,26 @@ MonoBehaviour:
   outlineMaterial: {fileID: 2100000, guid: 3eec5ec5549f83440aa72981970b557d, type: 2}
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineSize: 0.05
+--- !u!114 &359065704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359065698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82b5426787fa8a94790feed3ea9b946a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  calendarUI: {fileID: 1895568491}
+  computerUI: {fileID: 1781501196}
+  bedUI: {fileID: 1468029456}
+  doorUI: {fileID: 824032570}
+  catUI: {fileID: 231452535}
+  recordUI: {fileID: 1437993652}
+  journalUI: {fileID: 1434521890}
+  booksUI: {fileID: 1240992602}
 --- !u!1 &359259684
 GameObject:
   m_ObjectHideFlags: 0
@@ -17102,8 +17124,8 @@ MonoBehaviour:
   BedUI: {fileID: 1468029456}
   closeButton: {fileID: 141351508}
   startButton: {fileID: 540359605}
-  timeManager: {fileID: 0}
-  levelManager: {fileID: 0}
+  timeManager: {fileID: 725658458}
+  levelManager: {fileID: 593411906}
 --- !u!1 &984264760
 GameObject:
   m_ObjectHideFlags: 0
@@ -19452,6 +19474,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1147835487}
   m_CullTransparentMesh: 1
+--- !u!1 &1147899446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1147899447}
+  - component: {fileID: 1147899448}
+  m_Layer: 5
+  m_Name: BookManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1147899447
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147899446}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -1.991521}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 351004934}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -11.001221, y: -27.970947}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1147899448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147899446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 884f5c3f985a994479258950f1990595, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropdown: {fileID: 2084244877}
+  plusEnergyText: {fileID: 860823176}
+  minusStressText: {fileID: 596511653}
+  stressText: {fileID: 0}
+  energyText: {fileID: 0}
+  BookUI: {fileID: 1240992602}
+  closeButton: {fileID: 681617690}
+  startButton: {fileID: 314963516}
+  timeManager: {fileID: 725658458}
+  levelManager: {fileID: 593411906}
 --- !u!1 &1148240071
 GameObject:
   m_ObjectHideFlags: 0
@@ -26913,6 +26993,7 @@ GameObject:
   - component: {fileID: 1483308415}
   - component: {fileID: 1483308420}
   - component: {fileID: 1483308419}
+  - component: {fileID: 1483308421}
   m_Layer: 0
   m_Name: Clickable_Calendar_0
   m_TagString: Untagged
@@ -27078,6 +27159,26 @@ MonoBehaviour:
   outlineMaterial: {fileID: 2100000, guid: 3eec5ec5549f83440aa72981970b557d, type: 2}
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineSize: 0.05
+--- !u!114 &1483308421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483308414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82b5426787fa8a94790feed3ea9b946a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  calendarUI: {fileID: 0}
+  computerUI: {fileID: 0}
+  bedUI: {fileID: 0}
+  doorUI: {fileID: 0}
+  catUI: {fileID: 0}
+  recordUI: {fileID: 0}
+  journalUI: {fileID: 0}
+  booksUI: {fileID: 0}
 --- !u!1 &1493497829
 GameObject:
   m_ObjectHideFlags: 0
