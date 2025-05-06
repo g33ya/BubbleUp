@@ -3,8 +3,6 @@ using UnityEngine;
 public class CupState : MonoBehaviour
 {
     public bool hasBoba = false;
-
-    public bool hasAloe = false;
     public bool hasMatcha = false;
     public bool hasMango = false;
     public bool hasTaro = false;

@@ -12,16 +12,10 @@ public class AddAloe : MonoBehaviour
 
     void OnMouseDown()
     {
-        
-        GameObject cup = CupButtonSpawner.currentCup;
-        if(cup == null){
-            return;
-        }
-        
-        if(cup != null && aloeCupSprite != null){
-
-            SpriteRenderer sr = cup.GetComponent<SpriteRenderer>();
-            CupState state = cup.GetComponent<CupState>();
+        if(CupButtonSpawner.currentCup != null && aloeCupSprite != null){
+            GameObject cup = CupButtonSpawner.currentCup;
+        SpriteRenderer sr = cup.GetComponent<SpriteRenderer>();
+        CupState state = cup.GetComponent<CupState>();
             if (sr != null && state != null){
                 if(state.hasMatcha){
                     sr.sprite = matchaWithAloeSprite;

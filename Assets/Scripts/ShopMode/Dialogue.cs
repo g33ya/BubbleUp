@@ -98,9 +98,70 @@ public class Dialogue : MonoBehaviour
                     kitchenButton.SetActive(true);
                 }
             }
+            if (currentScene==9){
+                if (step==2){
+                    position2.transform.position= new Vector3(-11.28f,1.154747f,0);
+                }
+                if (step==5){
+                    position1.transform.position= new Vector3(-11.28f,1.154747f,0);
+                    homeButton.SetActive(true);
+                }
             }
-           
+            if (currentScene==10){
+                if (step==7){
+                    kitchenButton.SetActive(true);
+                }
+            }
+            if (currentScene==11){
+                if (step==3){
+                    Character.SetActive(true);
+                   // position1.transform.position= new Vector3(-11.28f,1.154747f,0);
+                }
+                if (step==11){
+                    kitchenButton.SetActive(true);
+                }
+            }
+            if (currentScene==12){
+                if (step==3){
+                    position1.transform.position= new Vector3(-11.28f,1.154747f,0);
+                }
+                if (step==4){
+                    Character.SetActive(true);
+                }
+                if (step==7){
+                    kitchenButton.SetActive(true);
+                }
+            }
+            if (currentScene==13){
+                if (step==10){
+                    position1.transform.position= new Vector3(-11.28f,1.154747f,0);
+                    homeButton.SetActive(true);
+                }
+            }
+            if (currentScene==14){
+                if (step==14){
+                    kitchenButton.SetActive(true);
+                }
+            }
+             if (currentScene==15){
+                if (step==3){
+                    Character.SetActive(true);
+                }
+                if (step==8){
+                    kitchenButton.SetActive(true);
+                }
+            }
+           if (currentScene==16){
+                if (step==2){
+                    position2.transform.position= new Vector3(-11.28f,1.154747f,0);
+                }
+                if (step==4){
+                    position1.transform.position= new Vector3(-11.28f,1.154747f,0);
+                    homeButton.SetActive(true);
+                }
+            }
         }
+    }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

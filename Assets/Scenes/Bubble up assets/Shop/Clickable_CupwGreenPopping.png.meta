@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Clickable_Cupw\uF022GreenPopping_0": -7593550437546395993
+      "Clickable_Cupw\uF022GreenPopping_1": 208202971174541732
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

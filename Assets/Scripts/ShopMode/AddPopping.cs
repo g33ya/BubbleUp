@@ -15,15 +15,14 @@ public class AddPopping : MonoBehaviour
 
     void OnMouseDown()
     {
+        if(CupButtonSpawner.currentCup != null && poppinCupSprite != null){
 
-         GameObject cup = CupButtonSpawner.currentCup;
-        if(cup == null){
-            return;
-        }
-        if(cup != null && poppinCupSprite != null){
-
+           GameObject cup = CupButtonSpawner.currentCup;
             SpriteRenderer sr = cup.GetComponent<SpriteRenderer>();
             CupState state = cup.GetComponent<CupState>();
+    
+
+            
             if (sr != null && state != null){
                 if(state.hasMango){
                     sr.sprite = mangoWithPoppinSprite;

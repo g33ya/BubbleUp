@@ -1283,6 +1283,7 @@ GameObject:
   - component: {fileID: 451869678}
   - component: {fileID: 451869681}
   - component: {fileID: 451869680}
+  - component: {fileID: 451869679}
   - component: {fileID: 451869682}
   m_Layer: 0
   m_Name: Boba Pearls
@@ -1306,6 +1307,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 616174736}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &451869679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451869677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58e0a5d64eddc444694891874addfe8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapPoint: {fileID: 0}
+  snapThreshold: 0.7
+  snapOffset: {x: 0, y: -0.2, z: 0}
 --- !u!61 &451869680
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1419,7 +1435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89f75e9b704244c43890fdb25612be03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bobaCupSprite: {fileID: 3490220934111244818, guid: fab127a6c3057af4ebf0d59930d2fcc2, type: 3}
+  bobaCupSprite: {fileID: 3490220934111244818, guid: ca50f6660007c43b2ac31a49de83231a, type: 3}
 --- !u!1 &535938850
 GameObject:
   m_ObjectHideFlags: 0
@@ -2849,6 +2865,7 @@ GameObject:
   - component: {fileID: 1230733416}
   - component: {fileID: 1230733419}
   - component: {fileID: 1230733418}
+  - component: {fileID: 1230733417}
   - component: {fileID: 1230733420}
   m_Layer: 0
   m_Name: Matcha Juice
@@ -2872,6 +2889,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 616174736}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1230733417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230733415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58e0a5d64eddc444694891874addfe8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapPoint: {fileID: 0}
+  snapThreshold: 0.7
+  snapOffset: {x: 0, y: -0.2, z: 0}
 --- !u!61 &1230733418
 BoxCollider2D:
   m_ObjectHideFlags: 0
