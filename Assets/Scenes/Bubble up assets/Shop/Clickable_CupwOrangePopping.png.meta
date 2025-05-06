@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 5ad6aef59ceb1644fb7127de0222bc6d
-=======
-guid: bc644f93f6e3d46af9e6b093c9b08df5
->>>>>>> 208125044a117132a60145706be8830ae3fa6429
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -123,12 +119,12 @@ TextureImporter:
       name: "Clickable_Cupw\uF022OrangePopping_0"
       rect:
         serializedVersion: 2
-        x: 56
-        y: 849
-        width: 6
-        height: 6
+        x: 389
+        y: 214
+        width: 1148
+        height: 788
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -150,7 +146,7 @@ TextureImporter:
         width: 822
         height: 713
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -167,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: dbd4eda5258ab4f64a081f85e9fac51f
     internalID: 0
     vertices: []
     indices: 

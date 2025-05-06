@@ -9,22 +9,25 @@ public class AddBoba : MonoBehaviour
 
     void OnMouseDown()
     {
-        if(CupButtonSpawner.currentCup != null && bobaCupSprite != null){
+        GameObject cup = CupButtonSpawner.currentCup;
+        if(cup == null){
+            return;
+        }
+       
+        if(cup != null && bobaCupSprite != null){
 
-            SpriteRenderer sr = CupButtonSpawner.currentCup.GetComponent<SpriteRenderer>();
-            if (sr != null){
+            SpriteRenderer sr = cup.GetComponent<SpriteRenderer>();
+            CupState state = cup.GetComponent<CupState>();
+            if (sr != null && state != null){
                 sr.sprite = bobaCupSprite;
+                state.hasBoba = true;
+
             }
         }
     }
-    void Start()
-    {
-        
-    }
+    void Start() { }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    void Update() { }
 }
+

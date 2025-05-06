@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 6737b15dd2f742b4088671910bb372a8
-=======
-guid: ebe10c4dcaf4e48c8acf012a8afa7ae5
->>>>>>> 208125044a117132a60145706be8830ae3fa6429
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -123,12 +119,12 @@ TextureImporter:
       name: "Clickable_Matchaw\uF022OrangePoppin_0"
       rect:
         serializedVersion: 2
-        x: 56
-        y: 849
-        width: 6
-        height: 6
+        x: 334
+        y: 221
+        width: 1184
+        height: 787
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -150,7 +146,7 @@ TextureImporter:
         width: 822
         height: 713
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -167,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9e0278a38921c4f30afd8436a2dfde93
     internalID: 0
     vertices: []
     indices: 
