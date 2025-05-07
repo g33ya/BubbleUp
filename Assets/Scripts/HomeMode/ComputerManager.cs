@@ -51,9 +51,13 @@ public class ComputerManager : MonoBehaviour
     void Start()
     {
         Debug.Log("ComputerManager started"); // Debug log to check if the script is running
+        
         assignment1 = new Assignment("Assignment 1", 180);
         assignment2 = new Assignment("Assignment 2", 225);
-
+        /*
+        assignment1 = GameStateManager.Instance.assignment1;
+        assignment2 = GameStateManager.Instance.assignment2;
+        */
         startWorkingButton.onClick.AddListener(OnButtonClick);
         startWorkingButton2.onClick.AddListener(OnButtonClick2);
         dropdown.onValueChanged.AddListener(delegate { OnDropdownValueChanged(); });
@@ -170,7 +174,7 @@ public class ComputerManager : MonoBehaviour
 
         if (levelManager.stressLevel + (selectedOptionNum * 0.4) >= 100)
         {
-            startWorkingButton.interactable = false; // Disable the button if not enough energy
+            startWorkingButton2.interactable = false; // Disable the button if not enough energy
             tooStressedText2.gameObject.SetActive(true); 
             if (levelManager.energyLevel - (selectedOptionNum * 0.2) <= 0){
                 notEnoughEnergyText2.gameObject.SetActive(true); 

@@ -12,6 +12,9 @@ public class GameStateManager : MonoBehaviour
 
     private void Awake()
     {
+        assignment1 = new Assignment("Assignment 1", 180);
+        assignment2 = new Assignment("Assignment 2", 225);
+        
         if (Instance == null)
         {
             Instance = this;
