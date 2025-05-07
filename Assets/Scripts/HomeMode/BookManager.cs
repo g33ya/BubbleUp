@@ -1,16 +1,15 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
 
 public class BookManager : MonoBehaviour
 {
     // UI elements
-    public TMP_Dropdown dropdown; 
-    public TMP_Text plusEnergyText;
-    public TMP_Text minusStressText;
-    public TMP_Text stressText;
-    public TMP_Text energyText;
+    public TMP_Dropdown dropdown;
+    public TMP_Text plusEnergyText;     
+    public TMP_Text minusStressText;    
+    public TMP_Text stressText;         
+    public TMP_Text energyText;         
     public GameObject BookUI;
     public GameObject closeButton;
     public GameObject startButton;
@@ -24,62 +23,53 @@ public class BookManager : MonoBehaviour
         BookUI.SetActive(false);
 
         dropdown.onValueChanged.AddListener(delegate { OnDropdownValueChanged(); });
-        closeButton.GetComponent<Button>().onClick.AddListener(CloseSleep);
-        startButton.GetComponent<Button>().onClick.AddListener(StartSleep);
+        closeButton.GetComponent<Button>().onClick.AddListener(CloseBook);
+        startButton.GetComponent<Button>().onClick.AddListener(StartReading);
     }
 
-    void StartSleep(){
+    // Starts reading and applies stat changes
+    void StartReading()
+    {
         int selectedIndex = dropdown.value;
         string selectedOptionString = dropdown.options[selectedIndex].text;
-        int selectedSleepTime = 0;
+        int selectedReadTime = GetMinutesFromOption(selectedOptionString);
 
-        if (selectedOptionString == "30 min") selectedSleepTime = 30;
-        else if (selectedOptionString == "1 hr") selectedSleepTime = 60;
-        else if (selectedOptionString == "2 hr") selectedSleepTime = 120;
-        else if (selectedOptionString == "3 hr") selectedSleepTime = 180;
-        else if (selectedOptionString == "4 hr") selectedSleepTime = 240;
+        timeManager.AddTime(selectedReadTime); // Simulate reading time
 
-        timeManager.AddTime(selectedSleepTime); // Simulate time passing - Gia
-
-        // Energy & Stress Stat Change
-        levelManager.IncreaseEnergyLevel((int)(selectedSleepTime * 0.3f)); 
-        levelManager.DecreaseStressLevel((int)(selectedSleepTime * 0.2f)); 
+        // Adjust stats
+        levelManager.IncreaseEnergyLevel((int)(selectedReadTime * 0.3f)); // Reusing energy field for knowledge
+        levelManager.DecreaseStressLevel((int)(selectedReadTime * 0.2f));
 
         BookUI.SetActive(false);
 
-        UpdateSleepTextDisplay();
+        UpdateStatDisplay();
     }
 
+    // Updates projected changes when dropdown is changed
     void OnDropdownValueChanged()
     {
         int selectedIndex = dropdown.value;
         string selectedOptionString = dropdown.options[selectedIndex].text;
-        int selectedOptionNum = 0;
+        int selectedOptionNum = GetMinutesFromOption(selectedOptionString);
 
-        if (selectedOptionString == "30 min") selectedOptionNum = 30;
-        else if (selectedOptionString == "1 hr") selectedOptionNum = 60;
-        else if (selectedOptionString == "2 hr") selectedOptionNum = 120;
-        else if (selectedOptionString == "3 hr") selectedOptionNum = 180;
-        else if (selectedOptionString == "4 hr") selectedOptionNum = 240;
-
-        int plusEnergy = (int)(selectedOptionNum * 0.2f);
+        int plusKnowledge = (int)(selectedOptionNum * 0.2f);
         int minusStress = (int)(selectedOptionNum * 0.3f);
 
-        plusEnergyText.text = $"+ {plusEnergy} Energy";
+        plusEnergyText.text = $"+ {plusKnowledge} Knowledge";
         minusStressText.text = $"- {minusStress} Stress";
 
-        UpdateSleepTextDisplay();
+        UpdateStatDisplay();
     }
 
-    // Updates the player's Stats
-    void UpdateSleepTextDisplay()
+    // Update the on-screen player stats
+    void UpdateStatDisplay()
     {
         stressText.text = "Stress: " + levelManager.stressLevel;
         energyText.text = "Energy: " + levelManager.energyLevel;
     }
 
-    // Hides the Sleep Menu
-    public void CloseSleep()
+    // Close the book reading UI
+    public void CloseBook()
     {
         BookUI.SetActive(false);
     }
@@ -88,14 +78,32 @@ public class BookManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            CloseSleep();
+            CloseBook();
         }
     }
 
-    //Function that is use to play any Sound in the game - will move to logic manager soon
-    public void playSound(AudioSource sound){
-        if(sound != null){
+    // Plays a given sound
+    public void PlaySound(AudioSource sound)
+    {
+        if (sound != null)
+        {
             sound.Play();
+        }
+    }
+
+     // Allows player to close UI with Escape key
+
+    // Helper function to convert dropdown text to time in minutes
+    int GetMinutesFromOption(string option)
+    {
+        switch (option)
+        {
+            case "30 min": return 30;
+            case "1 hr": return 60;
+            case "2 hr": return 120;
+            case "3 hr": return 180;
+            case "4 hr": return 240;
+            default: return 0;
         }
     }
 }

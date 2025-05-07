@@ -5,15 +5,15 @@ using System.Collections;
 
 public class DoorManager : MonoBehaviour
 {
-    // UI elements
+    // UI elements for the Door
     public TMP_Dropdown dropdown; 
-    public TMP_Text plusEnergyText;
-    public TMP_Text minusStressText;
-    public TMP_Text stressText;
-    public TMP_Text energyText;
-    public GameObject DoorUI;
-    public GameObject closeButton;
-    public GameObject startButton;
+    public TMP_Text plusEnergyText;      
+    public TMP_Text minusStressText;   
+    public TMP_Text stressText;           
+    public TMP_Text energyText;        
+    public GameObject DoorUI;          
+    public GameObject closeButton;      
+    public GameObject startButton;      
 
     // Game systems
     public TimeManager timeManager;
@@ -21,80 +21,87 @@ public class DoorManager : MonoBehaviour
 
     void Start()
     {
-        DoorUI.SetActive(false);
+        DoorUI.SetActive(false);  // Hide the door interaction UI at start
 
         dropdown.onValueChanged.AddListener(delegate { OnDropdownValueChanged(); });
-        closeButton.GetComponent<Button>().onClick.AddListener(CloseSleep);
-        startButton.GetComponent<Button>().onClick.AddListener(StartSleep);
+        closeButton.GetComponent<Button>().onClick.AddListener(CloseDoorUI);
+        startButton.GetComponent<Button>().onClick.AddListener(StartDoorAction);
     }
 
-    void StartSleep(){
+    // Called when the player starts using the door (e.g. exits a room, takes a break)
+    void StartDoorAction()
+    {
         int selectedIndex = dropdown.value;
         string selectedOptionString = dropdown.options[selectedIndex].text;
-        int selectedSleepTime = 0;
+        int selectedTime = 0;
 
-        if (selectedOptionString == "30 min") selectedSleepTime = 30;
-        else if (selectedOptionString == "1 hr") selectedSleepTime = 60;
-        else if (selectedOptionString == "2 hr") selectedSleepTime = 120;
-        else if (selectedOptionString == "3 hr") selectedSleepTime = 180;
-        else if (selectedOptionString == "4 hr") selectedSleepTime = 240;
+        // Convert dropdown selection to minutes
+        if (selectedOptionString == "30 min") selectedTime = 30;
+        else if (selectedOptionString == "1 hr") selectedTime = 60;
+        else if (selectedOptionString == "2 hr") selectedTime = 120;
+        else if (selectedOptionString == "3 hr") selectedTime = 180;
+        else if (selectedOptionString == "4 hr") selectedTime = 240;
 
-        timeManager.AddTime(selectedSleepTime); // Simulate time passing - Gia
+        timeManager.AddTime(selectedTime); // Simulate time spent during door activity
 
-        // Energy & Stress Stat Change
-        levelManager.IncreaseEnergyLevel((int)(selectedSleepTime * 0.3f)); 
-        levelManager.DecreaseStressLevel((int)(selectedSleepTime * 0.2f)); 
+        // Apply stat changes from door interaction
+        levelManager.IncreaseEnergyLevel((int)(selectedTime * 0.3f)); 
+        levelManager.DecreaseStressLevel((int)(selectedTime * 0.2f)); 
 
-        DoorUI.SetActive(false);
+        DoorUI.SetActive(false); // Close UI after interaction
 
-        UpdateSleepTextDisplay();
+        UpdateDoorStatsDisplay();
     }
 
+    // Updates projected stat changes based on dropdown selection
     void OnDropdownValueChanged()
     {
         int selectedIndex = dropdown.value;
         string selectedOptionString = dropdown.options[selectedIndex].text;
-        int selectedOptionNum = 0;
+        int selectedTime = 0;
 
-        if (selectedOptionString == "30 min") selectedOptionNum = 30;
-        else if (selectedOptionString == "1 hr") selectedOptionNum = 60;
-        else if (selectedOptionString == "2 hr") selectedOptionNum = 120;
-        else if (selectedOptionString == "3 hr") selectedOptionNum = 180;
-        else if (selectedOptionString == "4 hr") selectedOptionNum = 240;
+        if (selectedOptionString == "30 min") selectedTime = 30;
+        else if (selectedOptionString == "1 hr") selectedTime = 60;
+        else if (selectedOptionString == "2 hr") selectedTime = 120;
+        else if (selectedOptionString == "3 hr") selectedTime = 180;
+        else if (selectedOptionString == "4 hr") selectedTime = 240;
 
-        int plusEnergy = (int)(selectedOptionNum * 0.2f);
-        int minusStress = (int)(selectedOptionNum * 0.3f);
+        int plusEnergy = (int)(selectedTime * 0.2f);
+        int minusStress = (int)(selectedTime * 0.3f);
 
         plusEnergyText.text = $"+ {plusEnergy} Energy";
         minusStressText.text = $"- {minusStress} Stress";
 
-        UpdateSleepTextDisplay();
+        UpdateDoorStatsDisplay();
     }
 
-    // Updates the player's Stats
-    void UpdateSleepTextDisplay()
+    // Updates the UI to show the player's current stats
+    void UpdateDoorStatsDisplay()
     {
         stressText.text = "Stress: " + levelManager.stressLevel;
         energyText.text = "Energy: " + levelManager.energyLevel;
     }
 
-    // Hides the Sleep Menu
-    public void CloseSleep()
+    // Hides the door interaction UI
+    public void CloseDoorUI()
     {
         DoorUI.SetActive(false);
     }
 
+    // Allows player to close the UI with Escape key
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            CloseSleep();
+            CloseDoorUI();
         }
     }
 
-    //Function that is use to play any Sound in the game - will move to logic manager soon
-    public void playSound(AudioSource sound){
-        if(sound != null){
+    // Plays a sound effect (e.g. door creak, footstep) — will move to LogicManager later
+    public void playSound(AudioSource sound)
+    {
+        if (sound != null)
+        {
             sound.Play();
         }
     }
