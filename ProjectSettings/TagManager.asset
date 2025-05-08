@@ -13,6 +13,41 @@ TagManager:
   - aloew/cup
   - poppinw/cup
   - matchaOnly
+  - mangoOnly
+  - matchaw/aloe
+  - matchaw/boba
+  - matchaw/poppin
+  - mangow/aloe
+  - mangow/boba
+  - mangow/poppin
+  - taroOnly
+  - tarow/aloe
+  - tarow/boba
+  - tarow/poppin
+  - brownsugarOnly
+  - brownsugarw/boba
+  - milkOnly
+  - milkw/boba
+  - milkw/Aloe
+  - milkw/Poppin
+  - Sealedw/BrownSugar
+  - Sealedw/Milk
+  - Sealedw/Taro
+  - Sealedw/Mango
+  - Sealedw/Matcha
+  - bobaSealedw/BrownSugar
+  - bobaSealedw/milk
+  - bobaSealedw/matcha
+  - bobaSealedw/mango
+  - bobaSealedw/taro
+  - poppinSealedw/milk
+  - poppinSealedw/mango
+  - poppinSealedw/taro
+  - poppinSealedw/matcha
+  - aloeSealedw/milk
+  - aloeSealedw/matcha
+  - aloeSealedw/mango
+  - aloeSealedw/taro
   layers:
   - Default
   - TransparentFX

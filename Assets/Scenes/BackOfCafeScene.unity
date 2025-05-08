@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 14809864}
   - component: {fileID: 14809867}
   - component: {fileID: 14809866}
-  - component: {fileID: 14809865}
+  - component: {fileID: 14809868}
   m_Layer: 0
   m_Name: Mango Juice
   m_TagString: Untagged
@@ -153,21 +153,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 616174736}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &14809865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 14809863}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58e0a5d64eddc444694891874addfe8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapPoint: {fileID: 0}
-  snapThreshold: 0.7
-  snapOffset: {x: 0, y: -0.2, z: 0}
 --- !u!61 &14809866
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -269,6 +254,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &14809868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14809863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ef1c5a58902487ba2104e0bb6d532f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mangoCupSprite: {fileID: 2096412399073885462, guid: 72e26e27b4f3fb843a65b359e4a2b24f, type: 3}
+  mangoWithAloeSprite: {fileID: -2586768722040249087, guid: 3b362d02ffbf85f4aa7233329c8a4952, type: 3}
+  mangoWithBobaSprite: {fileID: 1755747747064077749, guid: b63d0b8a2c271a54490b364db7725e88, type: 3}
+  mangoWithPoppinSprite: {fileID: -6971235186392487740, guid: 9ae21b2e7767e8947acd6095ed35e4c9, type: 3}
 --- !u!1 &154480705
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,7 +580,7 @@ Transform:
   m_GameObject: {fileID: 191840045}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.90549904, y: -0.6336852, z: 1427.2747}
+  m_LocalPosition: {x: -0.53, y: -1.64, z: 1427.2747}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1025,8 +1026,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noCup: {fileID: -7851375875926598054, guid: a8af48e6bc7ab654c8d4405d5fb9479d, type: 3}
   withCup: {fileID: 6568491884983337940, guid: b90e3218e48f9ab45b94fe2ab541686f, type: 3}
-  sealedCupPrefab: {fileID: 0}
-  spawnPoint: {fileID: 0}
+  spawnPoint: {fileID: 1182806182}
+  mangoSealed: {fileID: 2334955078402560304, guid: ae468b6f0943146b2933a1cc2c2623d0, type: 3}
+  mangoBobaSealed: {fileID: 2533402758761686797, guid: 8854dcf5162a14868ab245dba3c8df67, type: 3}
+  mangoAloeSealed: {fileID: 6453945281028951433, guid: 5134c770ba8cc4d9d93c425939486b8d, type: 3}
+  mangoPoppinSealed: {fileID: 8416692397240146877, guid: faa4cc356dea44a52a8d5383c1b9e8a2, type: 3}
+  taroSealed: {fileID: -8247699785675443468, guid: b3f6882928a914746b29b33bbc238d36, type: 3}
+  taroBobaSealed: {fileID: -1183781659521159595, guid: b070de3238a93a5419dbabdbb372a88a, type: 3}
+  taroPoppinSealed: {fileID: -601100184725789824, guid: ff1bdbd6869cffe44acebbc23f18ce6d, type: 3}
+  taroAloeSealed: {fileID: -945624818799447723, guid: 8e223a23cf9b4324c8ea13fad7477229, type: 3}
+  milkSealed: {fileID: 6145345440602119499, guid: 489de1d7c0b4e3a408d953fb74cf26ca, type: 3}
+  milkBobaSealed: {fileID: 3909569181004464527, guid: 4b115fc0befba3847badf1f0ab3e8bae, type: 3}
+  milkAloeSealed: {fileID: 992242485193438872, guid: 95cf61a20f23d034f968cb1061f14a05, type: 3}
+  milkPoppinSealed: {fileID: 3216991397895985692, guid: f9983cb2921b7024cb159294b79f8e72, type: 3}
+  brownsugarSealed: {fileID: 3179408156578266252, guid: 513e816276ecd495a92520147f1e043b, type: 3}
+  brownsugarBobaSealed: {fileID: 8549518895370683587, guid: 3376b03e6a5a3404e92d1e199f8f1529, type: 3}
+  matchaSealed: {fileID: 3240910172443462940, guid: 1d012154a22b61c4992fdb5cb0ae1570, type: 3}
+  matchaBobaSealed: {fileID: -1772419047615821791, guid: 4e2fe9bf40db0bd4e8502d78bd60754c, type: 3}
+  matchaPoppinSealed: {fileID: 7310009955974782036, guid: 4cd73534f9b47a346a6c4e63e419fb19, type: 3}
+  matchaAloeSealed: {fileID: -7514571465814022676, guid: c152820a5bbfb7f41a863f5ad4856f84, type: 3}
 --- !u!1 &360815383
 GameObject:
   m_ObjectHideFlags: 0
@@ -1113,7 +1131,6 @@ GameObject:
   - component: {fileID: 440243111}
   - component: {fileID: 440243114}
   - component: {fileID: 440243113}
-  - component: {fileID: 440243112}
   - component: {fileID: 440243115}
   m_Layer: 0
   m_Name: Popping Pearls
@@ -1137,21 +1154,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 616174736}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &440243112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 440243110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58e0a5d64eddc444694891874addfe8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapPoint: {fileID: 0}
-  snapThreshold: 0.7
-  snapOffset: {x: 0, y: -0.2, z: 0}
 --- !u!61 &440243113
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1265,7 +1267,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6bec9b5065a44c468b32d39b2c06a58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poppinCupSprite: {fileID: -8891852669829288390, guid: bc644f93f6e3d46af9e6b093c9b08df5, type: 3}
+  poppinCupSprite: {fileID: -8891852669829288390, guid: 5ad6aef59ceb1644fb7127de0222bc6d, type: 3}
+  matchaWithPoppinSprite: {fileID: -6771009301961453599, guid: 6737b15dd2f742b4088671910bb372a8, type: 3}
+  mangoWithPoppinSprite: {fileID: -6971235186392487740, guid: 9ae21b2e7767e8947acd6095ed35e4c9, type: 3}
+  taroWithPoppinSprite: {fileID: 1402998173964939640, guid: ab2fa133d7b3a034ab4c2a83805b698d, type: 3}
+  milkWithPoppinSprite: {fileID: 8517543488386050402, guid: 2c692a91ab4ba2a458c1becd5dc88fde, type: 3}
 --- !u!1 &451869677
 GameObject:
   m_ObjectHideFlags: 0
@@ -1594,6 +1600,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inProgressCupPrefab: {fileID: 2815753840982345500, guid: 318b277b1a7404b218c273060593504e, type: 3}
+--- !u!1001 &559648035
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2088843573393234794, guid: 5134c770ba8cc4d9d93c425939486b8d, type: 3}
+      propertyPath: m_Size.x
+      value: 6.139241
+      objectReference: {fileID: 0}
+    - target: {fileID: 2088843573393234794, guid: 5134c770ba8cc4d9d93c425939486b8d, type: 3}
+      propertyPath: m_Size.y
+      value: 4.217984
+      objectReference: {fileID: 0}
+    - target: {fileID: 2088843573393234794, guid: 5134c770ba8cc4d9d93c425939486b8d, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.05560541
+      objectReference: {fileID: 0}
+    - target: {fileID: 2088843573393234794, guid: 5134c770ba8cc4d9d93c425939486b8d, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.048917294
+      objectReference: {fileID: 0}
+    - target: {fileID: 5506601488500867196, guid: 5134c770ba8cc4d9d93c425939486b8d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.21233702
+      objectReference: {fileID: 0}
+    - target: {fileID: 5506601488500867196, guid: 5134c770ba8cc4d9d93c425939486b8d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.7737105
+      objectReference: {fileID: 0}
+    - target: {fileID: 5506601488500867196, guid: 5134c770ba8cc4d9d93c425939486b8d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5506601488500867196, guid: 5134c770ba8cc4d9d93c425939486b8d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5506601488500867196, guid: 5134c770ba8cc4d9d93c425939486b8d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5506601488500867196, guid: 5134c770ba8cc4d9d93c425939486b8d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5506601488500867196, guid: 5134c770ba8cc4d9d93c425939486b8d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5506601488500867196, guid: 5134c770ba8cc4d9d93c425939486b8d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5506601488500867196, guid: 5134c770ba8cc4d9d93c425939486b8d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5506601488500867196, guid: 5134c770ba8cc4d9d93c425939486b8d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453945281028951433, guid: 5134c770ba8cc4d9d93c425939486b8d, type: 3}
+      propertyPath: m_Name
+      value: mangoAloeSealed
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5134c770ba8cc4d9d93c425939486b8d, type: 3}
 --- !u!1 &564312661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1605,7 +1684,7 @@ GameObject:
   - component: {fileID: 564312662}
   - component: {fileID: 564312665}
   - component: {fileID: 564312664}
-  - component: {fileID: 564312663}
+  - component: {fileID: 564312666}
   m_Layer: 0
   m_Name: Taro Juice
   m_TagString: Untagged
@@ -1628,21 +1707,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 616174736}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &564312663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 564312661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58e0a5d64eddc444694891874addfe8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapPoint: {fileID: 0}
-  snapThreshold: 0.7
-  snapOffset: {x: 0, y: -0.2, z: 0}
 --- !u!61 &564312664
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1744,6 +1808,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &564312666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564312661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be3af96a6c404c41a79cb0e307d4b3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  taroOnlySprite: {fileID: -83516185683859780, guid: d88573a5169b4e140bfd0ea97a3e682c, type: 3}
+  taroWithAloeSprite: {fileID: -1243633403815435530, guid: e6b741183beb2e0458f26207e427ed38, type: 3}
+  taroWithBobaSprite: {fileID: -2763158845320072381, guid: 750bfe0471ccc4b4191e777a77907e36, type: 3}
+  taroWithPoppinSprite: {fileID: 1402998173964939640, guid: ab2fa133d7b3a034ab4c2a83805b698d, type: 3}
 --- !u!1 &588769357
 GameObject:
   m_ObjectHideFlags: 0
@@ -2026,8 +2106,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noCup: {fileID: -7851375875926598054, guid: a8af48e6bc7ab654c8d4405d5fb9479d, type: 3}
   withCup: {fileID: 6568491884983337940, guid: b90e3218e48f9ab45b94fe2ab541686f, type: 3}
-  sealedCupPrefab: {fileID: 0}
-  spawnPoint: {fileID: 0}
+  spawnPoint: {fileID: 1182806182}
+  mangoSealed: {fileID: 2334955078402560304, guid: ae468b6f0943146b2933a1cc2c2623d0, type: 3}
+  mangoBobaSealed: {fileID: 2533402758761686797, guid: 8854dcf5162a14868ab245dba3c8df67, type: 3}
+  mangoAloeSealed: {fileID: 6453945281028951433, guid: 5134c770ba8cc4d9d93c425939486b8d, type: 3}
+  mangoPoppinSealed: {fileID: 8416692397240146877, guid: faa4cc356dea44a52a8d5383c1b9e8a2, type: 3}
+  taroSealed: {fileID: -8247699785675443468, guid: b3f6882928a914746b29b33bbc238d36, type: 3}
+  taroBobaSealed: {fileID: -1183781659521159595, guid: b070de3238a93a5419dbabdbb372a88a, type: 3}
+  taroPoppinSealed: {fileID: -601100184725789824, guid: ff1bdbd6869cffe44acebbc23f18ce6d, type: 3}
+  taroAloeSealed: {fileID: -945624818799447723, guid: 8e223a23cf9b4324c8ea13fad7477229, type: 3}
+  milkSealed: {fileID: 6145345440602119499, guid: 489de1d7c0b4e3a408d953fb74cf26ca, type: 3}
+  milkBobaSealed: {fileID: 3909569181004464527, guid: 4b115fc0befba3847badf1f0ab3e8bae, type: 3}
+  milkAloeSealed: {fileID: 992242485193438872, guid: 95cf61a20f23d034f968cb1061f14a05, type: 3}
+  milkPoppinSealed: {fileID: 3216991397895985692, guid: f9983cb2921b7024cb159294b79f8e72, type: 3}
+  brownsugarSealed: {fileID: 3179408156578266252, guid: 513e816276ecd495a92520147f1e043b, type: 3}
+  brownsugarBobaSealed: {fileID: 8549518895370683587, guid: 3376b03e6a5a3404e92d1e199f8f1529, type: 3}
+  matchaSealed: {fileID: 3240910172443462940, guid: 1d012154a22b61c4992fdb5cb0ae1570, type: 3}
+  matchaBobaSealed: {fileID: -1772419047615821791, guid: 4e2fe9bf40db0bd4e8502d78bd60754c, type: 3}
+  matchaPoppinSealed: {fileID: 7310009955974782036, guid: 4cd73534f9b47a346a6c4e63e419fb19, type: 3}
+  matchaAloeSealed: {fileID: -7514571465814022676, guid: c152820a5bbfb7f41a863f5ad4856f84, type: 3}
 --- !u!61 &718009230
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2290,7 +2387,6 @@ GameObject:
   - component: {fileID: 996660861}
   - component: {fileID: 996660864}
   - component: {fileID: 996660863}
-  - component: {fileID: 996660862}
   - component: {fileID: 996660865}
   m_Layer: 0
   m_Name: Aloe Jelly
@@ -2314,21 +2410,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 616174736}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &996660862
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 996660860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58e0a5d64eddc444694891874addfe8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapPoint: {fileID: 0}
-  snapThreshold: 0.7
-  snapOffset: {x: 0, y: -0.2, z: 0}
 --- !u!61 &996660863
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2442,7 +2523,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05fef84d614bb454395d2f2e4fd55125, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aloeCupSprite: {fileID: -1231341891186751354, guid: 4d34b1435ab5f4142823b750cb3c6acf, type: 3}
+  aloeCupSprite: {fileID: -1231341891186751354, guid: 8febd10e160feb849be2287893992125, type: 3}
+  matchaWithAloeSprite: {fileID: 8379732681861297503, guid: fb4b849d2370312488703759b30b914a, type: 3}
+  mangoWithAloeSprite: {fileID: -2586768722040249087, guid: 3b362d02ffbf85f4aa7233329c8a4952, type: 3}
+  taroWithAloeSprite: {fileID: -1243633403815435530, guid: e6b741183beb2e0458f26207e427ed38, type: 3}
+  milkWithAloeSprite: {fileID: 4148317677747987209, guid: cdda076241b2dc84a905e314dd0af4ad, type: 3}
 --- !u!1 &1066240585
 GameObject:
   m_ObjectHideFlags: 0
@@ -2604,7 +2689,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.46, y: -1.68, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 616174736}
@@ -2652,7 +2737,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2932,8 +3017,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822edb052b656410f9939f11edc1ce37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  matchaOnlySprite: {fileID: 2150198551892363791, guid: 5a1e98b02428445c88859dd2780a7668, type: 3}
-  matchaWithBobaSprite: {fileID: -784692581750019777, guid: f5a0e81d5350e454aace040645f6e585, type: 3}
+  matchaOnlySprite: {fileID: 2150198551892363791, guid: 74739c4bc6d2734489d32d092540a52c, type: 3}
+  matchaWithBobaSprite: {fileID: -784692581750019777, guid: 4e69a021962c2084bb1301663bf4037a, type: 3}
+  matchaWithAloeSprite: {fileID: 8379732681861297503, guid: fb4b849d2370312488703759b30b914a, type: 3}
+  matchaWithPoppinSprite: {fileID: -6771009301961453599, guid: 6737b15dd2f742b4088671910bb372a8, type: 3}
 --- !u!1 &1443796746
 GameObject:
   m_ObjectHideFlags: 0
@@ -2945,9 +3032,9 @@ GameObject:
   - component: {fileID: 1443796747}
   - component: {fileID: 1443796750}
   - component: {fileID: 1443796749}
-  - component: {fileID: 1443796748}
+  - component: {fileID: 1443796751}
   m_Layer: 0
-  m_Name: Milk
+  m_Name: BrownSugar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2968,21 +3055,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 616174736}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1443796748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1443796746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58e0a5d64eddc444694891874addfe8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapPoint: {fileID: 0}
-  snapThreshold: 0.7
-  snapOffset: {x: 0, y: -0.2, z: 0}
 --- !u!61 &1443796749
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3084,6 +3156,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1443796751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443796746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7fa35446e4b449beb131fbaf2369ff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brownsugarOnlySprite: {fileID: 7776524351508437024, guid: a4d24bf8caf22ca48ae747fcf39e5101, type: 3}
+  brownsugarWithBobaSprite: {fileID: -1934966080297878056, guid: 9bf609f675ca0ab4db50ec6956e6b7c3, type: 3}
 --- !u!1 &1444163022
 GameObject:
   m_ObjectHideFlags: 0
@@ -3394,7 +3480,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2018769799231748683, guid: d81ade9f18916cf4e862ca77735067fb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3466,8 +3552,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noCup: {fileID: 0}
   withCup: {fileID: 0}
-  sealedCupPrefab: {fileID: 5288852215165320657, guid: 6dc6cf970d83b4866bed66a877af1cc2, type: 3}
   spawnPoint: {fileID: 1182806182}
+  mangoSealed: {fileID: 2334955078402560304, guid: ae468b6f0943146b2933a1cc2c2623d0, type: 3}
+  mangoBobaSealed: {fileID: 2533402758761686797, guid: 8854dcf5162a14868ab245dba3c8df67, type: 3}
+  mangoAloeSealed: {fileID: 6453945281028951433, guid: 5134c770ba8cc4d9d93c425939486b8d, type: 3}
+  mangoPoppinSealed: {fileID: 8416692397240146877, guid: faa4cc356dea44a52a8d5383c1b9e8a2, type: 3}
+  taroSealed: {fileID: -8247699785675443468, guid: b3f6882928a914746b29b33bbc238d36, type: 3}
+  taroBobaSealed: {fileID: -1183781659521159595, guid: b070de3238a93a5419dbabdbb372a88a, type: 3}
+  taroPoppinSealed: {fileID: -601100184725789824, guid: ff1bdbd6869cffe44acebbc23f18ce6d, type: 3}
+  taroAloeSealed: {fileID: -945624818799447723, guid: 8e223a23cf9b4324c8ea13fad7477229, type: 3}
+  milkSealed: {fileID: 5047668698742533111, guid: 36b04d38e238c6a44aa227afc33f3c53, type: 3}
+  milkBobaSealed: {fileID: 5294554095018347407, guid: e90e453fc12fa3b47b6ba07159bc8ffe, type: 3}
+  milkAloeSealed: {fileID: 915317105331281563, guid: 9a4c5d6ff81821643af6e6c2d7f80f50, type: 3}
+  milkPoppinSealed: {fileID: -473116579432739309, guid: aeafaaf9e5c9f41459f482709ee120f7, type: 3}
+  brownsugarSealed: {fileID: 3179408156578266252, guid: 513e816276ecd495a92520147f1e043b, type: 3}
+  brownsugarBobaSealed: {fileID: 8549518895370683587, guid: 3376b03e6a5a3404e92d1e199f8f1529, type: 3}
+  matchaSealed: {fileID: 3240910172443462940, guid: 1d012154a22b61c4992fdb5cb0ae1570, type: 3}
+  matchaBobaSealed: {fileID: -1772419047615821791, guid: 4e2fe9bf40db0bd4e8502d78bd60754c, type: 3}
+  matchaPoppinSealed: {fileID: 7310009955974782036, guid: 4cd73534f9b47a346a6c4e63e419fb19, type: 3}
+  matchaAloeSealed: {fileID: -7514571465814022676, guid: c152820a5bbfb7f41a863f5ad4856f84, type: 3}
 --- !u!1 &1642855254
 GameObject:
   m_ObjectHideFlags: 0
@@ -3881,7 +3984,7 @@ GameObject:
   - component: {fileID: 1786490070}
   - component: {fileID: 1786490073}
   - component: {fileID: 1786490072}
-  - component: {fileID: 1786490071}
+  - component: {fileID: 1786490074}
   m_Layer: 0
   m_Name: PlantMilk
   m_TagString: Untagged
@@ -3904,21 +4007,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 616174736}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1786490071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1786490069}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58e0a5d64eddc444694891874addfe8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapPoint: {fileID: 0}
-  snapThreshold: 0.7
-  snapOffset: {x: 0, y: -0.2, z: 0}
 --- !u!61 &1786490072
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4020,6 +4108,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1786490074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786490069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb4d4ce40e33a402387cc4ff325d0a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  milkOnlySprite: {fileID: 7115314469374858343, guid: 469d69e1e4af29248a50192da28042d4, type: 3}
+  milkWithBobaSprite: {fileID: 4268452383655585642, guid: 5824300be47407441ac4f1e64399b26f, type: 3}
+  milkWithAloeSprite: {fileID: 4148317677747987209, guid: cdda076241b2dc84a905e314dd0af4ad, type: 3}
+  milkWithPoppinSprite: {fileID: 8517543488386050402, guid: 2c692a91ab4ba2a458c1becd5dc88fde, type: 3}
 --- !u!1 &2101680678
 GameObject:
   m_ObjectHideFlags: 0
@@ -4257,3 +4361,4 @@ SceneRoots:
   - {fileID: 1198830709}
   - {fileID: 616174736}
   - {fileID: 191840047}
+  - {fileID: 559648035}

@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1231341891186751354, guid: 8febd10e160feb849be2287893992125, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -134,3 +134,23 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 11.16, y: 7.57}
   m_EdgeRadius: 0
+--- !u!114 &5145958947355572585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8014285918929992735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e8db8a5352eb407ea374f739feeee0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasBoba: 1
+  hasAloe: 0
+  hasMatcha: 0
+  hasMango: 0
+  hasTaro: 0
+  hasMilk: 0
+  hasBrownSugar: 0
+  hasPoppin: 0
