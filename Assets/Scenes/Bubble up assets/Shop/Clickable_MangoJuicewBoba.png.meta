@@ -119,12 +119,12 @@ TextureImporter:
       name: "Clickable_MangoJuicew\uF022Boba_0"
       rect:
         serializedVersion: 2
-        x: 309
-        y: 214
-        width: 1315
-        height: 813
+        x: 56
+        y: 849
+        width: 6
+        height: 6
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -146,7 +146,7 @@ TextureImporter:
         width: 927
         height: 713
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -163,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c4e6703fe22ec405eb563eca81ad1c14
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 

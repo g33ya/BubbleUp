@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 1341319306225983047}
   - component: {fileID: 3123876155224631926}
   - component: {fileID: -1962411947889298792}
-  - component: {fileID: -787679954404103389}
   m_Layer: 0
   m_Name: Cup
   m_TagString: cup
@@ -79,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 228835466367813266, guid: 565df8667e309fd498602fde46a6041b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -179,23 +178,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-787679954404103389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7794389447993196635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e8db8a5352eb407ea374f739feeee0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hasBoba: 0
-  hasAloe: 0
-  hasMatcha: 0
-  hasMango: 0
-  hasTaro: 0
-  hasMilk: 0
-  hasBrownSugar: 0
-  hasPoppin: 0
