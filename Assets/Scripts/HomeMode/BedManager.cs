@@ -44,6 +44,9 @@ public class SleepManager : MonoBehaviour
         // Energy & Stress Stat Change
         levelManager.IncreaseEnergyLevel((int)(selectedSleepTime * 0.3f)); 
         levelManager.DecreaseStressLevel((int)(selectedSleepTime * 0.2f)); 
+        PlayerPrefs.SetInt("EnergyLevel", levelManager.energyLevel); // Save energy level
+        PlayerPrefs.SetInt("StressLevel", levelManager.stressLevel); // Save stress level
+        PlayerPrefs.Save(); // Save changes to PlayerPrefs
 
         BedUI.SetActive(false);
 

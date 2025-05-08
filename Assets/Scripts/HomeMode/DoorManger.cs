@@ -47,6 +47,9 @@ public class DoorManager : MonoBehaviour
         // Apply stat changes from door interaction
         levelManager.IncreaseEnergyLevel((int)(selectedTime * 0.3f)); 
         levelManager.DecreaseStressLevel((int)(selectedTime * 0.2f)); 
+        PlayerPrefs.SetInt("EnergyLevel", levelManager.energyLevel); // Save energy level
+        PlayerPrefs.SetInt("StressLevel", levelManager.stressLevel); // Save stress level
+        PlayerPrefs.Save(); // Save changes to PlayerPrefs
 
         DoorUI.SetActive(false); // Close UI after interaction
 
