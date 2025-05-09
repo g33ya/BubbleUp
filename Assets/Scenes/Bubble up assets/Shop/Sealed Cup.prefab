@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7344817483376654351}
   - component: {fileID: 1568445353607701517}
   - component: {fileID: 3358057286936632483}
-  - component: {fileID: 5267620060494624362}
   m_Layer: 0
   m_Name: Sealed Cup
   m_TagString: sealcup
@@ -151,16 +150,3 @@ MonoBehaviour:
   snapPoint: {fileID: 0}
   snapThreshold: 0.7
   snapOffset: {x: 0, y: -0.2, z: 0}
---- !u!114 &5267620060494624362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5288852215165320657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 024d92866470e4679913f82d677a97a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sr: {fileID: 7344817483376654351}
