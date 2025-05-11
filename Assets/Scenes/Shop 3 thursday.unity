@@ -1369,7 +1369,7 @@ MonoBehaviour:
   dialogueText: {fileID: 2083473879}
   portraitImage: {fileID: 2138368967}
   position1: {fileID: 1557768964}
-  position2: {fileID: 0}
+  position2: {fileID: 116611569}
   homeButton: {fileID: 1827673209}
   kitchenButton: {fileID: 154042022}
   Character: {fileID: 1891057510}
