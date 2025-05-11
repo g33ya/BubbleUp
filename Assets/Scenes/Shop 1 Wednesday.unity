@@ -846,15 +846,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -690040873414559854, guid: aa44474ffd088ef4c82bcbeb0bb79b31, type: 3}
+  m_Sprite: {fileID: -8551130212731234159, guid: 453dc6d6873e1f64cb521ddf98414f23, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 9.97, y: 15.36}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1171144101
@@ -866,8 +866,8 @@ Transform:
   m_GameObject: {fileID: 1171144099}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -644.75995, y: 159.84, z: -9719.999}
-  m_LocalScale: {x: 79.05079, y: 79.05079, z: 79.05079}
+  m_LocalPosition: {x: -644.75995, y: 97, z: -9719.999}
+  m_LocalScale: {x: 45.046303, y: 45.046303, z: 45.046303}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1002777130}
@@ -948,13 +948,13 @@ MonoBehaviour:
   - " That sounds like a solid plan.\r"
   - " Thanks. I\u2019m trying.\r\n Anyway, can I get a milk tea with aloe jelly?"
   portrait:
-  - {fileID: -690040873414559854, guid: aa44474ffd088ef4c82bcbeb0bb79b31, type: 3}
-  - {fileID: -690040873414559854, guid: 426337f648495f944b35accaeca2514f, type: 3}
-  - {fileID: -690040873414559854, guid: aa44474ffd088ef4c82bcbeb0bb79b31, type: 3}
-  - {fileID: -690040873414559854, guid: aa44474ffd088ef4c82bcbeb0bb79b31, type: 3}
-  - {fileID: -690040873414559854, guid: aa44474ffd088ef4c82bcbeb0bb79b31, type: 3}
-  - {fileID: -4033371025274693098, guid: 35b97bcd261a7f5439b049fe10fb4f35, type: 3}
-  - {fileID: -690040873414559854, guid: aa44474ffd088ef4c82bcbeb0bb79b31, type: 3}
+  - {fileID: -8551130212731234159, guid: 453dc6d6873e1f64cb521ddf98414f23, type: 3}
+  - {fileID: -8551130212731234159, guid: 453dc6d6873e1f64cb521ddf98414f23, type: 3}
+  - {fileID: -8551130212731234159, guid: 453dc6d6873e1f64cb521ddf98414f23, type: 3}
+  - {fileID: -8551130212731234159, guid: 453dc6d6873e1f64cb521ddf98414f23, type: 3}
+  - {fileID: -8551130212731234159, guid: 453dc6d6873e1f64cb521ddf98414f23, type: 3}
+  - {fileID: -5536324370814838258, guid: ebc22afaafe042d459183daa3d537b27, type: 3}
+  - {fileID: -8551130212731234159, guid: 453dc6d6873e1f64cb521ddf98414f23, type: 3}
 --- !u!4 &1235620348
 Transform:
   m_ObjectHideFlags: 0
@@ -1264,7 +1264,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1540426309290004842, guid: 7058f1f2b86d487489ac96892b5e089c, type: 3}
+  m_Sprite: {fileID: -1540426309290004842, guid: c532879f4ee97b54eb4b94cf67523430, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

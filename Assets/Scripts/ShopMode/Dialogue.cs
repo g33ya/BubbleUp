@@ -53,7 +53,7 @@ public class Dialogue : MonoBehaviour
             portraitImage.sprite=portrait[step];
             step +=1;
             if (currentScene==5){
-            if (dialogueText.text=="Sure thing. Enjoy your day!"){
+            if (step==2){
                 position1.transform.position= new Vector3(-11.28f,1.154747f,0);
             }
             if (step==4){
@@ -86,6 +86,10 @@ public class Dialogue : MonoBehaviour
                 }
             }
             if (currentScene==7){
+                if (step==2){
+                    Character.SetActive(false);
+                    Character2.SetActive(true);
+                }
                 if (step==3){
                     kitchenButton.SetActive(true);
                 }
