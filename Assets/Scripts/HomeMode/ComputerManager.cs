@@ -192,6 +192,7 @@ public class ComputerManager : MonoBehaviour
         }
         UpdateCurrentProgressDisplay2();
 
+
         levelManager.DecreaseEnergyLevel((int)(-selectedOptionNum * 0.2f)); // Decrease energy level
         levelManager.IncreaseStressLevel((int)(selectedOptionNum * 0.4f)); // Increase stress level
         
