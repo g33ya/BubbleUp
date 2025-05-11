@@ -846,7 +846,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -690040873414559854, guid: 426337f648495f944b35accaeca2514f, type: 3}
+  m_Sprite: {fileID: -8551130212731234159, guid: 453dc6d6873e1f64cb521ddf98414f23, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -866,8 +866,8 @@ Transform:
   m_GameObject: {fileID: 1171144099}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -644.75995, y: 159.84, z: -9719.999}
-  m_LocalScale: {x: 79.05079, y: 79.05079, z: 79.05079}
+  m_LocalPosition: {x: -768, y: 97, z: -9719.999}
+  m_LocalScale: {x: 54.03626, y: 54.03626, z: 54.03626}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1002777130}
@@ -940,10 +940,10 @@ MonoBehaviour:
     a computer science major\u2013 junioritis is real.\r\n"
   - "I\u2019ll do a milk tea with boba. My sweet treat for the day!"
   portrait:
-  - {fileID: -690040873414559854, guid: 426337f648495f944b35accaeca2514f, type: 3}
-  - {fileID: -4033371025274693098, guid: 35b97bcd261a7f5439b049fe10fb4f35, type: 3}
-  - {fileID: -690040873414559854, guid: 426337f648495f944b35accaeca2514f, type: 3}
-  - {fileID: -690040873414559854, guid: 426337f648495f944b35accaeca2514f, type: 3}
+  - {fileID: -8551130212731234159, guid: 453dc6d6873e1f64cb521ddf98414f23, type: 3}
+  - {fileID: -5536324370814838258, guid: ebc22afaafe042d459183daa3d537b27, type: 3}
+  - {fileID: -8551130212731234159, guid: 453dc6d6873e1f64cb521ddf98414f23, type: 3}
+  - {fileID: -8551130212731234159, guid: 453dc6d6873e1f64cb521ddf98414f23, type: 3}
 --- !u!4 &1235620348
 Transform:
   m_ObjectHideFlags: 0
@@ -1034,8 +1034,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.45, y: 0.77370703, z: 106.121635}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1483635188}
+  m_Children: []
   m_Father: {fileID: 1782729105}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1210,7 +1209,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061035156, y: -300}
+  m_AnchoredPosition: {x: 0, y: -300}
   m_SizeDelta: {x: -200.00009, y: -800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1403338054
@@ -1296,16 +1295,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483635187}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.45, y: 0.8317351, z: 106.121635}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1260166457}
+  m_Father: {fileID: 1782729105}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -768, y: 112.00006}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1483635189
@@ -1315,7 +1314,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483635187}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -1660,6 +1659,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1260166457}
+  - {fileID: 1483635188}
   m_Father: {fileID: 1403338053}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
