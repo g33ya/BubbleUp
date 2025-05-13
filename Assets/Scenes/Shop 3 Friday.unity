@@ -180,7 +180,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 456b044dc2e371b4db4f4a513211f4ed, type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: aed4fb05f85284745835eaf96d7b1390, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
@@ -334,7 +334,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6270953770400647376, guid: c132d4532f214e042aa416913d6e459b, type: 3}
+  m_Sprite: {fileID: -6270953770400647376, guid: 9b77749a2980c974682ce693c653a88f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -488,7 +488,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6642193843099659868, guid: b38b716ca9fd4d44e899a8ef93e61746, type: 3}
+  m_Sprite: {fileID: 6642193843099659868, guid: 0ddfcfe6970310b45994cdf67d1df167, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -622,7 +622,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6270953770400647376, guid: c132d4532f214e042aa416913d6e459b, type: 3}
+  m_Sprite: {fileID: -6270953770400647376, guid: 9b77749a2980c974682ce693c653a88f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1243,12 +1243,12 @@ GameObject:
   - component: {fileID: 1171144100}
   - component: {fileID: 1171144102}
   m_Layer: 0
-  m_Name: Bea
+  m_Name: Taylor
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1171144100
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1293,7 +1293,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 4145446095678743276, guid: b4443dd64dde6c3489ecb75914e5f28c, type: 3}
+  m_Sprite: {fileID: -4710684864929586125, guid: a6b2df35b45da5c4b93d3d4c288d6ff5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1314,7 +1314,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 100.44, y: 97, z: -9719.999}
-  m_LocalScale: {x: 53.431217, y: 53.431217, z: 53.431217}
+  m_LocalScale: {x: 54.0362, y: 54.0362, z: 54.0362}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1002777130}
@@ -1368,13 +1368,14 @@ MonoBehaviour:
   speakerText: {fileID: 2048538847}
   dialogueText: {fileID: 2083473879}
   portraitImage: {fileID: 2138368967}
-  position1: {fileID: 116611569}
+  position1: {fileID: 1557768964}
   position2: {fileID: 0}
   homeButton: {fileID: 1827673209}
   kitchenButton: {fileID: 154042022}
   Character: {fileID: 1891057510}
   Character2: {fileID: 0}
   speaker:
+  - Taylor
   - Ren
   - You
   - Ren
@@ -1382,39 +1383,34 @@ MonoBehaviour:
   - You
   - Ren
   - You
-  - Ren
-  - 
   - Ren
   - You
   dialogueWords:
-  - "Thanks. That girl that just left\u2013 Bea? She\u2019s in my class. Same exam.
-    Algorithms."
-  - " Yeah, she mentioned it was a tough one.\r"
-  - "I didn\u2019t study much. I just... didn\u2019t feel like I needed to. I\u2019ve
-    always kind of coasted, I guess.\r"
-  - "She seems pretty stressed about it. It feels weird, I don\u2019t really study
-    like other people do.\r\n"
-  - "Everyone has a different approach. Does your way usually work?\r"
-  - "Yeah. Pretty much. I feel good about this exam. \r"
-  - "That\u2019s great! I\u2019m guessing not studying frees up some time for yourself,
-    which is nice. Do you have stuff you do instead?"
-  - " I like collecting records for my player at home. I have a whole shelf of them.
-    I like listening to music\u2013 it calms me down."
-  - ' Record Player Unlocked!'
-  - "Anyways, I\u2019m gonna head out. Thanks for the drink.\r\r\n"
-  - Have a great day!
+  - This looks perfect, thank you! Have a great day!
+  - Yo.
+  - Hey! Library trip successful?
+  - 'Yeah. I ended up staying for hours.
+
+    I found a book that actually explained
+    something I kept missing in class.'
+  - "Like\u2026 maybe I can learn this stuff. Just takes longer than I thought."
+  - "You\u2019re putting in the work. That matters more than getting it instantly."
+  - "Still not sure I love the struggle. But I\u2019m not scared of it anymore. That\u2019s
+    something."
+  - Definitely something. What can I get you?
+  - One mango smoothie, please.
+  - 'Coming right up. '
   portrait:
-  - {fileID: 3535177381572351074, guid: 95ff43c801867644eb32cb65280b8608, type: 3}
-  - {fileID: -5536324370814838258, guid: 0f384e171e4d7f248abc3972632ae789, type: 3}
-  - {fileID: 3535177381572351074, guid: 95ff43c801867644eb32cb65280b8608, type: 3}
-  - {fileID: 3535177381572351074, guid: 95ff43c801867644eb32cb65280b8608, type: 3}
-  - {fileID: -5536324370814838258, guid: 0f384e171e4d7f248abc3972632ae789, type: 3}
-  - {fileID: 3535177381572351074, guid: 95ff43c801867644eb32cb65280b8608, type: 3}
-  - {fileID: -5536324370814838258, guid: 0f384e171e4d7f248abc3972632ae789, type: 3}
-  - {fileID: 3535177381572351074, guid: 95ff43c801867644eb32cb65280b8608, type: 3}
-  - {fileID: -57649103899204461, guid: 7ea818ab30c85214c8501d108e5a4250, type: 3}
-  - {fileID: 3535177381572351074, guid: 95ff43c801867644eb32cb65280b8608, type: 3}
-  - {fileID: -5536324370814838258, guid: 0f384e171e4d7f248abc3972632ae789, type: 3}
+  - {fileID: -8551130212731234159, guid: 73a906cb944df324f971f24c38723129, type: 3}
+  - {fileID: -5536324370814838258, guid: ef936f45129df93439547d85d6f916ed, type: 3}
+  - {fileID: -8551130212731234159, guid: 73a906cb944df324f971f24c38723129, type: 3}
+  - {fileID: -5536324370814838258, guid: ef936f45129df93439547d85d6f916ed, type: 3}
+  - {fileID: -8551130212731234159, guid: 73a906cb944df324f971f24c38723129, type: 3}
+  - {fileID: -8551130212731234159, guid: 73a906cb944df324f971f24c38723129, type: 3}
+  - {fileID: -5536324370814838258, guid: ef936f45129df93439547d85d6f916ed, type: 3}
+  - {fileID: -8551130212731234159, guid: 73a906cb944df324f971f24c38723129, type: 3}
+  - {fileID: 7607482721926598001, guid: b972fc64f6f9ba748ad5f149813310cc, type: 3}
+  - {fileID: -5536324370814838258, guid: ef936f45129df93439547d85d6f916ed, type: 3}
 --- !u!4 &1235620348
 Transform:
   m_ObjectHideFlags: 0
@@ -1648,7 +1644,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1540426309290004842, guid: c532879f4ee97b54eb4b94cf67523430, type: 3}
+  m_Sprite: {fileID: -1540426309290004842, guid: f58afc8b9172a7a4b96fe78cacbefd03, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1678,12 +1674,12 @@ GameObject:
   - component: {fileID: 1557768965}
   - component: {fileID: 1557768967}
   m_Layer: 0
-  m_Name: Bea Counter Position
+  m_Name: Taylor Counter Position
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1557768965
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1861,7 +1857,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 8270719687502293858, guid: 3b59cd95b02e90449a5fea90b29a6ded, type: 3}
+  m_Sprite: {fileID: 8270719687502293858, guid: 136936c74a16e094587a473fcb33ce61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2006,7 +2002,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1891057511
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2051,7 +2047,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8592563224677910862, guid: 0920b318efc58f44798141c01c4fd915, type: 3}
+  m_Sprite: {fileID: 3535177381572351074, guid: 95ff43c801867644eb32cb65280b8608, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2071,8 +2067,8 @@ Transform:
   m_GameObject: {fileID: 1891057510}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.4707241, y: 1.154747, z: 0}
-  m_LocalScale: {x: 0.492534, y: 0.49254, z: 0.49254}
+  m_LocalPosition: {x: -7.36, y: 1.07, z: 0}
+  m_LocalScale: {x: 0.49254695, y: 0.49254695, z: 0.49254695}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

@@ -56,6 +56,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Shop 3 thursday.unity
     guid: 16635aa6312d773408d6270b2e261e14
+  - enabled: 1
+    path: Assets/Scenes/Shop 1 Friday.unity
+    guid: f5c6e5857f823b84fb3d0f2075f38802
+  - enabled: 1
+    path: Assets/Scenes/Shop 2 Friday.unity
+    guid: a357b3d7ca44536479e310e22c0835e0
+  - enabled: 1
+    path: Assets/Scenes/Shop 3 Friday.unity
+    guid: cbed3793d4cba5546bac154c7588c1c9
+  - enabled: 1
+    path: Assets/Scenes/Shop 4 Friday.unity
+    guid: 7a0f53afdc7da4d47893da22f034e7bd
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
