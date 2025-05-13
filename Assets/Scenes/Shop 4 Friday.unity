@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 116611571}
   - component: {fileID: 116611570}
   m_Layer: 0
-  m_Name: Ren position
+  m_Name: Elomar position
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -180,7 +180,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 456b044dc2e371b4db4f4a513211f4ed, type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: 740cedf0c14984d4793db1a1f9ed65a7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
@@ -334,7 +334,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6270953770400647376, guid: c132d4532f214e042aa416913d6e459b, type: 3}
+  m_Sprite: {fileID: -6270953770400647376, guid: d1d8149eab5ad374493fea8d1cf770d0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -488,7 +488,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6642193843099659868, guid: b38b716ca9fd4d44e899a8ef93e61746, type: 3}
+  m_Sprite: {fileID: 6642193843099659868, guid: 7dc4651b92eb93742ad8b3bd1e0fdb5f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -622,7 +622,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6270953770400647376, guid: c132d4532f214e042aa416913d6e459b, type: 3}
+  m_Sprite: {fileID: -6270953770400647376, guid: d1d8149eab5ad374493fea8d1cf770d0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1243,12 +1243,12 @@ GameObject:
   - component: {fileID: 1171144100}
   - component: {fileID: 1171144102}
   m_Layer: 0
-  m_Name: Bea
+  m_Name: Ren
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1171144100
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1293,7 +1293,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 4145446095678743276, guid: b4443dd64dde6c3489ecb75914e5f28c, type: 3}
+  m_Sprite: {fileID: 4922177492377716888, guid: b103992dbdbc69c4c92a65836e43d5d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1314,7 +1314,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 100.44, y: 97, z: -9719.999}
-  m_LocalScale: {x: 53.431217, y: 53.431217, z: 53.431217}
+  m_LocalScale: {x: 54.0362, y: 54.0362, z: 54.0362}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1002777130}
@@ -1368,7 +1368,7 @@ MonoBehaviour:
   speakerText: {fileID: 2048538847}
   dialogueText: {fileID: 2083473879}
   portraitImage: {fileID: 2138368967}
-  position1: {fileID: 116611569}
+  position1: {fileID: 1557768964}
   position2: {fileID: 0}
   homeButton: {fileID: 1827673209}
   kitchenButton: {fileID: 154042022}
@@ -1377,44 +1377,12 @@ MonoBehaviour:
   speaker:
   - Ren
   - You
-  - Ren
-  - Ren
-  - You
-  - Ren
-  - You
-  - Ren
-  - 
-  - Ren
-  - You
   dialogueWords:
-  - "Thanks. That girl that just left\u2013 Bea? She\u2019s in my class. Same exam.
-    Algorithms."
-  - " Yeah, she mentioned it was a tough one.\r"
-  - "I didn\u2019t study much. I just... didn\u2019t feel like I needed to. I\u2019ve
-    always kind of coasted, I guess.\r"
-  - "She seems pretty stressed about it. It feels weird, I don\u2019t really study
-    like other people do.\r\n"
-  - "Everyone has a different approach. Does your way usually work?\r"
-  - "Yeah. Pretty much. I feel good about this exam. \r"
-  - "That\u2019s great! I\u2019m guessing not studying frees up some time for yourself,
-    which is nice. Do you have stuff you do instead?"
-  - " I like collecting records for my player at home. I have a whole shelf of them.
-    I like listening to music\u2013 it calms me down."
-  - ' Record Player Unlocked!'
-  - "Anyways, I\u2019m gonna head out. Thanks for the drink.\r\r\n"
-  - Have a great day!
+  - Thanks. See you around.
+  - Have a good one!
   portrait:
   - {fileID: 3535177381572351074, guid: 95ff43c801867644eb32cb65280b8608, type: 3}
-  - {fileID: -5536324370814838258, guid: 0f384e171e4d7f248abc3972632ae789, type: 3}
-  - {fileID: 3535177381572351074, guid: 95ff43c801867644eb32cb65280b8608, type: 3}
-  - {fileID: 3535177381572351074, guid: 95ff43c801867644eb32cb65280b8608, type: 3}
-  - {fileID: -5536324370814838258, guid: 0f384e171e4d7f248abc3972632ae789, type: 3}
-  - {fileID: 3535177381572351074, guid: 95ff43c801867644eb32cb65280b8608, type: 3}
-  - {fileID: -5536324370814838258, guid: 0f384e171e4d7f248abc3972632ae789, type: 3}
-  - {fileID: 3535177381572351074, guid: 95ff43c801867644eb32cb65280b8608, type: 3}
-  - {fileID: -57649103899204461, guid: 7ea818ab30c85214c8501d108e5a4250, type: 3}
-  - {fileID: 3535177381572351074, guid: 95ff43c801867644eb32cb65280b8608, type: 3}
-  - {fileID: -5536324370814838258, guid: 0f384e171e4d7f248abc3972632ae789, type: 3}
+  - {fileID: -5536324370814838258, guid: b68a1fe4329d1c74eb6137d0afe6428c, type: 3}
 --- !u!4 &1235620348
 Transform:
   m_ObjectHideFlags: 0
@@ -1648,7 +1616,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1540426309290004842, guid: c532879f4ee97b54eb4b94cf67523430, type: 3}
+  m_Sprite: {fileID: -1540426309290004842, guid: ef33f8593039c054a8cb8d962b5b98ec, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1678,12 +1646,12 @@ GameObject:
   - component: {fileID: 1557768965}
   - component: {fileID: 1557768967}
   m_Layer: 0
-  m_Name: Bea Counter Position
+  m_Name: Ren Counter Position
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1557768965
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1748,7 +1716,7 @@ Transform:
   m_GameObject: {fileID: 1557768964}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 563, y: 97, z: -9719.999}
+  m_LocalPosition: {x: 100.44, y: 97, z: -9719.999}
   m_LocalScale: {x: 108, y: 108, z: 108}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1861,7 +1829,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 8270719687502293858, guid: 3b59cd95b02e90449a5fea90b29a6ded, type: 3}
+  m_Sprite: {fileID: 8270719687502293858, guid: e0794ed2185236c49b7a949d5641bbf5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2001,12 +1969,12 @@ GameObject:
   - component: {fileID: 1891057511}
   - component: {fileID: 1891057513}
   m_Layer: 0
-  m_Name: Ren
+  m_Name: Elomar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1891057511
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2051,7 +2019,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8592563224677910862, guid: 0920b318efc58f44798141c01c4fd915, type: 3}
+  m_Sprite: {fileID: 7607482721926598001, guid: dc01df71602bc1340913bd6af268863f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2071,8 +2039,8 @@ Transform:
   m_GameObject: {fileID: 1891057510}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.4707241, y: 1.154747, z: 0}
-  m_LocalScale: {x: 0.492534, y: 0.49254, z: 0.49254}
+  m_LocalPosition: {x: -7.36, y: 1.07, z: 0}
+  m_LocalScale: {x: 0.49254695, y: 0.49254695, z: 0.49254695}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

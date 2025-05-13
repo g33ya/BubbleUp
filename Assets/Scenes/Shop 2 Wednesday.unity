@@ -334,7 +334,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6270953770400647376, guid: 18b5e7170fc4a784e9e2d84b8afd61b7, type: 3}
+  m_Sprite: {fileID: -6270953770400647376, guid: 7a4bdc8b05a735847a61e1697bf0b294, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -622,7 +622,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6270953770400647376, guid: 18b5e7170fc4a784e9e2d84b8afd61b7, type: 3}
+  m_Sprite: {fileID: -6270953770400647376, guid: 7a4bdc8b05a735847a61e1697bf0b294, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1399,7 +1399,7 @@ MonoBehaviour:
   - "That\u2019s a big realization.\r\n"
   - " Yeah.\r\n I\u2019m actually kind of excited to get back to practice after the
     exam.\r\n Feels like I\u2019m starting to see things differently.\r\n"
-  - "[\U0001F4E2 New stress reliever unlocked: Exercising]"
+  - 'New stress reliever unlocked: Exercising'
   - ' Glad to hear it. What can I get you?
 
 '
@@ -1416,7 +1416,7 @@ MonoBehaviour:
   - {fileID: -7090956003496366093, guid: 0dc81356162762b46bf5a5df31a606ab, type: 3}
   - {fileID: -5536324370814838258, guid: ebc22afaafe042d459183daa3d537b27, type: 3}
   - {fileID: -7090956003496366093, guid: 0dc81356162762b46bf5a5df31a606ab, type: 3}
-  - {fileID: -5536324370814838258, guid: ebc22afaafe042d459183daa3d537b27, type: 3}
+  - {fileID: -57649103899204461, guid: 7ea818ab30c85214c8501d108e5a4250, type: 3}
   - {fileID: -5536324370814838258, guid: ebc22afaafe042d459183daa3d537b27, type: 3}
   - {fileID: -7090956003496366093, guid: 0dc81356162762b46bf5a5df31a606ab, type: 3}
   - {fileID: -5536324370814838258, guid: ebc22afaafe042d459183daa3d537b27, type: 3}
@@ -2011,7 +2011,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1891057511
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2056,7 +2056,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7090956003496366093, guid: 0dc81356162762b46bf5a5df31a606ab, type: 3}
+  m_Sprite: {fileID: -9090472988228515879, guid: 51d81ea19d78a7348bbbf5cf729d8b94, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2077,7 +2077,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.36, y: 1.07, z: 0}
-  m_LocalScale: {x: 0.63466, y: 0.63466, z: 0.63466}
+  m_LocalScale: {x: 0.44393197, y: 0.44393197, z: 0.44393197}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

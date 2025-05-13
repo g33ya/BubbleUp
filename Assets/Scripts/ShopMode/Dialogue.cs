@@ -164,6 +164,44 @@ public class Dialogue : MonoBehaviour
                     homeButton.SetActive(true);
                 }
             }
+            if (currentScene==17){
+                if (step==6){
+                    kitchenButton.SetActive(true);
+                }
+            }
+            if (currentScene==18){
+            if (step==2){
+                //homeButton.SetActive(true);
+                position1.transform.position= new Vector3(-11.28f,1.154747f,0);
+                Character.SetActive(true);
+                //position1.GetComponent<RectTransform>().anchoredPosition = new Vector2(537f, 97f);
+             }
+             if (step==10){
+                 kitchenButton.SetActive(true);
+            }
+            }
+             if (currentScene==19){
+            if (step==2){
+                //homeButton.SetActive(true);
+                position1.transform.position= new Vector3(-11.28f,1.154747f,0);
+                Character.SetActive(true);
+                //position1.GetComponent<RectTransform>().anchoredPosition = new Vector2(537f, 97f);
+            // }
+            // if (step==10){
+            //     kitchenButton.SetActive(true);
+            }
+            }
+            if (currentScene==20){
+            if (step==2){
+                //homeButton.SetActive(true);
+                position1.transform.position= new Vector3(-11.28f,1.154747f,0);
+                homeButton.SetActive(true);
+                //position1.GetComponent<RectTransform>().anchoredPosition = new Vector2(537f, 97f);
+            // }
+            // if (step==10){
+            //     kitchenButton.SetActive(true);
+            }
+            }
         }
     }
     }
