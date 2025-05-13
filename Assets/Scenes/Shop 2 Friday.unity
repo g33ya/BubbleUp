@@ -1376,14 +1376,14 @@ MonoBehaviour:
   Character2: {fileID: 0}
   speaker:
   - Bea
+  - Taylor
   - You
-  - Bea
+  - Taylor
   - You
-  - Bea
-  - Bea
+  - Taylor
   - You
-  - Bea
-  - Elomar
+  - Taylor
+  - Taylor
   - You
   dialogueWords:
   - Thank you! I'll catch you Monday. Fingers crossed I keep this momentum.
@@ -1403,14 +1403,14 @@ MonoBehaviour:
   - 'Coming right up. '
   portrait:
   - {fileID: -8551130212731234159, guid: 78bd06829431eb54a995a8fb66bc51b2, type: 3}
-  - {fileID: -5536324370814838258, guid: d3f5d654b4626b243a664e01b0b93827, type: 3}
-  - {fileID: -8551130212731234159, guid: 78bd06829431eb54a995a8fb66bc51b2, type: 3}
   - {fileID: -7090956003496366093, guid: 0dc81356162762b46bf5a5df31a606ab, type: 3}
+  - {fileID: -5536324370814838258, guid: d3f5d654b4626b243a664e01b0b93827, type: 3}
+  - {fileID: -9090472988228515879, guid: 51d81ea19d78a7348bbbf5cf729d8b94, type: 3}
   - {fileID: -5536324370814838258, guid: ebc22afaafe042d459183daa3d537b27, type: 3}
-  - {fileID: -7090956003496366093, guid: 0dc81356162762b46bf5a5df31a606ab, type: 3}
+  - {fileID: -9090472988228515879, guid: 51d81ea19d78a7348bbbf5cf729d8b94, type: 3}
   - {fileID: -5536324370814838258, guid: d3f5d654b4626b243a664e01b0b93827, type: 3}
-  - {fileID: -7090956003496366093, guid: 0dc81356162762b46bf5a5df31a606ab, type: 3}
-  - {fileID: -7090956003496366093, guid: 0dc81356162762b46bf5a5df31a606ab, type: 3}
+  - {fileID: -9090472988228515879, guid: 51d81ea19d78a7348bbbf5cf729d8b94, type: 3}
+  - {fileID: -9090472988228515879, guid: 51d81ea19d78a7348bbbf5cf729d8b94, type: 3}
   - {fileID: -5536324370814838258, guid: d3f5d654b4626b243a664e01b0b93827, type: 3}
 --- !u!4 &1235620348
 Transform:
