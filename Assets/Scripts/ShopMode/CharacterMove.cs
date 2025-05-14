@@ -5,6 +5,7 @@ public class CharacterMove : MonoBehaviour
     public GameObject character;
     public GameObject counterPosition;
     public float speed;
+    public AudioSource AudioPlayer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,4 +17,12 @@ public class CharacterMove : MonoBehaviour
     {
         character.transform.position=Vector3.MoveTowards(character.transform.position, counterPosition.transform.position,speed);
     }
+    void OnTriggerEnter2D(Collider2D other)
+{
+    // if (other.CompareTag("CollisonTag"))
+    // {
+    //     Debug.Log("Trigger Entered");
+    //     AudioPlayer.Play();
+    // }
+}
 }

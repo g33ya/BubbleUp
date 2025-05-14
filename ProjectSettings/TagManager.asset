@@ -13,6 +13,9 @@ TagManager:
   - aloew/cup
   - poppinw/cup
   - matchaOnly
+  - NPC
+  - Door Collision tag
+  - CollisonTag
   layers:
   - Default
   - TransparentFX
