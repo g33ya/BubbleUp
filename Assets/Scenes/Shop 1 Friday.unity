@@ -1207,14 +1207,15 @@ MonoBehaviour:
     sugar boba drink today as a treat\u2014not a lifeline."
   - Major progress. I'll go make that for you now
   portrait:
-  - {fileID: -8551130212731234159, guid: 8de073e7ae40b284bad864ad291d3375, type: 3}
+  - {fileID: -7149995068673313765, guid: e9a2bec9cd2e24042be98c6669d14c4d, type: 3}
   - {fileID: -5536324370814838258, guid: abd9b57b9b65aed4d86acf590cd6c409, type: 3}
-  - {fileID: -8551130212731234159, guid: 8de073e7ae40b284bad864ad291d3375, type: 3}
-  - {fileID: -8551130212731234159, guid: 8de073e7ae40b284bad864ad291d3375, type: 3}
-  - {fileID: -8551130212731234159, guid: 8de073e7ae40b284bad864ad291d3375, type: 3}
-  - {fileID: -8551130212731234159, guid: 8de073e7ae40b284bad864ad291d3375, type: 3}
-  - {fileID: -8551130212731234159, guid: 8de073e7ae40b284bad864ad291d3375, type: 3}
-  audioplayer: {fileID: 0}
+  - {fileID: -7149995068673313765, guid: e9a2bec9cd2e24042be98c6669d14c4d, type: 3}
+  - {fileID: -7149995068673313765, guid: e9a2bec9cd2e24042be98c6669d14c4d, type: 3}
+  - {fileID: -5536324370814838258, guid: ebc22afaafe042d459183daa3d537b27, type: 3}
+  - {fileID: -7149995068673313765, guid: e9a2bec9cd2e24042be98c6669d14c4d, type: 3}
+  - {fileID: -5536324370814838258, guid: ebc22afaafe042d459183daa3d537b27, type: 3}
+  doorChime: {fileID: 0}
+  sparkle: {fileID: 0}
 --- !u!4 &1235620348
 Transform:
   m_ObjectHideFlags: 0
@@ -1585,7 +1586,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483635187}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -2071,7 +2072,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -655, y: -13}
+  m_AnchoredPosition: {x: -632.78, y: -13}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2016371285

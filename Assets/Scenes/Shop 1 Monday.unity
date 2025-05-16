@@ -1409,10 +1409,10 @@ MonoBehaviour:
     a computer science major\u2013 junioritis is real.\r\n"
   - "I\u2019ll do a milk tea with boba. My sweet treat for the day!"
   portrait:
-  - {fileID: -8551130212731234159, guid: 453dc6d6873e1f64cb521ddf98414f23, type: 3}
+  - {fileID: -7149995068673313765, guid: e9a2bec9cd2e24042be98c6669d14c4d, type: 3}
   - {fileID: -5536324370814838258, guid: ebc22afaafe042d459183daa3d537b27, type: 3}
-  - {fileID: -8551130212731234159, guid: 453dc6d6873e1f64cb521ddf98414f23, type: 3}
-  - {fileID: -8551130212731234159, guid: 453dc6d6873e1f64cb521ddf98414f23, type: 3}
+  - {fileID: -7149995068673313765, guid: e9a2bec9cd2e24042be98c6669d14c4d, type: 3}
+  - {fileID: -7149995068673313765, guid: e9a2bec9cd2e24042be98c6669d14c4d, type: 3}
   audioplayer: {fileID: 0}
 --- !u!4 &1235620348
 Transform:
@@ -2270,7 +2270,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -655, y: -13}
+  m_AnchoredPosition: {x: -631.75, y: -13}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2016371285

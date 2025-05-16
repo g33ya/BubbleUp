@@ -1817,15 +1817,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 4145446095678743276, guid: f8895961b300c644cb716c50e6081c5a, type: 3}
+  m_Sprite: {fileID: 4145446095678743276, guid: 3233d80613865114cb6eeae1662a1bde, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.54, y: 6.22}
+  m_Size: {x: 10, y: 13.54}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1171144101
@@ -1917,12 +1917,13 @@ MonoBehaviour:
 
 '
   portrait:
-  - {fileID: 7607482721926598001, guid: dd8955fd23d4d70488425d08bbe4aa0d, type: 3}
-  - {fileID: -5536324370814838258, guid: 6fc82bcc7492bd442a032fc051cc3e39, type: 3}
-  - {fileID: -8551130212731234159, guid: 608ec20252aa06141b2b33376ec94ae2, type: 3}
-  - {fileID: 3535177381572351074, guid: 95ff43c801867644eb32cb65280b8608, type: 3}
+  - {fileID: 8607541430080083970, guid: f512966fd36302e419b2e87cd8ebe2b4, type: 3}
   - {fileID: -5536324370814838258, guid: ebc22afaafe042d459183daa3d537b27, type: 3}
-  audioplayer: {fileID: 970302259}
+  - {fileID: -7149995068673313765, guid: e9a2bec9cd2e24042be98c6669d14c4d, type: 3}
+  - {fileID: -3179554087238049522, guid: 5564d1ceec3715a42bd7bebf0c2d3430, type: 3}
+  - {fileID: -5536324370814838258, guid: ebc22afaafe042d459183daa3d537b27, type: 3}
+  doorChime: {fileID: 970302259}
+  sparkle: {fileID: 0}
 --- !u!4 &1235620348
 Transform:
   m_ObjectHideFlags: 0
@@ -2983,7 +2984,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -655, y: -13}
+  m_AnchoredPosition: {x: -629.81, y: -13}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2138368967
