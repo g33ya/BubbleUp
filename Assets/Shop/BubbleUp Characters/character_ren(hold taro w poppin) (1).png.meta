@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      character_ren(hold taro w poppin) (1)_0: -3246895413375407649
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

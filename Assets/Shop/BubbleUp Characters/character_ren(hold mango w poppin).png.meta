@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      character_ren(hold mango w poppin)_0: 4922177492377716888
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
