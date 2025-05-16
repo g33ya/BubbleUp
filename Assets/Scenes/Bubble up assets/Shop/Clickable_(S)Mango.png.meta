@@ -120,12 +120,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 321
-        y: 183
-        width: 1166
-        height: 831
+        y: 171
+        width: 1265
+        height: 837
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 422, y: 0, z: 347, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -141,13 +141,13 @@ TextureImporter:
       name: Clickable_(S)Mango_1
       rect:
         serializedVersion: 2
-        x: 353
+        x: 625
         y: 267
-        width: 927
-        height: 713
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+        width: 633
+        height: 747
+      alignment: 9
+      pivot: {x: 0.61372846, y: 0.4999999}
+      border: {x: 106, y: 0, z: 118, w: 0}
       customData: 
       outline: []
       physicsShape: []
