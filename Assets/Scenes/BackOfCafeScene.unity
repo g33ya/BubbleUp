@@ -269,7 +269,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
+
 --- !u!114 &14809868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,7 +317,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
+
 >>>>>>> ab2a77a5c2af580cb569230380e6e473b3d44ed5
 --- !u!1 &154480705
 GameObject:
@@ -493,9 +493,9 @@ Transform:
   m_GameObject: {fileID: 191840045}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD
+
   m_LocalPosition: {x: -0.33, y: -2.04, z: 10}
-=======
+
   m_LocalPosition: {x: 0.90549904, y: -0.6336852, z: 1427.2747}
 >>>>>>> ab2a77a5c2af580cb569230380e6e473b3d44ed5
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -927,8 +927,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
-=======
+
 --- !u!114 &299636932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1332,9 +1331,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89f75e9b704244c43890fdb25612be03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
+
   bobaCupSprite: {fileID: 3490220934111244818, guid: fab127a6c3057af4ebf0d59930d2fcc2, type: 3}
-=======
+
   bobaCupSprite: {fileID: 3490220934111244818, guid: ca50f6660007c43b2ac31a49de83231a, type: 3}
 --- !u!1 &535938850
 GameObject:
@@ -1651,10 +1650,10 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
+
 --- !u!114 &564312666
 MonoBehaviour:
-=======
+
 --- !u!1 &588769357
 GameObject:
 >>>>>>> ab2a77a5c2af580cb569230380e6e473b3d44ed5
@@ -1662,7 +1661,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
+
   m_GameObject: {fileID: 564312661}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1673,7 +1672,7 @@ GameObject:
   taroWithAloeSprite: {fileID: -1243633403815435530, guid: e6b741183beb2e0458f26207e427ed38, type: 3}
   taroWithBobaSprite: {fileID: -2763158845320072381, guid: 750bfe0471ccc4b4191e777a77907e36, type: 3}
   taroWithPoppinSprite: {fileID: 1402998173964939640, guid: ab2fa133d7b3a034ab4c2a83805b698d, type: 3}
-=======
+
   serializedVersion: 6
   m_Component:
   - component: {fileID: 588769358}
@@ -2030,8 +2029,7 @@ RectTransform:
   m_AnchoredPosition: {x: -7.27, y: 0.17}
   m_SizeDelta: {x: 2.95, y: 4.12}
   m_Pivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
-=======
+
 --- !u!114 &718009229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3209,8 +3207,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1569795630}
   m_CullTransparentMesh: 1
-<<<<<<< HEAD
-=======
+
 --- !u!1 &1591086726
 GameObject:
   m_ObjectHideFlags: 0
@@ -4174,8 +4171,8 @@ SceneRoots:
   - {fileID: 1198830709}
   - {fileID: 616174736}
   - {fileID: 191840047}
-<<<<<<< HEAD
+
   - {fileID: 142441339}
   - {fileID: 638925112}
-=======
+
 >>>>>>> ab2a77a5c2af580cb569230380e6e473b3d44ed5
