@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 9039140926327833811}
   - component: {fileID: 3230505908138225930}
   - component: {fileID: 3055578206962361627}
-  - component: {fileID: 6308108108489851563}
   m_Layer: 0
   m_Name: InProgress Cup
   m_TagString: inProgressCup
@@ -179,16 +178,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6308108108489851563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2815753840982345500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 024d92866470e4679913f82d677a97a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sr: {fileID: 7029204810444629765, guid: 295a44a326d8d4f0b8ac690726e37cb8, type: 3}

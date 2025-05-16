@@ -119,12 +119,12 @@ TextureImporter:
       name: "Clickable_Milkw\uF022Boba_0"
       rect:
         serializedVersion: 2
-        x: 340
-        y: 227
-        width: 1240
-        height: 806
+        x: 56
+        y: 849
+        width: 6
+        height: 6
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -146,7 +146,7 @@ TextureImporter:
         width: 822
         height: 713
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -163,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4568a5b892a8740418eaac886863a664
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 

@@ -51,10 +51,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 380
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -119,13 +119,13 @@ TextureImporter:
       name: "Clickable_(S)Tarow\uF022OrangePoppin_0"
       rect:
         serializedVersion: 2
-        x: 222
-        y: 270
-        width: 1302
-        height: 810
+        x: 0
+        y: 0
+        width: 0
+        height: 0
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 521, y: 0, z: 384, w: 115}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -137,33 +137,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: "Clickable_(S)Tarow\uF022OrangePoppin_1"
-      rect:
-        serializedVersion: 2
-        x: 353
-        y: 267
-        width: 822
-        height: 713
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4b0ad5bc9b0fa0c70800000000000000
-      internalID: 8938221091241697460
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4e07e5ecb924d42e2a5e628a777d0e73
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -174,7 +152,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       "Clickable_(S)Tarow\uF022OrangePoppin_0": -601100184725789824
-      "Clickable_(S)Tarow\uF022OrangePoppin_1": 8938221091241697460
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

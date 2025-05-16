@@ -51,10 +51,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 360
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -119,13 +119,13 @@ TextureImporter:
       name: Clickable_(S)Mango_0
       rect:
         serializedVersion: 2
-        x: 321
-        y: 171
-        width: 1265
-        height: 837
+        x: 0
+        y: 0
+        width: 0
+        height: 0
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 422, y: 0, z: 347, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -137,33 +137,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Clickable_(S)Mango_1
-      rect:
-        serializedVersion: 2
-        x: 625
-        y: 267
-        width: 633
-        height: 747
-      alignment: 9
-      pivot: {x: 0.61372846, y: 0.4999999}
-      border: {x: 106, y: 0, z: 118, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b9e0b3f0650e59180800000000000000
-      internalID: -9109128011059622245
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0df255cc9e1bb4bf99506646c5591c83
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -174,7 +152,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Clickable_(S)Mango_0: 3120742503207459111
-      Clickable_(S)Mango_1: -9109128011059622245
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
