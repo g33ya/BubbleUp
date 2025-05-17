@@ -269,56 +269,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
---- !u!114 &14809868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 14809863}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11ef1c5a58902487ba2104e0bb6d532f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mangoCupSprite: {fileID: 2096412399073885462, guid: 72e26e27b4f3fb843a65b359e4a2b24f, type: 3}
-  mangoWithAloeSprite: {fileID: -2586768722040249087, guid: 3b362d02ffbf85f4aa7233329c8a4952, type: 3}
-  mangoWithBobaSprite: {fileID: 1755747747064077749, guid: b63d0b8a2c271a54490b364db7725e88, type: 3}
-  mangoWithPoppinSprite: {fileID: -6971235186392487740, guid: 9ae21b2e7767e8947acd6095ed35e4c9, type: 3}
---- !u!1 &142441338
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 142441339}
-  m_Layer: 0
-  m_Name: SealedCupSpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &142441339
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 142441338}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.73, y: -1.38, z: -1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
->>>>>>> ab2a77a5c2af580cb569230380e6e473b3d44ed5
 --- !u!1 &154480705
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,6 +403,142 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &166643539
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 166643540}
+  - component: {fileID: 166643542}
+  - component: {fileID: 166643541}
+  m_Layer: 0
+  m_Name: Shaker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &166643540
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166643539}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.44, y: 0.2, z: 0}
+  m_LocalScale: {x: 0.7815, y: 0.8317, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2101680679}
+  - {fileID: 875084738}
+  m_Father: {fileID: 616174736}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &166643541
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166643539}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.86, y: 3.98}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2.86, y: 3.98}
+  m_EdgeRadius: 0
+--- !u!212 &166643542
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166643539}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -5217493170432572579, guid: 86454f891e711bf49ad1061df80441ce, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &191840045
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,11 +579,7 @@ Transform:
   m_GameObject: {fileID: 191840045}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD
-  m_LocalPosition: {x: -0.33, y: -2.04, z: 10}
-=======
   m_LocalPosition: {x: 0.90549904, y: -0.6336852, z: 1427.2747}
->>>>>>> ab2a77a5c2af580cb569230380e6e473b3d44ed5
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -804,6 +886,7 @@ GameObject:
   - component: {fileID: 299636929}
   - component: {fileID: 299636931}
   - component: {fileID: 299636930}
+  - component: {fileID: 299636932}
   m_Layer: 0
   m_Name: Cup Sealer w/no Cup
   m_TagString: Untagged
@@ -820,10 +903,11 @@ Transform:
   m_GameObject: {fileID: 299636928}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.21, y: 0.17, z: 0}
+  m_LocalPosition: {x: -4.62, y: 0.27, z: 0}
   m_LocalScale: {x: 0.7881, y: 0.8591, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1591086727}
   m_Father: {fileID: 616174736}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &299636930
@@ -927,8 +1011,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
-=======
 --- !u!114 &299636932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -945,7 +1027,6 @@ MonoBehaviour:
   withCup: {fileID: 6568491884983337940, guid: b90e3218e48f9ab45b94fe2ab541686f, type: 3}
   sealedCupPrefab: {fileID: 0}
   spawnPoint: {fileID: 0}
->>>>>>> ab2a77a5c2af580cb569230380e6e473b3d44ed5
 --- !u!1 &360815383
 GameObject:
   m_ObjectHideFlags: 0
@@ -1196,6 +1277,7 @@ GameObject:
   - component: {fileID: 451869678}
   - component: {fileID: 451869681}
   - component: {fileID: 451869680}
+  - component: {fileID: 451869679}
   - component: {fileID: 451869682}
   m_Layer: 0
   m_Name: Boba Pearls
@@ -1219,6 +1301,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 616174736}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &451869679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451869677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58e0a5d64eddc444694891874addfe8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapPoint: {fileID: 0}
+  snapThreshold: 0.7
+  snapOffset: {x: 0, y: -0.2, z: 0}
 --- !u!61 &451869680
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1332,9 +1429,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89f75e9b704244c43890fdb25612be03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  bobaCupSprite: {fileID: 3490220934111244818, guid: fab127a6c3057af4ebf0d59930d2fcc2, type: 3}
-=======
   bobaCupSprite: {fileID: 3490220934111244818, guid: ca50f6660007c43b2ac31a49de83231a, type: 3}
 --- !u!1 &535938850
 GameObject:
@@ -1500,7 +1594,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inProgressCupPrefab: {fileID: 2815753840982345500, guid: 318b277b1a7404b218c273060593504e, type: 3}
->>>>>>> ab2a77a5c2af580cb569230380e6e473b3d44ed5
 --- !u!1 &564312661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1651,29 +1744,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
---- !u!114 &564312666
-MonoBehaviour:
-=======
 --- !u!1 &588769357
 GameObject:
->>>>>>> ab2a77a5c2af580cb569230380e6e473b3d44ed5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 564312661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7be3af96a6c404c41a79cb0e307d4b3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  taroOnlySprite: {fileID: -83516185683859780, guid: d88573a5169b4e140bfd0ea97a3e682c, type: 3}
-  taroWithAloeSprite: {fileID: -1243633403815435530, guid: e6b741183beb2e0458f26207e427ed38, type: 3}
-  taroWithBobaSprite: {fileID: -2763158845320072381, guid: 750bfe0471ccc4b4191e777a77907e36, type: 3}
-  taroWithPoppinSprite: {fileID: 1402998173964939640, guid: ab2fa133d7b3a034ab4c2a83805b698d, type: 3}
-=======
   serializedVersion: 6
   m_Component:
   - component: {fileID: 588769358}
@@ -1802,7 +1878,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.6, y: 0.97}
   m_EdgeRadius: 0
->>>>>>> ab2a77a5c2af580cb569230380e6e473b3d44ed5
 --- !u!1 &616174733
 GameObject:
   m_ObjectHideFlags: 0
@@ -1888,108 +1963,14 @@ Transform:
   - {fileID: 14809864}
   - {fileID: 1786490070}
   - {fileID: 440243111}
+  - {fileID: 535938851}
+  - {fileID: 166643540}
   - {fileID: 564312662}
   - {fileID: 154480706}
   - {fileID: 718009228}
-  - {fileID: 2101680679}
   - {fileID: 299636929}
   - {fileID: 1182806182}
   - {fileID: 1758619317}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &638925109
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 638925112}
-  - component: {fileID: 638925111}
-  - component: {fileID: 638925110}
-  m_Layer: 0
-  m_Name: SealedZone
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &638925110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 638925109}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11bd43dd43f304572bf52fb2c698fd82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lever: {fileID: 2101680683}
-  machineRenderer: {fileID: 299636931}
-  sealerEmptySprite: {fileID: -7851375875926598054, guid: a8af48e6bc7ab654c8d4405d5fb9479d, type: 3}
-  sealerWithCupSprite: {fileID: 6568491884983337940, guid: b90e3218e48f9ab45b94fe2ab541686f, type: 3}
---- !u!61 &638925111
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 638925109}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.21153593, y: 0.4935848}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 2.316227, y: 3.4444194}
-  m_EdgeRadius: 0
---- !u!4 &638925112
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 638925109}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.43, y: -0.37, z: 104.748055}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &718009227
@@ -2003,7 +1984,7 @@ GameObject:
   - component: {fileID: 718009228}
   - component: {fileID: 718009231}
   - component: {fileID: 718009230}
-  - component: {fileID: 718009232}
+  - component: {fileID: 718009229}
   m_Layer: 0
   m_Name: Cup Sealer w/Cup
   m_TagString: Untagged
@@ -2022,16 +2003,15 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.7881, y: 0.8591, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 588769358}
   m_Father: {fileID: 616174736}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.27, y: 0.17}
+  m_AnchoredPosition: {x: -4.62, y: 0.33}
   m_SizeDelta: {x: 2.95, y: 4.12}
   m_Pivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
-=======
 --- !u!114 &718009229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2048,7 +2028,6 @@ MonoBehaviour:
   withCup: {fileID: 6568491884983337940, guid: b90e3218e48f9ab45b94fe2ab541686f, type: 3}
   sealedCupPrefab: {fileID: 0}
   spawnPoint: {fileID: 0}
->>>>>>> ab2a77a5c2af580cb569230380e6e473b3d44ed5
 --- !u!61 &718009230
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2138,7 +2117,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 6568491884983337940, guid: b90e3218e48f9ab45b94fe2ab541686f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2150,43 +2129,156 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &718009232
+--- !u!1 &875084737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 875084738}
+  - component: {fileID: 875084741}
+  - component: {fileID: 875084739}
+  - component: {fileID: 875084742}
+  m_Layer: 0
+  m_Name: Shaker Lever Down
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &875084738
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875084737}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.6400001, y: -0.33, z: 0}
+  m_LocalScale: {x: 1.0663999, y: 0.94269997, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 166643540}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &875084739
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875084737}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.01899983, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.61, y: 2.66}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.5720004, y: 2.66}
+  m_EdgeRadius: 0
+--- !u!212 &875084741
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875084737}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -54510852400673543, guid: 36bf8fa2752464a7888fc0b03d4b866b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 1
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &875084742
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 718009227}
+  m_GameObject: {fileID: 875084737}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07cbb68c414524a51b8f51e6b7c1fa21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   leverUp: {fileID: 0}
-  leverDown: {fileID: 0}
-  machineRenderer: {fileID: 0}
-  sealerEmptySprite: {fileID: 0}
-  currentCupState: {fileID: 0}
-  spawnPoint: {fileID: 142441339}
-  currentCup: {fileID: 0}
-  mangoSealed: {fileID: 2334955078402560304, guid: ae468b6f0943146b2933a1cc2c2623d0, type: 3}
-  mangoBobaSealed: {fileID: 2533402758761686797, guid: 8854dcf5162a14868ab245dba3c8df67, type: 3}
-  mangoAloeSealed: {fileID: 6453945281028951433, guid: 5134c770ba8cc4d9d93c425939486b8d, type: 3}
-  mangoPoppinSealed: {fileID: 8416692397240146877, guid: faa4cc356dea44a52a8d5383c1b9e8a2, type: 3}
-  taroSealed: {fileID: 4822388485213034832, guid: f71ca72129c884ec38172bc0bb3ce84b, type: 3}
-  taroBobaSealed: {fileID: 6511776728983981478, guid: 35cc48bcfa79244a78578e6bc14782c1, type: 3}
-  taroPoppinSealed: {fileID: 4029667506778785409, guid: d49ab802ea0ad4c3ea61301d11dc03bb, type: 3}
-  taroAloeSealed: {fileID: 5030036341617372334, guid: d05c9158621b04214940843a079ad4fd, type: 3}
-  milkSealed: {fileID: 4220007314157254636, guid: aa4294b9f8ca74be9a8c07c630bc829c, type: 3}
-  milkBobaSealed: {fileID: 172362988280907500, guid: 14f8053943ea24677aa6233430836aeb, type: 3}
-  milkAloeSealed: {fileID: 7219478915612940890, guid: 9b32e06f488484dc0b96695630699d54, type: 3}
-  milkPoppinSealed: {fileID: 6690306517289643972, guid: 5a784ae604eb549fdaf8ed8d9d59eb8c, type: 3}
-  brownsugarSealed: {fileID: 3179408156578266252, guid: 513e816276ecd495a92520147f1e043b, type: 3}
-  brownsugarBobaSealed: {fileID: 8549518895370683587, guid: 3376b03e6a5a3404e92d1e199f8f1529, type: 3}
-  matchaSealed: {fileID: 4337740244994542158, guid: 8fe036dc60f18436db22570ca67968c8, type: 3}
-  matchaBobaSealed: {fileID: 3462572554898538778, guid: c736c8eb58d8747f7978cb0cf04da180, type: 3}
-  matchaPoppinSealed: {fileID: 8873482534740799038, guid: 9da9fb61597f54c918fc5b5c07514772, type: 3}
-  matchaAloeSealed: {fileID: 7703847682703723500, guid: 6d7b77a184232446780490121a4e2a71, type: 3}
+  leverDown: {fileID: -54510852400673543, guid: 36bf8fa2752464a7888fc0b03d4b866b, type: 3}
+  shakerCup: {fileID: 535938850}
 --- !u!1 &996660860
 GameObject:
   m_ObjectHideFlags: 0
@@ -2688,6 +2780,7 @@ GameObject:
   - component: {fileID: 1230733416}
   - component: {fileID: 1230733419}
   - component: {fileID: 1230733418}
+  - component: {fileID: 1230733417}
   - component: {fileID: 1230733420}
   m_Layer: 0
   m_Name: Matcha Juice
@@ -2711,6 +2804,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 616174736}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1230733417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230733415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58e0a5d64eddc444694891874addfe8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapPoint: {fileID: 0}
+  snapThreshold: 0.7
+  snapOffset: {x: 0, y: -0.2, z: 0}
 --- !u!61 &1230733418
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3209,8 +3317,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1569795630}
   m_CullTransparentMesh: 1
-<<<<<<< HEAD
-=======
 --- !u!1 &1591086726
 GameObject:
   m_ObjectHideFlags: 0
@@ -3362,7 +3468,6 @@ MonoBehaviour:
   withCup: {fileID: 0}
   sealedCupPrefab: {fileID: 5288852215165320657, guid: 6dc6cf970d83b4866bed66a877af1cc2, type: 3}
   spawnPoint: {fileID: 1182806182}
->>>>>>> ab2a77a5c2af580cb569230380e6e473b3d44ed5
 --- !u!1 &1642855254
 GameObject:
   m_ObjectHideFlags: 0
@@ -3943,11 +4048,11 @@ Transform:
   m_GameObject: {fileID: 2101680678}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.81, y: 0.48000002, z: 0}
-  m_LocalScale: {x: 0.83339155, y: 0.7840436, z: 1}
+  m_LocalPosition: {x: 1.68, y: 0.38, z: 0}
+  m_LocalScale: {x: 1.0663999, y: 0.94269997, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 616174736}
+  m_Father: {fileID: 166643540}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2101680680
 BoxCollider2D:
@@ -4063,30 +4168,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   leverUp: {fileID: 108906438478637347, guid: 6d868685468300f4da8eb4f6419e561d, type: 3}
-  leverDown: {fileID: -2018769799231748683, guid: d81ade9f18916cf4e862ca77735067fb, type: 3}
-  machineRenderer: {fileID: 299636931}
-  sealerEmptySprite: {fileID: -7851375875926598054, guid: a8af48e6bc7ab654c8d4405d5fb9479d, type: 3}
-  currentCupState: {fileID: 0}
-  spawnPoint: {fileID: 142441339}
-  currentCup: {fileID: 0}
-  mangoSealed: {fileID: 2334955078402560304, guid: ae468b6f0943146b2933a1cc2c2623d0, type: 3}
-  mangoBobaSealed: {fileID: 2533402758761686797, guid: 8854dcf5162a14868ab245dba3c8df67, type: 3}
-  mangoAloeSealed: {fileID: 6453945281028951433, guid: 5134c770ba8cc4d9d93c425939486b8d, type: 3}
-  mangoPoppinSealed: {fileID: 8416692397240146877, guid: faa4cc356dea44a52a8d5383c1b9e8a2, type: 3}
-  taroSealed: {fileID: 4822388485213034832, guid: f71ca72129c884ec38172bc0bb3ce84b, type: 3}
-  taroBobaSealed: {fileID: 6511776728983981478, guid: 35cc48bcfa79244a78578e6bc14782c1, type: 3}
-  taroPoppinSealed: {fileID: 4029667506778785409, guid: d49ab802ea0ad4c3ea61301d11dc03bb, type: 3}
-  taroAloeSealed: {fileID: 5030036341617372334, guid: d05c9158621b04214940843a079ad4fd, type: 3}
-  milkSealed: {fileID: 4220007314157254636, guid: aa4294b9f8ca74be9a8c07c630bc829c, type: 3}
-  milkBobaSealed: {fileID: 172362988280907500, guid: 14f8053943ea24677aa6233430836aeb, type: 3}
-  milkAloeSealed: {fileID: 7219478915612940890, guid: 9b32e06f488484dc0b96695630699d54, type: 3}
-  milkPoppinSealed: {fileID: 6690306517289643972, guid: 5a784ae604eb549fdaf8ed8d9d59eb8c, type: 3}
-  brownsugarSealed: {fileID: 3179408156578266252, guid: 513e816276ecd495a92520147f1e043b, type: 3}
-  brownsugarBobaSealed: {fileID: 8549518895370683587, guid: 3376b03e6a5a3404e92d1e199f8f1529, type: 3}
-  matchaSealed: {fileID: 4337740244994542158, guid: 8fe036dc60f18436db22570ca67968c8, type: 3}
-  matchaBobaSealed: {fileID: 3462572554898538778, guid: c736c8eb58d8747f7978cb0cf04da180, type: 3}
-  matchaPoppinSealed: {fileID: 8873482534740799038, guid: 9da9fb61597f54c918fc5b5c07514772, type: 3}
-  matchaAloeSealed: {fileID: 7703847682703723500, guid: 6d7b77a184232446780490121a4e2a71, type: 3}
+  leverDown: {fileID: 0}
+  shakerCup: {fileID: 535938850}
 --- !u!1 &2106123606
 GameObject:
   m_ObjectHideFlags: 0
@@ -4174,8 +4257,3 @@ SceneRoots:
   - {fileID: 1198830709}
   - {fileID: 616174736}
   - {fileID: 191840047}
-<<<<<<< HEAD
-  - {fileID: 142441339}
-  - {fileID: 638925112}
-=======
->>>>>>> ab2a77a5c2af580cb569230380e6e473b3d44ed5
