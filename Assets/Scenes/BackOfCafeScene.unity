@@ -286,7 +286,7 @@ MonoBehaviour:
   mangoWithAloeSprite: {fileID: -2586768722040249087, guid: 3b362d02ffbf85f4aa7233329c8a4952, type: 3}
   mangoWithBobaSprite: {fileID: 1755747747064077749, guid: b63d0b8a2c271a54490b364db7725e88, type: 3}
   mangoWithPoppinSprite: {fileID: -6971235186392487740, guid: 9ae21b2e7767e8947acd6095ed35e4c9, type: 3}
-<<<<<<< HEAD
+
 --- !u!1 &142441338
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,9 +319,7 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 
->>>>>>> ab2a77a5c2af580cb569230380e6e473b3d44ed5
-=======
->>>>>>> parent of fd8db72 (I deleted objects that unncessary to the scene, like the shaker and the shaker cup. Now the we just have the seal machine, and youre able to seal all the cup and drinks, as well put them in the trash if there's a mess up. I also put some comments on code, but I might delete some because I feel like I went overboard with the comments, I just want to make sure everything is good and enough for the final version. I believe my scene is completed, however, I may need sound but thats the only thing.)
+
 --- !u!1 &154480705
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,13 +630,7 @@ Transform:
   m_GameObject: {fileID: 191840045}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD
 
-  m_LocalPosition: {x: -0.33, y: -2.04, z: 10}
-
-  m_LocalPosition: {x: 0.90549904, y: -0.6336852, z: 1427.2747}
->>>>>>> ab2a77a5c2af580cb569230380e6e473b3d44ed5
-=======
   m_LocalPosition: {x: -0.53, y: -1.64, z: 1427.2747}
 >>>>>>> parent of fd8db72 (I deleted objects that unncessary to the scene, like the shaker and the shaker cup. Now the we just have the seal machine, and youre able to seal all the cup and drinks, as well put them in the trash if there's a mess up. I also put some comments on code, but I might delete some because I feel like I went overboard with the comments, I just want to make sure everything is good and enough for the final version. I believe my scene is completed, however, I may need sound but thats the only thing.)
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -1086,11 +1078,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noCup: {fileID: -7851375875926598054, guid: a8af48e6bc7ab654c8d4405d5fb9479d, type: 3}
   withCup: {fileID: 6568491884983337940, guid: b90e3218e48f9ab45b94fe2ab541686f, type: 3}
-<<<<<<< HEAD
-  sealedCupPrefab: {fileID: 0}
-  spawnPoint: {fileID: 0}
->>>>>>> ab2a77a5c2af580cb569230380e6e473b3d44ed5
-=======
+
   spawnPoint: {fileID: 1182806182}
   mangoSealed: {fileID: 2334955078402560304, guid: ae468b6f0943146b2933a1cc2c2623d0, type: 3}
   mangoBobaSealed: {fileID: 2533402758761686797, guid: 8854dcf5162a14868ab245dba3c8df67, type: 3}
@@ -1110,7 +1098,7 @@ MonoBehaviour:
   matchaBobaSealed: {fileID: -1772419047615821791, guid: 4e2fe9bf40db0bd4e8502d78bd60754c, type: 3}
   matchaPoppinSealed: {fileID: 7310009955974782036, guid: 4cd73534f9b47a346a6c4e63e419fb19, type: 3}
   matchaAloeSealed: {fileID: -7514571465814022676, guid: c152820a5bbfb7f41a863f5ad4856f84, type: 3}
->>>>>>> parent of fd8db72 (I deleted objects that unncessary to the scene, like the shaker and the shaker cup. Now the we just have the seal machine, and youre able to seal all the cup and drinks, as well put them in the trash if there's a mess up. I also put some comments on code, but I might delete some because I feel like I went overboard with the comments, I just want to make sure everything is good and enough for the final version. I believe my scene is completed, however, I may need sound but thats the only thing.)
+
 --- !u!1 &360815383
 GameObject:
   m_ObjectHideFlags: 0
@@ -1681,9 +1669,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inProgressCupPrefab: {fileID: 2815753840982345500, guid: 318b277b1a7404b218c273060593504e, type: 3}
-<<<<<<< HEAD
->>>>>>> ab2a77a5c2af580cb569230380e6e473b3d44ed5
-=======
+
 --- !u!1001 &559648035
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1757,7 +1743,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5134c770ba8cc4d9d93c425939486b8d, type: 3}
->>>>>>> parent of fd8db72 (I deleted objects that unncessary to the scene, like the shaker and the shaker cup. Now the we just have the seal machine, and youre able to seal all the cup and drinks, as well put them in the trash if there's a mess up. I also put some comments on code, but I might delete some because I feel like I went overboard with the comments, I just want to make sure everything is good and enough for the final version. I believe my scene is completed, however, I may need sound but thats the only thing.)
+
 --- !u!1 &564312661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1914,7 +1900,7 @@ MonoBehaviour:
 
 --- !u!1 &588769357
 GameObject:
->>>>>>> ab2a77a5c2af580cb569230380e6e473b3d44ed5
+
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2058,10 +2044,8 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.6, y: 0.97}
   m_EdgeRadius: 0
-<<<<<<< HEAD
->>>>>>> ab2a77a5c2af580cb569230380e6e473b3d44ed5
-=======
->>>>>>> parent of fd8db72 (I deleted objects that unncessary to the scene, like the shaker and the shaker cup. Now the we just have the seal machine, and youre able to seal all the cup and drinks, as well put them in the trash if there's a mess up. I also put some comments on code, but I might delete some because I feel like I went overboard with the comments, I just want to make sure everything is good and enough for the final version. I believe my scene is completed, however, I may need sound but thats the only thing.)
+
+
 --- !u!1 &616174733
 GameObject:
   m_ObjectHideFlags: 0
@@ -2210,11 +2194,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noCup: {fileID: -7851375875926598054, guid: a8af48e6bc7ab654c8d4405d5fb9479d, type: 3}
   withCup: {fileID: 6568491884983337940, guid: b90e3218e48f9ab45b94fe2ab541686f, type: 3}
-<<<<<<< HEAD
-  sealedCupPrefab: {fileID: 0}
-  spawnPoint: {fileID: 0}
->>>>>>> ab2a77a5c2af580cb569230380e6e473b3d44ed5
-=======
+
+
   spawnPoint: {fileID: 1182806182}
   mangoSealed: {fileID: 2334955078402560304, guid: ae468b6f0943146b2933a1cc2c2623d0, type: 3}
   mangoBobaSealed: {fileID: 2533402758761686797, guid: 8854dcf5162a14868ab245dba3c8df67, type: 3}
@@ -2234,7 +2215,7 @@ MonoBehaviour:
   matchaBobaSealed: {fileID: -1772419047615821791, guid: 4e2fe9bf40db0bd4e8502d78bd60754c, type: 3}
   matchaPoppinSealed: {fileID: 7310009955974782036, guid: 4cd73534f9b47a346a6c4e63e419fb19, type: 3}
   matchaAloeSealed: {fileID: -7514571465814022676, guid: c152820a5bbfb7f41a863f5ad4856f84, type: 3}
->>>>>>> parent of fd8db72 (I deleted objects that unncessary to the scene, like the shaker and the shaker cup. Now the we just have the seal machine, and youre able to seal all the cup and drinks, as well put them in the trash if there's a mess up. I also put some comments on code, but I might delete some because I feel like I went overboard with the comments, I just want to make sure everything is good and enough for the final version. I believe my scene is completed, however, I may need sound but thats the only thing.)
+
 --- !u!61 &718009230
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4486,12 +4467,4 @@ SceneRoots:
   - {fileID: 1198830709}
   - {fileID: 616174736}
   - {fileID: 191840047}
-<<<<<<< HEAD
 
-  - {fileID: 142441339}
-  - {fileID: 638925112}
-
->>>>>>> ab2a77a5c2af580cb569230380e6e473b3d44ed5
-=======
-  - {fileID: 559648035}
->>>>>>> parent of fd8db72 (I deleted objects that unncessary to the scene, like the shaker and the shaker cup. Now the we just have the seal machine, and youre able to seal all the cup and drinks, as well put them in the trash if there's a mess up. I also put some comments on code, but I might delete some because I feel like I went overboard with the comments, I just want to make sure everything is good and enough for the final version. I believe my scene is completed, however, I may need sound but thats the only thing.)
