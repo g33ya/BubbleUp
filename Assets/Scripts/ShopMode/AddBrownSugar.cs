@@ -1,11 +1,9 @@
 using UnityEngine;
 
-//This script adds Brown Sugar to the currently selected cup when the Brown Sugar carton is clicked
-
 public class AddBrownSugar : MonoBehaviour
 {
-    public Sprite brownsugarOnlySprite; //sprite with only brownsugar added
-    public Sprite brownsugarWithBobaSprite; //sprite with brownsugar and boba added
+    public Sprite brownsugarOnlySprite;
+    public Sprite brownsugarWithBobaSprite;
 
       private void OnMouseDown()
     {
@@ -16,17 +14,14 @@ public class AddBrownSugar : MonoBehaviour
             SpriteRenderer sr = cup.GetComponent<SpriteRenderer>();
             CupState state = cup.GetComponent<CupState>();
 
-            //only procedd if a cup is selected 
             if (sr != null && state != null)
             {
-                //if cup already has boba, add the brownsugar sprite so now its brownsugar + boba cup
                 if(state.hasBoba){
                     sr.sprite = brownsugarWithBobaSprite;
                 }
                 else{
                     sr.sprite = brownsugarOnlySprite;
                 }
-                //mark that brownsugar was added
                 state.hasBrownSugar = true;
             }
         }
