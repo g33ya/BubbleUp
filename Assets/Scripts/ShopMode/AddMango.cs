@@ -1,19 +1,17 @@
 using UnityEngine;
 
-//This script adds Mango to the currently selected cup when the Mango carton is clicked
-
 public class AddMango : MonoBehaviour
 {
-    public Sprite mangoCupSprite; //Mango Only
-    public Sprite mangoWithAloeSprite; //Mango + Aloe
-    public Sprite mangoWithBobaSprite; //Mango + Boba
-    public Sprite mangoWithPoppinSprite; //Mango + Poppin
+    public Sprite mangoCupSprite;
+    public Sprite mangoWithAloeSprite;
+
+    public Sprite mangoWithBobaSprite;
+    public Sprite mangoWithPoppinSprite;
 
     private void OnMouseDown()
     {
         GameObject cup = CupButtonSpawner.currentCup;
 
-        // Only proceed if a cup is actually selected
         if (cup != null)
         {
             SpriteRenderer sr = cup.GetComponent<SpriteRenderer>();
@@ -21,24 +19,18 @@ public class AddMango : MonoBehaviour
 
             if (sr != null && state != null)
             {
-                 //cup already has Boba, then add Mango so now the cup changes to Sprite Mango + Boba
                 if(state.hasBoba){
                     sr.sprite = mangoWithBobaSprite;
                 }
-                //cup already has Poppin, then add Mango so now the cup changes to Sprite Mango + Poppin
                 else if(state.hasPoppin){
                     sr.sprite = mangoWithPoppinSprite;
                 }
-                 //cup already has Aloe, then add Mango so now the cup changes to Sprite Mango + Aloe
                 else if(state.hasAloe){
                     sr.sprite = mangoWithAloeSprite;
-
-                }else
-                {
+                }else{
                     sr.sprite = mangoCupSprite;
                 }
                
-               //mark that mango was added
                 state.hasMango = true;
             }
         }
