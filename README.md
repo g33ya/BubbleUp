@@ -18,14 +18,18 @@ Bubble Up is a narrative game that helps players recognize and manage Imposter S
 6. Return to the shop to give customer their order and continue conversation
 ### Home Mode ###
 1. After returning home from the shop each night, view your current stress/energy levels and the current time in the top right corner
-2. Click on the calendar to view upcoming assignments
+2. Click on the calendar to view upcoming assignment dates
 3. Click on the laptop to work on assignments
-4. Utilize the other clickables to decrease stress/increase energy to successfully finish your assignments throughout the week
-## Screenshot
+4. Utilize the other clickables to decrease stress/increase energy to successfully finish your assignments throughout the week *(cat, art supplies, bed, etc)*
+## Screenshots
 (Coming Soon)
 ## Gameplay Video
 (Coming Soon)
-## Education Game Design Document
+## Educational Game Design Document
 View our Design Document [here](https://github.com/g33ya/BubbleUp/blob/main/docs/egdd.md).
 ## Credits and Acknowledgements
 (Resources to be added throughout development)
+## Links ##
+- [Final Presentation](https://www.canva.com/design/DAGmxikPs2Q/eHDZh2LD-R_sX90NBLDneg/view?utm_content=DAGmxikPs2Q&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h296b7078de)
+- [Deployed Game URL](https://g33ya.github.io/BubbleUp/)
+
