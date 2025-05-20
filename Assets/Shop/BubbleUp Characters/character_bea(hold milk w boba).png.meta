@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      character_bea(hold milk w boba)_0: 4145446095678743276
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
