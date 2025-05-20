@@ -2882,6 +2882,7 @@ MonoBehaviour:
   BedUI: {fileID: 0}
   closeButton: {fileID: 17674367}
   startButton: {fileID: 0}
+  dreamSound: {fileID: 0}
   timeManager: {fileID: 0}
   levelManager: {fileID: 0}
 --- !u!114 &141351511
@@ -5393,6 +5394,7 @@ MonoBehaviour:
   BedUI: {fileID: 0}
   closeButton: {fileID: 0}
   startButton: {fileID: 0}
+  dreamSound: {fileID: 0}
   timeManager: {fileID: 0}
   levelManager: {fileID: 0}
 --- !u!114 &318868928
@@ -12070,6 +12072,7 @@ MonoBehaviour:
   BedUI: {fileID: 0}
   closeButton: {fileID: 359259684}
   startButton: {fileID: 0}
+  dreamSound: {fileID: 0}
   timeManager: {fileID: 0}
   levelManager: {fileID: 0}
 --- !u!114 &681617693
@@ -12214,6 +12217,7 @@ MonoBehaviour:
   BedUI: {fileID: 0}
   closeButton: {fileID: 1964830466}
   startButton: {fileID: 0}
+  dreamSound: {fileID: 0}
   timeManager: {fileID: 0}
   levelManager: {fileID: 0}
 --- !u!114 &696767215
@@ -15399,7 +15403,7 @@ MonoBehaviour:
     - m_Text: 4 hr
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: End Day Sleep - in works
+    - m_Text: End of Day
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_OnValueChanged:
@@ -16863,6 +16867,7 @@ MonoBehaviour:
   BedUI: {fileID: 0}
   closeButton: {fileID: 990635059}
   startButton: {fileID: 0}
+  dreamSound: {fileID: 0}
   timeManager: {fileID: 0}
   levelManager: {fileID: 0}
 --- !u!114 &939342807
@@ -17536,6 +17541,7 @@ MonoBehaviour:
   BedUI: {fileID: 1468029456}
   closeButton: {fileID: 141351508}
   startButton: {fileID: 540359605}
+  dreamSound: {fileID: 8300000, guid: 8277320b657bedd47ad52f189e0b8705, type: 3}
   timeManager: {fileID: 725658458}
   levelManager: {fileID: 593411906}
 --- !u!1 &984264760
@@ -18869,6 +18875,7 @@ MonoBehaviour:
   BedUI: {fileID: 0}
   closeButton: {fileID: 2146277725}
   startButton: {fileID: 0}
+  dreamSound: {fileID: 0}
   timeManager: {fileID: 0}
   levelManager: {fileID: 0}
 --- !u!114 &1104213393
@@ -19860,6 +19867,7 @@ MonoBehaviour:
   BedUI: {fileID: 0}
   closeButton: {fileID: 346185707}
   startButton: {fileID: 0}
+  dreamSound: {fileID: 0}
   timeManager: {fileID: 0}
   levelManager: {fileID: 0}
 --- !u!114 &1147835490
@@ -28105,6 +28113,7 @@ MonoBehaviour:
   BedUI: {fileID: 0}
   closeButton: {fileID: 2089184803}
   startButton: {fileID: 0}
+  dreamSound: {fileID: 0}
   timeManager: {fileID: 0}
   levelManager: {fileID: 0}
 --- !u!114 &1500595927
@@ -28526,6 +28535,7 @@ MonoBehaviour:
   BedUI: {fileID: 0}
   closeButton: {fileID: 0}
   startButton: {fileID: 0}
+  dreamSound: {fileID: 0}
   timeManager: {fileID: 0}
   levelManager: {fileID: 0}
 --- !u!114 &1516460211
@@ -33538,6 +33548,7 @@ MonoBehaviour:
   BedUI: {fileID: 0}
   closeButton: {fileID: 466710532}
   startButton: {fileID: 0}
+  dreamSound: {fileID: 0}
   timeManager: {fileID: 0}
   levelManager: {fileID: 0}
 --- !u!114 &1797315786
@@ -36852,6 +36863,7 @@ MonoBehaviour:
   BedUI: {fileID: 0}
   closeButton: {fileID: 373885897}
   startButton: {fileID: 0}
+  dreamSound: {fileID: 0}
   timeManager: {fileID: 0}
   levelManager: {fileID: 0}
 --- !u!114 &2111318854

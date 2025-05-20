@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class SleepManager : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class SleepManager : MonoBehaviour
     public GameObject BedUI;
     public GameObject closeButton;
     public GameObject startButton;
+
+    public AudioClip dreamSound;
 
     // Game systems
     public TimeManager timeManager;
@@ -38,6 +41,12 @@ public class SleepManager : MonoBehaviour
         else if (selectedOptionString == "2 hr") selectedSleepTime = 120;
         else if (selectedOptionString == "3 hr") selectedSleepTime = 180;
         else if (selectedOptionString == "4 hr") selectedSleepTime = 240;
+        else if (selectedOptionString == "End of Day"){
+            BedUI.SetActive(false);
+            SoundPlayer.instance.PlaySFX(dreamSound);
+            SceneManager.LoadScene("Shop 2 Tuesday"); //Need to talk to Taylor About the Scene Change
+            return;
+        }
 
         timeManager.AddTime(selectedSleepTime); // Simulate time passing - Gia
 
@@ -46,7 +55,6 @@ public class SleepManager : MonoBehaviour
         levelManager.DecreaseStressLevel((int)(selectedSleepTime * 0.2f)); 
 
         BedUI.SetActive(false);
-
         UpdateSleepTextDisplay();
     }
 
