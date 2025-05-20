@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class PermanentOutline : MonoBehaviour
 {
-    public Color outlineColor = Color.yellow;
-    public float scaleFactor = 1.05f;
+    public Color outlineColor = Color.black;
+    public float scaleFactor = 1.12f;
 
     private GameObject outlineObj;
 
