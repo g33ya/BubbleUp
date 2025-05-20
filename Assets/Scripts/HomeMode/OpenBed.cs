@@ -10,7 +10,7 @@ public class OpenBed : MonoBehaviour
     public GameObject recordUI;
     public GameObject journalUI;
     public GameObject booksUI;
-
+    
     void OnMouseDown()
     {
         if (!computerUI.activeSelf && 

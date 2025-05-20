@@ -91,11 +91,4 @@ public class SleepManager : MonoBehaviour
             CloseSleep();
         }
     }
-
-    //Function that is use to play any Sound in the game - will move to logic manager soon
-    public void playSound(AudioSource sound){
-        if(sound != null){
-            sound.Play();
-        }
-    }
 }
