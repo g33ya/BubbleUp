@@ -8883,7 +8883,7 @@ MonoBehaviour:
     - m_Text: 3 hr
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: 4 hr of Pets
+    - m_Text: 4 hr
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_OnValueChanged:
@@ -12831,7 +12831,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeText: {fileID: 1451885406}
   fadePanel: {fileID: 1637094548}
-  fadeDuration: 1
+  fadeDuration: 1.5
 --- !u!1 &731244507
 GameObject:
   m_ObjectHideFlags: 0

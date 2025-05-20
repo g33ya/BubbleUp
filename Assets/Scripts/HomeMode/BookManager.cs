@@ -55,7 +55,7 @@ public class BookManager : MonoBehaviour
         int plusKnowledge = (int)(selectedOptionNum * 0.2f);
         int minusStress = (int)(selectedOptionNum * 0.3f);
 
-        plusEnergyText.text = $"+ {plusKnowledge} Knowledge";
+        plusEnergyText.text = $"+ {plusKnowledge} Energy";
         minusStressText.text = $"- {minusStress} Stress";
 
         UpdateStatDisplay();

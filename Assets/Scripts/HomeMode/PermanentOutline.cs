@@ -5,18 +5,17 @@ public class PermanentOutline : MonoBehaviour
     public Color outlineColor = Color.black;
     public float scaleFactor = 1.12f;
 
-    private GameObject outlineObj;
+    private GameObject outlineObject;
 
     void Start()
     {
-        // Duplicate the original sprite
-        outlineObj = new GameObject("Outline");
-        outlineObj.transform.parent = transform;
-        outlineObj.transform.localPosition = Vector3.zero;
-        outlineObj.transform.localScale = Vector3.one * scaleFactor;
+        outlineObject = new GameObject("Outline"); // Duplicate the original sprite
+        outlineObject.transform.parent = transform;
+        outlineObject.transform.localPosition = Vector3.zero;
+        outlineObject.transform.localScale = Vector3.one * scaleFactor;
 
         SpriteRenderer sr = GetComponent<SpriteRenderer>();
-        SpriteRenderer outlineSR = outlineObj.AddComponent<SpriteRenderer>();
+        SpriteRenderer outlineSR = outlineObject.AddComponent<SpriteRenderer>();
 
         outlineSR.sprite = sr.sprite;
         outlineSR.sortingLayerID = sr.sortingLayerID;

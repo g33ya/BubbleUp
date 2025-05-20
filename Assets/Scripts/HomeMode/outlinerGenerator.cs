@@ -9,8 +9,7 @@ public class outlinerGenerator : MonoBehaviour
 
     void Start()
     {
-        // Duplicate the original sprite
-        outlineObject = new GameObject("Outline");
+        outlineObject = new GameObject("Outline"); // Duplicate the original sprite
         outlineObject.transform.parent = transform;
         outlineObject.transform.localPosition = Vector3.zero;
         outlineObject.transform.localScale = Vector3.one * scaleFactor;
@@ -19,7 +18,7 @@ public class outlinerGenerator : MonoBehaviour
         SpriteRenderer outlineSR = outlineObject.AddComponent<SpriteRenderer>();
 
         outlineSR.sprite = sr.sprite;
-        outlineSR.material = new Material(Shader.Find("Sprites/Default")); // Ensure alpha isn't affected
+        outlineSR.material = new Material(Shader.Find("Sprites/Default")); //Try to help with opacity with lighter colors
         outlineSR.sortingLayerID = sr.sortingLayerID;
         outlineSR.sortingOrder = sr.sortingOrder - 1;
 

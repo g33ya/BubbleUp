@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 using TMPro;
 using System.Collections;
 //using UnityEngine;
@@ -55,7 +55,7 @@ public class TimeManager : MonoBehaviour
         UpdateTimeDisplay();
     }
 
-     private IEnumerator FadeInOut()
+     public IEnumerator FadeInOut()
     {
         // Fade In
         fadePanel.alpha = 0;
@@ -83,5 +83,15 @@ public class TimeManager : MonoBehaviour
         fadePanel.alpha = 0;
         fadePanel.gameObject.SetActive(false);  // Hide the fade panel after the animation
     }
+
+    public IEnumerator FadeInOutWithScene(string sceneName)
+{
+    //Call Fade Function
+    yield return StartCoroutine(FadeInOut());
+
+    //After Fade, load the scene
+    SceneManager.LoadScene(sceneName);
+}
+
 }
 

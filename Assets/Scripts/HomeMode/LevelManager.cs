@@ -23,7 +23,7 @@ public class LevelManager : MonoBehaviour
 
     public void DecreaseEnergyLevel(int amount)
     {
-        energyLevel += amount;
+        energyLevel -= amount;
         if (energyLevel > 100) // min level
         {
             energyLevel = 100;
