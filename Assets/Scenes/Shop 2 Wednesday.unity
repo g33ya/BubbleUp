@@ -1504,6 +1504,7 @@ MonoBehaviour:
   kitchenButton: {fileID: 154042022}
   Character: {fileID: 1891057510}
   Character2: {fileID: 0}
+  collage: {fileID: 0}
   speaker:
   - Bea
   - You

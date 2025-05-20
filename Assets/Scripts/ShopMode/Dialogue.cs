@@ -19,6 +19,7 @@ public class Dialogue : MonoBehaviour
     public GameObject kitchenButton;
     public GameObject Character;
     public GameObject Character2;
+    public GameObject collage;
     //public GameObject ElomarPosition;
     public string[] speaker;
     [TextArea]
@@ -127,6 +128,13 @@ public class Dialogue : MonoBehaviour
                 }
             }
             if (currentScene==10){
+                if (step==2){
+                    collage.SetActive(true);
+                    sparkle.Play();
+                }
+                if (step==4){
+                    collage.SetActive(false);
+                }
                 if (step==7){
                     kitchenButton.SetActive(true);
                 }
