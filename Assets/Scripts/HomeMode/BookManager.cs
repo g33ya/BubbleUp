@@ -37,8 +37,8 @@ public class BookManager : MonoBehaviour
         timeManager.AddTime(selectedReadTime); // Simulate reading time
 
         // Adjust stats
-        levelManager.IncreaseEnergyLevel((int)(selectedReadTime * 0.3f)); // Reusing energy field for knowledge
-        levelManager.DecreaseStressLevel((int)(selectedReadTime * 0.2f));
+        levelManager.DecreaseEnergyLevel((int)(selectedReadTime * 0.25f));
+        levelManager.DecreaseStressLevel((int)(selectedReadTime * 0.1f));
 
         BookUI.SetActive(false);
 
@@ -52,10 +52,10 @@ public class BookManager : MonoBehaviour
         string selectedOptionString = dropdown.options[selectedIndex].text;
         int selectedOptionNum = GetMinutesFromOption(selectedOptionString);
 
-        int plusKnowledge = (int)(selectedOptionNum * 0.2f);
-        int minusStress = (int)(selectedOptionNum * 0.3f);
+        int minusEnergy = (int)(selectedOptionNum * 0.25f);
+        int minusStress = (int)(selectedOptionNum * 0.1f);
 
-        plusEnergyText.text = $"+ {plusKnowledge} Energy";
+        plusEnergyText.text = $"- {minusEnergy} Energy";
         minusStressText.text = $"- {minusStress} Stress";
 
         UpdateStatDisplay();

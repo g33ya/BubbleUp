@@ -45,8 +45,8 @@ public class RecordManager : MonoBehaviour
         timeManager.AddTime(selectedTime); // Simulate time spent recording
 
         // Apply stat changes from record-keeping session
-        levelManager.IncreaseEnergyLevel((int)(selectedTime * 0.3f)); 
-        levelManager.DecreaseStressLevel((int)(selectedTime * 0.2f)); 
+        levelManager.DecreaseEnergyLevel((int)(selectedTime * 0.2f));
+        levelManager.DecreaseStressLevel((int)(selectedTime * 0.1f));
 
         recordUI.SetActive(false); // Close UI after interaction
 
@@ -66,10 +66,10 @@ public class RecordManager : MonoBehaviour
         else if (selectedOptionString == "3 hr") selectedTime = 180;
         else if (selectedOptionString == "4 hr") selectedTime = 240;
 
-        int plusEnergy = (int)(selectedTime * 0.2f);
-        int minusStress = (int)(selectedTime * 0.3f);
+        int minusEnergy = (int)(selectedTime * 0.2f);
+        int minusStress = (int)(selectedTime * 0.1f);
 
-        plusEnergyText.text = $"+ {plusEnergy} Energy";
+        plusEnergyText.text = $"- {minusEnergy} Energy";  // Change label accordingly
         minusStressText.text = $"- {minusStress} Stress";
 
         UpdateRecordStatsDisplay();

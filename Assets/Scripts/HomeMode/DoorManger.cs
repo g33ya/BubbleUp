@@ -45,8 +45,8 @@ public class DoorManager : MonoBehaviour
         timeManager.AddTime(selectedTime); // Simulate time spent during door activity
 
         // Apply stat changes from door interaction
-        levelManager.IncreaseEnergyLevel((int)(selectedTime * 0.3f)); 
-        levelManager.DecreaseStressLevel((int)(selectedTime * 0.2f)); 
+        levelManager.DecreaseEnergyLevel((int)(selectedTime * 0.2f)); // more energy loss
+        levelManager.DecreaseStressLevel((int)(selectedTime * 0.35f)); // strong stress relief
 
         DoorUI.SetActive(false); // Close UI after interaction
 
@@ -66,10 +66,10 @@ public class DoorManager : MonoBehaviour
         else if (selectedOptionString == "3 hr") selectedTime = 180;
         else if (selectedOptionString == "4 hr") selectedTime = 240;
 
-        int plusEnergy = (int)(selectedTime * 0.2f);
-        int minusStress = (int)(selectedTime * 0.3f);
+        int minusEnergy = (int)(selectedTime * 0.2f);
+        int minusStress = (int)(selectedTime * 0.35f);
 
-        plusEnergyText.text = $"+ {plusEnergy} Energy";
+        plusEnergyText.text = $"- {minusEnergy} Energy";
         minusStressText.text = $"- {minusStress} Stress";
 
         UpdateDoorStatsDisplay();
