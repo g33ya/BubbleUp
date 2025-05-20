@@ -6328,6 +6328,7 @@ GameObject:
   - component: {fileID: 359065702}
   - component: {fileID: 359065701}
   - component: {fileID: 359065704}
+  - component: {fileID: 359065705}
   m_Layer: 0
   m_Name: Clickable_Books_0
   m_TagString: Untagged
@@ -6475,9 +6476,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f927ee73af2d34cac096de87fe3fab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMaterial: {fileID: 2100000, guid: 3eec5ec5549f83440aa72981970b557d, type: 2}
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineSize: 0.05
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  scaleFactor: 1.25
 --- !u!114 &359065704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6498,6 +6498,20 @@ MonoBehaviour:
   recordUI: {fileID: 1437993652}
   journalUI: {fileID: 1434521890}
   booksUI: {fileID: 1240992602}
+--- !u!114 &359065705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359065698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 443014b8ad7c582408033d62ae7c2bfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  scaleFactor: 1.15
 --- !u!1 &359259684
 GameObject:
   m_ObjectHideFlags: 0
@@ -7142,6 +7156,7 @@ GameObject:
   - component: {fileID: 397864502}
   - component: {fileID: 397864501}
   - component: {fileID: 397864504}
+  - component: {fileID: 397864505}
   m_Layer: 0
   m_Name: Clickable_Door_0
   m_TagString: Untagged
@@ -7231,9 +7246,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f927ee73af2d34cac096de87fe3fab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMaterial: {fileID: 2100000, guid: 3eec5ec5549f83440aa72981970b557d, type: 2}
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineSize: 0.05
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  scaleFactor: 1.2
 --- !u!114 &397864502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7312,6 +7326,20 @@ MonoBehaviour:
   recordUI: {fileID: 1437993652}
   journalUI: {fileID: 1434521890}
   booksUI: {fileID: 1240992602}
+--- !u!114 &397864505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397864498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 443014b8ad7c582408033d62ae7c2bfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  scaleFactor: 1.08
 --- !u!1 &412735239
 GameObject:
   m_ObjectHideFlags: 0
@@ -10061,6 +10089,7 @@ GameObject:
   - component: {fileID: 584297151}
   - component: {fileID: 584297153}
   - component: {fileID: 584297154}
+  - component: {fileID: 584297155}
   m_Layer: 0
   m_Name: Clickable_Cat_0
   m_TagString: Untagged
@@ -10162,9 +10191,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f927ee73af2d34cac096de87fe3fab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMaterial: {fileID: 2100000, guid: 3eec5ec5549f83440aa72981970b557d, type: 2}
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineSize: 0.05
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  scaleFactor: 1.25
 --- !u!61 &584297153
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10231,6 +10259,20 @@ MonoBehaviour:
   recordUI: {fileID: 1437993652}
   journalUI: {fileID: 1434521890}
   booksUI: {fileID: 1240992602}
+--- !u!114 &584297155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584297147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 443014b8ad7c582408033d62ae7c2bfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  scaleFactor: 1.08
 --- !u!1 &585372195
 GameObject:
   m_ObjectHideFlags: 0
@@ -14086,6 +14128,7 @@ GameObject:
   - component: {fileID: 772726578}
   - component: {fileID: 772726581}
   - component: {fileID: 772726580}
+  - component: {fileID: 772726582}
   m_Layer: 0
   m_Name: Clickable_Computer_0
   m_TagString: Untagged
@@ -14255,9 +14298,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f927ee73af2d34cac096de87fe3fab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMaterial: {fileID: 2100000, guid: 3eec5ec5549f83440aa72981970b557d, type: 2}
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineSize: 0.05
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  scaleFactor: 1.15
+--- !u!114 &772726582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772726575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 443014b8ad7c582408033d62ae7c2bfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  scaleFactor: 1.08
 --- !u!1 &780800248
 GameObject:
   m_ObjectHideFlags: 0
@@ -23074,6 +23130,7 @@ GameObject:
   - component: {fileID: 1286324207}
   - component: {fileID: 1286324206}
   - component: {fileID: 1286324209}
+  - component: {fileID: 1286324210}
   m_Layer: 0
   m_Name: Clickable_ArtSupplies_0
   m_TagString: Untagged
@@ -23175,9 +23232,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f927ee73af2d34cac096de87fe3fab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMaterial: {fileID: 2100000, guid: 3eec5ec5549f83440aa72981970b557d, type: 2}
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineSize: 0.05
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  scaleFactor: 1.15
 --- !u!61 &1286324208
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23244,6 +23300,20 @@ MonoBehaviour:
   recordUI: {fileID: 1437993652}
   journalUI: {fileID: 1434521890}
   booksUI: {fileID: 1240992602}
+--- !u!114 &1286324210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286324203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 443014b8ad7c582408033d62ae7c2bfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  scaleFactor: 1.08
 --- !u!1 &1296207640
 GameObject:
   m_ObjectHideFlags: 0
@@ -25659,6 +25729,7 @@ GameObject:
   - component: {fileID: 1400239734}
   - component: {fileID: 1400239733}
   - component: {fileID: 1400239736}
+  - component: {fileID: 1400239737}
   m_Layer: 0
   m_Name: Clickable_Bed_0
   m_TagString: Untagged
@@ -25760,9 +25831,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f927ee73af2d34cac096de87fe3fab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMaterial: {fileID: 2100000, guid: 3eec5ec5549f83440aa72981970b557d, type: 2}
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineSize: 0.02
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  scaleFactor: 1.12
 --- !u!61 &1400239735
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25829,6 +25899,20 @@ MonoBehaviour:
   recordUI: {fileID: 1437993652}
   journalUI: {fileID: 1434521890}
   booksUI: {fileID: 1240992602}
+--- !u!114 &1400239737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400239730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 443014b8ad7c582408033d62ae7c2bfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  scaleFactor: 1.05
 --- !u!1 &1405245665
 GameObject:
   m_ObjectHideFlags: 0
@@ -27361,6 +27445,7 @@ GameObject:
   - component: {fileID: 1483308420}
   - component: {fileID: 1483308419}
   - component: {fileID: 1483308421}
+  - component: {fileID: 1483308422}
   m_Layer: 0
   m_Name: Clickable_Calendar_0
   m_TagString: Untagged
@@ -27508,9 +27593,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f927ee73af2d34cac096de87fe3fab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMaterial: {fileID: 2100000, guid: 3eec5ec5549f83440aa72981970b557d, type: 2}
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineSize: 0.05
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  scaleFactor: 1.15
 --- !u!114 &1483308421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27531,6 +27615,20 @@ MonoBehaviour:
   recordUI: {fileID: 1437993652}
   journalUI: {fileID: 1434521890}
   booksUI: {fileID: 1240992602}
+--- !u!114 &1483308422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483308414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 443014b8ad7c582408033d62ae7c2bfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  scaleFactor: 1.08
 --- !u!1 &1493497829
 GameObject:
   m_ObjectHideFlags: 0
@@ -32768,6 +32866,7 @@ GameObject:
   - component: {fileID: 1782999626}
   - component: {fileID: 1782999625}
   - component: {fileID: 1782999628}
+  - component: {fileID: 1782999629}
   m_Layer: 0
   m_Name: Clickable_RecorderPlayer_0
   m_TagString: Untagged
@@ -32915,9 +33014,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f927ee73af2d34cac096de87fe3fab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMaterial: {fileID: 2100000, guid: 3eec5ec5549f83440aa72981970b557d, type: 2}
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineSize: 0.05
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  scaleFactor: 1.15
 --- !u!114 &1782999628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32938,6 +33036,20 @@ MonoBehaviour:
   recordUI: {fileID: 1437993652}
   journalUI: {fileID: 1434521890}
   booksUI: {fileID: 1240992602}
+--- !u!114 &1782999629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782999622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 443014b8ad7c582408033d62ae7c2bfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  scaleFactor: 1.08
 --- !u!1 &1791450098
 GameObject:
   m_ObjectHideFlags: 0
@@ -34397,9 +34509,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f927ee73af2d34cac096de87fe3fab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMaterial: {fileID: 2100000, guid: 3eec5ec5549f83440aa72981970b557d, type: 2}
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineSize: 0.05
+  scaleFactor: 1.15
 --- !u!114 &1938965845
 MonoBehaviour:
   m_ObjectHideFlags: 0
