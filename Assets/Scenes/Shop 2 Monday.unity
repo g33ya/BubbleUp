@@ -1462,7 +1462,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 1171144099}
   counterPosition: {fileID: 1557768964}
-  speed: 0.1
+  speed: 0.05
   AudioPlayer: {fileID: 0}
 --- !u!1 &1235620346
 GameObject:
@@ -2354,7 +2354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 1891057510}
   counterPosition: {fileID: 116611569}
-  speed: 0.1
+  speed: 0.05
   AudioPlayer: {fileID: 42035051}
 --- !u!50 &1891057514
 Rigidbody2D:

@@ -1145,7 +1145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 1171144099}
   counterPosition: {fileID: 1557768964}
-  speed: 0.1
+  speed: 0.05
   AudioPlayer: {fileID: 0}
 --- !u!1 &1235620346
 GameObject:
@@ -1200,7 +1200,8 @@ MonoBehaviour:
   - {fileID: 1244389876898281592, guid: c116ea16d0d9918429f404baf4666eae, type: 3}
   - {fileID: 1244389876898281592, guid: c116ea16d0d9918429f404baf4666eae, type: 3}
   - {fileID: -5536324370814838258, guid: ebc22afaafe042d459183daa3d537b27, type: 3}
-  audioplayer: {fileID: 0}
+  doorChime: {fileID: 0}
+  sparkle: {fileID: 0}
 --- !u!4 &1235620348
 Transform:
   m_ObjectHideFlags: 0
@@ -2145,7 +2146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 2032950633}
   counterPosition: {fileID: 1557768964}
-  speed: 0.1
+  speed: 0.05
   AudioPlayer: {fileID: 0}
 --- !u!212 &2032950636
 SpriteRenderer:
