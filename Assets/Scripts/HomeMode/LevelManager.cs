@@ -67,7 +67,7 @@ public class LevelManager : MonoBehaviour
     {
         if (energyLevel - energyCost < 0)
         {
-            ShowStatusMessage("You are too tired for this activity");
+            ShowStatusMessage("You are too tired for this activity!");
             return false;
         }
         return true;

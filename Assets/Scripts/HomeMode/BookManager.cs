@@ -33,12 +33,11 @@ public class BookManager : MonoBehaviour
     int selectedIndex = dropdown.value;
     string selectedOptionString = dropdown.options[selectedIndex].text;
     int selectedReadTime = GetMinutesFromOption(selectedOptionString);
-
     int energyCost = (int)(selectedReadTime * 0.25f);
 
     if (!levelManager.CanDoActivity(energyCost))
     {
-        return;
+        return; // Cancel the action if too tired
     }
 
     timeManager.AddTime(selectedReadTime);
