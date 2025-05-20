@@ -44,7 +44,6 @@ public class RecordManager : MonoBehaviour
     int energyGain = (int)(selectedTime * 0.3f); // if it increases energy, skip energy check
     int stressReduction = (int)(selectedTime * 0.2f);
 
-    // Check if energy will drop (for consistency, let’s say record-keeping costs energy too)
     int energyCost = 10; // You can change this value based on balancing
 
     if (!levelManager.CanDoActivity(energyCost))

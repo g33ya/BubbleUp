@@ -41,16 +41,23 @@ public class CatManager : MonoBehaviour
         else if (selectedOptionString == "3 hr") selectedTime = 180;
         else if (selectedOptionString == "4 hr") selectedTime = 240;
 
+        int energyCost = (int)(selectedTime * 0.03f);
+
+        // Check if the player has enough energy
+        if (!levelManager.CanDoActivity(energyCost))
+        {
+            return; // Exit early if too tired
+        }
+
         timeManager.AddTime(selectedTime); // Simulate time spent with the cat
 
-        // Apply stat changes from cat time
-        levelManager.DecreaseEnergyLevel((int)(selectedTime * 0.03f)); // slight energy drop
-        levelManager.DecreaseStressLevel((int)(selectedTime * 0.41f)); // big stress relief
+        // Apply stat changes
+        levelManager.DecreaseEnergyLevel(energyCost);                    // slight energy drop
+        levelManager.DecreaseStressLevel((int)(selectedTime * 0.41f));  // big stress relief
 
+        CatUI.SetActive(false); // Close the cat interaction UI
 
-        CatUI.SetActive(false); // Close UI after interaction
-
-        UpdateCatStatsDisplay();
+        UpdateCatStatsDisplay(); // Refresh stats on screen
     }
 
     // Updates projected stat changes based on dropdown selection
