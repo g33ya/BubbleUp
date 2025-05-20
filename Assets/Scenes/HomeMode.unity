@@ -6498,6 +6498,7 @@ MonoBehaviour:
   recordUI: {fileID: 1437993652}
   journalUI: {fileID: 1434521890}
   booksUI: {fileID: 1240992602}
+  bookSound: {fileID: 8300000, guid: ba7b9252674018148ae1580780b65aa8, type: 3}
 --- !u!114 &359065705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7326,6 +7327,7 @@ MonoBehaviour:
   recordUI: {fileID: 1437993652}
   journalUI: {fileID: 1434521890}
   booksUI: {fileID: 1240992602}
+  doorSound: {fileID: 8300000, guid: ccca676a83764ed4e936ddb79a4f8412, type: 3}
 --- !u!114 &397864505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10388,6 +10390,7 @@ MonoBehaviour:
   recordUI: {fileID: 1437993652}
   journalUI: {fileID: 1434521890}
   booksUI: {fileID: 1240992602}
+  catSound: {fileID: 8300000, guid: be56ef1fb5622ab428754175e7db87cb, type: 3}
 --- !u!114 &584297155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14357,6 +14360,7 @@ MonoBehaviour:
   recordUI: {fileID: 1437993652}
   journalUI: {fileID: 1434521890}
   booksUI: {fileID: 1240992602}
+  computerSound: {fileID: 8300000, guid: 734af626e1af7ea4c94a8e0c17f4ff67, type: 3}
 --- !u!61 &772726579
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21522,6 +21526,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1209285580}
   m_CullTransparentMesh: 1
+--- !u!1 &1214348093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1214348095}
+  - component: {fileID: 1214348094}
+  m_Layer: 0
+  m_Name: SoundEffects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1214348094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214348093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0aa8c0f8ba0687428db85630da8206a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1214348095
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214348093}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.59799016, y: -0.37128368, z: 1.6068842}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1216743446
 GameObject:
   m_ObjectHideFlags: 0
@@ -23429,6 +23477,7 @@ MonoBehaviour:
   recordUI: {fileID: 1437993652}
   journalUI: {fileID: 1434521890}
   booksUI: {fileID: 1240992602}
+  wrritingSound: {fileID: 8300000, guid: 27d20a96f3c6c404e86204063e8cb443, type: 3}
 --- !u!114 &1286324210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26028,6 +26077,7 @@ MonoBehaviour:
   recordUI: {fileID: 1437993652}
   journalUI: {fileID: 1434521890}
   booksUI: {fileID: 1240992602}
+  sleepSound: {fileID: 8300000, guid: c72d25a1612f3c94a8c8fc4c1ad2c13c, type: 3}
 --- !u!114 &1400239737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27744,6 +27794,7 @@ MonoBehaviour:
   recordUI: {fileID: 1437993652}
   journalUI: {fileID: 1434521890}
   booksUI: {fileID: 1240992602}
+  calendarSound: {fileID: 8300000, guid: ba7b9252674018148ae1580780b65aa8, type: 3}
 --- !u!114 &1483308422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33165,6 +33216,7 @@ MonoBehaviour:
   recordUI: {fileID: 1437993652}
   journalUI: {fileID: 1434521890}
   booksUI: {fileID: 1240992602}
+  recordSound: {fileID: 8300000, guid: 7691417a9873b014481ed8f05e0c1aa9, type: 3}
 --- !u!114 &1782999629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37469,3 +37521,4 @@ SceneRoots:
   - {fileID: 1529924538}
   - {fileID: 555771310}
   - {fileID: 408116118}
+  - {fileID: 1214348095}

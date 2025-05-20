@@ -11,6 +11,8 @@ public class OpenBook : MonoBehaviour
     public GameObject journalUI;
     public GameObject booksUI;
 
+    public AudioClip bookSound;
+
     void OnMouseDown()
     {
         if (!computerUI.activeSelf && 
@@ -22,6 +24,7 @@ public class OpenBook : MonoBehaviour
             !recordUI.activeSelf)
         {
             booksUI.SetActive(true);
+            SoundPlayer.instance.PlaySFX(bookSound);
         }
     }
 }

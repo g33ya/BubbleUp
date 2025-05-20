@@ -13,6 +13,8 @@ public class OpenComputer : MonoBehaviour
     public GameObject journalUI;
     public GameObject booksUI;
 
+    public AudioClip computerSound;
+
     void OnMouseDown() {
     Debug.Log("Computer clicked!");
 
@@ -27,6 +29,7 @@ public class OpenComputer : MonoBehaviour
         computerUI.SetActive(true);
         dayPanel.SetActive(true);
         Debug.Log("Computer UI and Day Panel activated!");
+        SoundPlayer.instance.PlaySFX(computerSound);
     }
 }
 }
