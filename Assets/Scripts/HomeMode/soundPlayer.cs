@@ -2,16 +2,25 @@ using UnityEngine;
 
 public class SoundPlayer : MonoBehaviour
 {
-    public AudioClip sfxClip; // assign in Inspector
+    public static SoundPlayer instance; //ChatGPT helped with some construction of this code
     private AudioSource audioSource;
 
-    void Start()
+    void Awake()
     {
-        audioSource = GetComponent<AudioSource>();
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
-    public void PlaySFX()
+    public void PlaySFX(AudioClip clip)
     {
-        audioSource.PlayOneShot(sfxClip);
+        audioSource.PlayOneShot(clip);
     }
 }

@@ -11,6 +11,8 @@ public class OpenJounral : MonoBehaviour
     public GameObject journalUI;
     public GameObject booksUI;
 
+    public AudioClip wrritingSound;
+
     void OnMouseDown()
     {
         if (!computerUI.activeSelf && 
@@ -22,6 +24,7 @@ public class OpenJounral : MonoBehaviour
             !booksUI.activeSelf)
         {
             journalUI.SetActive(true);
+            SoundPlayer.instance.PlaySFX(wrritingSound);
         }
     }
 }

@@ -11,6 +11,8 @@ public class OpenRecord : MonoBehaviour
     public GameObject journalUI;
     public GameObject booksUI;
 
+    public AudioClip recordSound;
+
     void OnMouseDown()
     {
         if (!computerUI.activeSelf && 
@@ -22,6 +24,7 @@ public class OpenRecord : MonoBehaviour
             !booksUI.activeSelf)
         {
             recordUI.SetActive(true);
+            SoundPlayer.instance.PlaySFX(recordSound);
         }
     }
 }
