@@ -96,13 +96,4 @@ public class DoorManager : MonoBehaviour
             CloseDoorUI();
         }
     }
-
-    // Plays a sound effect (e.g. door creak, footstep) — will move to LogicManager later
-    public void playSound(AudioSource sound)
-    {
-        if (sound != null)
-        {
-            sound.Play();
-        }
-    }
 }

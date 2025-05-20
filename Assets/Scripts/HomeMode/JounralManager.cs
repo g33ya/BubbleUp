@@ -96,13 +96,4 @@ public class JournalManager : MonoBehaviour
             CloseJournalUI();
         }
     }
-
-    // Plays a sound effect (e.g. page turning) — will move to LogicManager later
-    public void playSound(AudioSource sound)
-    {
-        if (sound != null)
-        {
-            sound.Play();
-        }
-    }
 }

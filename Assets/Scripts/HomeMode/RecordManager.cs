@@ -96,13 +96,4 @@ public class RecordManager : MonoBehaviour
             CloseRecordUI();
         }
     }
-
-    // Plays a sound effect (e.g. pen scribble, notebook rustle) — to be moved to LogicManager
-    public void playSound(AudioSource sound)
-    {
-        if (sound != null)
-        {
-            sound.Play();
-        }
-    }
 }

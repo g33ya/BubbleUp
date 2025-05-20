@@ -96,12 +96,4 @@ public class CatManager : MonoBehaviour
         }
     }
 
-    // Plays a sound effect (will be moved to LogicManager later)
-    public void playSound(AudioSource sound)
-    {
-        if (sound != null)
-        {
-            sound.Play();
-        }
-    }
 }
