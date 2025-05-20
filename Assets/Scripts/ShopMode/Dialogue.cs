@@ -53,7 +53,7 @@ public class Dialogue : MonoBehaviour
             portraitImage.sprite=portrait[step];
             step +=1;
             if (currentScene==5){
-            if (dialogueText.text=="Sure thing. Enjoy your day!"){
+            if (step==2){
                 position1.transform.position= new Vector3(-11.28f,1.154747f,0);
             }
             if (step==4){
@@ -86,6 +86,10 @@ public class Dialogue : MonoBehaviour
                 }
             }
             if (currentScene==7){
+                if (step==2){
+                    Character.SetActive(false);
+                    Character2.SetActive(true);
+                }
                 if (step==3){
                     kitchenButton.SetActive(true);
                 }
@@ -159,6 +163,44 @@ public class Dialogue : MonoBehaviour
                     position1.transform.position= new Vector3(-11.28f,1.154747f,0);
                     homeButton.SetActive(true);
                 }
+            }
+            if (currentScene==17){
+                if (step==6){
+                    kitchenButton.SetActive(true);
+                }
+            }
+            if (currentScene==18){
+            if (step==2){
+                //homeButton.SetActive(true);
+                position1.transform.position= new Vector3(-11.28f,1.154747f,0);
+                Character.SetActive(true);
+                //position1.GetComponent<RectTransform>().anchoredPosition = new Vector2(537f, 97f);
+             }
+             if (step==10){
+                 kitchenButton.SetActive(true);
+            }
+            }
+             if (currentScene==19){
+            if (step==2){
+                //homeButton.SetActive(true);
+                position1.transform.position= new Vector3(-11.28f,1.154747f,0);
+                Character.SetActive(true);
+                //position1.GetComponent<RectTransform>().anchoredPosition = new Vector2(537f, 97f);
+            // }
+            // if (step==10){
+            //     kitchenButton.SetActive(true);
+            }
+            }
+            if (currentScene==20){
+            if (step==2){
+                //homeButton.SetActive(true);
+                position1.transform.position= new Vector3(-11.28f,1.154747f,0);
+                homeButton.SetActive(true);
+                //position1.GetComponent<RectTransform>().anchoredPosition = new Vector2(537f, 97f);
+            // }
+            // if (step==10){
+            //     kitchenButton.SetActive(true);
+            }
             }
         }
     }

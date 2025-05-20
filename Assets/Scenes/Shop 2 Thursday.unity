@@ -1293,7 +1293,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -4569859926898310901, guid: dbe016c32d3caf6409ff632b9a32ac98, type: 3}
+  m_Sprite: {fileID: -8592563224677910862, guid: 0920b318efc58f44798141c01c4fd915, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1314,7 +1314,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 100.44, y: 97, z: -9719.999}
-  m_LocalScale: {x: 79.05079, y: 79.05079, z: 79.05079}
+  m_LocalScale: {x: 51.56799, y: 51.56799, z: 51.56799}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1002777130}
@@ -1399,14 +1399,14 @@ MonoBehaviour:
 '
   - ' Good afternoon! One mango smoothie, please.'
   portrait:
-  - {fileID: -4033371025274693098, guid: 35b97bcd261a7f5439b049fe10fb4f35, type: 3}
-  - {fileID: -4569859926898310901, guid: dbe016c32d3caf6409ff632b9a32ac98, type: 3}
-  - {fileID: 7640617194265235215, guid: f83520627ee1ebf418fad794a3580a9a, type: 3}
-  - {fileID: -4569859926898310901, guid: dbe016c32d3caf6409ff632b9a32ac98, type: 3}
-  - {fileID: 7640617194265235215, guid: f83520627ee1ebf418fad794a3580a9a, type: 3}
-  - {fileID: -4569859926898310901, guid: dbe016c32d3caf6409ff632b9a32ac98, type: 3}
-  - {fileID: 7640617194265235215, guid: f83520627ee1ebf418fad794a3580a9a, type: 3}
-  - {fileID: -4033371025274693098, guid: 35b97bcd261a7f5439b049fe10fb4f35, type: 3}
+  - {fileID: -5536324370814838258, guid: ebc22afaafe042d459183daa3d537b27, type: 3}
+  - {fileID: 3535177381572351074, guid: 95ff43c801867644eb32cb65280b8608, type: 3}
+  - {fileID: 7607482721926598001, guid: dd8955fd23d4d70488425d08bbe4aa0d, type: 3}
+  - {fileID: 3535177381572351074, guid: 95ff43c801867644eb32cb65280b8608, type: 3}
+  - {fileID: 7607482721926598001, guid: dd8955fd23d4d70488425d08bbe4aa0d, type: 3}
+  - {fileID: 3535177381572351074, guid: 95ff43c801867644eb32cb65280b8608, type: 3}
+  - {fileID: 7607482721926598001, guid: dd8955fd23d4d70488425d08bbe4aa0d, type: 3}
+  - {fileID: -5536324370814838258, guid: ebc22afaafe042d459183daa3d537b27, type: 3}
 --- !u!4 &1235620348
 Transform:
   m_ObjectHideFlags: 0
@@ -2043,7 +2043,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7640617194265235215, guid: 4f02a62e7d3626941ae48b1fcb38c57a, type: 3}
+  m_Sprite: {fileID: 7607482721926598001, guid: dd8955fd23d4d70488425d08bbe4aa0d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2064,7 +2064,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.36, y: 1.07, z: 0}
-  m_LocalScale: {x: 0.63466, y: 0.63466, z: 0.63466}
+  m_LocalScale: {x: 0.477588, y: 0.477588, z: 0.477588}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 35b97bcd261a7f5439b049fe10fb4f35
+guid: ebc22afaafe042d459183daa3d537b27
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4033371025274693098
-    second: girlCharacter_0
+      213: -5536324370814838258
+    second: girlCharacter (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: girlCharacter_0
+      name: girlCharacter (1)_0
       rect:
         serializedVersion: 2
         x: 38
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 61a16271c669608c0800000000000000
-      internalID: -4033371025274693098
+      spriteID: e0a5e3441560b23b0800000000000000
+      internalID: -5536324370814838258
       vertices: []
       indices: 
       edges: []
