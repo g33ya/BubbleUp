@@ -42,8 +42,11 @@ public class SleepManager : MonoBehaviour
         else if (selectedOptionString == "3 hr") selectedSleepTime = 180;
         else if (selectedOptionString == "4 hr") selectedSleepTime = 240;
         else if (selectedOptionString == "End of Day") {
+            levelManager.IncreaseEnergyLevel(50);
+            levelManager.DecreaseStressLevel(40);
+        
             BedUI.SetActive(false);
-            //SoundPlayer.instance.PlaySFX(dreamSound);
+            SoundPlayer.instance.PlaySFX(dreamSound);
             timeManager.StartCoroutine(timeManager.FadeInOutWithScene("Shop 2 Tuesday"));
 
             //SceneManager.LoadScene("Shop 2 Tuesday"); //Need to talk to Taylor About the Scene Change
@@ -65,15 +68,26 @@ public class SleepManager : MonoBehaviour
         int selectedIndex = dropdown.value;
         string selectedOptionString = dropdown.options[selectedIndex].text;
         int selectedOptionNum = 0;
+        int plusEnergy;
+        int minusStress;
 
         if (selectedOptionString == "30 min") selectedOptionNum = 30;
         else if (selectedOptionString == "1 hr") selectedOptionNum = 60;
         else if (selectedOptionString == "2 hr") selectedOptionNum = 120;
         else if (selectedOptionString == "3 hr") selectedOptionNum = 180;
         else if (selectedOptionString == "4 hr") selectedOptionNum = 240;
+        else if (selectedOptionString == "End of Day"){
+            plusEnergy = 50;  // Custom boost
+            minusStress = 40; // Custom stress reduction
 
-        int plusEnergy = (int)(selectedOptionNum * 0.2f);
-        int minusStress = (int)(selectedOptionNum * 0.3f);
+            plusEnergyText.text = $"+ {plusEnergy} Energy";
+            minusStressText.text = $"- {minusStress} Stress";
+            UpdateSleepTextDisplay();
+            return;
+        }
+
+        plusEnergy = (int)(selectedOptionNum * 0.2f);
+        minusStress = (int)(selectedOptionNum * 0.3f);
 
         plusEnergyText.text = $"+ {plusEnergy} Energy";
         minusStressText.text = $"- {minusStress} Stress";
