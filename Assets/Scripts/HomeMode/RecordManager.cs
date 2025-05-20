@@ -30,28 +30,37 @@ public class RecordManager : MonoBehaviour
 
     // Called when player starts the record-keeping activity
     void StartRecording()
+{
+    int selectedIndex = dropdown.value;
+    string selectedOptionString = dropdown.options[selectedIndex].text;
+    int selectedTime = 0;
+
+    if (selectedOptionString == "30 min") selectedTime = 30;
+    else if (selectedOptionString == "1 hr") selectedTime = 60;
+    else if (selectedOptionString == "2 hr") selectedTime = 120;
+    else if (selectedOptionString == "3 hr") selectedTime = 180;
+    else if (selectedOptionString == "4 hr") selectedTime = 240;
+
+    int energyGain = (int)(selectedTime * 0.3f); // if it increases energy, skip energy check
+    int stressReduction = (int)(selectedTime * 0.2f);
+
+    // Check if energy will drop (for consistency, let’s say record-keeping costs energy too)
+    int energyCost = 10; // You can change this value based on balancing
+
+    if (!levelManager.CanDoActivity(energyCost))
     {
-        int selectedIndex = dropdown.value;
-        string selectedOptionString = dropdown.options[selectedIndex].text;
-        int selectedTime = 0;
-
-        // Convert dropdown selection to minutes
-        if (selectedOptionString == "30 min") selectedTime = 30;
-        else if (selectedOptionString == "1 hr") selectedTime = 60;
-        else if (selectedOptionString == "2 hr") selectedTime = 120;
-        else if (selectedOptionString == "3 hr") selectedTime = 180;
-        else if (selectedOptionString == "4 hr") selectedTime = 240;
-
-        timeManager.AddTime(selectedTime); // Simulate time spent recording
-
-        // Apply stat changes from record-keeping session
-        levelManager.DecreaseEnergyLevel((int)(selectedTime * 0.2f));
-        levelManager.DecreaseStressLevel((int)(selectedTime * 0.1f));
-
-        recordUI.SetActive(false); // Close UI after interaction
-
-        UpdateRecordStatsDisplay();
+        return;
     }
+
+    timeManager.AddTime(selectedTime);
+    levelManager.DecreaseEnergyLevel(energyCost); // applying a fixed cost
+    levelManager.IncreaseEnergyLevel(energyGain);
+    levelManager.DecreaseStressLevel(stressReduction);
+
+    recordUI.SetActive(false);
+    UpdateRecordStatsDisplay();
+}
+
 
     // Updates projected stat changes based on dropdown selection
     void OnDropdownValueChanged()

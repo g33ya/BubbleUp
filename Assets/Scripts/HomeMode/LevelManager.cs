@@ -10,6 +10,8 @@ public class LevelManager : MonoBehaviour
     public TMP_Text energyLevelText;
     public TMP_Text stressLevelText;
 
+    public TMP_Text statusMessageText;
+
 
     public void IncreaseEnergyLevel(int amount)
     {
@@ -59,6 +61,31 @@ public class LevelManager : MonoBehaviour
     public void UpdateStressLevelText()
     {
         stressLevelText.text = "Stress: " + stressLevel.ToString();
+    }
+
+    public bool CanDoActivity(int energyCost)
+    {
+        if (energyLevel - energyCost < 0)
+        {
+            ShowStatusMessage("You are too tired for this activity");
+            return false;
+        }
+        return true;
+    }
+
+    private void ShowStatusMessage(string message)
+    {
+        if (statusMessageText != null)
+        {
+            statusMessageText.text = message;
+            StartCoroutine(ClearStatusMessageAfterDelay());
+        }
+    }
+
+    private IEnumerator ClearStatusMessageAfterDelay()
+    {
+        yield return new WaitForSeconds(2f);
+        statusMessageText.text = "";
     }
 
     private IEnumerator DelayedStressDisplay()

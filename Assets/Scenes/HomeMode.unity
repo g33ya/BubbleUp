@@ -708,7 +708,7 @@ MonoBehaviour:
     - m_Text: 30 min
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: '1 hr '
+    - m_Text: 1 hr
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
     - m_Text: 2 hr
@@ -2629,7 +2629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545a109dc35cbea44ad6246c97f32786, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dropdown: {fileID: 417549435}
+  dropdown: {fileID: 712686346}
   plusEnergyText: {fileID: 1357920883}
   minusStressText: {fileID: 1107732942}
   stressText: {fileID: 1039564818}
@@ -10590,6 +10590,7 @@ MonoBehaviour:
   stressLevel: 0
   energyLevelText: {fileID: 163599909}
   stressLevelText: {fileID: 1039564818}
+  statusMessageText: {fileID: 0}
 --- !u!1 &596511651
 GameObject:
   m_ObjectHideFlags: 0

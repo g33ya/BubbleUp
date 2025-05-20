@@ -29,21 +29,26 @@ public class BookManager : MonoBehaviour
 
     // Starts reading and applies stat changes
     void StartReading()
+{
+    int selectedIndex = dropdown.value;
+    string selectedOptionString = dropdown.options[selectedIndex].text;
+    int selectedReadTime = GetMinutesFromOption(selectedOptionString);
+
+    int energyCost = (int)(selectedReadTime * 0.25f);
+
+    if (!levelManager.CanDoActivity(energyCost))
     {
-        int selectedIndex = dropdown.value;
-        string selectedOptionString = dropdown.options[selectedIndex].text;
-        int selectedReadTime = GetMinutesFromOption(selectedOptionString);
-
-        timeManager.AddTime(selectedReadTime); // Simulate reading time
-
-        // Adjust stats
-        levelManager.DecreaseEnergyLevel((int)(selectedReadTime * 0.25f));
-        levelManager.DecreaseStressLevel((int)(selectedReadTime * 0.1f));
-
-        BookUI.SetActive(false);
-
-        UpdateStatDisplay();
+        return;
     }
+
+    timeManager.AddTime(selectedReadTime);
+    levelManager.DecreaseEnergyLevel(energyCost);
+    levelManager.DecreaseStressLevel((int)(selectedReadTime * 0.1f));
+
+    BookUI.SetActive(false);
+    UpdateStatDisplay();
+}
+
 
     // Updates projected changes when dropdown is changed
     void OnDropdownValueChanged()
