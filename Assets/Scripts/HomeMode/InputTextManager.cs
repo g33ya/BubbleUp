@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class InputTextManager: MonoBehaviour //ChatGPT helped with some construction of this code
 {
@@ -9,6 +10,8 @@ public class InputTextManager: MonoBehaviour //ChatGPT helped with some construc
     public TMP_Text warningText;
     public GameObject closeButton;
     public Button submitButton;
+
+    public TimeManager timeManager;
 
     void Start()
     {
@@ -37,7 +40,7 @@ public class InputTextManager: MonoBehaviour //ChatGPT helped with some construc
             warningText.text = "Thanks! You've written enough.";
             warningText.color = Color.green;
             warningText.gameObject.SetActive(true);
-
+            SceneManager.LoadScene("OutsideCafeScene");
             // You can continue your logic here (e.g., save input, close UI, etc.)
         }
     }

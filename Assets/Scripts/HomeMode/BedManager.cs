@@ -22,7 +22,6 @@ public class SleepManager : MonoBehaviour
     public TimeManager timeManager;
     public LevelManager levelManager;
      private int currentScene;
-
     void Start()
     {
         BedUI.SetActive(false);
