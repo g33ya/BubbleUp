@@ -222,7 +222,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 29
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1315,6 +1315,7 @@ MonoBehaviour:
   kitchenButton: {fileID: 154042022}
   Character: {fileID: 0}
   Character2: {fileID: 0}
+  collage: {fileID: 0}
   speaker:
   - Ren
   - You
@@ -1351,7 +1352,7 @@ MonoBehaviour:
   - " Peaceful\u2019s the goal.\r\n Thanks, by the way.\r\n You\u2019ve been\u2026
     grounding.\r\n"
   - Glad I could help. By the way, what can I get you?
-  - oh right... Can I get a taro tea with popping boba?
+  - oh right... Can I get a Matcha with popping boba?
   - Sure
   portrait:
   - {fileID: -3179554087238049522, guid: 5564d1ceec3715a42bd7bebf0c2d3430, type: 3}
@@ -1756,8 +1757,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c0f568ab35932c44c8f02dddcb06175d, type: 2}
-  m_sharedMaterial: {fileID: 5893740002465033161, guid: c0f568ab35932c44c8f02dddcb06175d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2115,8 +2116,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c0f568ab35932c44c8f02dddcb06175d, type: 2}
-  m_sharedMaterial: {fileID: 5893740002465033161, guid: c0f568ab35932c44c8f02dddcb06175d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
