@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Front_Cafe_Background_Counter_0: -6357705243869153672
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
