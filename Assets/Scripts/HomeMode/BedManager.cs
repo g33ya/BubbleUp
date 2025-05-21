@@ -21,11 +21,12 @@ public class SleepManager : MonoBehaviour
     // Game systems
     public TimeManager timeManager;
     public LevelManager levelManager;
+     private int currentScene;
 
     void Start()
     {
         BedUI.SetActive(false);
-
+        currentScene=SceneManager.GetActiveScene().buildIndex;
         dropdown.onValueChanged.AddListener(delegate { OnDropdownValueChanged(); });
         closeButton.GetComponent<Button>().onClick.AddListener(CloseSleep);
         startButton.GetComponent<Button>().onClick.AddListener(StartSleep);
@@ -47,7 +48,19 @@ public class SleepManager : MonoBehaviour
         
             BedUI.SetActive(false);
             SoundPlayer.instance.PlaySFX(dreamSound);
-            timeManager.StartCoroutine(timeManager.FadeInOutWithScene("Shop 1 Tuesday"));
+            if (currentScene==4){
+                 timeManager.StartCoroutine(timeManager.FadeInOutWithScene("Shop 1 Tuesday"));
+            }
+            if (currentScene==34){
+                timeManager.StartCoroutine(timeManager.FadeInOutWithScene("Shop 1 Wednesday"));
+            }
+            if (currentScene==35){
+                timeManager.StartCoroutine(timeManager.FadeInOutWithScene("Shop 1 Thursday"));
+            }
+            if (currentScene==36){
+                timeManager.StartCoroutine(timeManager.FadeInOutWithScene("Shop 1 Friday"));
+            }
+           
 
             //SceneManager.LoadScene("Shop 2 Tuesday"); //Need to talk to Taylor About the Scene Change
             return;

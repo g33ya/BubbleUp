@@ -12,6 +12,8 @@ public class TimeManager : MonoBehaviour
      public CanvasGroup fadePanel;  
     public float fadeDuration = 1f;
 
+    private int currentScene;
+
     void Start()
     {
         UpdateTimeDisplay();
@@ -35,7 +37,18 @@ public class TimeManager : MonoBehaviour
         //Check if it's now 6 AM or later - to move onto the next scene
         if (hour >= 6 && hour < 7 && minute == 0) // Only trigger at exactly 6:00 AM
         {
-            StartCoroutine(FadeInOutWithScene("Shop 1 Tuesday")); // Replace with needed scene name
+            if (currentScene==4){
+                 StartCoroutine(FadeInOutWithScene("Shop 1 Tuesday"));
+            }
+            if (currentScene==34){
+                StartCoroutine(FadeInOutWithScene("Shop 1 Wednesday"));
+            }
+            if (currentScene==35){
+                StartCoroutine(FadeInOutWithScene("Shop 1 Thursday"));
+            }
+            if (currentScene==36){
+                StartCoroutine(FadeInOutWithScene("Shop 1 Friday"));
+            } // Replace with needed scene name
         }
         else
         {
