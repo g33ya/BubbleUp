@@ -188,7 +188,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &116611571
@@ -617,7 +617,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6642193843099659868, guid: 7dc4651b92eb93742ad8b3bd1e0fdb5f, type: 3}
+  m_Sprite: {fileID: 6642193843099659868, guid: d26bcadd05e638f43865077f69e2fe5f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -751,7 +751,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6270953770400647376, guid: d1d8149eab5ad374493fea8d1cf770d0, type: 3}
+  m_Sprite: {fileID: -6270953770400647376, guid: 7a4bdc8b05a735847a61e1697bf0b294, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1644,8 +1644,8 @@ MonoBehaviour:
   - Wow, this week has been eventful. I can't wait to write about in my DIARY.
   portrait:
   - {fileID: -3179554087238049522, guid: 5564d1ceec3715a42bd7bebf0c2d3430, type: 3}
-  - {fileID: -5536324370814838258, guid: b68a1fe4329d1c74eb6137d0afe6428c, type: 3}
-  - {fileID: -5536324370814838258, guid: b68a1fe4329d1c74eb6137d0afe6428c, type: 3}
+  - {fileID: -5536324370814838258, guid: ebc22afaafe042d459183daa3d537b27, type: 3}
+  - {fileID: -5536324370814838258, guid: ebc22afaafe042d459183daa3d537b27, type: 3}
   doorChime: {fileID: 1164966042}
   sparkle: {fileID: 0}
 --- !u!4 &1235620348
@@ -1881,7 +1881,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1540426309290004842, guid: ef33f8593039c054a8cb8d962b5b98ec, type: 3}
+  m_Sprite: {fileID: -1540426309290004842, guid: 96d16510f2bf35b43b9ac22b98e64127, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2094,7 +2094,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 8270719687502293858, guid: e0794ed2185236c49b7a949d5641bbf5, type: 3}
+  m_Sprite: {fileID: 8270719687502293858, guid: 45f628d1574fb694798bf8ba7c2cf3a8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2292,7 +2292,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1891057512
