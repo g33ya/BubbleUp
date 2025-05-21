@@ -11,6 +11,7 @@ public class AddMatcha : MonoBehaviour
     public Sprite matchaWithAloeSprite; //sprite with Matcha + Aloe
 
     public Sprite matchaWithPoppinSprite; //sprite with Matcha + Poppin
+    public AudioSource pour;
     private void OnMouseDown()
     {
         GameObject cup = CupButtonSpawner.currentCup;
@@ -27,20 +28,24 @@ public class AddMatcha : MonoBehaviour
                 if (state.hasBoba)
                 {
                     sr.sprite = matchaWithBobaSprite;
+                    pour.Play();
                 }
                 //cup already has Aloe, then add Matcha so now the cup changes to Sprite Matcha + Aloe
                 else if (state.hasAloe)
                 {
                     sr.sprite = matchaWithAloeSprite;
+                    pour.Play();
                 }
                 //cup already has Poppin, then add Matcha so now the cup changes to Sprite Matcha + Poppin
                 else if (state.hasPoppin)
                 {
                     sr.sprite = matchaWithPoppinSprite;
+                    pour.Play();
                 }
                 else
                 {
                     sr.sprite = matchaOnlySprite;
+                    pour.Play();
                 }
 
                 //mark that matcha was added

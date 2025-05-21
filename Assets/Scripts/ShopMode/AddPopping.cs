@@ -16,6 +16,7 @@ public class AddPopping : MonoBehaviour
 
     public Sprite taroWithPoppinSprite; //Taro + Poppin
     public Sprite milkWithPoppinSprite; //Milk + Poppin
+    public AudioSource Bloop;
 
 
 
@@ -42,23 +43,28 @@ public class AddPopping : MonoBehaviour
                 if (state.hasMango)
                 {
                     sr.sprite = mangoWithPoppinSprite;
+                    Bloop.Play();
                 }
                 else if (state.hasTaro)
                 {
                     sr.sprite = taroWithPoppinSprite;
+                    Bloop.Play();
                 }
                 else if (state.hasMilk)
                 {
                     sr.sprite = milkWithPoppinSprite;
+                    Bloop.Play();
                 }
                 else if (state.hasMatcha)
                 {
                     sr.sprite = matchaWithPoppinSprite;
+                    Bloop.Play();
                 }
                 else
                 {
                     //if the cup has no base yet, just show the Poppin by itself
                     sr.sprite = poppinCupSprite;
+                    Bloop.Play();
                 }
 
                 //Mark that the cup has now Poppin added
