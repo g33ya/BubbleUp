@@ -24,7 +24,7 @@ Bubble Up is a narrative game that helps players recognize and manage Imposter S
 ## Screenshots
 (Coming Soon)
 ## Gameplay Video
-(Coming Soon)
+- [Bubble Up Day 1 Trailer](https://www.youtube.com/watch?v=BJ-cCliwdBs)
 ## Educational Game Design Document
 View our Design Document [here](https://github.com/g33ya/BubbleUp/blob/main/docs/egdd.md).
 ## Credits and Acknowledgements
