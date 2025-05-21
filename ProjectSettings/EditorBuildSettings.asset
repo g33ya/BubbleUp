@@ -131,6 +131,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HomeModeThursday.unity
     guid: 090335516ee8506488f44ded950e7d42
+  - enabled: 1
+    path: Assets/Scenes/Kitchen 2 Thursday.unity
+    guid: 17ffa753777c5d1489e1c2622fac666a
+  - enabled: 1
+    path: Assets/Scenes/HomeModeFriday.unity
+    guid: 0db1c261e108fcf42a64cffe652beb89
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -270,6 +270,7 @@ MonoBehaviour:
   mangoWithAloeSprite: {fileID: -2586768722040249087, guid: 2c4cbfc7eb594234b963464b5ad627c9, type: 3}
   mangoWithBobaSprite: {fileID: 1755747747064077749, guid: eeab7dffa2c30bb449706cc9587d91a5, type: 3}
   mangoWithPoppinSprite: {fileID: -6971235186392487740, guid: 348b2e2c1e9e9214ca39648661390752, type: 3}
+  pour: {fileID: 1836617257}
 --- !u!1 &154480705
 GameObject:
   m_ObjectHideFlags: 0
@@ -1341,6 +1342,7 @@ MonoBehaviour:
   mangoWithPoppinSprite: {fileID: -6971235186392487740, guid: 348b2e2c1e9e9214ca39648661390752, type: 3}
   taroWithPoppinSprite: {fileID: 1402998173964939640, guid: 3ca0ecdcc2f92354e83033682ea8fb5e, type: 3}
   milkWithPoppinSprite: {fileID: 8517543488386050402, guid: 226316c4a5afa3848a47d886b7c81921, type: 3}
+  Bloop: {fileID: 532000550}
 --- !u!1 &451869677
 GameObject:
   m_ObjectHideFlags: 0
@@ -1489,6 +1491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bobaCupSprite: {fileID: 3490220934111244818, guid: 304731335b8a4434e9f0948e27f5cfe6, type: 3}
+  Bloop: {fileID: 532000550}
 --- !u!1 &472635921
 GameObject:
   m_ObjectHideFlags: 0
@@ -1625,6 +1628,135 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 472635921}
   m_CullTransparentMesh: 1
+--- !u!1 &532000549
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 532000551}
+  - component: {fileID: 532000550}
+  m_Layer: 0
+  m_Name: Bloop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &532000550
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532000549}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c4a78d2a2e3b58d41802007233a88395, type: 3}
+  m_Resource: {fileID: 8300000, guid: c4a78d2a2e3b58d41802007233a88395, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &532000551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532000549}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 960, y: 540, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &564312661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1776,6 +1908,7 @@ MonoBehaviour:
   taroWithAloeSprite: {fileID: -1243633403815435530, guid: 3e64619380bb3c049951aa9134823f66, type: 3}
   taroWithBobaSprite: {fileID: -2763158845320072381, guid: 919aa6edddd35e743a6b556da6f9cae9, type: 3}
   taroWithPoppinSprite: {fileID: 1402998173964939640, guid: 3ca0ecdcc2f92354e83033682ea8fb5e, type: 3}
+  pour: {fileID: 1836617257}
 --- !u!1 &616174733
 GameObject:
   m_ObjectHideFlags: 0
@@ -2268,6 +2401,7 @@ MonoBehaviour:
   mangoWithAloeSprite: {fileID: -2586768722040249087, guid: 2c4cbfc7eb594234b963464b5ad627c9, type: 3}
   taroWithAloeSprite: {fileID: -1243633403815435530, guid: 3e64619380bb3c049951aa9134823f66, type: 3}
   milkWithAloeSprite: {fileID: 4148317677747987209, guid: 949e3275559c3474595ae35b1a0779ea, type: 3}
+  Bloop: {fileID: 532000550}
 --- !u!1 &1182806181
 GameObject:
   m_ObjectHideFlags: 0
@@ -2611,6 +2745,7 @@ MonoBehaviour:
   matchaWithBobaSprite: {fileID: -784692581750019777, guid: ad9095d39cb0f7d4aaabeee99fb3e8d1, type: 3}
   matchaWithAloeSprite: {fileID: 8379732681861297503, guid: f92a3bde06c267f45ade6343ffd0c739, type: 3}
   matchaWithPoppinSprite: {fileID: -6771009301961453599, guid: 18193bc70d645024bbfdac60e9001575, type: 3}
+  pour: {fileID: 1836617257}
 --- !u!1 &1305565420
 GameObject:
   m_ObjectHideFlags: 0
@@ -2881,6 +3016,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brownsugarOnlySprite: {fileID: 7776524351508437024, guid: 211ea067356fff2499c1c9722b843900, type: 3}
   brownsugarWithBobaSprite: {fileID: -1934966080297878056, guid: 88315ce48bf392a4db46b4295a5c749e, type: 3}
+  pour: {fileID: 1836617257}
 --- !u!1 &1444163022
 GameObject:
   m_ObjectHideFlags: 0
@@ -3861,6 +3997,7 @@ MonoBehaviour:
   milkWithBobaSprite: {fileID: 4268452383655585642, guid: 8b336df783027c240aae86c9a79a0857, type: 3}
   milkWithAloeSprite: {fileID: 4148317677747987209, guid: 949e3275559c3474595ae35b1a0779ea, type: 3}
   milkWithPoppinSprite: {fileID: 8517543488386050402, guid: 226316c4a5afa3848a47d886b7c81921, type: 3}
+  pour: {fileID: 1836617257}
 --- !u!1 &1827854683
 GameObject:
   m_ObjectHideFlags: 0
@@ -3997,6 +4134,135 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1827854683}
   m_CullTransparentMesh: 1
+--- !u!1 &1836617256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1836617258}
+  - component: {fileID: 1836617257}
+  m_Layer: 0
+  m_Name: Pour
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1836617257
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836617256}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f0d778c9fb038994dbbc8e34052b0822, type: 3}
+  m_Resource: {fileID: 8300000, guid: f0d778c9fb038994dbbc8e34052b0822, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1836617258
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836617256}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 960, y: 540, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1884557839
 GameObject:
   m_ObjectHideFlags: 0
@@ -4275,3 +4541,5 @@ SceneRoots:
   - {fileID: 896106927}
   - {fileID: 1884557841}
   - {fileID: 1630815725}
+  - {fileID: 1836617258}
+  - {fileID: 532000551}
