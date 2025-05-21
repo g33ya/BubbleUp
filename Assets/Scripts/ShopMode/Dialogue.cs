@@ -1,3 +1,4 @@
+//CREDIT FOR MAIN DIALOGUE FUNCTIONALITY: https://www.youtube.com/watch?v=vR6H3mu_xD8
 using UnityEngine;
 using TMPro;
 using System.Collections;
@@ -19,6 +20,7 @@ public class Dialogue : MonoBehaviour
     public GameObject kitchenButton;
     public GameObject Character;
     public GameObject Character2;
+    public GameObject collage;
     //public GameObject ElomarPosition;
     public string[] speaker;
     [TextArea]
@@ -28,12 +30,15 @@ public class Dialogue : MonoBehaviour
     //private bool isDrinkMade=false;
     private int step;
     private int currentScene;
+    public AudioSource doorChime;
+    public AudioSource sparkle;
     // void Start()
     // {
     //     isDrinkMade==false;
     // }
     void Start()
     {
+        //USED CHAT GPT TO HELP KEEP TRACK OF SCENES
         currentScene=SceneManager.GetActiveScene().buildIndex;
         speakerText.text=speaker[step];
             dialogueText.text=dialogueWords[step];
@@ -55,9 +60,11 @@ public class Dialogue : MonoBehaviour
             if (currentScene==5){
             if (step==2){
                 position1.transform.position= new Vector3(-11.28f,1.154747f,0);
+                 doorChime.Play();
             }
             if (step==4){
                 Character2.SetActive(true);
+                doorChime.Play();
                 position2.transform.position= new Vector3(-11.28f,1.154747f,0);
             }
             if (step==5){
@@ -73,6 +80,7 @@ public class Dialogue : MonoBehaviour
             if (step==9){
                 //homeButton.SetActive(true);
                 Character.SetActive(true);
+                doorChime.Play();
                 //position1.GetComponent<RectTransform>().anchoredPosition = new Vector2(537f, 97f);
             }
             if (step==10){
@@ -80,9 +88,13 @@ public class Dialogue : MonoBehaviour
             }
             }
             if (currentScene==6){
+                if (step==9){
+                    sparkle.Play();
+                }
                 if (step==11){
                     homeButton.SetActive(true);
                     position1.transform.position= new Vector3(-11.28f,1.154747f,0);
+                    doorChime.Play();
                 }
             }
             if (currentScene==7){
@@ -97,6 +109,10 @@ public class Dialogue : MonoBehaviour
             if (currentScene==8){
                 if (step==4){
                 Character.SetActive(true);
+                doorChime.Play();
+                }
+                if (step==14){
+                    sparkle.Play();
                 }
                 if (step==20){
                     kitchenButton.SetActive(true);
@@ -105,13 +121,22 @@ public class Dialogue : MonoBehaviour
             if (currentScene==9){
                 if (step==2){
                     position2.transform.position= new Vector3(-11.28f,1.154747f,0);
+                    doorChime.Play();
                 }
                 if (step==5){
                     position1.transform.position= new Vector3(-11.28f,1.154747f,0);
+                    doorChime.Play();
                     homeButton.SetActive(true);
                 }
             }
             if (currentScene==10){
+                if (step==2){
+                    collage.SetActive(true);
+                    sparkle.Play();
+                }
+                if (step==4){
+                    collage.SetActive(false);
+                }
                 if (step==7){
                     kitchenButton.SetActive(true);
                 }
@@ -119,7 +144,11 @@ public class Dialogue : MonoBehaviour
             if (currentScene==11){
                 if (step==3){
                     Character.SetActive(true);
+                    doorChime.Play();
                    // position1.transform.position= new Vector3(-11.28f,1.154747f,0);
+                }
+                if (step==9){
+                    sparkle.Play();
                 }
                 if (step==11){
                     kitchenButton.SetActive(true);
@@ -128,9 +157,11 @@ public class Dialogue : MonoBehaviour
             if (currentScene==12){
                 if (step==3){
                     position1.transform.position= new Vector3(-11.28f,1.154747f,0);
+                    doorChime.Play();
                 }
                 if (step==4){
                     Character.SetActive(true);
+                    doorChime.Play();
                 }
                 if (step==7){
                     kitchenButton.SetActive(true);
@@ -139,10 +170,14 @@ public class Dialogue : MonoBehaviour
             if (currentScene==13){
                 if (step==10){
                     position1.transform.position= new Vector3(-11.28f,1.154747f,0);
+                    doorChime.Play();
                     homeButton.SetActive(true);
                 }
             }
             if (currentScene==14){
+                if (step==9){
+                    sparkle.Play();
+                }
                 if (step==14){
                     kitchenButton.SetActive(true);
                 }
@@ -150,6 +185,7 @@ public class Dialogue : MonoBehaviour
              if (currentScene==15){
                 if (step==3){
                     Character.SetActive(true);
+                    doorChime.Play();
                 }
                 if (step==8){
                     kitchenButton.SetActive(true);
@@ -158,9 +194,11 @@ public class Dialogue : MonoBehaviour
            if (currentScene==16){
                 if (step==2){
                     position2.transform.position= new Vector3(-11.28f,1.154747f,0);
+                    doorChime.Play();
                 }
                 if (step==4){
                     position1.transform.position= new Vector3(-11.28f,1.154747f,0);
+                    doorChime.Play();
                     homeButton.SetActive(true);
                 }
             }
@@ -172,8 +210,10 @@ public class Dialogue : MonoBehaviour
             if (currentScene==18){
             if (step==2){
                 //homeButton.SetActive(true);
-                position1.transform.position= new Vector3(-11.28f,1.154747f,0);
                 Character.SetActive(true);
+                position1.transform.position= new Vector3(-11.28f,1.154747f,0);
+                doorChime.Play();
+                // Character.SetActive(true);
                 //position1.GetComponent<RectTransform>().anchoredPosition = new Vector2(537f, 97f);
              }
              if (step==10){
@@ -184,17 +224,19 @@ public class Dialogue : MonoBehaviour
             if (step==2){
                 //homeButton.SetActive(true);
                 position1.transform.position= new Vector3(-11.28f,1.154747f,0);
+                doorChime.Play();
                 Character.SetActive(true);
                 //position1.GetComponent<RectTransform>().anchoredPosition = new Vector2(537f, 97f);
-            // }
-            // if (step==10){
-            //     kitchenButton.SetActive(true);
+             }
+            if (step==10){
+                kitchenButton.SetActive(true);
             }
             }
             if (currentScene==20){
             if (step==2){
                 //homeButton.SetActive(true);
                 position1.transform.position= new Vector3(-11.28f,1.154747f,0);
+                doorChime.Play();
                 homeButton.SetActive(true);
                 //position1.GetComponent<RectTransform>().anchoredPosition = new Vector2(537f, 97f);
             // }
