@@ -32,9 +32,9 @@ public class ShakeLever : MonoBehaviour
     {
         Debug.Log("Lever clicked");
 
-        // Get current cup from CupButtonSpawner if needed
-        if (currentCup == null)
-            currentCup = CupButtonSpawner.currentCup;
+        // // Get current cup from CupButtonSpawner if needed
+        // if (currentCup == null)
+        //     currentCup = CupButtonSpawner.currentCup;
        
 
         if (currentCup != null && currentCupState == null)
@@ -56,11 +56,16 @@ public class ShakeLever : MonoBehaviour
                 Debug.Log("Spawning sealed prefab: " + prefabToSpawn.name);
                 Instantiate(prefabToSpawn, spawnPoint.position, Quaternion.identity);
                 Destroy(currentCup);
-                CupButtonSpawner.currentCup = null;
+                currentCup = null;
+                currentCupState = null;
+                machineRenderer.sprite = sealerEmptySprite;
 
-                 if (machineRenderer != null && sealerEmptySprite != null)
-                 {
-                     machineRenderer.sprite = sealerEmptySprite;
+                //this makes sure when the user drags the cup to the machine and then press the lever the sealer machine appearance changes
+                //to back to being empty inside
+                if (machineRenderer != null && sealerEmptySprite != null)
+                {
+                    machineRenderer.sprite = null;
+                    machineRenderer.sprite = sealerEmptySprite;
                 }
 
                 StartCoroutine(ResetLever());

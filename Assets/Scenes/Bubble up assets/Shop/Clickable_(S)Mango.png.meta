@@ -119,13 +119,13 @@ TextureImporter:
       name: Clickable_(S)Mango_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 507
         y: 0
-        width: 0
-        height: 0
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+        width: 856
+        height: 1045
+      alignment: 9
+      pivot: {x: 0.4999998, y: 0.61690813}
+      border: {x: 0, y: 159, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -141,7 +141,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f6b4d67e013ef48068529c66cc83d7eb
     internalID: 0
     vertices: []
     indices: 

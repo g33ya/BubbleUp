@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.4691, y: -0.9127, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.20969974, y: 0.21708238, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -103,13 +103,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasBoba: 0
-  hasAloe: 0
   hasMatcha: 0
   hasMango: 1
   hasTaro: 0
   hasMilk: 0
   hasBrownSugar: 0
   hasPoppin: 0
+  hasAloe: 0
 --- !u!61 &1698827798256315010
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -144,17 +144,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.8434675, y: 0.1927923}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 11.84, y: 8.12}
+    oldSize: {x: 10.49, y: 7.88}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 11.84, y: 8.12}
+  m_Size: {x: 3.9355044, y: 6.866848}
   m_EdgeRadius: 0
 --- !u!114 &-3485753232648286476
 MonoBehaviour:

@@ -119,13 +119,13 @@ TextureImporter:
       name: "Clickable_(S)Tarow\uF022OrangePoppin_0"
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+        x: 538
+        y: 199
+        width: 763
+        height: 837
+      alignment: 9
+      pivot: {x: 0.5461108, y: 0.49782008}
+      border: {x: 7, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -141,7 +141,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: bf62b2a32c92e4a7eab6646a2e90f983
     internalID: 0
     vertices: []
     indices: 

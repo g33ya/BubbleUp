@@ -1,33 +1,44 @@
 using UnityEngine;
 
+//This script adds Brown Sugar to the currently selected cup when the Brown Sugar carton is clicked
+
 public class AddBrownSugar : MonoBehaviour
 {
-    public Sprite brownsugarOnlySprite;
-    public Sprite brownsugarWithBobaSprite;
+    public Sprite brownsugarOnlySprite; //sprite with only brownsugar added
+    public Sprite brownsugarWithBobaSprite; //sprite with brownsugar and boba added
 
-      private void OnMouseDown()
+    private void OnMouseDown()
     {
-        GameObject cup = CupButtonSpawner.currentCup;
 
+        GameObject cup = CupButtonSpawner.currentCup; // Get the currently selected cup
+
+        // Make sure a cup exists and the sprite is assigned
         if (cup != null)
         {
             SpriteRenderer sr = cup.GetComponent<SpriteRenderer>();
             CupState state = cup.GetComponent<CupState>();
 
+            //only procedd if a cup is selected 
             if (sr != null && state != null)
             {
-                if(state.hasBoba){
+                //if cup already has boba, add the brownsugar sprite so now its brownsugar + boba cup
+                if (state.hasBoba)
+                {
                     sr.sprite = brownsugarWithBobaSprite;
                 }
-                else{
+                else
+                {
                     sr.sprite = brownsugarOnlySprite;
                 }
+                 state.ResetDrinkBase();
+                //mark that brownsugar was added
                 state.hasBrownSugar = true;
             }
         }
     }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+        void Start()
     {
         
     }
