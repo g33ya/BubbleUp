@@ -43,7 +43,7 @@ public class SleepManager : MonoBehaviour
         else if (selectedOptionString == "4 hr") selectedSleepTime = 240;
         else if (selectedOptionString == "End of Day") {
             levelManager.IncreaseEnergyLevel(50);
-            levelManager.DecreaseStressLevel(40);
+            levelManager.DecreaseStressLevel(10);
         
             BedUI.SetActive(false);
             SoundPlayer.instance.PlaySFX(dreamSound);
@@ -57,7 +57,7 @@ public class SleepManager : MonoBehaviour
 
         // Energy & Stress Stat Change
         levelManager.IncreaseEnergyLevel((int)(selectedSleepTime * 0.3f)); 
-        levelManager.DecreaseStressLevel((int)(selectedSleepTime * 0.2f)); 
+        levelManager.DecreaseStressLevel((int)(selectedSleepTime * 0.02f)); 
 
         BedUI.SetActive(false);
         UpdateSleepTextDisplay();
@@ -87,7 +87,7 @@ public class SleepManager : MonoBehaviour
         }
 
         plusEnergy = (int)(selectedOptionNum * 0.2f);
-        minusStress = (int)(selectedOptionNum * 0.3f);
+        minusStress = (int)(selectedOptionNum * 0.03f);
 
         plusEnergyText.text = $"+ {plusEnergy} Energy";
         minusStressText.text = $"- {minusStress} Stress";
