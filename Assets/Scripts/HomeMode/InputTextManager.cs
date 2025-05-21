@@ -2,22 +2,29 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InputTextManager: MonoBehaviour
+public class InputTextManager: MonoBehaviour //ChatGPT helped with some construction of this code
 {
+    public GameObject rJournalUI;
     public TMP_InputField inputField;
     public TMP_Text warningText;
+    public GameObject closeButton;
     public Button submitButton;
 
     void Start()
     {
         warningText.gameObject.SetActive(false);
+        rJournalUI.gameObject.SetActive(false);
         submitButton.onClick.AddListener(ValidateInput);
+        closeButton.GetComponent<Button>().onClick.AddListener(CloseBook);
+
     }
 
     void ValidateInput()
     {
         string userInput = inputField.text;
         int wordCount = CountWords(userInput);
+        inputField.characterLimit = 1000;
+
 
         if (wordCount < 20)
         {
@@ -48,5 +55,20 @@ public class InputTextManager: MonoBehaviour
             }
         }
         return count;
+    }
+
+    // Hides Menu
+    public void CloseBook()
+    {
+        rJournalUI.SetActive(false);
+    }
+
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            CloseBook();
+        }
     }
 }
