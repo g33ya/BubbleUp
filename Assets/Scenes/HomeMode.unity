@@ -15223,6 +15223,10 @@ MonoBehaviour:
   journalUI: {fileID: 1434521890}
   booksUI: {fileID: 1240992602}
   computerSound: {fileID: 8300000, guid: 734af626e1af7ea4c94a8e0c17f4ff67, type: 3}
+  initialWorkOnButton: {fileID: 0}
+  initialWorkOnButton2: {fileID: 0}
+  assignmentCompleteText: {fileID: 0}
+  assignmentCompleteText2: {fileID: 0}
 --- !u!61 &772726579
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16773,7 +16777,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &876305696
 MonoBehaviour:
   m_ObjectHideFlags: 0
