@@ -42,14 +42,14 @@ public class TrashScript : MonoBehaviour
 
 }
 
-internal class SealedCup
-{
-}
+// internal class SealedCup
+// {
+// }
 
-public class TrashConfirmUI
-{
-    internal void ShowConfirmation(GameObject gameObject)
-    {
-        throw new NotImplementedException();
-    }
-}
+// public class TrashConfirmUI
+// {
+//     internal void ShowConfirmation(GameObject gameObject)
+//     {
+//         throw new NotImplementedException();
+//     }
+// }
