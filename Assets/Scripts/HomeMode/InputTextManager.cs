@@ -40,8 +40,7 @@ public class InputTextManager: MonoBehaviour //ChatGPT helped with some construc
             warningText.text = "Thanks! You've written enough.";
             warningText.color = Color.green;
             warningText.gameObject.SetActive(true);
-            SceneManager.LoadScene("OutsideCafeScene");
-            // You can continue your logic here (e.g., save input, close UI, etc.)
+            SceneManager.LoadScene("Outside Cafe Scene"); // It would have looped back to the front screen if it works!
         }
     }
 
