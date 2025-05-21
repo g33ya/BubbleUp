@@ -47,12 +47,22 @@ public class ComputerManager : MonoBehaviour
     public TMP_Text assignmentCompleteText; // Text to display the name of the assignment
     public TMP_Text assignmentCompleteText2; // Text to display the name of the assignment
 
-
     void Start()
     {
         Debug.Log("ComputerManager started"); // Debug log to check if the script is running
+        int savedProgress1 = PlayerPrefs.GetInt("Assignment1Progress", 0);
+        int savedProgress2 = PlayerPrefs.GetInt("Assignment2Progress", 0);
+        int savedStress = PlayerPrefs.GetInt("StressLevel", 20);
+        int savedEnergy = PlayerPrefs.GetInt("EnergyLevel", 50);
+
         assignment1 = new Assignment("Assignment 1", 180);
         assignment2 = new Assignment("Assignment 2", 225);
+
+        assignment1.currentProgress = savedProgress1;
+        assignment2.currentProgress = savedProgress2;
+
+        levelManager.stressLevel = savedStress;
+        levelManager.energyLevel = savedEnergy;
 
         startWorkingButton.onClick.AddListener(OnButtonClick);
         startWorkingButton2.onClick.AddListener(OnButtonClick2);
@@ -104,6 +114,7 @@ public class ComputerManager : MonoBehaviour
         else if (selectedOptionString == "3 hr") selectedOptionNum = 180;
         else if (selectedOptionString == "4 hr") selectedOptionNum = 240;
 
+        Debug.Log("Energy Level: " + levelManager.energyLevel); // Debug log to check the selected option
         if (levelManager.energyLevel - (selectedOptionNum * 0.2) <= 0)
         {
             startWorkingButton.interactable = false; // Disable the button if not enough energy
@@ -128,19 +139,28 @@ public class ComputerManager : MonoBehaviour
         timeManager.AddTime(selectedOptionNum); // Add time to the time manager
 
         assignment1.currentProgress += (int)(selectedOptionNum * 0.3f); // Increase progress of the assignment
-        
+        PlayerPrefs.SetInt("Assignment1Progress", assignment1.currentProgress);
+        PlayerPrefs.Save();
 
         if (assignment1.currentProgress >= 100)
         {
             assignment1.currentProgress = 100;
+            PlayerPrefs.SetInt("Assignment1Progress", assignment1.currentProgress);
+            PlayerPrefs.Save();
             initialWorkOnButton.interactable = false; // Lock the button (disable interaction)
             assignmentCompleteText.gameObject.SetActive(true);
         }
         UpdateCurrentProgressDisplay();
 
         levelManager.DecreaseEnergyLevel((int)(-selectedOptionNum * 0.2f)); // Decrease energy level
+        PlayerPrefs.SetInt("EnergyLevel", levelManager.energyLevel);
+        PlayerPrefs.Save();
         levelManager.IncreaseStressLevel((int)(selectedOptionNum * 0.4f)); // Increase stress level
-        
+        PlayerPrefs.SetInt("StressLevel", levelManager.stressLevel);
+        PlayerPrefs.Save();
+
+        Debug.Log("stress:" + PlayerPrefs.GetInt("StressLevel")); // Debug log to check if the method is 
+        Debug.Log("energy:" + PlayerPrefs.GetInt("EnergyLevel")); // Debug log to check if the method is called
         
         computerUI.SetActive(false);
         assignmentPanel.SetActive(false); // Show the assignment panel after working on the assignment
@@ -170,7 +190,7 @@ public class ComputerManager : MonoBehaviour
 
         if (levelManager.stressLevel + (selectedOptionNum * 0.4) >= 100)
         {
-            startWorkingButton.interactable = false; // Disable the button if not enough energy
+            startWorkingButton2.interactable = false; // Disable the button if not enough energy
             tooStressedText2.gameObject.SetActive(true); 
             if (levelManager.energyLevel - (selectedOptionNum * 0.2) <= 0){
                 notEnoughEnergyText2.gameObject.SetActive(true); 
@@ -182,19 +202,26 @@ public class ComputerManager : MonoBehaviour
         timeManager.AddTime(selectedOptionNum); // Add time to the time manager
 
         assignment2.currentProgress += (int)(selectedOptionNum * 0.3f); // Increase progress of the assignment
-        
+        PlayerPrefs.SetInt("Assignment2Progress", assignment2.currentProgress);
+        PlayerPrefs.Save();
 
         if (assignment2.currentProgress >= 100)
         {
             assignment2.currentProgress = 100;
-            initialWorkOnButton.interactable = false; // Lock the button (disable interaction)
+            PlayerPrefs.SetInt("Assignment2Progress", assignment2.currentProgress);
+            PlayerPrefs.Save();
+            initialWorkOnButton2.interactable = false; // Lock the button (disable interaction)
             assignmentCompleteText2.gameObject.SetActive(true);
         }
         UpdateCurrentProgressDisplay2();
 
 
         levelManager.DecreaseEnergyLevel((int)(-selectedOptionNum * 0.2f)); // Decrease energy level
+        PlayerPrefs.SetInt("EnergyLevel", levelManager.energyLevel);
+        PlayerPrefs.Save();
         levelManager.IncreaseStressLevel((int)(selectedOptionNum * 0.4f)); // Increase stress level
+        PlayerPrefs.SetInt("StressLevel", levelManager.stressLevel);
+        PlayerPrefs.Save();
         
         Debug.Log(assignment2.currentProgress); // Debug log to check if the method is called
         
@@ -256,13 +283,14 @@ public class ComputerManager : MonoBehaviour
 
     void UpdateCurrentProgressDisplay()
     {   
-        int progressPercent = assignment1.currentProgress;
+        int progressPercent = PlayerPrefs.GetInt("Assignment1Progress", 0);  // Default to 0 if no value is set
         currentProgressText.text = "Current Progress: " + progressPercent + "%";
     }
 
     void UpdateCurrentProgressDisplay2()
     {   
-        int progressPercent = assignment2.currentProgress;
+        int progressPercent = PlayerPrefs.GetInt("Assignment2Progress", 0);  // Default to 0 if no value is set
+        
         currentProgressText2.text = "Current Progress: " + progressPercent + "%";
     }
 

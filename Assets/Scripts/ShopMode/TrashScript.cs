@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 // This script handles trashing (deleting) cups when they enter the trash area
@@ -39,4 +40,16 @@ public class TrashScript : MonoBehaviour
         }
     }
 
+}
+
+internal class SealedCup
+{
+}
+
+public class TrashConfirmUI
+{
+    internal void ShowConfirmation(GameObject gameObject)
+    {
+        throw new NotImplementedException();
+    }
 }
