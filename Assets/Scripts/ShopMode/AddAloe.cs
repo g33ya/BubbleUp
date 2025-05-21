@@ -10,6 +10,7 @@ public class AddAloe : MonoBehaviour
       public Sprite mangoWithAloeSprite; //Mango with Aloe Cup
       public Sprite taroWithAloeSprite; //Taro with Aloe Cup
       public Sprite milkWithAloeSprite; //Milk with Aloe Cup
+      public AudioSource Bloop;
 
 
     // Called automatically when the player clicks this GameObject (Aloe Clickable)
@@ -31,17 +32,22 @@ public class AddAloe : MonoBehaviour
                //check the base cup has the correct sprite
                 if(state.hasMatcha){
                     sr.sprite = matchaWithAloeSprite;
+                    Bloop.Play();
                 }else if(state.hasMango){
                     sr.sprite = mangoWithAloeSprite;
+                    Bloop.Play();
                 }else if(state.hasTaro){
                     sr.sprite = taroWithAloeSprite;
+                    Bloop.Play();
                 }
                 else if(state.hasMilk){
                     sr.sprite = milkWithAloeSprite;
+                    Bloop.Play();
                 }
                 else{
                     //if the cup has no base yet, just show the aloe by itself
                      sr.sprite = aloeCupSprite;
+                     Bloop.Play();
                 }
                 //Mark that the cup has now Aloe added
                   state.hasAloe = true;

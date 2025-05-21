@@ -7,6 +7,7 @@ public class AddMilk : MonoBehaviour
     public Sprite milkWithBobaSprite; //Milk + Boba
     public Sprite milkWithAloeSprite; //Milk + Aloe
     public Sprite milkWithPoppinSprite; //Milk + Poppin
+    public AudioSource pour;
 
      private void OnMouseDown()
     {
@@ -23,17 +24,21 @@ public class AddMilk : MonoBehaviour
                  //cup already has Boba, then add Milk so now the cup changes to Sprite Milk + Boba
                 if(state.hasBoba){
                     sr.sprite = milkWithBobaSprite;
+                    pour.Play();
                 }
                  //cup already has Aloe, then add Milk so now the cup changes to Sprite Milk + Aloe
                 else if(state.hasAloe){
                     sr.sprite = milkWithAloeSprite;
+                    pour.Play();
                 }
                 //cup already has Poppin, then add Milk so now the cup changes to Sprite Milk + Poppin
                 else if(state.hasPoppin){
                     sr.sprite = milkWithPoppinSprite;
+                    pour.Play();
                 }else
                 {
                     sr.sprite = milkOnlySprite;
+                    pour.Play();
                 }
 
                 //mark that milk was added

@@ -5,6 +5,7 @@ public class AddBoba : MonoBehaviour
 {
     // Sprite that represent Boba Only
     public Sprite bobaCupSprite;
+    public AudioSource Bloop;
 
 
     // Called automatically when the player clicks this GameObject (Boba Clickable)
@@ -27,6 +28,7 @@ public class AddBoba : MonoBehaviour
             if (sr != null && state != null)
             {
                 sr.sprite = bobaCupSprite; //change the cup appearance to now have boba
+                Bloop.Play();
 
                 //mark that the cup has boba added
                 state.hasBoba = true;

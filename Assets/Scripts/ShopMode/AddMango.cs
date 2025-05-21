@@ -8,6 +8,7 @@ public class AddMango : MonoBehaviour
     public Sprite mangoWithAloeSprite; //Mango + Aloe
     public Sprite mangoWithBobaSprite; //Mango + Boba
     public Sprite mangoWithPoppinSprite; //Mango + Poppin
+    public AudioSource pour;
 
     private void OnMouseDown()
     {
@@ -25,21 +26,25 @@ public class AddMango : MonoBehaviour
                 if (state.hasBoba)
                 {
                     sr.sprite = mangoWithBobaSprite;
+                    pour.Play();
                 }
                 //cup already has Poppin, then add Mango so now the cup changes to Sprite Mango + Poppin
                 else if (state.hasPoppin)
                 {
                     sr.sprite = mangoWithPoppinSprite;
+                    pour.Play();
                 }
                 //cup already has Aloe, then add Mango so now the cup changes to Sprite Mango + Aloe
                 else if (state.hasAloe)
                 {
                     sr.sprite = mangoWithAloeSprite;
+                    pour.Play();
 
                 }
                 else
                 {
                     sr.sprite = mangoCupSprite;
+                    pour.Play();
                 }
 
                 //mark that mango was added

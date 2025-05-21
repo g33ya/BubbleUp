@@ -1633,14 +1633,18 @@ MonoBehaviour:
   kitchenButton: {fileID: 154042022}
   Character: {fileID: 1891057510}
   Character2: {fileID: 0}
+  collage: {fileID: 0}
   speaker:
   - Ren
+  - You
   - You
   dialogueWords:
   - Thanks. See you around.
   - Have a good one!
+  - Wow, this week has been eventful. I can't wait to write about in my DIARY.
   portrait:
   - {fileID: -3179554087238049522, guid: 5564d1ceec3715a42bd7bebf0c2d3430, type: 3}
+  - {fileID: -5536324370814838258, guid: b68a1fe4329d1c74eb6137d0afe6428c, type: 3}
   - {fileID: -5536324370814838258, guid: b68a1fe4329d1c74eb6137d0afe6428c, type: 3}
   doorChime: {fileID: 1164966042}
   sparkle: {fileID: 0}

@@ -8,6 +8,7 @@ public class AddTaro : MonoBehaviour
     public Sprite taroWithAloeSprite;  //Taro + Aloe
     public Sprite taroWithBobaSprite;  //Taro + Boba 
     public Sprite taroWithPoppinSprite;  //Taro + Poppin
+    public AudioSource pour;
 
     private void OnMouseDown()
     {
@@ -25,21 +26,25 @@ public class AddTaro : MonoBehaviour
                 if (state.hasBoba)
                 {
                     sr.sprite = taroWithBobaSprite;
+                    pour.Play();
                 }
                 //cup already has Aloe, then add Taro so now the cup changes to Sprite Taro + Aloe
                 else if (state.hasAloe)
                 {
                     sr.sprite = taroWithAloeSprite;
+                    pour.Play();
 
                 }
                 //cup already has Poppin, then add Taro so now the cup changes to Sprite Taro + Poppin
                 else if (state.hasPoppin)
                 {
                     sr.sprite = taroWithPoppinSprite;
+                    pour.Play();
                 }
                 else
                 {
                     sr.sprite = taroOnlySprite;
+                    pour.Play();
                 }
                 //mark that taro was added
                 state.hasTaro = true;

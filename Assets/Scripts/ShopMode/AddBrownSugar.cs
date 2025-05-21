@@ -6,6 +6,7 @@ public class AddBrownSugar : MonoBehaviour
 {
     public Sprite brownsugarOnlySprite; //sprite with only brownsugar added
     public Sprite brownsugarWithBobaSprite; //sprite with brownsugar and boba added
+    public AudioSource pour;
 
     private void OnMouseDown()
     {
@@ -25,10 +26,12 @@ public class AddBrownSugar : MonoBehaviour
                 if (state.hasBoba)
                 {
                     sr.sprite = brownsugarWithBobaSprite;
+                    pour.Play();
                 }
                 else
                 {
                     sr.sprite = brownsugarOnlySprite;
+                    pour.Play();
                 }
                  state.ResetDrinkBase();
                 //mark that brownsugar was added
