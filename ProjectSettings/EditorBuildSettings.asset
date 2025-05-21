@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Shop 1 Monday.unity
     guid: 4ad37b25d62ccbd4b9825e546a9b489f
   - enabled: 1
-    path: Assets/Scenes/BackOfCafeScene.unity
+    path: Assets/Scenes/BackOfCafeScene_DONTUSE.unity
     guid: c888dbba32b956c4bacda5f3838e2d8e
   - enabled: 1
     path: Assets/Scenes/Shop 2 Monday.unity

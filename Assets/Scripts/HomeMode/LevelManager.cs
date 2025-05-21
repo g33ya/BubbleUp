@@ -10,7 +10,6 @@ public class LevelManager : MonoBehaviour
     public TMP_Text energyLevelText;
     public TMP_Text stressLevelText;
 
-
     public void IncreaseEnergyLevel(int amount)
     {
         energyLevel += amount;
@@ -53,12 +52,12 @@ public class LevelManager : MonoBehaviour
 
     public void UpdateEnergyLevelText()
     {
-        energyLevelText.text = "Energy: " + energyLevel.ToString();
+        energyLevelText.text = "Energy: " + PlayerPrefs.GetInt("EnergyLevel").ToString();
     }
 
     public void UpdateStressLevelText()
     {
-        stressLevelText.text = "Stress: " + stressLevel.ToString();
+        stressLevelText.text = "Stress: " + PlayerPrefs.GetInt("StressLevel").ToString();
     }
 
     private IEnumerator DelayedStressDisplay()

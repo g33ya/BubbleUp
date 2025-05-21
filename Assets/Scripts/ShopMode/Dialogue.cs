@@ -1,3 +1,4 @@
+//CREDIT FOR MAIN DIALOGUE FUNCTIONALITY: https://www.youtube.com/watch?v=vR6H3mu_xD8
 using UnityEngine;
 using TMPro;
 using System.Collections;
@@ -37,6 +38,7 @@ public class Dialogue : MonoBehaviour
     // }
     void Start()
     {
+        //USED CHAT GPT TO HELP KEEP TRACK OF SCENES
         currentScene=SceneManager.GetActiveScene().buildIndex;
         speakerText.text=speaker[step];
             dialogueText.text=dialogueWords[step];

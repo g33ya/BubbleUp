@@ -13,9 +13,37 @@ TagManager:
   - aloew/cup
   - poppinw/cup
   - matchaOnly
-  - NPC
-  - Door Collision tag
-  - CollisonTag
+  - poppinSealedw/mango
+  - Sealedw/BrownSugar
+  - Sealedw/Mango
+  - aloeSealedw/mango
+  - bobaSealedw/mango
+  - Sealedw/Matcha
+  - bobaSealedw/BrownSugar
+  - matchaw/boba
+  - aloeSealedw/milk
+  - poppinSealedw/matcha
+  - bobaSealedw/matcha
+  - aloeSealedw/matcha
+  - mangow/poppin
+  - mangow/aloe
+  - mangoOnly
+  - Sealedw/Milk
+  - bobaSealedw/milk
+  - aloeSealedw/taro
+  - Sealedw/Taro
+  - poppinSealedw/taro
+  - matchaw/aloe
+  - matchaw/poppin
+  - taroOnly
+  - tarow/boba
+  - tarow/poppin
+  - tarow/aloe
+  - mangow/boba
+  - milkOnly
+  - milkw/aloe
+  - milkw/boba
+  - milkw/poppin
   layers:
   - Default
   - TransparentFX
