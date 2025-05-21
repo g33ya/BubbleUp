@@ -1118,6 +1118,7 @@ MonoBehaviour:
   warningText: {fileID: 0}
   closeButton: {fileID: 1280706181}
   submitButton: {fileID: 862238867}
+  timeManager: {fileID: 0}
 --- !u!1 &1466547870
 GameObject:
   m_ObjectHideFlags: 0
