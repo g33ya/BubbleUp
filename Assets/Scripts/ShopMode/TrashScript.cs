@@ -44,6 +44,9 @@ public class TrashScript : MonoBehaviour
 
 // internal class SealedCup
 // {
+//     public SealedCup()
+//     {
+//     }
 // }
 
 // public class TrashConfirmUI
@@ -52,4 +55,4 @@ public class TrashScript : MonoBehaviour
 //     {
 //         throw new NotImplementedException();
 //     }
-// }
+//}
