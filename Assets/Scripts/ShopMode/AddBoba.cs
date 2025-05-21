@@ -1,25 +1,34 @@
 using UnityEngine;
 
+// This script adds Boba to the currently selected cup (S/L) when the Boba ingredient is clicked
 public class AddBoba : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-
+    // Sprite that represent Boba Only
     public Sprite bobaCupSprite;
-    // public GameObject cupObject;
 
+
+    // Called automatically when the player clicks this GameObject (Boba Clickable)
     void OnMouseDown()
     {
         GameObject cup = CupButtonSpawner.currentCup;
-        if(cup == null){
+
+        // If no cup is currently selected, do nothing
+        if (cup == null)
+        {
             return;
         }
-       
-        if(cup != null && bobaCupSprite != null){
+
+        // Make sure both the cup and the boba sprite exist before continuing
+        if (cup != null && bobaCupSprite != null)
+        {
 
             SpriteRenderer sr = cup.GetComponent<SpriteRenderer>();
             CupState state = cup.GetComponent<CupState>();
-            if (sr != null && state != null){
-                sr.sprite = bobaCupSprite;
+            if (sr != null && state != null)
+            {
+                sr.sprite = bobaCupSprite; //change the cup appearance to now have boba
+
+                //mark that the cup has boba added
                 state.hasBoba = true;
 
             }

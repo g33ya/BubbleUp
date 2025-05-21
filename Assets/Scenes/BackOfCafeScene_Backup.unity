@@ -1337,6 +1337,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poppinCupSprite: {fileID: -8891852669829288390, guid: 5ad6aef59ceb1644fb7127de0222bc6d, type: 3}
+<<<<<<< HEAD
+  matchaWithPoppinSprite: {fileID: -6771009301961453599, guid: 6737b15dd2f742b4088671910bb372a8, type: 3}
+  mangoWithPoppinSprite: {fileID: -6971235186392487740, guid: 9ae21b2e7767e8947acd6095ed35e4c9, type: 3}
+  taroWithPoppinSprite: {fileID: 1402998173964939640, guid: ab2fa133d7b3a034ab4c2a83805b698d, type: 3}
+  milkWithPoppinSprite: {fileID: 8517543488386050402, guid: 2c692a91ab4ba2a458c1becd5dc88fde, type: 3}
+=======
+>>>>>>> bf34c02cd5fbeb0f9ce0147acd28588fad286a10
 --- !u!1 &451869677
 GameObject:
   m_ObjectHideFlags: 0
@@ -2260,6 +2267,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aloeCupSprite: {fileID: -1231341891186751354, guid: 8febd10e160feb849be2287893992125, type: 3}
+<<<<<<< HEAD
+  matchaWithAloeSprite: {fileID: 8379732681861297503, guid: fb4b849d2370312488703759b30b914a, type: 3}
+  mangoWithAloeSprite: {fileID: -2586768722040249087, guid: 3b362d02ffbf85f4aa7233329c8a4952, type: 3}
+  taroWithAloeSprite: {fileID: -1243633403815435530, guid: e6b741183beb2e0458f26207e427ed38, type: 3}
+  milkWithAloeSprite: {fileID: 4148317677747987209, guid: cdda076241b2dc84a905e314dd0af4ad, type: 3}
+=======
+>>>>>>> bf34c02cd5fbeb0f9ce0147acd28588fad286a10
 --- !u!1 &1182806181
 GameObject:
   m_ObjectHideFlags: 0
@@ -2600,6 +2614,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   matchaOnlySprite: {fileID: 2150198551892363791, guid: 74739c4bc6d2734489d32d092540a52c, type: 3}
   matchaWithBobaSprite: {fileID: -784692581750019777, guid: 4e69a021962c2084bb1301663bf4037a, type: 3}
+<<<<<<< HEAD
+  matchaWithAloeSprite: {fileID: 8379732681861297503, guid: fb4b849d2370312488703759b30b914a, type: 3}
+  matchaWithPoppinSprite: {fileID: -6771009301961453599, guid: 6737b15dd2f742b4088671910bb372a8, type: 3}
+=======
+>>>>>>> bf34c02cd5fbeb0f9ce0147acd28588fad286a10
 --- !u!1 &1305565420
 GameObject:
   m_ObjectHideFlags: 0
@@ -3221,7 +3240,10 @@ MonoBehaviour:
   Panel: {fileID: 935784649}
   yesButton: {fileID: 1305565422}
   noButton: {fileID: 237957271}
+<<<<<<< HEAD
+=======
   cupToTrash: {fileID: 0}
+>>>>>>> bf34c02cd5fbeb0f9ce0147acd28588fad286a10
 --- !u!1 &1642855254
 GameObject:
   m_ObjectHideFlags: 0
@@ -3625,6 +3647,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11c49d38325794bf0a88482aa0e699e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  confirmUI: {fileID: 1630815726}
+=======
+>>>>>>> bf34c02cd5fbeb0f9ce0147acd28588fad286a10
 --- !u!114 &1758619321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3640,7 +3666,10 @@ MonoBehaviour:
   Panel: {fileID: 935784649}
   yesButton: {fileID: 1305565422}
   noButton: {fileID: 237957271}
+<<<<<<< HEAD
+=======
   cupToTrash: {fileID: 0}
+>>>>>>> bf34c02cd5fbeb0f9ce0147acd28588fad286a10
 --- !u!1 &1786490069
 GameObject:
   m_ObjectHideFlags: 0
@@ -4172,8 +4201,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leverUp: {fileID: 108906438478637347, guid: 6d868685468300f4da8eb4f6419e561d, type: 3}
   leverDown: {fileID: -2018769799231748683, guid: d81ade9f18916cf4e862ca77735067fb, type: 3}
+<<<<<<< HEAD
+=======
   spriteRenderer: {fileID: 0}
   isPressed: 0
+>>>>>>> bf34c02cd5fbeb0f9ce0147acd28588fad286a10
   machineRenderer: {fileID: 299636931}
   sealerEmptySprite: {fileID: -7851375875926598054, guid: a8af48e6bc7ab654c8d4405d5fb9479d, type: 3}
   currentCupState: {fileID: 0}

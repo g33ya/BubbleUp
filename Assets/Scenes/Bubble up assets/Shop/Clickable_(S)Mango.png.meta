@@ -119,13 +119,13 @@ TextureImporter:
       name: Clickable_(S)Mango_0
       rect:
         serializedVersion: 2
-        x: 56
-        y: 849
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+        x: 507
+        y: 0
+        width: 856
+        height: 1045
+      alignment: 9
+      pivot: {x: 0.4999998, y: 0.61690813}
+      border: {x: 0, y: 159, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -137,33 +137,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Clickable_(S)Mango_1
-      rect:
-        serializedVersion: 2
-        x: 353
-        y: 267
-        width: 927
-        height: 713
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b9e0b3f0650e59180800000000000000
-      internalID: -9109128011059622245
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f6b4d67e013ef48068529c66cc83d7eb
     internalID: 0
     vertices: []
     indices: 
@@ -174,7 +152,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Clickable_(S)Mango_0: 3120742503207459111
-      Clickable_(S)Mango_1: -9109128011059622245
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

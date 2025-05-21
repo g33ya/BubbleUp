@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1341319306225983047}
   - component: {fileID: 3123876155224631926}
   - component: {fileID: -1962411947889298792}
+  - component: {fileID: -787679954404103389}
   m_Layer: 0
   m_Name: Cup
   m_TagString: cup
@@ -78,13 +79,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 228835466367813266, guid: 565df8667e309fd498602fde46a6041b, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 7370226238808567388, guid: b9de1d9a724184bb2884ba709ce2dfe6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 8.8, y: 7.51}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -127,9 +128,9 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 8.8, y: 7.51}
-    newSize: {x: 8.8, y: 7.51}
+    pivot: {x: 0.5121242, y: 0.56520313}
+    oldSize: {x: 10.23, y: 8.56}
+    newSize: {x: 0.06, y: 0.06}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -178,3 +179,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-787679954404103389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7794389447993196635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e8db8a5352eb407ea374f739feeee0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasBoba: 0
+  hasMatcha: 0
+  hasMango: 0
+  hasTaro: 0
+  hasMilk: 0
+  hasBrownSugar: 0
+  hasPoppin: 0
+  hasAloe: 0
