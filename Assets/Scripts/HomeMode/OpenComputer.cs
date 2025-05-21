@@ -19,6 +19,7 @@ public class OpenComputer : MonoBehaviour
     Debug.Log("Computer clicked!");
 
     if (!calendarUI.activeSelf &&
+        !catUI.activeSelf&&
         !bedUI.activeSelf &&
         !assignmentPanel.activeSelf &&
         !booksUI.activeSelf &&
