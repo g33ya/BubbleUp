@@ -56,6 +56,10 @@ public class JournalManager : MonoBehaviour
         // Apply stat changes from journaling
         levelManager.IncreaseEnergyLevel((int)(selectedTime * 0.05f)); 
         levelManager.DecreaseStressLevel((int)(selectedTime * 0.02f)); 
+ 
+        PlayerPrefs.SetInt("EnergyLevel", levelManager.energyLevel); // Save energy level
+        PlayerPrefs.SetInt("StressLevel", levelManager.stressLevel); // Save stress level
+        PlayerPrefs.Save(); // Save changes to PlayerPrefs
 
         JournalUI.SetActive(false); // Close UI after journaling
         UpdateJournalStatsDisplay();

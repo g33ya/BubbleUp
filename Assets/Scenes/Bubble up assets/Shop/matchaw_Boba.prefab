@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4607633400945878272}
   - component: {fileID: 169348836033902933}
   - component: {fileID: 5620171728248357490}
+  - component: {fileID: 8997091114027637325}
   m_Layer: 0
   m_Name: matchaw_Boba
   m_TagString: matchaw/boba
@@ -30,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.05, y: -0.72, z: 0}
-  m_LocalScale: {x: 0.23271617, y: 0.23245351, z: 1}
+  m_LocalScale: {x: 0.20737764, y: 0.21918042, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -119,6 +120,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   matchaOnlySprite: {fileID: 2150198551892363791, guid: 74739c4bc6d2734489d32d092540a52c, type: 3}
   matchaWithBobaSprite: {fileID: -784692581750019777, guid: 4e69a021962c2084bb1301663bf4037a, type: 3}
+  matchaWithAloeSprite: {fileID: 8379732681861297503, guid: fb4b849d2370312488703759b30b914a, type: 3}
+  matchaWithPoppinSprite: {fileID: -6771009301961453599, guid: 6737b15dd2f742b4088671910bb372a8, type: 3}
 --- !u!61 &5620171728248357490
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -153,7 +156,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.17719728, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -163,5 +166,25 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 11.41, y: 7.69}
+  m_Size: {x: 3.9676566, y: 7.69}
   m_EdgeRadius: 0
+--- !u!114 &8997091114027637325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7580822657649518719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e8db8a5352eb407ea374f739feeee0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasBoba: 1
+  hasMatcha: 1
+  hasMango: 0
+  hasTaro: 0
+  hasMilk: 0
+  hasBrownSugar: 0
+  hasPoppin: 0
+  hasAloe: 0

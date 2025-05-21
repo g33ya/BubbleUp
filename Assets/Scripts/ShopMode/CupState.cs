@@ -4,6 +4,22 @@ public class CupState : MonoBehaviour
 {
     public bool hasBoba = false;
     public bool hasMatcha = false;
+    public bool hasMango = false;
+    public bool hasTaro = false;
+    public bool hasMilk = false;
+    public bool hasBrownSugar = false;
+    public bool hasPoppin = false;
+    public bool hasAloe = false;
+
+    public void ResetDrinkBase()
+{
+    hasTaro = false;
+    hasMatcha = false;
+    hasMango = false;
+    hasMilk = false;
+    hasBrownSugar = false;
+}
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

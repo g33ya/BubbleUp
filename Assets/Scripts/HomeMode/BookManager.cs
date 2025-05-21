@@ -40,9 +40,15 @@ public class BookManager : MonoBehaviour
         return; // Cancel the action if too tired
     }
 
-    timeManager.AddTime(selectedReadTime);
+    timeManager.AddTime(selectedReadTime); // Simulate reading time
+
+    // Adjust stats
     levelManager.DecreaseEnergyLevel(energyCost);
     levelManager.DecreaseStressLevel((int)(selectedReadTime * 0.1f));
+
+    PlayerPrefs.SetInt("EnergyLevel", levelManager.energyLevel); // Save energy level
+    PlayerPrefs.SetInt("StressLevel", levelManager.stressLevel); // Save stress level
+    PlayerPrefs.Save(); // Save changes to PlayerPrefs
 
     BookUI.SetActive(false);
     UpdateStatDisplay();

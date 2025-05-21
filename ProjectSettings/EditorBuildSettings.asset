@@ -11,9 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Shop 1 Monday.unity
     guid: 4ad37b25d62ccbd4b9825e546a9b489f
-  - enabled: 1
-    path: Assets/Scenes/BackOfCafeScene.unity
+  - enabled: 0
+    path: Assets/Scenes/BackOfCafeScene_DONTUSE.unity
     guid: c888dbba32b956c4bacda5f3838e2d8e
+  - enabled: 1
+    path: Assets/Scenes/BackOfCafeScene_Backup.unity
+    guid: 1ed94f002b1ab45c88bcdc1e29079ff8
   - enabled: 1
     path: Assets/Scenes/Shop 2 Monday.unity
     guid: 3ff78300ee7bb70459b271c03c229b7b
@@ -68,6 +71,57 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Shop 4 Friday.unity
     guid: 7a0f53afdc7da4d47893da22f034e7bd
+  - enabled: 1
+    path: Assets/Kitchen 1 Monday.unity
+    guid: 0af9d503507d4384f866f9e2844556f1
+  - enabled: 1
+    path: Assets/Kitchen 2 Monday.unity
+    guid: cd7ce387ab7d71c4a936da24f3807ecd
+  - enabled: 1
+    path: Assets/Kitchen 3 Monday.unity
+    guid: a79f9a0161e85fe49ab43d6f1075c148
+  - enabled: 1
+    path: Assets/Kitchen 1 Tuesday.unity
+    guid: 7546d6da4ffa68f47997eca4279a4637
+  - enabled: 1
+    path: Assets/Kitchen 2 Tuesday.unity
+    guid: 2bb8227f5c3079a428518646f427266f
+  - enabled: 1
+    path: Assets/Kitchen 1 Wednesday.unity
+    guid: 848ef2df4799d9b4eacf609af9191a62
+  - enabled: 1
+    path: Assets/Kitchen 2 Wednesday.unity
+    guid: a715e4e8b29802444b446aed2045e6e8
+  - enabled: 1
+    path: Assets/Kitchen 3 Wednesday.unity
+    guid: b5e0eb3f7d4f39247b3c15552d57e443
+  - enabled: 1
+    path: Assets/Kitchen 1 Thursday.unity
+    guid: b2b615e642d0de5489d72e196e56b6ff
+  - enabled: 0
+    path: Assets/Kitchen 2 Thursday.unity
+    guid: 2ff2fcac6ce5859419ee26f4dcb4b004
+  - enabled: 0
+    path: Assets/Kitchen 1 Friday.unity
+    guid: 6a0e1102591dddf49ac2c9becaa43e3d
+  - enabled: 0
+    path: Assets/Kitchen 2 Friday.unity
+    guid: 3ca6d79a8cc831f45a18aa4fc36ef3c0
+  - enabled: 0
+    path: Assets/Kitchen 3 Friday.unity
+    guid: b522cb00318937246999e1df49ebcba0
+  - enabled: 1
+    path: Assets/Scenes/Kitchen 1 Thursday.unity
+    guid: 5c2a07d3a315394478488877f511a5e7
+  - enabled: 1
+    path: Assets/Scenes/Kitchen 1 Friday.unity
+    guid: d6bac734cbabcda49a326d58ce1856b3
+  - enabled: 1
+    path: Assets/Scenes/Kitchen 2 Friday.unity
+    guid: 80ee292277e9275498acef04bfb2f163
+  - enabled: 1
+    path: Assets/Scenes/Kitchen 3 Friday.unity
+    guid: c0a9ae9a95fb9d24aa8dd0cf61261770
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

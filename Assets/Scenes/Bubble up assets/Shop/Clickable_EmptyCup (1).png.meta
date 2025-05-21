@@ -119,12 +119,12 @@ TextureImporter:
       name: Clickable_EmptyCup (1)_0
       rect:
         serializedVersion: 2
-        x: 56
-        y: 849
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 427
+        y: 196
+        width: 1023
+        height: 856
+      alignment: 9
+      pivot: {x: 0.5121242, y: 0.56520313}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -146,7 +146,7 @@ TextureImporter:
         width: 822
         height: 713
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -163,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f4a3d50581c6c4ba9aea16aa44cd2304
     internalID: 0
     vertices: []
     indices: 

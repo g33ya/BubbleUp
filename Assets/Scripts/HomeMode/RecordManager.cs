@@ -35,6 +35,7 @@ public class RecordManager : MonoBehaviour
     string selectedOptionString = dropdown.options[selectedIndex].text;
     int selectedTime = 0;
 
+    // Convert dropdown selection to minutes
     if (selectedOptionString == "30 min") selectedTime = 30;
     else if (selectedOptionString == "1 hr") selectedTime = 60;
     else if (selectedOptionString == "2 hr") selectedTime = 120;
@@ -51,12 +52,18 @@ public class RecordManager : MonoBehaviour
         return;
     }
 
-    timeManager.AddTime(selectedTime);
+    timeManager.AddTime(selectedTime); // Simulate time spent recording
+
+    // Apply stat changes from record-keeping session
     levelManager.DecreaseEnergyLevel(energyCost); // applying a fixed cost
     levelManager.IncreaseEnergyLevel(energyGain);
     levelManager.DecreaseStressLevel(stressReduction);
 
-    recordUI.SetActive(false);
+    PlayerPrefs.SetInt("EnergyLevel", levelManager.energyLevel); // Save energy level
+    PlayerPrefs.SetInt("StressLevel", levelManager.stressLevel); // Save stress level
+    PlayerPrefs.Save(); // Save changes to PlayerPrefs
+
+    recordUI.SetActive(false); // Close UI after interaction
     UpdateRecordStatsDisplay();
 }
 

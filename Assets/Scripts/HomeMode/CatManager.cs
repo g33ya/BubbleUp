@@ -51,9 +51,12 @@ public class CatManager : MonoBehaviour
 
         timeManager.AddTime(selectedTime); // Simulate time spent with the cat
 
-        // Apply stat changes
-        levelManager.DecreaseEnergyLevel(energyCost);                    // slight energy drop
-        levelManager.DecreaseStressLevel((int)(selectedTime * 0.41f));  // big stress relief
+        // Apply stat changes from cat time
+        levelManager.IncreaseEnergyLevel((int)(selectedTime * 0.3f)); 
+        levelManager.DecreaseStressLevel((int)(selectedTime * 0.2f)); 
+        PlayerPrefs.SetInt("EnergyLevel", levelManager.energyLevel); // Save energy level
+        PlayerPrefs.SetInt("StressLevel", levelManager.stressLevel); // Save stress level
+        PlayerPrefs.Save(); // Save changes to PlayerPrefs
 
         CatUI.SetActive(false); // Close the cat interaction UI
 

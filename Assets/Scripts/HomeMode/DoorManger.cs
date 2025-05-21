@@ -56,6 +56,10 @@ public class DoorManager : MonoBehaviour
         timeManager.AddTime(selectedTime); // Simulate time spent during door activity
         levelManager.DecreaseEnergyLevel((int)(selectedTime * 0.2f)); // more energy loss
         levelManager.DecreaseStressLevel((int)(selectedTime * 0.35f)); // strong stress relief
+         
+        PlayerPrefs.SetInt("EnergyLevel", levelManager.energyLevel); // Save energy level
+        PlayerPrefs.SetInt("StressLevel", levelManager.stressLevel); // Save stress level
+        PlayerPrefs.Save(); // Save changes to PlayerPrefs
 
         DoorUI.SetActive(false); // Close UI after interaction
 
