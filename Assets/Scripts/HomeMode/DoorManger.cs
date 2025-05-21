@@ -21,14 +21,14 @@ public class DoorManager : MonoBehaviour
 
     void Start()
     {
-        DoorUI.SetActive(false);  // Hide the door interaction UI at start
+        DoorUI.SetActive(false);  // Hide the Door
 
         dropdown.onValueChanged.AddListener(delegate { OnDropdownValueChanged(); });
         closeButton.GetComponent<Button>().onClick.AddListener(CloseDoorUI);
         startButton.GetComponent<Button>().onClick.AddListener(StartDoorAction);
     }
 
-    // Called when the player starts using the door (e.g. exits a room, takes a break)
+    // Called when the player starts using the door
     void StartDoorAction()
     {
         int selectedIndex = dropdown.value;
@@ -42,9 +42,7 @@ public class DoorManager : MonoBehaviour
         else if (selectedOptionString == "3 hr") selectedTime = 180;
         else if (selectedOptionString == "4 hr") selectedTime = 240;
 
-        timeManager.AddTime(selectedTime); // Simulate time spent during door activity
-
-        int energyGain = (int)(selectedTime * 0.3f); // if it increases energy, skip energy check
+        int energyGain = (int)(selectedTime * 0.3f);
         int stressReduction = (int)(selectedTime * 0.2f);
 
         int energyCost = 10; // You can change this value based on balancing
@@ -55,6 +53,7 @@ public class DoorManager : MonoBehaviour
         }
 
         // Apply stat changes from door interaction
+        timeManager.AddTime(selectedTime); // Simulate time spent during door activity
         levelManager.DecreaseEnergyLevel((int)(selectedTime * 0.2f)); // more energy loss
         levelManager.DecreaseStressLevel((int)(selectedTime * 0.35f)); // strong stress relief
 
