@@ -44,6 +44,16 @@ public class DoorManager : MonoBehaviour
 
         timeManager.AddTime(selectedTime); // Simulate time spent during door activity
 
+        int energyGain = (int)(selectedTime * 0.3f); // if it increases energy, skip energy check
+        int stressReduction = (int)(selectedTime * 0.2f);
+
+        int energyCost = 10; // You can change this value based on balancing
+
+        if (!levelManager.CanDoActivity(energyCost))
+        {
+            return;
+        }
+
         // Apply stat changes from door interaction
         levelManager.DecreaseEnergyLevel((int)(selectedTime * 0.2f)); // more energy loss
         levelManager.DecreaseStressLevel((int)(selectedTime * 0.35f)); // strong stress relief
