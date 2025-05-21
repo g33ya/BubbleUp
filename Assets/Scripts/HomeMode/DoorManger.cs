@@ -21,14 +21,14 @@ public class DoorManager : MonoBehaviour
 
     void Start()
     {
-        DoorUI.SetActive(false);  // Hide the door interaction UI at start
+        DoorUI.SetActive(false);  // Hide the Door
 
         dropdown.onValueChanged.AddListener(delegate { OnDropdownValueChanged(); });
         closeButton.GetComponent<Button>().onClick.AddListener(CloseDoorUI);
         startButton.GetComponent<Button>().onClick.AddListener(StartDoorAction);
     }
 
-    // Called when the player starts using the door (e.g. exits a room, takes a break)
+    // Called when the player starts using the door
     void StartDoorAction()
     {
         int selectedIndex = dropdown.value;
@@ -42,11 +42,21 @@ public class DoorManager : MonoBehaviour
         else if (selectedOptionString == "3 hr") selectedTime = 180;
         else if (selectedOptionString == "4 hr") selectedTime = 240;
 
-        timeManager.AddTime(selectedTime); // Simulate time spent during door activity
+        int energyGain = (int)(selectedTime * 0.3f);
+        int stressReduction = (int)(selectedTime * 0.2f);
+
+        int energyCost = 10; // You can change this value based on balancing
+
+        if (!levelManager.CanDoActivity(energyCost))
+        {
+            return;
+        }
 
         // Apply stat changes from door interaction
-        levelManager.IncreaseEnergyLevel((int)(selectedTime * 0.3f)); 
-        levelManager.DecreaseStressLevel((int)(selectedTime * 0.2f)); 
+        timeManager.AddTime(selectedTime); // Simulate time spent during door activity
+        levelManager.DecreaseEnergyLevel((int)(selectedTime * 0.2f)); // more energy loss
+        levelManager.DecreaseStressLevel((int)(selectedTime * 0.35f)); // strong stress relief
+         
         PlayerPrefs.SetInt("EnergyLevel", levelManager.energyLevel); // Save energy level
         PlayerPrefs.SetInt("StressLevel", levelManager.stressLevel); // Save stress level
         PlayerPrefs.Save(); // Save changes to PlayerPrefs
@@ -69,10 +79,10 @@ public class DoorManager : MonoBehaviour
         else if (selectedOptionString == "3 hr") selectedTime = 180;
         else if (selectedOptionString == "4 hr") selectedTime = 240;
 
-        int plusEnergy = (int)(selectedTime * 0.2f);
-        int minusStress = (int)(selectedTime * 0.3f);
+        int minusEnergy = (int)(selectedTime * 0.2f);
+        int minusStress = (int)(selectedTime * 0.35f);
 
-        plusEnergyText.text = $"+ {plusEnergy} Energy";
+        plusEnergyText.text = $"- {minusEnergy} Energy";
         minusStressText.text = $"- {minusStress} Stress";
 
         UpdateDoorStatsDisplay();
@@ -97,15 +107,6 @@ public class DoorManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             CloseDoorUI();
-        }
-    }
-
-    // Plays a sound effect (e.g. door creak, footstep) — will move to LogicManager later
-    public void playSound(AudioSource sound)
-    {
-        if (sound != null)
-        {
-            sound.Play();
         }
     }
 }

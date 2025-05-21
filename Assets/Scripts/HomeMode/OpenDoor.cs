@@ -11,6 +11,8 @@ public class OpenDoor : MonoBehaviour
     public GameObject journalUI;
     public GameObject booksUI;
 
+    public AudioClip doorSound;
+
     void OnMouseDown()
     {
         if (!computerUI.activeSelf && 
@@ -22,6 +24,7 @@ public class OpenDoor : MonoBehaviour
             !booksUI.activeSelf)
         {
             doorUI.SetActive(true);
+            SoundPlayer.instance.PlaySFX(doorSound);
         }
     }
 }

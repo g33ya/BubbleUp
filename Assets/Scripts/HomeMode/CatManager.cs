@@ -41,6 +41,14 @@ public class CatManager : MonoBehaviour
         else if (selectedOptionString == "3 hr") selectedTime = 180;
         else if (selectedOptionString == "4 hr") selectedTime = 240;
 
+        int energyCost = (int)(selectedTime * 0.03f);
+
+        // Check if the player has enough energy
+        if (!levelManager.CanDoActivity(energyCost))
+        {
+            return; // Exit early if too tired
+        }
+
         timeManager.AddTime(selectedTime); // Simulate time spent with the cat
 
         // Apply stat changes from cat time
@@ -50,9 +58,9 @@ public class CatManager : MonoBehaviour
         PlayerPrefs.SetInt("StressLevel", levelManager.stressLevel); // Save stress level
         PlayerPrefs.Save(); // Save changes to PlayerPrefs
 
-        CatUI.SetActive(false); // Close UI after interaction
+        CatUI.SetActive(false); // Close the cat interaction UI
 
-        UpdateCatStatsDisplay();
+        UpdateCatStatsDisplay(); // Refresh stats on screen
     }
 
     // Updates projected stat changes based on dropdown selection
@@ -68,11 +76,12 @@ public class CatManager : MonoBehaviour
         else if (selectedOptionString == "3 hr") selectedTime = 180;
         else if (selectedOptionString == "4 hr") selectedTime = 240;
 
-        int plusEnergy = (int)(selectedTime * 0.2f);
-        int minusStress = (int)(selectedTime * 0.3f);
+        int minusEnergy = (int)(selectedTime * 0.03f);
+        int minusStress = (int)(selectedTime * 0.41f);
 
-        plusEnergyText.text = $"+ {plusEnergy} Energy";
+        plusEnergyText.text = $"- {minusEnergy} Energy";
         minusStressText.text = $"- {minusStress} Stress";
+
 
         UpdateCatStatsDisplay();
     }
@@ -99,12 +108,4 @@ public class CatManager : MonoBehaviour
         }
     }
 
-    // Plays a sound effect (will be moved to LogicManager later)
-    public void playSound(AudioSource sound)
-    {
-        if (sound != null)
-        {
-            sound.Play();
-        }
-    }
 }

@@ -11,6 +11,8 @@ public class OpenCalendar : MonoBehaviour
     public GameObject journalUI;
     public GameObject booksUI;
 
+    public AudioClip calendarSound;
+
   void OnMouseDown()
     {
         if (!computerUI.activeSelf && 
@@ -22,6 +24,7 @@ public class OpenCalendar : MonoBehaviour
             !recordUI.activeSelf)
         {
             calendarUI.SetActive(true);
+            SoundPlayer.instance.PlaySFX(calendarSound);
         }
     }
 }

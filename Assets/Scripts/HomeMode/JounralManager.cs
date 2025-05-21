@@ -44,15 +44,24 @@ public class JournalManager : MonoBehaviour
 
         timeManager.AddTime(selectedTime); // Simulate time spent journaling
 
+        int energyGain = (int)(selectedTime * 0.3f); // if it increases energy, skip energy check
+        int stressReduction = (int)(selectedTime * 0.2f);
+        int energyCost = 10; // You can change this value based on balancing
+
+        if (!levelManager.CanDoActivity(energyCost))
+        {
+            return;
+        }
+
         // Apply stat changes from journaling
-        levelManager.IncreaseEnergyLevel((int)(selectedTime * 0.3f)); 
-        levelManager.DecreaseStressLevel((int)(selectedTime * 0.2f)); 
+        levelManager.IncreaseEnergyLevel((int)(selectedTime * 0.05f)); 
+        levelManager.DecreaseStressLevel((int)(selectedTime * 0.02f)); 
+ 
         PlayerPrefs.SetInt("EnergyLevel", levelManager.energyLevel); // Save energy level
         PlayerPrefs.SetInt("StressLevel", levelManager.stressLevel); // Save stress level
         PlayerPrefs.Save(); // Save changes to PlayerPrefs
 
         JournalUI.SetActive(false); // Close UI after journaling
-
         UpdateJournalStatsDisplay();
     }
 
@@ -69,10 +78,10 @@ public class JournalManager : MonoBehaviour
         else if (selectedOptionString == "3 hr") selectedTime = 180;
         else if (selectedOptionString == "4 hr") selectedTime = 240;
 
-        int plusEnergy = (int)(selectedTime * 0.2f);
-        int minusStress = (int)(selectedTime * 0.3f);
+        int plusEnergy = (int)(selectedTime * 0.05f);
+        int minusStress = (int)(selectedTime * 0.02f);
 
-        plusEnergyText.text = $"+ {plusEnergy} Energy";
+        plusEnergyText.text = $"- {plusEnergy} Energy";
         minusStressText.text = $"- {minusStress} Stress";
 
         UpdateJournalStatsDisplay();
@@ -97,15 +106,6 @@ public class JournalManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             CloseJournalUI();
-        }
-    }
-
-    // Plays a sound effect (e.g. page turning) — will move to LogicManager later
-    public void playSound(AudioSource sound)
-    {
-        if (sound != null)
-        {
-            sound.Play();
         }
     }
 }

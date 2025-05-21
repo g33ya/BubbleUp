@@ -29,24 +29,31 @@ public class BookManager : MonoBehaviour
 
     // Starts reading and applies stat changes
     void StartReading()
+{
+    int selectedIndex = dropdown.value;
+    string selectedOptionString = dropdown.options[selectedIndex].text;
+    int selectedReadTime = GetMinutesFromOption(selectedOptionString);
+    int energyCost = (int)(selectedReadTime * 0.25f);
+
+    if (!levelManager.CanDoActivity(energyCost))
     {
-        int selectedIndex = dropdown.value;
-        string selectedOptionString = dropdown.options[selectedIndex].text;
-        int selectedReadTime = GetMinutesFromOption(selectedOptionString);
-
-        timeManager.AddTime(selectedReadTime); // Simulate reading time
-
-        // Adjust stats
-        levelManager.IncreaseEnergyLevel((int)(selectedReadTime * 0.3f)); // Reusing energy field for knowledge
-        levelManager.DecreaseStressLevel((int)(selectedReadTime * 0.2f));
-        PlayerPrefs.SetInt("EnergyLevel", levelManager.energyLevel); // Save energy level
-        PlayerPrefs.SetInt("StressLevel", levelManager.stressLevel); // Save stress level
-        PlayerPrefs.Save(); // Save changes to PlayerPrefs
-
-        BookUI.SetActive(false);
-
-        UpdateStatDisplay();
+        return; // Cancel the action if too tired
     }
+
+    timeManager.AddTime(selectedReadTime); // Simulate reading time
+
+    // Adjust stats
+    levelManager.DecreaseEnergyLevel(energyCost);
+    levelManager.DecreaseStressLevel((int)(selectedReadTime * 0.1f));
+
+    PlayerPrefs.SetInt("EnergyLevel", levelManager.energyLevel); // Save energy level
+    PlayerPrefs.SetInt("StressLevel", levelManager.stressLevel); // Save stress level
+    PlayerPrefs.Save(); // Save changes to PlayerPrefs
+
+    BookUI.SetActive(false);
+    UpdateStatDisplay();
+}
+
 
     // Updates projected changes when dropdown is changed
     void OnDropdownValueChanged()
@@ -55,10 +62,10 @@ public class BookManager : MonoBehaviour
         string selectedOptionString = dropdown.options[selectedIndex].text;
         int selectedOptionNum = GetMinutesFromOption(selectedOptionString);
 
-        int plusKnowledge = (int)(selectedOptionNum * 0.2f);
-        int minusStress = (int)(selectedOptionNum * 0.3f);
+        int minusEnergy = (int)(selectedOptionNum * 0.25f);
+        int minusStress = (int)(selectedOptionNum * 0.1f);
 
-        plusEnergyText.text = $"+ {plusKnowledge} Knowledge";
+        plusEnergyText.text = $"- {minusEnergy} Energy";
         minusStressText.text = $"- {minusStress} Stress";
 
         UpdateStatDisplay();

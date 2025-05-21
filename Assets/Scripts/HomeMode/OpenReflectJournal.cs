@@ -1,6 +1,5 @@
 using UnityEngine;
-
-public class OpenJounral : MonoBehaviour
+public class OpenReflectJournal : MonoBehaviour
 {
     public GameObject calendarUI;
     public GameObject computerUI;
@@ -10,8 +9,9 @@ public class OpenJounral : MonoBehaviour
     public GameObject recordUI;
     public GameObject journalUI;
     public GameObject booksUI;
+    public GameObject reflectJournalUI;
 
-    public AudioClip wrritingSound;
+    public AudioClip magicalSound;
 
     void OnMouseDown()
     {
@@ -20,12 +20,12 @@ public class OpenJounral : MonoBehaviour
             !bedUI.activeSelf &&
             !doorUI.activeSelf &&
             !recordUI.activeSelf &&
-            !catUI.activeSelf &&
-            !booksUI.activeSelf)
+            !journalUI.activeSelf &&
+            !booksUI.activeSelf &&
+            !catUI.activeSelf)
         {
-            journalUI.SetActive(true);
-            SoundPlayer.instance.PlaySFX(wrritingSound);
+            reflectJournalUI.SetActive(true);
+            SoundPlayer.instance.PlaySFX(magicalSound);
         }
     }
 }
-

@@ -15,6 +15,7 @@ public class OpenComputer : MonoBehaviour
     public GameObject journalUI;
     public GameObject booksUI;
 
+    public AudioClip computerSound;
     public Button initialWorkOnButton;
     public Button initialWorkOnButton2;
     public TMP_Text assignmentCompleteText; // Text to display the name of the assignment
@@ -24,6 +25,7 @@ public class OpenComputer : MonoBehaviour
     Debug.Log("Computer clicked!");
 
     if (!calendarUI.activeSelf &&
+        !catUI.activeSelf&&
         !bedUI.activeSelf &&
         !assignmentPanel.activeSelf &&
         !booksUI.activeSelf &&
@@ -34,6 +36,7 @@ public class OpenComputer : MonoBehaviour
         computerUI.SetActive(true);
         dayPanel.SetActive(true);
         Debug.Log("Computer UI and Day Panel activated!");
+        SoundPlayer.instance.PlaySFX(computerSound);
     }
 
     if (PlayerPrefs.GetInt("Assignment1Progress") >= 100)

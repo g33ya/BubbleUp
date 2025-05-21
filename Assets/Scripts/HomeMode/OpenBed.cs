@@ -11,6 +11,8 @@ public class OpenBed : MonoBehaviour
     public GameObject journalUI;
     public GameObject booksUI;
 
+    public AudioClip sleepSound;
+
     void OnMouseDown()
     {
         if (!computerUI.activeSelf && 
@@ -22,6 +24,7 @@ public class OpenBed : MonoBehaviour
             !recordUI.activeSelf)
         {
             bedUI.SetActive(true);
+            SoundPlayer.instance.PlaySFX(sleepSound);
         }
     }
 }

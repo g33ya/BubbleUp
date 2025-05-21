@@ -2,7 +2,7 @@
 
 ## Elevator Pitch
 
-A narrative journey where you explore customers’ daily struggles and solutions, helping you navigate your own imposter syndrome along the way in the setting of a boba shop.
+Bubble Up is a narrative game that helps players recognize and manage Imposter Syndrome through storytelling and daily decision-making. As a boba shop worker balancing school and life, you'll engage with customers who open up about their personal challenges. By listening to their stories, you’ll uncover emotional insights not just in others but in yourself. Alongside navigating your own workload and wellbeing once you clock out for the day, Bubble Up invites players to reflect, grow, and discover the right work-life balance for you!
 
 ## Influences
 - Coffee Talk: 
@@ -54,8 +54,9 @@ Bubble Up can be formally used as a module in introductory computer science cour
 
 ## Assessment Measures
 
-Students will be asked to fill out “Pre-work forms” during their “training day” before they can officially start their work week. They will click on their interactive laptop and fill out the forms which will include them customizing their name and multiple-choice and open-response questions surrounding how they would handle common situations that involve imposter syndrome and workload management. At the end of their work week, they will have to fill out an assessment report for the boba shop that will ask similar questions to assess learning.
-
+After playing through Bubble Up, players will be asked two assessment questions to evaluate the success of our two main learning objectives:
+- Identify a time when Imposter Syndrome came into play in your everyday life and identify a coping mechanism you could have used to prevent it
+- Create a homework schedule for your upcoming week that encourages a balanced work-life and personal-life, preventing burnout
 
 # What sets this project apart?
 
@@ -72,7 +73,7 @@ This is a game for one person. The player clicks/drags with a mouse.
 ## Player Modes
 
 - Single Player Mode:  You will make drinks, talk to customers, and manage your stats advancing through each day until the narrative is done (ending based on the stats, ~1 week in-game time)
--In Boba shop Mode: This is the mode where the player makes the customers' drinks. The screen will also showcase the receipt near the boba-making station in order for the player to follow the ingredients the customer had asked for.
+-In Boba Shop Mode: This is the mode where the player makes the customers' drinks. The screen has a recipe menu near the boba-making station in order for the player to follow the ingredients the customer had asked for.
 -In Room Mode: When the player is done working, they will enter their room to have a chance to relax and reflect upon the day they had. They have the option to go on walks and do other activities to relieve stress
 -Start Mode: Instead of the game automatically starting, there will be a start page for the user to press play to begin their game of Bubble Up
 
@@ -87,12 +88,11 @@ This is a game for one person. The player clicks/drags with a mouse.
 
 # Procedures/Actions
 
-You can click on the customer in the line, and spark up a conversation while simultaneously taking their order. Once the conversation ends, you’ll receive a ticket for your order. Then, they began making their bubble tea drink based on what the receipt stated.
+Conversation occurs until there is a natural stopping point in the story to take their order. Once the conversation ends, you're able to enter the kitchen. Then, they began making their bubble tea drink based on what the receipt stated.
 
 The user can control the making of the drinks, however, the conversations between the customers are preset. So the user can not alter the dialogue. The user also can customize their character to make it more personable.
 
 # Rules
-If the player makes a drink wrong, they have to remake the drink, and stress increases
 If your energy and stress levels are maxed out, you have to replay the prior day
 After a customer leaves, a new customer with a new drink order comes in
 Over time, you will unlock new actions based on your daytime work time that the player can make during the nighttime free time
@@ -100,24 +100,19 @@ Over time, you will unlock new actions based on your daytime work time that the 
 # Objects/Entities
 
 Shop Interactable: juices, boba, blender, toppings, tickets
-Bedroom Interactable: bed, laptop, cat, record player, journaling materials
-Game Menu Interactable: phone, help, calendar
+Bedroom Interactable: bed, laptop, calendar, cat, record player, journaling materials, door
 
 ## Core Gameplay Mechanics (Detailed)
 
-- Interacting with Order Tickets: You can click and drag the tickets only to the left or the right of your screen. When clicking the ticket, the ticket will expand on the screen showcasing all the ingredients the customer wants in the bubble tea. Describe in 2 paragraphs or less, along with how it generally works
+- Interacting with Recipe Menu: When in the kitchen, you can open the recipe menu to see which ingredients are required for the drinks ordered throughout the game.
 
-- Interacting with the customers: You can click on the customers to “talk” to them, and you can learn more about them and their lives. When you click on them, a speech bubble appears on the bottom of the screen with the icon of the person you are clicking. Once all the text appears, you can click next, to continue the conversation until it ends.
+- Interacting with the customers: Characters automatically begin conversation, and you can learn more about them and their lives through a speech bubble that appears on the bottom of the screen. Once all the text appears, you can click next, to continue the conversation until it ends.
 
-- Managing on levels: You manage your energy and stress levels. These can be impacted by the success of fulfilling orders in the shop, making progress on upcoming assignments, and getting enough rest each night.
+- Managing on levels: You manage your energy and stress levels. These can be impacted by making progress on upcoming assignments, and getting enough rest each night.
     
 ## Feedback
 
-When giving the customer their drink, they smile if the order is correct and frown if it is incorrect.
-The facial expressions can vary between customers during the conversations, some may have a mad expression, while others can have a happy or sad expression
-
 Selection sound, to indicate that the user has clicked something
-Phone Buzz Sound to indicate when there is something on the phone the player should see: new item unlocked, mental note made, etc.
 Bell sound at the start of shop day
 Energy & Stress Levels will change based off the player’s interaction
 Happy twinkle sound at the end of a good day (stress levels low), whomp sound at the end of a bad day (stress levels high)
@@ -129,7 +124,7 @@ If the character ended the day on a good note, a ‘Sparkle’ (positive feedbac
 
 ## Presentation of Rules
 
-Players will have a “training day at the beginning of their “week” where they will be prompted to complete actions that teach them the rules of the game: how to make drinks, how to manage their levels, and how to continue the game through dialogue. There will also be a “help” button in the game menu that will offer hints and guidance to players whenever needed
+Players will be presented a screen with the instructions required to succesfully go through making a drink and navigating Home Mode on the first day. 
 
 ## Presentation of Content
 

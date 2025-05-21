@@ -11,6 +11,8 @@ public class OpenCat : MonoBehaviour
     public GameObject journalUI;
     public GameObject booksUI;
 
+    public AudioClip catSound;
+
     void OnMouseDown()
     {
         if (!computerUI.activeSelf && 
@@ -22,6 +24,7 @@ public class OpenCat : MonoBehaviour
             !booksUI.activeSelf)
         {
             catUI.SetActive(true);
+            SoundPlayer.instance.PlaySFX(catSound);
         }
     }
 }

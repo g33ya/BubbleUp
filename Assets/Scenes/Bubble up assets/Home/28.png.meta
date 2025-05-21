@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: b070de3238a93a5419dbabdbb372a88a
+guid: a276f1cfb941b9c4586841322afd0415
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1183781659521159595
-    second: "Clickable_(S)Tarow\uF022Boba_0"
-  - first:
-      213: 1189197569126317938
-    second: "Clickable_(S)Tarow\uF022Boba_1"
+      213: -796155573255488767
+    second: 28_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,35 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Clickable_(S)Tarow\uF022Boba_0"
+      name: 28_0
       rect:
         serializedVersion: 2
-        x: 458
-        y: 53
-        width: 874
-        height: 992
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 55e6e944adc529fe0800000000000000
-      internalID: -1183781659521159595
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Clickable_(S)Tarow\uF022Boba_1"
-      rect:
-        serializedVersion: 2
-        x: 353
-        y: 267
-        width: 822
-        height: 713
+        x: 22
+        y: 1
+        width: 1887
+        height: 1073
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 27f388373e0e08010800000000000000
-      internalID: 1189197569126317938
+      spriteID: 10bb82e69bc73f4f0800000000000000
+      internalID: -796155573255488767
       vertices: []
       indices: 
       edges: []
@@ -163,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: fe4ac6a59e3624d90bdfa1766f187687
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -173,8 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "Clickable_(S)Tarow\uF022Boba_0": -1183781659521159595
-      "Clickable_(S)Tarow\uF022Boba_1": 1189197569126317938
+      28_0: -796155573255488767
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

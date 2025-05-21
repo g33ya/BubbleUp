@@ -30,31 +30,43 @@ public class RecordManager : MonoBehaviour
 
     // Called when player starts the record-keeping activity
     void StartRecording()
+{
+    int selectedIndex = dropdown.value;
+    string selectedOptionString = dropdown.options[selectedIndex].text;
+    int selectedTime = 0;
+
+    // Convert dropdown selection to minutes
+    if (selectedOptionString == "30 min") selectedTime = 30;
+    else if (selectedOptionString == "1 hr") selectedTime = 60;
+    else if (selectedOptionString == "2 hr") selectedTime = 120;
+    else if (selectedOptionString == "3 hr") selectedTime = 180;
+    else if (selectedOptionString == "4 hr") selectedTime = 240;
+
+    int energyGain = (int)(selectedTime * 0.3f); // if it increases energy, skip energy check
+    int stressReduction = (int)(selectedTime * 0.2f);
+
+    int energyCost = 10; // You can change this value based on balancing
+
+    if (!levelManager.CanDoActivity(energyCost))
     {
-        int selectedIndex = dropdown.value;
-        string selectedOptionString = dropdown.options[selectedIndex].text;
-        int selectedTime = 0;
-
-        // Convert dropdown selection to minutes
-        if (selectedOptionString == "30 min") selectedTime = 30;
-        else if (selectedOptionString == "1 hr") selectedTime = 60;
-        else if (selectedOptionString == "2 hr") selectedTime = 120;
-        else if (selectedOptionString == "3 hr") selectedTime = 180;
-        else if (selectedOptionString == "4 hr") selectedTime = 240;
-
-        timeManager.AddTime(selectedTime); // Simulate time spent recording
-
-        // Apply stat changes from record-keeping session
-        levelManager.IncreaseEnergyLevel((int)(selectedTime * 0.3f)); 
-        levelManager.DecreaseStressLevel((int)(selectedTime * 0.2f)); 
-        PlayerPrefs.SetInt("EnergyLevel", levelManager.energyLevel); // Save energy level
-        PlayerPrefs.SetInt("StressLevel", levelManager.stressLevel); // Save stress level
-        PlayerPrefs.Save(); // Save changes to PlayerPrefs
-
-        recordUI.SetActive(false); // Close UI after interaction
-
-        UpdateRecordStatsDisplay();
+        return;
     }
+
+    timeManager.AddTime(selectedTime); // Simulate time spent recording
+
+    // Apply stat changes from record-keeping session
+    levelManager.DecreaseEnergyLevel(energyCost); // applying a fixed cost
+    levelManager.IncreaseEnergyLevel(energyGain);
+    levelManager.DecreaseStressLevel(stressReduction);
+
+    PlayerPrefs.SetInt("EnergyLevel", levelManager.energyLevel); // Save energy level
+    PlayerPrefs.SetInt("StressLevel", levelManager.stressLevel); // Save stress level
+    PlayerPrefs.Save(); // Save changes to PlayerPrefs
+
+    recordUI.SetActive(false); // Close UI after interaction
+    UpdateRecordStatsDisplay();
+}
+
 
     // Updates projected stat changes based on dropdown selection
     void OnDropdownValueChanged()
@@ -69,10 +81,10 @@ public class RecordManager : MonoBehaviour
         else if (selectedOptionString == "3 hr") selectedTime = 180;
         else if (selectedOptionString == "4 hr") selectedTime = 240;
 
-        int plusEnergy = (int)(selectedTime * 0.2f);
-        int minusStress = (int)(selectedTime * 0.3f);
+        int minusEnergy = (int)(selectedTime * 0.2f);
+        int minusStress = (int)(selectedTime * 0.1f);
 
-        plusEnergyText.text = $"+ {plusEnergy} Energy";
+        plusEnergyText.text = $"- {minusEnergy} Energy";  // Change label accordingly
         minusStressText.text = $"- {minusStress} Stress";
 
         UpdateRecordStatsDisplay();
@@ -97,15 +109,6 @@ public class RecordManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             CloseRecordUI();
-        }
-    }
-
-    // Plays a sound effect (e.g. pen scribble, notebook rustle) — to be moved to LogicManager
-    public void playSound(AudioSource sound)
-    {
-        if (sound != null)
-        {
-            sound.Play();
         }
     }
 }
