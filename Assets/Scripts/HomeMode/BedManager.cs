@@ -47,7 +47,7 @@ public class SleepManager : MonoBehaviour
         
             BedUI.SetActive(false);
             SoundPlayer.instance.PlaySFX(dreamSound);
-            timeManager.StartCoroutine(timeManager.FadeInOutWithScene("Shop 2 Tuesday"));
+            timeManager.StartCoroutine(timeManager.FadeInOutWithScene("Shop 1 Tuesday"));
 
             //SceneManager.LoadScene("Shop 2 Tuesday"); //Need to talk to Taylor About the Scene Change
             return;
@@ -77,8 +77,8 @@ public class SleepManager : MonoBehaviour
         else if (selectedOptionString == "3 hr") selectedOptionNum = 180;
         else if (selectedOptionString == "4 hr") selectedOptionNum = 240;
         else if (selectedOptionString == "End of Day"){
-            plusEnergy = 50;  // Custom boost
-            minusStress = 40; // Custom stress reduction
+            plusEnergy = 50;
+            minusStress = 40;
 
             plusEnergyText.text = $"+ {plusEnergy} Energy";
             minusStressText.text = $"- {minusStress} Stress";

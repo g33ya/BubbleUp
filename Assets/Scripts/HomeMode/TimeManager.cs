@@ -35,7 +35,7 @@ public class TimeManager : MonoBehaviour
         //Check if it's now 6 AM or later - to move onto the next scene
         if (hour >= 6 && hour < 7 && minute == 0) // Only trigger at exactly 6:00 AM
         {
-            StartCoroutine(FadeInOutWithScene("NextSceneName")); // Replace with your actual scene name
+            StartCoroutine(FadeInOutWithScene("Shop 1 Tuesday")); // Replace with needed scene name
         }
         else
         {
