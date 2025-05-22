@@ -12258,8 +12258,8 @@ MonoBehaviour:
   plusStressText2: {fileID: 2205221}
   minusSleepText: {fileID: 1608005093}
   minusSleepText2: {fileID: 2083793585}
-  stressText: {fileID: 0}
-  energyText: {fileID: 0}
+  stressText: {fileID: 1039564818}
+  energyText: {fileID: 163599909}
   computerUI: {fileID: 244980517}
   closeButton1: {fileID: 1097213379}
   closeButton2: {fileID: 1101259953}
@@ -12270,8 +12270,8 @@ MonoBehaviour:
   sundayPanel: {fileID: 1983090262}
   initialWorkOnButton: {fileID: 1168148324}
   initialWorkOnButton2: {fileID: 1778448573}
-  timeManager: {fileID: 0}
-  levelManager: {fileID: 0}
+  timeManager: {fileID: 725658458}
+  levelManager: {fileID: 593411906}
   notEnoughEnergyText: {fileID: 1040539651}
   notEnoughEnergyText2: {fileID: 1060106996}
   tooStressedText: {fileID: 1999369332}
@@ -28150,7 +28150,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1468029457
 RectTransform:
   m_ObjectHideFlags: 0
